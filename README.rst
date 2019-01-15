@@ -82,6 +82,6 @@ The main developer(s):
    :target: https://github.com/jason-r-becker/dfspy/pulls
 .. |GitHub-Contributions| image:: https://img.shields.io/github/contributors/jason-r-becker/dfspy.svg
    :target: https://github.com/jason-r-becker/dfspy/graphs/contributors
-.. |Python-Versions| image:: https://img.shields.io/badge/python-3.5%20|%203.6%20|%203.7-blue.svg
+.. |Python-Versions| image:: https://img.shields.io/badge/python-3.7-blue.svg
 .. |LICENSE| image:: https://img.shields.io/pypi/l/dfspy.svg
    :target: https://raw.githubusercontent.com/jason-r-becker/dfspy/master/License.txt
