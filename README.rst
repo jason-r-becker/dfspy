@@ -66,7 +66,7 @@ Authors
 The main developer(s):
 
 - Jason R Becker (`jrbecker <https://github.com/jason-r-becker>`__)
-- Jack St. Clair (`JackStC <https://github.com/JackStC>`__`)
+- Jack St. Clair (`JackStC <https://github.com/JackStC>`__)
 
 .. |GitHub-Status| image:: https://img.shields.io/github/tag/jason-r-becker/dfspy.svg?maxAge=86400
    :target: https://github.com/jason-r-becker/dfspy/releases
