@@ -1,3 +1,5 @@
+import argparse
+import os
 import sys
 from datetime import datetime as dt
 from datetime import timedelta
@@ -7,6 +9,7 @@ import requests
 import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
+from tqdm import tqdm
 
 # %%
 
@@ -22,7 +25,14 @@ def main():
     
     # Get command line arguments.
     args = parse_args()
-
+    
+    # Scrape and save data.
+    scraper = dataScraper(
+        sources=args.sources,
+        weeks=args.weeks,
+        years=args.years,
+        )
+    scraper.save()
 
 def parse_args():
     """Collect settings from command line and set defaults."""
@@ -33,7 +43,7 @@ def parse_args():
     
     # Set default sources.
     # TODO: Update sources as their scrapers are written.
-    default_sources = ['CBS', 'ESPN']
+    default_sources = ['CBS', 'ESPN', 'Yahoo']
     
     # Get default season year and week from current time.
     today = dt.utcnow()
@@ -59,11 +69,22 @@ def parse_args():
     # Set default arguments.
     parser.set_defaults(
         sources=default_sources,
-        week=default_week,
-        year=default_year,
+        weeks=default_week,
+        years=default_year,
         )
     args = parser.parse_args()
+    
+    # Convert ranges to lists.
+    years, weeks = args.years, args.weeks
+    args.years = list_from_str_range(years) if '-' in years else years
+    args.weeks = list_from_str_range(weeks) if '-' in weeks else weeks
+    
     return args
+
+def list_from_str_range(str_range):
+    """Convert str range to inclusive list of integers"""
+    vals = str_range.split('-')
+    return list(range(int(vals[0]), int(vals[1])+1))
     
     
 def mkdir(directory):
@@ -77,7 +98,7 @@ def mkdir(directory):
 class dataScraper:
     """
     Class for scraping weekly or season projections from various
-    web sources.
+    web sources and saving to the `../data` directory.
     
     TODO: call singleScrape and build data directory for given inputs.
     
@@ -97,14 +118,43 @@ class dataScraper:
         List of years to scrape projections.
             - int: Scrape single year's projections.
             - lits(int): Scrape multiple year's projections.
+    
+    Methods
+    -------
+    save(): Scrape and save selected data.
     """
     
     def __init__(self, sources, weeks, years):
+        # Convert inits to lists
         self.sources = sources if type(sources) in [list, tuple] else [sources]
-        self.weeks = weeks if type(weeks) in [list, tuple] else [weeks]
         self.years = years if type(years) in [list, tuple] else [years]
         self.positions = 'QB RB WR TE DST K'.split()
-        
+        if weeks == 'all':
+            self.weeks = np.arange(17)
+        elif weeks == 'season':
+            self.weeks = [0]
+        elif type(weeks) in [list, tuple]:
+            self.weeks = weeks
+        else:
+            self.weeks = [weeks]
+            
+    def save(self):
+        """Scrape and save specified data."""
+        iters = len(self.years) * len(self.weeks) * len(self.positions) \
+                * len(self.sources)
+        with tqdm(total=iters) as pbar:
+            for year in self.years:
+                for week in self.weeks:
+                    for pos in self.positions:
+                        for source in self.sources:
+                            scraper = singleScrape(source, week, year, pos)
+                            df = scraper.scrape()
+                            if df is not None:
+                                path = f'../data/{year}/{week}/{pos}'
+                                mkdir(path)
+                                df.to_csv(f'{path}/{source}.csv', index=False)
+                            pbar.update(1)
+
 
 class singleScrape:
     """
@@ -117,7 +167,6 @@ class singleScrape:
         - FFToday
         - FleaFlicker
         - NumberFire
-        - Yahoo
         - FantasyFootballNerd
         - RTSports
         - Walterfootball
@@ -144,7 +193,6 @@ class singleScrape:
         self.week = week
         self.year = year
         self.pos = pos
-        self.url = self._get_url()
     
     def _get_url(self):
         """Returns url for scraping."""
@@ -163,17 +211,6 @@ class singleScrape:
             f'?print_rows=9999'
             )
         return url
-    
-    def _url_for_ESPN(self):
-        pos = {'QB': 0, 'RB': 2, 'WR': 4, 'TE': 6, 'DST': 16, 'K': 17}
-        cat_id = f'&slotCategoryId={pos[self.pos]}'
-        period = 'seasonTotals=true' if self.week == 0 \
-                 else f'scoringPeriodId={self.week}'
-        url = (
-            f'http://games.espn.com/ffl/tools/projections?projections?='
-            f'slot=CategoryId=0{cat_id}&{period}&seasonId={self.year}'
-            )
-        return url
         
     def _clean_CBS_df(self, df):
         header_ix = list(df.iloc[:, 0]).index('Player')
@@ -184,24 +221,59 @@ class singleScrape:
         clean_df['POS'] = self.pos
         return clean_df
         
+    def _url_for_ESPN(self):
+        pos = {'QB': 0, 'RB': 2, 'WR': 4, 'TE': 6, 'DST': 16, 'K': 17}
+        cat_id = f'&slotCategoryId={pos[self.pos]}'
+        period = 'seasonTotals=true' if self.week == 0 \
+                 else f'scoringPeriodId={self.week}'
+        page = f'&startIndex={int(self._page * 40)}'
+        url = (
+            f'http://games.espn.com/ffl/tools/projections?projections?='
+            f'slot=CategoryId=0{cat_id}&{period}&seasonId={self.year}{page}'
+            )
+        return url
+        
     def _clean_ESPN_df(self, df):
         header_ix = list(df.iloc[:, 0]).index('PLAYER, TEAM POS')
         cols = [col for col in df.iloc[header_ix, :] if isinstance(col, str)]
         clean_df = df.iloc[header_ix+1:, :len(cols)].copy()
         cols[0] = 'Player'
         clean_df.columns = cols
+        
         clean_df.index = list(range(len(clean_df)))
         clean_df['POS'] = self.pos
         return clean_df
     
-    def scrape(self):
+    def _url_for_Yahoo(self):
+        pos = 'DEF' if self.pos == 'DST' else self.pos
+        period = f'S_PS_{self.year}' if self.week == 0 else f'S_PW_{self.week}'
+        page = f'&count={int(self._page * 25)}'
+        url = (
+            f'https://football.fantasysports.yahoo.com/f1/48938/players?&sort='
+            f'PTS&sdir=1&status=A&pos={pos}&stat1={period}&jsenabled=1{page}'
+            )
+        return url
+        
+    def _clean_Yahoo_df(self, df):
+        df.columns = df.columns.droplevel(0)  # drop first multi-index row
+        bad_cols = ['Unnamed', 'Fan Pts', 'Owner', 'GP*', 'Owned']
+        cols = [col for col in df.columns \
+                if not any(bc in col for bc in bad_cols)]
+        clean_df = df[cols].copy()
+        temp_cols = list(clean_df)
+        temp_cols[0] = 'Player'
+        clean_df.columns = temp_cols
+        clean_df['POS'] = self.pos
+        return clean_df
+        
+    def _scrape_single_page(self):
         """
         Scrape DataFrame for specified inits.
         
         Returns
         -------
         df: pd.DataFrame
-            DataFrame of resulting scrape, None if scrape fails.
+            DataFrame of sinlge page scrape, None if scrape fails.
         """
         # Scrape data, attempt 5 times before passing.
         attempts = 5
@@ -228,11 +300,67 @@ class singleScrape:
         
         # Convert scrape into DataFrame and clean.
         soup = BeautifulSoup(r.text, features='lxml')
-        table = soup.find_all('table')[0]
+        table_ix = 1 if self.source in ['Yahoo'] else 0
+        table = soup.find_all('table')[table_ix]
         df = pd.read_html(str(table))[0]
         return self._clean_scraped_df(df)
+    
+    def scrape(self):
+        """
+        Scrape DataFrame for specified inits. If source hosts projections
+        tables on multiple pages, scrape all pages and combine into one
+        DataFrame, otherwise scrape full table if hosted on one page.
+        
+        Returns
+        -------
+        df: pd.DataFrame
+            DataFrame of full resulting scrape, None if scrape fails.
+        """
+        multi_scrape_sources = ['ESPN', 'Yahoo']
+        if self.source in multi_scrape_sources:
+            max_pages = 10
+            df_pages = []
+            for i in range(max_pages):
+                self._page = i
+                self.url = self._get_url()
+                try:
+                    df_i = self._scrape_single_page()
+                except (KeyboardInterrupt, SystemExit):
+                    raise
+                except Exception as e:
+                    break
+                
+                if not isinstance(df_i, pd.DataFrame):
+                    break
+                if len(df_i) < 4:
+                    break
 
-
-if __name__ == "__main__":
-    main()
+                # Store succesfully scraped DataFrame.
+                df_pages.append(df_i)
+                if i == 0:
+                    # Save column headers from first page.
+                    cols = df_i.columns
             
+            if len(df_pages) == 0:
+                # No succesfull scrapes.
+                return None
+            
+            # Combine all succesfully scraped pages.
+            combined_df = np.vstack(df_pages)
+            df = pd.DataFrame(combined_df, columns=cols)
+            df.drop_duplicates(inplace=True)
+        
+        else:
+            # Only single scrape required for all data.
+            self.url = self._get_url()
+            df = self._scrape_single_page()
+        
+        return df
+        
+        
+
+
+# %%
+
+if __name__ == '__main__':
+    main()
