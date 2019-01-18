@@ -1,0 +1,131 @@
+Player,OPP,STATUS ET,C/A,YDS,TD,INT,RUSH,YDS,TD,REC,YDS,TD,PTS,POS
+"Tom Brady, NE QB",@Den,W 41-16,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Mike Vick, Pit QB",@Ind,W 20-17,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Drew Brees, NO QB",@Buf,W 47-10,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Josh McCown, NYJ QB",@TB,L 10-15,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Shaun Hill, Min QB",@Wsh,W 38-30,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Carson Palmer, Ari QB",Sea,L 16-22,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Tony Romo, Dal QB",@Atl,L 7-27,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Eli Manning, NYG QB",@SF,L 21-31,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Philip Rivers, LAC QB",@Jax,L 17-20,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Ben Roethlisberger, Pit QB",@Ind,W 20-17,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Matt Schaub, Atl QB",Dal,W 27-7,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Luke McCown, Dal QB",@Atl,L 7-27,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Alex Smith, Wsh QB",Min,L 30-38,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Aaron Rodgers, GB QB",@Chi,W 23-16,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Dan Orlovsky, LAR QB",Hou,W 33-7,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Derek Anderson, Car QB",Mia,W 45-21,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Matt Cassel, Det QB",Cle,W 38-24,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Ryan Fitzpatrick, TB QB",NYJ,W 15-10,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Jay Cutler, Mia QB",@Car,L 21-45,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Kellen Clemens, LAC QB",@Jax,L 17-20,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Tarvaris Jackson, Sea QB",@Ari,W 22-16,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Charlie Whitehurst, Cle QB",@Det,L 24-38,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Bruce Gradkowski, Pit QB",@Ind,W 20-17,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Drew Stanton, Cle QB",@Det,L 24-38,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Matt Moore, Mia QB",@Car,L 21-45,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Matt Ryan, Atl QB",Dal,W 27-7,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Joe Flacco, Bal QB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,QB
+"Chad Henne, KC QB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,QB
+"Josh Johnson, Oak QB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,QB
+"Matt Flynn, NO QB",@Buf,W 47-10,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Chase Daniel, Chi QB",GB,L 16-23,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Josh Freeman, Ind QB",Pit,L 17-20,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Brian Hoyer, NE QB",@Den,W 41-16,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Mark Sanchez, Chi QB",GB,L 16-23,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Matthew Stafford, Det QB",Cle,W 38-24,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Sam Bradford, Ari QB",Sea,L 16-22,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Jimmy Clausen, Bal QB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,QB
+"Colt McCoy, Wsh QB",Min,L 30-38,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Dan LeFevour, TB QB",NYJ,W 15-10,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Joe Webb, Hou QB",@LAR,L 7-33,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Thaddeus Lewis, Bal QB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,QB
+"Christian Ponder, SF QB",NYG,W 31-21,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Blaine Gabbert, Ten QB",Cin,W 24-20,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Cam Newton, Car QB",Mia,W 45-21,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Colin Kaepernick, SF QB",NYG,W 31-21,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Andy Dalton, Cin QB",@Ten,L 20-24,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Ryan Mallett, Bal QB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,QB
+"T.J. Yates, Hou QB",@LAR,L 7-33,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Tyrod Taylor, Cle QB",@Det,L 24-38,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Jerrod Johnson, Dal QB",@Atl,L 7-27,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Scott Tolzien, Ind QB",Pit,L 17-20,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Andrew Luck, Ind QB",Pit,L 17-20,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Robert Griffin III, Bal QB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,QB
+"Ryan Tannehill, Mia QB",@Car,L 21-45,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Nick Foles, Phi QB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,QB
+"Brandon Weeden, Hou QB",@LAR,L 7-33,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Brock Osweiler, Mia QB",@Car,L 21-45,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Kirk Cousins, Min QB",@Wsh,W 38-30,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Russell Wilson, Sea QB",@Ari,W 22-16,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Kellen Moore, Dal QB",@Atl,L 7-27,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Ryan Lindley, Ind QB",Pit,L 17-20,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Case Keenum, Den QB",NE,L 16-41,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Austin Davis, Sea QB",@Ari,W 22-16,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Matt Simms, Atl QB",Dal,W 27-7,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Alex Tanney, Ten QB",Cin,W 24-20,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"EJ Manuel, Oak QB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,QB
+"Mike Glennon, Ari QB",Sea,L 16-22,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Geno Smith, LAC QB",@Jax,L 17-20,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Ryan Nassib, Jax QB",LAC,W 20-17,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Sean Renfree, Atl QB",Dal,W 27-7,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Landry Jones, Pit QB",@Ind,W 20-17,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Zac Dysert, Ari QB",Sea,L 16-22,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Matt Barkley, Cin QB",@Ten,L 20-24,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Ryan Griffin, TB QB",NYJ,W 15-10,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Tyler Bray, Chi QB",GB,L 16-23,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Matt McGloin, KC QB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,QB
+"Blake Bortles, Jax QB",LAC,W 20-17,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Teddy Bridgewater, NYJ QB",@TB,L 10-15,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Johnny Manziel, Cle QB",@Det,L 24-38,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Derek Carr, Oak QB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,QB
+"Jimmy Garoppolo, SF QB",NYG,W 31-21,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"AJ McCarron, Buf QB",NO,L 10-47,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Tajh Boyd, Pit QB",@Ind,W 20-17,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Zach Mettenberger, Pit QB",@Ind,W 20-17,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"David Fales, Mia QB",@Car,L 21-45,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Keith Wenning, Buf QB",NO,L 10-47,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Tom Savage, Hou QB",@LAR,L 7-33,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Aaron Murray, KC QB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,QB
+"Matt Blanchard, Chi QB",GB,L 16-23,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Dustin Vaughan, Bal QB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,QB
+"Connor Shaw, Chi QB",GB,L 16-23,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Jameis Winston, TB QB",NYJ,W 15-10,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Bryce Petty, NYJ QB",@TB,L 10-15,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Trevor Siemian, Min QB",@Wsh,W 38-30,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Dylan Thompson, LAR QB",Hou,W 33-7,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Sean Mannion, LAR QB",Hou,W 33-7,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Garrett Grayson, Atl QB",Dal,W 27-7,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Marcus Mariota, Ten QB",Cin,W 24-20,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Brett Hundley, GB QB",@Chi,W 23-16,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Jared Goff, LAR QB",Hou,W 33-7,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Carson Wentz, Phi QB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,QB
+"Paxton Lynch, Den QB",NE,L 16-41,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Christian Hackenberg, NYJ QB",@TB,L 10-15,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Jacoby Brissett, Ind QB",Pit,L 17-20,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Cody Kessler, Jax QB",LAC,W 20-17,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Connor Cook, Oak QB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,QB
+"Dak Prescott, Dal QB",@Atl,L 7-27,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Cardale Jones, LAC QB",@Jax,L 17-20,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Kevin Hogan, Wsh QB",Min,L 30-38,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Nate Sudfeld, Phi QB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,QB
+"Jake Rudock, Det QB",Cle,W 38-24,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Brandon Allen, LAR QB",Hou,W 33-7,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Jeff Driskel, Cin QB",@Ten,L 20-24,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Brandon Doughty, Ari QB",Sea,L 16-22,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Trevone Boykin, Sea QB",@Ari,W 22-16,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Taylor Heinicke, Hou QB",@LAR,L 7-33,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Stephen Morris, Wsh QB",Min,L 30-38,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Joe Callahan, GB QB",@Chi,W 23-16,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Mitchell Trubisky, Chi QB",GB,L 16-23,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Brad Kaaya, Ind QB",Pit,L 17-20,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Chad Kelly, Den QB",NE,L 16-41,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Patrick Mahomes, KC QB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,QB
+"Joshua Dobbs, Pit QB",@Ind,W 20-17,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Deshaun Watson, Hou QB",@LAR,L 7-33,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Nathan Peterman, Buf QB",NO,L 10-47,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"C.J. Beathard, SF QB",NYG,W 31-21,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"DeShone Kizer, GB QB",@Chi,W 23-16,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Davis Webb, NYG QB",@SF,L 21-31,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Cooper Rush, Dal QB",@Atl,L 7-27,--/--,--,--,--,--,--,--,--,--,--,--,QB
+"Taysom Hill, NO QB",@Buf,W 47-10,--/--,--,--,--,--,--,--,--,--,--,--,QB

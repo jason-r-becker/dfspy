@@ -1,0 +1,54 @@
+Player,OPP,STATUS ET,1-39,40-49,50+,TOT,XP,PTS,POS
+"Stephen Gostkowski, NE K",Mia,W 38-7,1.1/1.2,0.5/0.7,0.2/0.3,1.9/2.2,3.1/3.3,9.3,K
+"Matt Bryant, Atl K",Cin,L 36-37,1.1/1.2,0.5/0.6,0.2/0.3,1.9/2.1,2.6/2.7,8.9,K
+"Sam Ficken, FA K",** BYE **,1.2/1.3,0.6/0.7,0.2/0.4,2/2.4,2.4/2.6,--,,K
+"Chris Boswell*, Pit K IR",Bal,L 14-26,1.1/1.2,0.5/0.7,0.2/0.3,1.8/2.2,2.6/2.7,8.7,K
+"Matt Prater, Det K",@Dal,L 24-26,1.2/1.2,0.6/0.7,0.2/0.3,1.9/2.2,2.2/2.2,8.7,K
+"Justin Tucker, Bal K",@Pit,W 26-14,1.1/1.1,0.5/0.6,0.2/0.3,1.8/2,2.3/2.4,8.6,K
+"Harrison Butker, KC K",@Den,W 27-23,1.1/1.1,0.5/0.6,0.2/0.3,1.8/2.1,2.6/2.7,8.5,K
+"Wil Lutz, NO K",@NYG,W 33-18,1/1.1,0.5/0.6,0.2/0.3,1.7/2,2.8/2.9,8.3,K
+"Adam Vinatieri, Ind K",Hou,L 34-37,1/1.1,0.5/0.6,0.2/0.3,1.7/2,2.5/2.6,8.2,K
+"Josh Lambo*, Jax K IR",NYJ,W 31-12,1/1.1,0.5/0.6,0.2/0.3,1.7/2,2.3/2.4,8.1,K
+"Caleb Sturgis, LAC K",SF,W 29-27,1/1.1,0.5/0.6,0.2/0.3,1.6/2,2.5/2.8,7.9,K
+"Cody Parkey, Chi K",TB,W 48-10,1/1.1,0.5/0.6,0.2/0.3,1.6/1.9,2.3/2.5,7.8,K
+"Randy Bullock, Cin K",@Atl,W 37-36,1/1.1,0.5/0.6,0.2/0.3,1.6/1.9,2.3/2.5,7.8,K
+"Ka'imi Fairbairn, Hou K",@Ind,W 37-34,1/1.2,0.5/0.6,0.2/0.3,1.7/2.1,2/2.2,7.7,K
+"Ryan Succop, Ten K",Phi,W 26-23,1/1.1,0.5/0.6,0.2/0.3,1.7/2,1.9/2,7.6,K
+"Mason Crosby, GB K",Buf,W 22-0,0.9/1,0.4/0.6,0.2/0.3,1.5/1.8,2.6/2.8,7.6,K
+"Greg Joseph, Cle K",@Oak,L 42-45,1/1.1,0.5/0.6,0.2/0.3,1.6/2,2.2/2.4,7.5,K
+"Robbie Gould, SF K",@LAC,L 27-29,1/1,0.5/0.6,0.2/0.3,1.7/1.8,1.8/1.8,7.5,K
+"Brett Maher, Dal K",Det,W 26-24,0.9/1,0.4/0.6,0.2/0.3,1.6/1.9,2.3/2.4,7.4,K
+"Sebastian Janikowski, Sea K Q",@Ari,W 20-17,0.9/1,0.4/0.6,0.2/0.3,1.5/1.9,2.3/2.5,7.4,K
+"Jake Elliott, Phi K",@Ten,L 23-26,1/1.1,0.5/0.6,0.2/0.3,1.6/2,1.9/2.1,7.4,K
+"Dan Bailey, Min K",@LAR,L 31-38,1/1.1,0.5/0.6,0.2/0.3,1.6/1.9,1.9/2.1,7.4,K
+"Brandon McManus, Den K",KC,L 23-27,0.9/1,0.4/0.6,0.2/0.3,1.5/1.9,2.2/2.4,7.2,K
+"Chandler Catanzaro, Car K",** BYE **,1/1.1,0.5/0.6,0.2/0.3,1.6/2,1.9/2.1,--,,K
+"Phil Dawson*, Ari K IR",Sea,L 17-20,0.9/1,0.4/0.5,0.2/0.3,1.5/1.8,2/2.1,6.9,K
+"Stephen Hauschka, Buf K",@GB,L 0-22,0.9/0.9,0.4/0.5,0.2/0.3,1.5/1.7,1.8/1.9,6.7,K
+"Jason Sanders, Mia K",@NE,L 7-38,0.9/0.9,0.4/0.5,0.2/0.3,1.4/1.7,2/2.2,6.6,K
+"Matt McCrane, Pit K",Bal,L 14-26,0.9/1,0.4/0.5,0.2/0.3,1.5/1.8,1.7/1.9,6.5,K
+"Aldrick Rosas, NYG K",NO,L 18-33,0.8/1,0.4/0.5,0.2/0.3,1.4/1.8,2/2.3,6.4,K
+"Jason Myers, NYJ K",@Jax,L 12-31,0.9/0.9,0.4/0.5,0.2/0.3,1.4/1.7,1.3/1.4,6.1,K
+"Mike Nugent*, Oak K IR",Cle,W 45-42,0/0,0/0,0/0,0/0,0/0,0,K
+"Nick Novak, LAC K",SF,W 29-27,0/0,0/0,0/0,0/0,0/0,0,K
+"Nick Folk, TB K",@Chi,L 10-48,0/0,0/0,0/0,0/0,0/0,0,K
+"Dan Carpenter, Buf K",@GB,L 0-22,0/0,0/0,0/0,0/0,0/0,0,K
+"Connor Barth, Chi K",TB,W 48-10,0/0,0/0,0/0,0/0,0/0,0,K
+"Graham Gano*, Car K IR",** BYE **,0/0,0/0,0/0,0/0,0/0,--,,K
+"Kai Forbath, Jax K",NYJ,W 31-12,0/0,0/0,0/0,0/0,0/0,0,K
+"Greg Zuerlein, LAR K",Min,W 38-31,0/0,0/0,0/0,0/0,0/0,0,K
+"Blair Walsh, Sea K",@Ari,W 20-17,0/0,0/0,0/0,0/0,0/0,0,K
+"Giorgio Tavecchio, Atl K",Cin,L 36-37,0/0,0/0,0/0,0/0,0/0,0,K
+"Dustin Hopkins, Wsh K",** BYE **,0/0,0/0,0/0,0/0,0/0,--,,K
+"Travis Coons, LAC K",SF,W 29-27,0/0,0/0,0/0,0/0,0/0,0,K
+"Cairo Santos, TB K",@Chi,L 10-48,0/0,0/0,0/0,0/0,0/0,0,K
+"Kasey Redfern, Det K Q",@Dal,L 24-26,0/0,0/0,0/0,0/0,0/0,0,K
+"Patrick Murray, TB K",@Chi,L 10-48,0/0,0/0,0/0,0/0,0/0,0,K
+"Andrew Franks, Mia K",@NE,L 7-38,0/0,0/0,0/0,0/0,0/0,0,K
+"Roberto Aguayo, LAC K",SF,W 29-27,0/0,0/0,0/0,0/0,0/0,0,K
+"Zane Gonzalez, Ari K",Sea,L 17-20,0/0,0/0,0/0,0/0,0/0,0,K
+"Younghoe Koo, LAC K",SF,W 29-27,0/0,0/0,0/0,0/0,0/0,0,K
+"Nick Rose, Hou K",@Ind,W 37-34,0/0,0/0,0/0,0/0,0/0,0,K
+"Daniel Carlson, Oak K",Cle,W 45-42,0/0,0/0,0/0,0/0,0/0,0,K
+"Eddy Pineiro*, Oak K IR",Cle,W 45-42,0/0,0/0,0/0,0/0,0/0,0,K
+"Mike Badgley, LAC K",SF,W 29-27,--/--,--/--,--/--,--/--,--/--,--,K

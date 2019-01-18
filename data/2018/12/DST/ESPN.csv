@@ -1,0 +1,33 @@
+Player,OPP,STATUS ET,TT,SCK,FF,FR,INT,ITD,FTD,PTS,POS
+Chargers D/ST D/ST,Ari,W 45-10,0,2.9,0.7,0.4,1,0.1,0.1,10,DST
+Ravens D/ST D/ST,Oak,W 34-17,0,2.7,0.7,0.4,0.7,0.1,0.1,9.1,DST
+Bears D/ST D/ST,@Det,W 23-16,0,3.2,0.9,0.6,1,0.1,0.1,8.2,DST
+Bills D/ST D/ST,Jax,W 24-21,0,1.9,0.9,0.6,0.9,0.1,0.1,7.6,DST
+Redskins D/ST D/ST,@Dal,L 23-31,0,3.1,1,0.6,0.8,0.1,0.1,7.4,DST
+Texans D/ST D/ST,Ten,W 34-17,0,3,0.9,0.6,0.8,0.1,0.1,7.3,DST
+Jaguars D/ST D/ST,@Buf,L 21-24,0,2.5,0.6,0.4,0.9,0.1,0.1,7.3,DST
+Cowboys D/ST D/ST,Wsh,W 31-23,0,2.4,0.7,0.5,0.7,0.1,0.1,6.9,DST
+Titans D/ST D/ST,@Hou,L 17-34,0,2.7,0.7,0.5,0.8,0.1,0.1,6.9,DST
+Panthers D/ST D/ST,Sea,L 27-30,0,3,0.8,0.5,0.7,0.1,0.1,6.7,DST
+49ers D/ST D/ST,@TB,L 9-27,0,2.4,0.6,0.4,1.4,0.1,0,6.6,DST
+Steelers D/ST D/ST,@Den,L 17-24,0,2.8,0.8,0.5,0.7,0.1,0.1,6.6,DST
+Lions D/ST D/ST,Chi,L 16-23,0,2.7,0.7,0.4,0.9,0.1,0.1,6.6,DST
+Eagles D/ST D/ST,NYG,W 25-22,0,3,0.7,0.5,0.6,0.1,0.1,6.6,DST
+Patriots D/ST D/ST,@NYJ,W 27-13,0,2.3,0.7,0.4,0.9,0.1,0.1,6.5,DST
+Browns D/ST D/ST,@Cin,W 35-20,0,2.1,0.9,0.6,0.9,0.1,0.1,6.3,DST
+Colts D/ST D/ST,Mia,W 27-24,0,2.3,0.8,0.5,0.9,0.1,0.1,6.3,DST
+Bengals D/ST D/ST,Cle,L 20-35,0,2.7,0.6,0.4,1,0.1,0.1,6,DST
+Broncos D/ST D/ST,Pit,W 24-17,0,2.1,0.7,0.5,1,0.1,0.1,5.6,DST
+Raiders D/ST D/ST,@Bal,L 17-34,0,1.5,0.5,0.4,0.8,0.1,0,5.2,DST
+Giants D/ST D/ST,@Phi,L 22-25,0,2.2,0.7,0.4,0.9,0.1,0.1,5.2,DST
+Jets D/ST D/ST,NE,L 13-27,0,1.6,0.9,0.6,0.7,0.1,0.1,4.9,DST
+Buccaneers D/ST D/ST,SF,W 27-9,0,2.2,0.7,0.5,0.8,0.1,0.1,4.9,DST
+Vikings D/ST D/ST,GB,W 24-17,0,2.9,0.7,0.4,0.5,0.1,0.1,4.9,DST
+Packers D/ST D/ST,@Min,L 17-24,0,2.9,0.5,0.4,0.6,0.1,0,4.8,DST
+Seahawks D/ST D/ST,@Car,W 30-27,0,2.2,0.8,0.5,0.7,0.1,0.1,4.8,DST
+Saints D/ST D/ST,Atl,W 31-17,0,2.7,0.7,0.5,0.5,0.1,0.1,4.7,DST
+Cardinals D/ST D/ST,@LAC,L 10-45,0,2,0.9,0.6,0.5,0,0.1,4.3,DST
+Dolphins D/ST D/ST,@Ind,L 24-27,0,1.2,0.7,0.5,1.2,0.1,0.1,4.1,DST
+Falcons D/ST D/ST,@NO,L 17-31,0,1.4,0.7,0.5,0.4,0,0.1,0.2,DST
+Chiefs D/ST D/ST,** BYE **,--,--,--,--,--,--,--,--,,DST
+Rams D/ST D/ST,** BYE **,--,--,--,--,--,--,--,--,,DST

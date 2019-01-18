@@ -1,0 +1,286 @@
+Player,OPP,STATUS ET,C/A,YDS,TD,INT,RUSH,YDS,TD,REC,YDS,TD,PTS,POS
+"Steven Jackson, NE RB",@TB,W 19-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Frank Gore, Mia RB",Ten,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Darren Sproles, Phi RB",Ari,W 34-7,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"John Kuhn, NO RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Reggie Bush, Buf RB",@Cin,L 16-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"DeAngelo Williams, Pit RB",Jax,L 9-30,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Fred Jackson, Sea RB",@LAR,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Adrian Peterson, Ari RB",@Phi,L 7-34,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Marshawn Lynch, Oak RB",Bal,L 17-30,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Ahmad Bradshaw, Ind RB",SF,W 26-23,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Pierre Thomas, Wsh RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Darren McFadden, Dal RB",GB,L 31-35,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Jonathan Stewart, NYG RB",LAC,L 22-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Chris Johnson, Ari RB",@Phi,L 7-34,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Matt Forte, NYJ RB",@Cle,W 17-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Jamaal Charles, Den RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Jerome Felton, Buf RB",@Cin,L 16-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Tim Hightower, SF RB",@Ind,L 23-26,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Justin Forsett, Den RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Mike Tolbert, Buf RB",@Cin,L 16-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Marcel Reece, Sea RB",@LAR,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Danny Woodhead, Bal RB",@Oak,W 30-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Donald Brown, NE RB",@TB,W 19-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Arian Foster, Mia RB",Ten,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Rashad Jennings, NYG RB",LAC,L 22-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Jorvorskie Lane, TB RB",NE,L 14-19,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"LeSean McCoy, Buf RB",@Cin,L 16-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Cedric Peerman, Cin RB",Buf,W 20-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Marcus Thigpen, Buf RB",@Cin,L 16-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Darrel Young, Car RB",@Det,W 27-24,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Antone Smith, TB RB",NE,L 14-19,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"C.J. Spiller, KC RB",@Hou,W 42-34,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Ryan Mathews, Phi RB",Ari,W 34-7,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Dexter McCluster, LAC RB",@NYG,W 27-22,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Ben Tate, Pit RB",Jax,L 9-30,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Toby Gerhart, Jax RB",@Pit,W 30-9,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Boobie Dixon, Buf RB",@Cin,L 16-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"LeGarrette Blount, Det RB",Car,L 24-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"James Starks, GB RB",@Dal,W 35-31,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Joique Bell, Det RB",Car,L 24-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Chris Ivory, Buf RB",@Cin,L 16-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"James Develin, NE RB",@TB,W 19-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Tyler Clutts, Dal RB",GB,L 31-35,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Mark Ingram, NO RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"DeMarco Murray, Ten RB",@Mia,L 10-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Shane Vereen, NYG RB",LAC,L 22-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Stevan Ridley, Pit RB",Jax,L 9-30,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Ryan Williams, Dal RB",GB,L 31-35,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Daniel Thomas, Mia RB",Ten,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Bilal Powell, NYJ RB",@Cle,W 17-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Anthony Sherman, KC RB",@Hou,W 42-34,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Kendall Hunter, NO RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Taiwan Jones, Buf RB",@Cin,L 16-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Jordan Todman, Hou RB",KC,L 34-42,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Roy Helu Jr., Oak RB",Bal,L 17-30,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Jacquizz Rodgers, TB RB",NE,L 14-19,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Dion Lewis, Ten RB",@Mia,L 10-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"DuJuan Harris, Jax RB",@Pit,W 30-9,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Patrick DiMarco, Buf RB",@Cin,L 16-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Matt Asiata, Det RB",Car,L 24-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Shaun Draughn, NYG RB",LAC,L 22-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Chase Reynolds, LAR RB",Sea,L 10-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Will Johnson, NYG RB",LAC,L 22-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Trent Richardson, Bal RB",@Oak,W 30-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Doug Martin, Oak RB",Bal,L 17-30,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Lamar Miller, Hou RB",KC,L 34-42,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Isaiah Pead*, Mia RB",Ten,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Chris Polk, Hou RB",KC,L 34-42,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"LaMike James, Mia RB",Ten,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Bernard Pierce, Den RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Robert Turbin, Ind RB",SF,W 26-23,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Ronnie Hillman, Dal RB",GB,L 31-35,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Cyrus Gray, Atl RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Vick Ballard, NO RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Alfred Morris, Dal RB",GB,L 31-35,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Daniel Herron, Buf RB",@Cin,L 16-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Bryce Brown, Sea RB",@LAR,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Daryl Richardson, Ind RB",SF,W 26-23,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Cory Harkey, LAR RB",Sea,L 10-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Joe Banyard, Buf RB",@Cin,L 16-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Derrick Coleman, Atl RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Jonas Gray, Jax RB",@Pit,W 30-9,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Lance Dunbar, LAR RB",Sea,L 10-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Travaris Cadet, Buf RB",@Cin,L 16-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Brandon Bolden, NE RB",@TB,W 19-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Bobby Rainey Jr., Bal RB",@Oak,W 30-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Jonathan Grimes, Jax RB",@Pit,W 30-9,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Jamize Olawale, Dal RB",GB,L 31-35,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Fozzy Whittaker, Car RB",@Det,W 27-24,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Montee Ball, FA RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Le'Veon Bell, Pit RB",Jax,L 9-30,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Giovani Bernard, Cin RB",Buf,W 20-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Knile Davis, Pit RB",Jax,L 9-30,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Eddie Lacy, Sea RB",@LAR,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Christine Michael, Ind RB",SF,W 26-23,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Andre Ellington, Hou RB",KC,L 34-42,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Latavius Murray, Min RB",@Chi,W 20-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Kenjon Barner, Phi RB",Ari,W 34-7,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Denard Robinson, Jax RB",@Pit,W 30-9,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Mike Gillislee, NE RB",@TB,W 19-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Chris Thompson, Wsh RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Mike James, Det RB",Car,L 24-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Rex Burkhead, NE RB",@TB,W 19-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Tommy Bohanon, Jax RB",@Pit,W 30-9,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Stepfan Taylor, Ari RB",@Phi,L 7-34,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Theo Riddick, Det RB",Car,L 24-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Zac Stacy, NYJ RB",@Cle,W 17-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Kyle Juszczyk, SF RB",@Ind,L 23-26,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Joseph Randle, FA RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Spencer Ware, KC RB",@Hou,W 42-34,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Kerwynn Williams, Ari RB",@Phi,L 7-34,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"C.J. Anderson, Den RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Benny Cunningham, Chi RB",Min,L 17-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Kendall Gaskins, SF RB",@Ind,L 23-26,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Steven Miller, Det RB",Car,L 24-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Zach Line, NO RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"George Winn, Ind RB",SF,W 26-23,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Khiry Robinson, NYJ RB",@Cle,W 17-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Charles Sims, TB RB",NE,L 14-19,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Dri Archer, Buf RB",@Cin,L 16-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Carlos Hyde, Cle RB",NYJ,L 14-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Jerick McKinnon, SF RB",@Ind,L 23-26,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Terrance West, Bal RB",@Oak,W 30-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Tre Mason, LAR RB",Sea,L 10-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Bishop Sankey, Min RB",@Chi,W 20-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Jeremy Hill, NE RB",@TB,W 19-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Tyler Gaffney, Jax RB",@Pit,W 30-9,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Storm Johnson, Mia RB",Ten,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Lache Seastrunk, NYJ RB",@Cle,W 17-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Andre Williams, LAC RB",@NYG,W 27-22,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"James White, NE RB",@TB,W 19-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Ka'Deem Carey, Chi RB",Min,L 17-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Devonta Freeman, Atl RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Lorenzo Taliaferro, Bal RB",@Oak,W 30-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Marion Grice, Ari RB",@Phi,L 7-34,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Isaiah Crowell, NYJ RB",@Cle,W 17-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Alfred Blue, Hou RB",KC,L 34-42,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Damien Williams, KC RB",@Hou,W 42-34,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Juwan Thompson, Den RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Kapri Bibbs, Wsh RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Branden Oliver, LAC RB",@NYG,W 27-22,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Antonio Andrews, Ten RB",@Mia,L 10-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Darrin Reaves, KC RB",@Hou,W 42-34,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Silas Redd, Wsh RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Ryan Hewitt, Cin RB",Buf,W 20-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Trey Watts, LAR RB",Sea,L 10-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Austin Johnson, TB RB",NE,L 14-19,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Jay Prosch, Hou RB",KC,L 34-42,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Orleans Darkwa, NYG RB",LAC,L 22-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Senorise Perry, Mia RB",Ten,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Glenn Winston, Cle RB",NYJ,L 14-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Fitzgerald Toussaint, Pit RB",Jax,L 9-30,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Charcandrick West, KC RB",@Hou,W 42-34,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Roosevelt Nix, Pit RB",Jax,L 9-30,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"David Johnson, Ari RB",@Phi,L 7-34,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Marcus Murphy, Buf RB",@Cin,L 16-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Michael Burton, Chi RB",Min,L 17-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Jeremy Langford, NYJ RB",@Cle,W 17-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Jalston Fowler, Sea RB",@LAR,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Malcolm Johnson, SF RB",@Ind,L 23-26,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Joey Iosefa, NE RB",@TB,W 19-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Jay Ajayi, Phi RB",Ari,W 34-7,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"David Cobb, Chi RB",Min,L 17-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Ameer Abdullah, Det RB",Car,L 24-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Melvin Gordon, LAC RB",@NYG,W 27-22,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Karlos Williams, Pit RB",Jax,L 9-30,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Ty Montgomery, GB RB",@Dal,W 35-31,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Javorius Allen, Bal RB",@Oak,W 30-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Kenny Hilliard, Wsh RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Josh Robinson, Ind RB",SF,W 26-23,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Aaron Ripkowski, GB RB",@Dal,W 35-31,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Tyler Varga, Ind RB",SF,W 26-23,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Duke Johnson Jr., Cle RB",NYJ,L 14-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"T.J. Yeldon, Jax RB",@Pit,W 30-9,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Todd Gurley II, LAR RB",Sea,L 10-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Tevin Coleman, Atl RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Matt Jones, Ind RB",SF,W 26-23,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Mike Davis, Sea RB",@LAR,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Cameron Artis-Payne, Car RB",@Det,W 27-24,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Michael Dyer, Oak RB",Bal,L 17-30,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"John Crockett, Bal RB",@Oak,W 30-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Terrence Magee, Atl RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Thomas Rawls, NYJ RB",@Cle,W 17-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Gus Johnson, LAC RB",@NYG,W 27-22,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Zach Zenner, Det RB",Car,L 24-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Malcolm Brown, LAR RB",Sea,L 10-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Terron Ward, Atl RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Jarryd Hayne, SF RB",@Ind,L 23-26,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Brandon Wegher, LAR RB",Sea,L 10-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Alonzo Harris, GB RB",@Dal,W 35-31,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Corey Grant, Jax RB",@Pit,W 30-9,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Nikita Whitlock, NYG RB",LAC,L 22-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Raheem Mostert, SF RB",@Ind,L 23-26,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Rod Smith, Dal RB",GB,L 31-35,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Trey Williams, Dal RB",GB,L 31-35,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Akeem Hunt, KC RB",@Hou,W 42-34,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Ezekiel Elliott, Dal RB",GB,L 31-35,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Derrick Henry, Ten RB",@Mia,L 10-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Kenyan Drake, Mia RB",Ten,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"C.J. Prosise, Sea RB",@LAR,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Tyler Ervin, Hou RB, WR",KC,L 34-42,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Kenneth Dixon, Bal RB",@Oak,W 30-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Devontae Booker, Den RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"DeAndre Washington, Oak RB",Bal,L 17-30,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Paul Perkins, NYG RB",LAC,L 22-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Jordan Howard, Chi RB",Min,L 17-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Wendell Smallwood, Phi RB",Ari,W 34-7,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Jonathan Williams, NO RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Alex Collins, Bal RB",@Oak,W 30-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Andy Janovich, Den RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Danny Vitale, Cle RB",NYJ,L 14-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Derek Watt, LAC RB",@NYG,W 27-22,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Kelvin Taylor, Cle RB",NYJ,L 14-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Darius Jackson, Cle RB",NYJ,L 14-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Dwayne Washington, Det RB",Car,L 24-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Daniel Lasco, NO RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Keith Marshall, Wsh RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Zac Brooks, Sea RB",@LAR,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Josh Ferguson, Ind RB",SF,W 26-23,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Terrell Watson, NYG RB",LAC,L 22-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Brandon Wilds, Jax RB",@Pit,W 30-9,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Jhurell Pressley, Atl RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Byron Marshall, Wsh RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"George Atkinson III, KC RB",@Hou,W 42-34,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"James Wilder Jr., Buf RB",@Cin,L 16-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"D.J. Foster, Ari RB",@Phi,L 7-34,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Dreamius Smith, LAC RB",@NYG,W 27-22,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Devon Johnson, Car RB",@Det,W 27-24,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Rob Kelley, Wsh RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Jalen Richard, Oak RB",Bal,L 17-30,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Troymaine Pope, Hou RB",KC,L 34-42,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Glenn Gronkowski, NE RB",@TB,W 19-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Julian Howsare, NYJ RB",@Cle,W 17-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Kenneth Farrow, LAC RB",@NYG,W 27-22,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Paul Lasike, Chi RB",Min,L 17-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Peyton Barber, TB RB",NE,L 14-19,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Don Jackson, GB RB",@Dal,W 35-31,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"George Farmer, Sea RB",@LAR,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Mack Brown, Min RB",@Chi,W 20-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Tarik Cohen, Chi RB",Min,L 17-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Donnel Pumphrey, Phi RB",Ari,W 34-7,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"De'Angelo Henderson, Den RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Alvin Kamara, NO RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Joe Mixon, Cin RB",Buf,W 20-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Samaje Perine, Wsh RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Elijah Hood, Oak RB",Bal,L 17-30,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"D'Onta Foreman, Hou RB",KC,L 34-42,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Marquez Williams, Cle RB",NYJ,L 14-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Marlon Mack, Ind RB",SF,W 26-23,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Leonard Fournette, Jax RB",@Pit,W 30-9,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Kareem Hunt, KC RB",@Hou,W 42-34,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Wayne Gallman, NYG RB",LAC,L 22-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"James Conner, Pit RB",Jax,L 9-30,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Dalvin Cook, Min RB",@Chi,W 20-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Christian McCaffrey, Car RB",@Det,W 27-24,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"T.J. Logan, Ari RB",@Phi,L 7-34,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Elijah McGuire, NYJ RB",@Cle,W 17-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Aaron Jones, GB RB",@Dal,W 35-31,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Sam Rogers, LAR RB",Sea,L 10-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Devante Mays, GB RB",@Dal,W 35-31,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Chris Carson, Sea RB",@LAR,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Joe Williams, SF RB",@Ind,L 23-26,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Jamaal Williams, GB RB",@Dal,W 35-31,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Matthew Dayes, Cle RB",NYJ,L 14-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Khalfani Muhammad, Ten RB",@Mia,L 10-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Jeremy McNichols, SF RB",@Ind,L 23-26,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Brian Hill, Cin RB",Buf,W 20-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Freddie Stevenson, Chi RB",Min,L 17-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Matt Breida, SF RB",@Ind,L 23-26,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Corey Clement, Phi RB",Ari,W 34-7,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Algernon Brown, NYJ RB",@Cle,W 17-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Jahad Thomas, NYJ RB",@Cle,W 17-14,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Austin Ekeler, LAC RB",@NYG,W 27-22,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"David Fluellen, Ten RB",@Mia,L 10-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Elijhaa Penny, Ari RB",@Phi,L 7-34,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"J.D. McKissic, Sea RB",@LAR,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Justin Davis, LAR RB",Sea,L 10-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Taquan Mizzell, Chi RB",Min,L 17-20,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"C.J. Ham, Min RB",@Chi,W 20-17,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Trey Edmunds, NO RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
+"Tre Madden, Sea RB",@LAR,W 16-10,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Cethan Carter, Cin TE, RB",Buf,W 20-16,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Shane Smith, NYG TE, RB",LAC,L 22-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"Tion Green, Det RB",Car,L 24-27,--/--,--,--,--,--,--,--,--,--,--,--,RB
+"LeShun Daniels Jr., Wsh RB",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,RB
