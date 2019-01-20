@@ -43,7 +43,85 @@ Using Anaconda, from terminal:
 Scraping Data
 -------------
 
-TODO
+Directory Organization
+~~~~~~~~~~~~~~~~~~~~~~
+
+The data directory will be organized as shown below.  The tree structure is
+organized as ``<season year>/<week>/<player position>/<source>.csv``.
+Source name files contain projections from said source whereas `STATS.csv`
+contains the true stats. Week 0 refers to full season projections/stats.
+
+.. code:: sh
+
+    data
+    ├── 2016
+    ├── 2017
+    └── 2018
+        ├── 0
+        ├── 1
+        ├── ...
+        └── 17
+            ├── DST
+            ├── K
+            ├── QB
+            ├── RB
+            ├── TE
+            └── WR
+                ├── CBS.csv
+                ├── ESPN.csv
+                ├── FFToday.csv
+                ├── FantasyPros.csv
+                ├── NFL.csv
+                ├── RTSports.csv
+                ├── STATS.csv
+                └── Yahoo.csv
+
+Scraping
+~~~~~~~~
+
+Historical projections and stats as well as current projections can be scraped
+with the ``scrape_data.py`` module. The following command line options are
+used to specify scraping parameters.
+
+========================== ======================= ========================
+ Setting                    Command Line Keyword    Default
+========================== ======================= ========================
+ Sources                    -s, --sources           All Projection Sources
+ Week(s) of the season      -w, --weeks             Current Week
+ Season Year(s)             -d, --depth             Current Season
+========================== ======================= ========================
+
+For example, scraping projections for the current week can be accomplished:
+
+.. code:: sh
+
+    python scrape_orderbook.py
+
+To specify historical projections to scrape, command line options can be used.
+To scrape full season projections from 2018:
+
+.. code:: sh
+
+    python scrape_orderbook.py -w 0 -y 2018
+
+Similarly for all individual weeks (or specified weeks):
+
+.. code:: sh
+
+    python scrape_orderbook.py -w 1-17 -y 2018
+
+All data (full season and weekly) for given years can also be scaped:
+
+    .. code:: sh
+
+    python scrape_orderbook.py -w all -y 2016-2018
+
+Finally, true realized stats can be scraped by specifying the source. Similarly
+any individual source can be scraped.
+
+    .. code:: sh
+
+    python scrape_orderbook.py -w all -y 2016-2018 -s STATS
 
 Contributions
 -------------
