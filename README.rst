@@ -46,8 +46,8 @@ Scraping Data
 Directory Organization
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The data directory will be organized as shown below.  The tree structure is
-organized as ``<season year>/<week>/<player position>/<source>.csv``.
+The data directory organization is shown below, structured
+``<season year>/<week>/<player position>/<source>.csv``.
 Source name files contain projections from said source whereas `STATS.csv`
 contains the true stats. Week 0 refers to full season projections/stats.
 
@@ -88,7 +88,7 @@ used to specify scraping parameters.
 ========================== ======================= ========================
  Sources                    -s, --sources           All Projection Sources
  Week(s) of the season      -w, --weeks             Current Week
- Season Year(s)             -d, --depth             Current Season
+ Season Year(s)             -y, --years             Current Season
 ========================== ======================= ========================
 
 For example, scraping projections for the current week can be accomplished:
@@ -112,14 +112,14 @@ Similarly for all individual weeks (or specified weeks):
 
 All data (full season and weekly) for given years can also be scaped:
 
-    .. code:: sh
+.. code:: sh
 
     python scrape_orderbook.py -w all -y 2016-2018
 
 Finally, true realized stats can be scraped by specifying the source. Similarly
 any individual source can be scraped.
 
-    .. code:: sh
+.. code:: sh
 
     python scrape_orderbook.py -w all -y 2016-2018 -s STATS
 
