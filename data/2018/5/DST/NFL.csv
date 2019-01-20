@@ -1,0 +1,31 @@
+Player,Team,GP,Sack,Int,Fum Rec,Saf,TD,Block,Return TD,Pts Allow,POS
+San Francisco 49ers,SF,1.0,2.23,0.94,0.65,0.04,0.1,0.09,0.03,17.12,DST
+Cincinnati Bengals,CIN,1.0,2.37,0.88,0.69,0.05,0.1,0.09,0.02,18.7,DST
+Buffalo Bills,BUF,1.0,2.04,0.84,0.66,0.04,0.1,0.07,0.03,22.71,DST
+Denver Broncos,DEN,1.0,2.43,0.84,0.58,0.03,0.1,0.12,0.02,23.08,DST
+Cleveland Browns,CLE,1.0,2.16,0.79,0.74,0.03,0.1,0.09,0.01,26.73,DST
+Arizona Cardinals,ARI,1.0,2.67,0.88,0.71,0.04,0.1,0.08,0.0,23.18,DST
+Los Angeles Chargers,LAC,1.0,1.77,0.97,0.57,0.03,0.1,0.07,0.03,18.09,DST
+Kansas City Chiefs,KC,1.0,1.91,0.69,0.66,0.03,0.1,0.07,0.04,23.7,DST
+Indianapolis Colts,IND,1.0,1.76,0.68,0.57,0.02,0.1,0.09,0.0,27.5,DST
+Dallas Cowboys,DAL,1.0,2.89,1.01,0.61,0.04,0.1,0.07,0.01,21.34,DST
+Miami Dolphins,MIA,1.0,1.91,0.9,0.46,0.03,0.11,0.1,0.0,23.4,DST
+Philadelphia Eagles,PHI,1.0,2.13,0.91,0.65,0.05,0.1,0.08,0.03,20.49,DST
+Atlanta Falcons,ATL,1.0,1.77,0.71,0.69,0.02,0.1,0.09,0.01,25.39,DST
+New York Giants,NYG,1.0,2.15,0.78,0.63,0.03,0.09,0.08,0.02,27.15,DST
+Jacksonville Jaguars,JAX,1.0,2.12,0.8,0.7,0.03,0.09,0.08,0.0,21.26,DST
+New York Jets,NYJ,1.0,1.95,0.98,0.6,0.03,0.1,0.08,0.02,20.18,DST
+Detroit Lions,DET,1.0,2.03,0.79,0.69,0.04,0.09,0.1,0.03,22.23,DST
+Green Bay Packers,GB,1.0,2.18,1.03,0.56,0.02,0.09,0.1,0.02,24.82,DST
+Carolina Panthers,CAR,1.0,2.2,0.91,0.62,0.04,0.1,0.1,0.02,18.69,DST
+New England Patriots,NE,1.0,2.09,0.98,0.65,0.03,0.11,0.09,0.01,18.45,DST
+Oakland Raiders,OAK,1.0,1.52,0.72,0.67,0.02,0.1,0.08,0.0,26.5,DST
+Los Angeles Rams,LA,1.0,2.69,0.99,0.66,0.04,0.1,0.11,0.02,20.49,DST
+Baltimore Ravens,BAL,1.0,2.54,1.22,0.68,0.04,0.12,0.07,0.02,18.16,DST
+Washington Redskins,WAS,1.0,1.85,0.79,0.6,0.02,0.09,0.07,0.03,25.41,DST
+New Orleans Saints,NO,1.0,2.26,0.75,0.64,0.03,0.1,0.09,0.07,19.72,DST
+Seattle Seahawks,SEA,1.0,1.95,0.75,0.56,0.04,0.09,0.08,0.01,22.71,DST
+Pittsburgh Steelers,PIT,1.0,2.3,0.84,0.65,0.03,0.1,0.09,0.02,20.89,DST
+Houston Texans,HOU,1.0,2.75,0.75,0.71,0.05,0.09,0.07,0.01,21.7,DST
+Tennessee Titans,TEN,1.0,3.32,0.96,0.67,0.06,0.11,0.07,0.02,20.33,DST
+Minnesota Vikings,MIN,1.0,2.13,0.84,0.65,0.03,0.1,0.08,0.0,25.78,DST

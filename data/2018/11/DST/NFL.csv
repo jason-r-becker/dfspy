@@ -1,0 +1,27 @@
+Player,Team,GP,Sack,Int,Fum Rec,Saf,TD,Block,Return TD,Pts Allow,POS
+Chicago Bears,CHI,1.0,2.45,1.03,0.67,0.04,0.09,0.06,0.08,18.66,DST
+Cincinnati Bengals,CIN,1.0,2.44,0.83,0.75,0.05,0.1,0.09,0.02,28.78,DST
+Denver Broncos,DEN,1.0,2.12,0.77,0.64,0.03,0.1,0.09,0.01,23.86,DST
+Tampa Bay Buccaneers,TB,1.0,2.3,0.75,0.6,0.04,0.12,0.1,0.01,24.05,DST
+Arizona Cardinals,ARI,1.0,2.24,0.75,0.68,0.04,0.1,0.08,0.01,19.77,DST
+Los Angeles Chargers,LAC,1.0,2.29,1.0,0.58,0.04,0.1,0.07,0.04,18.35,DST
+Kansas City Chiefs,KC,1.0,2.24,0.88,0.68,0.03,0.09,0.08,0.05,23.54,DST
+Indianapolis Colts,IND,1.0,2.36,0.83,0.6,0.05,0.09,0.1,0.02,21.64,DST
+Dallas Cowboys,DAL,1.0,2.18,0.78,0.63,0.03,0.1,0.06,0.0,23.26,DST
+Philadelphia Eagles,PHI,1.0,1.81,0.73,0.65,0.03,0.09,0.08,0.01,24.82,DST
+Atlanta Falcons,ATL,1.0,2.59,0.82,0.73,0.05,0.1,0.07,0.01,23.33,DST
+New York Giants,NYG,1.0,1.87,1.01,0.68,0.03,0.1,0.08,0.02,22.92,DST
+Jacksonville Jaguars,JAX,1.0,1.94,0.61,0.71,0.03,0.1,0.09,0.02,22.74,DST
+Detroit Lions,DET,1.0,2.21,0.72,0.53,0.03,0.11,0.1,0.03,22.12,DST
+Green Bay Packers,GB,1.0,2.52,1.13,0.62,0.04,0.09,0.09,0.0,24.43,DST
+Carolina Panthers,CAR,1.0,2.67,0.83,0.64,0.04,0.09,0.09,0.01,23.29,DST
+Oakland Raiders,OAK,1.0,2.3,0.96,0.58,0.03,0.09,0.08,0.02,24.5,DST
+Los Angeles Rams,LA,1.0,2.04,0.73,0.64,0.03,0.1,0.12,0.04,22.07,DST
+Baltimore Ravens,BAL,1.0,2.38,1.12,0.64,0.04,0.11,0.09,0.03,15.85,DST
+Washington Redskins,WAS,1.0,2.86,0.94,0.56,0.05,0.1,0.08,0.03,20.85,DST
+New Orleans Saints,NO,1.0,2.36,0.85,0.65,0.04,0.11,0.09,0.02,21.68,DST
+Seattle Seahawks,SEA,1.0,2.06,0.82,0.63,0.05,0.1,0.09,0.01,20.21,DST
+Pittsburgh Steelers,PIT,1.0,2.47,0.86,0.67,0.02,0.1,0.09,0.01,21.32,DST
+Houston Texans,HOU,1.0,2.4,0.87,0.66,0.03,0.1,0.08,0.01,22.58,DST
+Tennessee Titans,TEN,1.0,1.86,1.0,0.64,0.03,0.09,0.06,0.0,22.64,DST
+Minnesota Vikings,MIN,1.0,2.52,0.85,0.6,0.03,0.1,0.07,0.0,22.65,DST

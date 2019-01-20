@@ -1,0 +1,33 @@
+Player,Team,GP,Sack,Int,Fum Rec,Saf,TD,Block,Return TD,Pts Allow,POS
+San Francisco 49ers,SF,1.0,1.87,0.8,0.62,0.02,0.1,0.08,0.0,27.17,DST
+Chicago Bears,CHI,1.0,2.49,1.12,0.67,0.03,0.09,0.06,0.05,20.83,DST
+Cincinnati Bengals,CIN,1.0,1.59,0.66,0.56,0.02,0.1,0.11,0.01,26.25,DST
+Buffalo Bills,BUF,1.0,2.59,0.84,0.65,0.08,0.09,0.06,0.02,17.44,DST
+Denver Broncos,DEN,1.0,2.27,0.79,0.65,0.03,0.09,0.1,0.01,21.19,DST
+Cleveland Browns,CLE,1.0,2.72,0.84,0.73,0.03,0.1,0.09,0.01,25.96,DST
+Tampa Bay Buccaneers,TB,1.0,2.19,0.87,0.7,0.04,0.1,0.08,0.01,20.51,DST
+Arizona Cardinals,ARI,1.0,2.62,0.69,0.65,0.04,0.09,0.07,0.0,28.21,DST
+Los Angeles Chargers,LAC,1.0,2.24,0.92,0.67,0.03,0.1,0.09,0.02,20.26,DST
+Kansas City Chiefs,KC,1.0,2.48,0.96,0.68,0.04,0.1,0.11,0.04,15.95,DST
+Indianapolis Colts,IND,1.0,2.78,1.05,0.6,0.04,0.1,0.09,0.01,21.49,DST
+Dallas Cowboys,DAL,1.0,2.44,0.85,0.56,0.04,0.1,0.07,0.01,19.69,DST
+Miami Dolphins,MIA,1.0,2.67,1.02,0.53,0.04,0.11,0.11,0.0,21.81,DST
+Philadelphia Eagles,PHI,1.0,2.75,1.19,0.61,0.03,0.11,0.09,0.02,21.86,DST
+Atlanta Falcons,ATL,1.0,2.28,1.05,0.67,0.03,0.1,0.08,0.0,21.84,DST
+New York Giants,NYG,1.0,2.57,0.83,0.7,0.05,0.09,0.06,0.02,22.32,DST
+Jacksonville Jaguars,JAX,1.0,2.9,0.84,0.58,0.04,0.09,0.07,0.01,25.19,DST
+New York Jets,NYJ,1.0,1.74,0.65,0.57,0.02,0.1,0.1,0.0,27.49,DST
+Detroit Lions,DET,1.0,2.25,0.7,0.64,0.03,0.1,0.09,0.0,23.68,DST
+Green Bay Packers,GB,1.0,2.32,0.99,0.57,0.03,0.1,0.08,0.02,18.71,DST
+Carolina Panthers,CAR,1.0,2.73,0.67,0.76,0.04,0.1,0.08,0.0,26.96,DST
+New England Patriots,NE,1.0,2.37,1.07,0.62,0.03,0.09,0.11,0.03,17.63,DST
+Oakland Raiders,OAK,1.0,1.55,0.67,0.64,0.02,0.1,0.09,0.0,26.68,DST
+Los Angeles Rams,LA,1.0,2.45,0.98,0.74,0.03,0.1,0.11,0.02,17.19,DST
+Baltimore Ravens,BAL,1.0,2.1,1.0,0.64,0.03,0.11,0.07,0.03,16.55,DST
+Washington Redskins,WAS,1.0,2.02,0.78,0.71,0.03,0.1,0.06,0.01,23.59,DST
+New Orleans Saints,NO,1.0,2.79,1.1,0.6,0.04,0.1,0.1,0.02,16.8,DST
+Seattle Seahawks,SEA,1.0,2.74,1.17,0.62,0.05,0.1,0.08,0.03,14.63,DST
+Pittsburgh Steelers,PIT,1.0,2.87,0.85,0.65,0.06,0.1,0.11,0.02,15.4,DST
+Houston Texans,HOU,1.0,2.53,0.85,0.65,0.05,0.11,0.08,0.02,16.46,DST
+Tennessee Titans,TEN,1.0,1.65,0.9,0.59,0.03,0.1,0.07,0.02,22.11,DST
+Minnesota Vikings,MIN,1.0,2.47,0.94,0.61,0.03,0.1,0.06,0.02,22.19,DST
