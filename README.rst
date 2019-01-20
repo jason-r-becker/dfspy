@@ -48,8 +48,8 @@ Directory Organization
 
 The data directory organization is shown below, structured
 ``<season year>/<week>/<player position>/<source>.csv``.
-Source name files contain projections from said source whereas `STATS.csv`
-contains the true stats. Week 0 refers to full season projections/stats.
+Source name files contain projections from said source whereas ``STATS.csv``
+contains the true realized stats. Week 0 refers to full season projections/stats.
 
 .. code:: sh
 
