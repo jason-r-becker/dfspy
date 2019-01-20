@@ -46,7 +46,7 @@ def parse_args():
     # Set default sources.
     # TODO: Update sources as their scrapers are written.
     default_sources = ['CBS', 'ESPN', 'FantasyPros', 'FFToday',
-                       'NFL', 'RTSports', 'STATS', 'Yahoo']
+                       'NFL', 'RTSports', 'Yahoo']
     
     # Get default season year and week from current time.
     today = dt.utcnow()
