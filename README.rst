@@ -95,33 +95,33 @@ For example, scraping projections for the current week can be accomplished:
 
 .. code:: sh
 
-    python scrape_orderbook.py
+    python scrape_data.py
 
 To specify historical projections to scrape, command line options can be used.
 To scrape full season projections from 2018:
 
 .. code:: sh
 
-    python scrape_orderbook.py -w 0 -y 2018
+    python scrape_data.py -w 0 -y 2018
 
 Similarly for all individual weeks (or specified weeks):
 
 .. code:: sh
 
-    python scrape_orderbook.py -w 1-17 -y 2018
+    python scrape_data.py -w 1-17 -y 2018
 
 All data (full season and weekly) for given years can also be scaped:
 
 .. code:: sh
 
-    python scrape_orderbook.py -w all -y 2016-2018
+    python scrape_data.py -w all -y 2016-2018
 
 Finally, true realized stats can be scraped by specifying the source. Similarly
 any individual source can be scraped.
 
 .. code:: sh
 
-    python scrape_orderbook.py -w all -y 2016-2018 -s STATS
+    python scrape_data.py -w all -y 2016-2018 -s STATS
 
 Contributions
 -------------
