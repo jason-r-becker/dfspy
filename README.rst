@@ -152,7 +152,7 @@ The main developer(s):
    :target: https://github.com/jason-r-becker/dfspy/network
 .. |GitHub-Stars| image:: https://img.shields.io/github/stars/jason-r-becker/dfspy.svg
    :target: https://github.com/jason-r-becker/dfspy/stargazers
-.. |GitHub-Commits| image:: https://img.shields.io/github/commit-activity/jason-r-becker/dfspy.svg
+.. |GitHub-Commits| image:: https://img.shields.io/github/commit-activity/m/jason-r-becker/dfspy.svg
    :target: https://github.com/jason-r-becker/dfspy/graphs/commit-activity
 .. |GitHub-Issues| image:: https://img.shields.io/github/issues-closed/jason-r-becker/dfspy.svg
    :target: https://github.com/jason-r-becker/dfspy/issues
