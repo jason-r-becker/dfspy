@@ -11,7 +11,7 @@ def scoring_DST(df):
             df['Block'].values*block +
             df['Return TD'].values*ret_td +
             df['Pts Allow'].values/pts)
-    df['proj'] = proj.round(2)
+    df['proj'] = proj
     df = df['Player Team POS proj'.split()]
     df.columns = 'player team pos proj'.split()
     return df
@@ -23,19 +23,17 @@ def scoring_K(df):
             df['FG 20-29'].values*fg3 +
             df['FG 30-39'].values*fg3 +
             df['FG 40-49'].values*fg4)
-    df['proj'] = proj.round(2)
+    df['proj'] = proj
     df = df['Player Team POS proj'.split()]
     df.columns = 'player team pos proj'.split()
     return df
 
 def scoring_TE(df, ppr=0.5):
-    rush_yds, rush_td, rec, rec_yds, rec_td = 10, 6, ppr, 10, 6
-    proj = (df['Rush Yds'].values/rush_yds +
-            df['Rush TD'].values/rush_td +
-            df['Receptions'].values/rec +
+    rec, rec_yds, rec_td = ppr, 10, 6
+    proj = (df['Receptions'].values/rec +
             df['Rec Yds'].values/rec_yds +
             df['Rec TD'].values/rec_td)
-    df['proj'] = proj.round(2)
+    df['proj'] = proj
     df = df['Player Team POS proj'.split()]
     df.columns = 'player team pos proj'.split()
     return df
@@ -48,7 +46,7 @@ def scoring_WR(df, ppr=0.5):
             df['Receptions'].values/rec +
             df['Rec Yds'].values/rec_yds +
             df['Rec TD'].values/rec_td)
-    df['proj'] = proj.round(2)
+    df['proj'] = proj
     df = df['Player Team POS proj'.split()]
     df.columns = 'player team pos proj'.split()
     return df
@@ -62,7 +60,7 @@ def scoring_RB(df, ppr=0.5):
             df['Rec Yds'].values/rec_yds +
             df['Rec TD'].values/rec_td +
             df['2PT'].values/two_pt)
-    df['proj'] = proj.round(2)
+    df['proj'] = proj
     df = df['Player Team POS proj'.split()]
     df.columns = 'player team pos proj'.split()
     return df
@@ -77,7 +75,7 @@ def scoring_QB(df):
             df['Rush TD'].values/rush_td +
             df['Fum Lost'].values/fum_lost +
             df['2PT'].values/two_pt)
-    df['proj'] = proj.round(2)
+    df['proj'] = proj
     df = df['Player Team POS proj'.split()]
     df.columns = 'player team pos proj'.split()
     return df
