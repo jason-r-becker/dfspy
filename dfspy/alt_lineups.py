@@ -64,7 +64,7 @@ def get_cust_team_stack(df, budget, pt_lim, teams, nums):
                cp.matmul(W.T, df['K'].values.reshape(N, 1))==1,
                cp.matmul(W.T, df['DST'].values.reshape(N, 1))==1]
     for t, n in zip(teams, nums):
-        constrs.append(cp.matmul(W.T, df[t].values.reshape(N, 1))==n)
+        constrs.append(cp.matmul(W.T, df[t].values.reshape(N, 1))>=n)
 
     obj = cp.Maximize(cp.matmul(W.T, df['proj'].values.reshape(N, 1)))
     prob = cp.Problem(obj, constrs)
