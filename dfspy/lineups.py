@@ -7,9 +7,9 @@ from scoring import *
 def main():
     year = int(input('Enter Year: '))
     week = int(input('Enter Week: '))
+    budget = int(input('Enter Budget: '))
     source = 'NFL'
     print(f'Source = {source}')
-    budget = 12000
     df = read_data(year=year, week=week, source=source)
     df = get_costs(df)
     lineup, proj_pts, cost = get_optimal_lineup(df, budget)
@@ -46,17 +46,18 @@ def get_costs(df):
 def get_optimal_lineup(df, budget):
     N = len(df)
     W = cp.Variable((N, 1), boolean=True)
-    constraints = [cp.sum(cp.multiply(W, df['cost'].values.reshape(N, 1)))<=budget,
+    constrs = [cp.sum(cp.multiply(W, df['cost'].values.reshape(N, 1)))<=budget,
                    cp.sum(W)<=9,
                    cp.sum(cp.multiply(W, df['QB'].values.reshape(N, 1)))==1,
                    cp.sum(cp.multiply(W, df['RB'].values.reshape(N, 1)))<=3,
                    cp.sum(cp.multiply(W, df['WR'].values.reshape(N, 1)))<=3,
                    cp.sum(cp.multiply(W, df['TE'].values.reshape(N, 1)))<=2,
+                   cp.sum(cp.multiply(W, df['TE'].values.reshape(N, 1)))>=1,
                    cp.sum(cp.multiply(W, df['K'].values.reshape(N, 1)))==1,
                    cp.sum(cp.multiply(W, df['DST'].values.reshape(N, 1)))==1]
 
     obj = cp.Maximize(cp.sum(cp.multiply(W, df['proj'].values.reshape(N, 1))))
-    prob = cp.Problem(obj, constraints)
+    prob = cp.Problem(obj, constrs)
     prob.solve()
     W.value = W.value.round()
     idx = []
@@ -65,8 +66,14 @@ def get_optimal_lineup(df, budget):
             idx.append(i)
     proj_pts = round(df.iloc[idx]['proj'].sum(),2)
     lineup_cost = df.iloc[idx]['cost'].sum()
-    lineup = df.iloc[idx]['team pos proj cost'.split()].sort_values('pos')
+    lineup = df.iloc[idx]['team pos proj cost'.split()]
+    pos_map = {'QB': 1, 'RB': 2, 'WR': 3, 'TE': 4, 'K': 5, 'DST': 6}
+    pos_num = [pos_map[pos] for pos in lineup['pos'].values]
+    lineup['pos_num'] = pos_num
+    lineup = lineup.sort_values('pos_num')
+    lineup.drop('pos_num', axis=1, inplace=True)
     return lineup, proj_pts, lineup_cost
+
 # %%
 if __name__ == '__main__':
     main()
