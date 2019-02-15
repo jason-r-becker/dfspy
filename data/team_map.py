@@ -69,13 +69,45 @@ def read_FFToday(filename, team_names):
         team_names.append(name[0])
     return team_names
 
-d = {'Yahoo': read_Yahoo,
+d = {
+    'Yahoo': read_Yahoo,
     'NFL': read_NFL,
     'FantasyPros': read_FantasyPros,
     'ESPN': read_ESPN,
     'CBS': read_CBS,
-    'FFToday': read_FFToday}
+    'FFToday': read_FFToday
+    }
 
 # %%
 if __name__ == '__main__':
     main()
+
+
+# with open('../data/.team_mappings.json', 'r') as fid:
+#     team_map = json.load(fid)
+#
+# new_keys = []
+# vals = []
+# for k, v in team_map.items():
+#     if len(k)>3:
+#         new_keys.append(k.rsplit()[-1])
+#         new_keys.append(' '.join(k.rsplit()[:-1]))
+#         vals.append(v)
+#         vals.append(v)
+#
+# new_dict = {k: v for k, v in zip(new_keys, vals)}
+# final_dict = {**team_map, **new_dict}
+#
+# with open('../data/.team_mappings.json', 'w') as fid:
+#     json.dump(final_dict, fid, indent=4, sort_keys=True)
+#
+#
+#
+# for k, v in team_map.copy().items():
+#     lsplit, rsplit = tuple(k.rsplit(' ', 1)) if len(k) > 3 else k, k
+#     team_map[lsplit[0]] = v
+#     team_map[rsplit[0]] = v
+#
+# final_dict = {}
+# for k, v in sorted(team_map.items(), key=lambda x: x[1]):
+#     final_dict[k] = v
