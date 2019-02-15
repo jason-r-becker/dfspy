@@ -1,14 +1,16 @@
-import os
 import argparse
+import os
 from datetime import datetime as dt
 from datetime import timedelta
 
-import numpy as np
 import cvxpy as cp
+import empiricalutilities as eu
+import numpy as np
 import pandas as pd
+from tabulate import tabulate
 from tqdm import tqdm
 
-from scoring import *
+from scoring import scoring_QB, scoring_RB, scoring_WR, scoring_TE, scoring_DST
 from scrape_data import mkdir
 # %%
 
@@ -180,9 +182,15 @@ class LineupOptimizer:
             lineups[i+1] = lineup
             pt_lim = proj-0.1
             if verbose:
+                print('------------------------')
                 print(f'Lineup #{i+1}, Week {self.week}, {self.year}')
-                print(lineup.set_index('player'))
-                print('----------------')
+                lineup['salary'] = lineup['salary'].astype(int)
+                print(tabulate(
+                    lineup.set_index('player'),
+                    headers='keys',
+                    tablefmt='psql',
+                    floatfmt='.2f',
+                    ))
 
         self.lineups = lineups
         if save:
