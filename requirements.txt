@@ -1,3 +1,4 @@
+appnope==0.1.0
 backcall==0.1.0
 beautifulsoup4==4.7.1
 certifi==2018.11.29
@@ -10,6 +11,7 @@ dill==0.2.9
 ecos==2.0.7.post1
 fastcache==1.0.2
 future==0.17.1
+fuzzywuzzy==0.17.0
 idna==2.8
 ipykernel==5.1.0
 ipython==7.2.0
@@ -24,8 +26,10 @@ numpy==1.16.0
 osqp==0.5.0
 pandas==0.23.4
 parso==0.3.3
+pexpect==4.6.0
 pickleshare==0.7.5
 prompt-toolkit==2.0.8
+ptyprocess==0.6.0
 Pygments==2.3.1
 python-dateutil==2.7.5
 pytz==2018.9
