@@ -29,13 +29,13 @@ def main():
 def parse_args():
     """Collect settings from command line and set defaults"""
     parser = argparse.ArgumentParser()
-    parser.add_argument('-y', '--year', help='Year of season')
-    parser.add_argument('-w', '--week', help='Week of season')
+    parser.add_argument('-y', '--year', type=int, help='Year of season')
+    parser.add_argument('-w', '--week', type=int, help='Week of season')
     parser.add_argument('-l', '--league', help='FanDuel, DraftKings, etc.')
-    parser.add_argument('-n', '--n_lineups', help='Number of lineups')
-    parser.add_argument('-m', '--max_players', help='Max players per team')
-    parser.add_argument('-s', '--save', help='Want to save the lineup?')
-    parser.add_argument('-v', '--verbose', help='Print lineups to console')
+    parser.add_argument('-n', '--n_lineups', type=int, help='Number of lineups')
+    parser.add_argument('-m', '--max_players', type=int, help='Max plyrs/team')
+    parser.add_argument('-s', '--save', action='store_true', help='Save?')
+    parser.add_argument('-v', '--verbose', action='store_true', help='Print?')
 
     default_league = 'FanDuel'
     today = dt.utcnow()
@@ -64,7 +64,7 @@ def parse_args():
         n_lineups=1,
         max_players=3,
         save=False,
-        verbose=False
+        verbose=False,
         )
     args = parser.parse_args()
 
@@ -193,7 +193,7 @@ class LineupOptimizer:
 
 # self = LineupOptimizer(year=2018, week=4, league='FanDuel')
 # self.get_optimal_lineup(n_lineups=3, max_players_per_team=3)
-# self.get_optimal_lineup(n_lineups=3, max_players_per_team=3, verbose=True)
+# self.get_optimal_lineup(n_lineups=1, max_players_per_team=3)
 
 if __name__ == '__main__':
     main()
