@@ -1,11 +1,74 @@
 import os
+import argparse
+from datetime import datetime as dt
+from datetime import timedelta
+
 import numpy as np
 import cvxpy as cp
 import pandas as pd
 from tqdm import tqdm
+
 from scoring import *
 from scrape_data import mkdir
 # %%
+
+def main():
+    args = parse_args()
+    optimizer = LineupOptimizer(
+        year=args.year,
+        week=args.week,
+        league=args.league,
+        )
+    optimizer.get_optimal_lineup(
+        n_lineups=args.n_lineups,
+        max_players_per_team=args.max_players,
+        save=args.save,
+        verbose=args.verbose,
+        )
+
+def parse_args():
+    """Collect settings from command line and set defaults"""
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-y', '--year', help='Year of season')
+    parser.add_argument('-w', '--week', help='Week of season')
+    parser.add_argument('-l', '--league', help='FanDuel, DraftKings, etc.')
+    parser.add_argument('-n', '--n_lineups', help='Number of lineups')
+    parser.add_argument('-m', '--max_players', help='Max players per team')
+    parser.add_argument('-s', '--save', help='Want to save the lineup?')
+    parser.add_argument('-v', '--verbose', help='Print lineups to console')
+
+    default_league = 'FanDuel'
+    today = dt.utcnow()
+    default_year = today.year if today.month > 7 else today.year - 1
+    season_start = {  # Date of Thursday night game starting each season.
+        2015: '9/10/2015',
+        2016: '9/8/2016',
+        2017: '9/7/2017',
+        2018: '9/6/2018',
+        2019: '9/5/2019',
+        }[default_year]
+
+    # Default week is the current NFL season week, starting on Tuesdays.
+    # Before the season default is week 1, and after the season it is 17.
+    default_week = int(np.ceil(
+        (today-pd.to_datetime(season_start)+timedelta(days=2)).total_seconds()
+        / (3600 * 24 * 7)
+        ))
+    default_week = max(1, min(17, default_week))
+
+    # set default arguments
+    parser.set_defaults(
+        year=default_year,
+        week=default_week,
+        league=default_league,
+        n_lineups=1,
+        max_players=3,
+        save=False,
+        verbose=False
+        )
+    args = parser.parse_args()
+
+    return args
 
 class LineupOptimizer:
     def __init__(self, year, week, league):
@@ -78,7 +141,6 @@ class LineupOptimizer:
             cp.matmul(W.T, self._data_col_vector('WR')) >= 3,
             cp.matmul(W.T, self._data_col_vector('TE')) <= 2,
             cp.matmul(W.T, self._data_col_vector('TE')) >= 1,
-            #cp.matmul(W.T, self._data_col_vector('K'))==1,
             cp.matmul(W.T, self._data_col_vector('DST')) == 1,
             cp.max(cp.matmul(W[idx:].T,
                 self.data[teams].values[idx:, :])) <= self.max_players_per_team,
@@ -118,7 +180,7 @@ class LineupOptimizer:
             lineups[i+1] = lineup
             pt_lim = proj-0.1
             if verbose:
-                print(f'Lineup #{i+1}')
+                print(f'Lineup #{i+1}, Week {self.week}, {self.year}')
                 print(lineup.set_index('player'))
                 print('----------------')
 
@@ -129,6 +191,9 @@ class LineupOptimizer:
 # %%
 
 
-self = LineupOptimizer(year=2018, week=4, league='FanDuel')
-self.get_optimal_lineup(n_lineups=3, max_players_per_team=3)
-self.get_optimal_lineup(n_lineups=3, max_players_per_team=3, verbose=True)
+# self = LineupOptimizer(year=2018, week=4, league='FanDuel')
+# self.get_optimal_lineup(n_lineups=3, max_players_per_team=3)
+# self.get_optimal_lineup(n_lineups=3, max_players_per_team=3, verbose=True)
+
+if __name__ == '__main__':
+    main()
