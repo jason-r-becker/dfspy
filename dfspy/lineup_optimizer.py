@@ -1,5 +1,6 @@
 import argparse
 import os
+from collections import defaultdict
 from datetime import datetime as dt
 from datetime import timedelta
 
@@ -92,8 +93,6 @@ class LineupOptimizer:
             }[league]
         self.data = self._load_data()
         self.resdf = self._load_results()
-        self._pt_lim = 10000
-        self.max_players_per_team = 3
 
     def _load_data(self, source='NFL'):
         POS = 'QB RB WR TE DST'.split()
@@ -137,7 +136,7 @@ class LineupOptimizer:
         N = len(self.data)
         W = cp.Variable((N, 1), boolean=True)
 
-        DSTe = self.data[self.data['pos']=='DST'].index.max()+1
+        D = self.data[self.data['pos']=='DST'].index.max()+1
         WRs = self.data[self.data['pos']=='WR'].index.min()
         WRe = self.data[self.data['pos']=='WR'].index.max()+1
         QBs = self.data[self.data['pos']=='QB'].index.min()
@@ -156,8 +155,8 @@ class LineupOptimizer:
             cp.matmul(W.T, self._data_col_vector('TE')) <= 2,
             cp.matmul(W.T, self._data_col_vector('TE')) >= 1,
             cp.matmul(W.T, self._data_col_vector('DST')) == 1,
-            cp.max(cp.matmul(W[DSTe:].T,
-                self.data[teams].values[DSTe:, :])) <= self.max_players_per_team,
+            cp.max(cp.matmul(W[D:].T,
+                self.data[teams].values[D:, :])) <= self.max_players_per_team,
             ]
 
         if self._stack:
@@ -198,11 +197,13 @@ class LineupOptimizer:
 
         self.max_players_per_team = max_players_per_team
         self._stack = stack
+        self._pt_lim = 10000
+
         lineups = {}
         for i in range(n_lineups):
             lineup, proj = self._optimize()
             lineups[i+1] = self.get_results(lineup) if result else lineup
-            self._pt_lim = proj-0.1
+            self._pt_lim = proj-0.1 if n_lineups > 1 else 10000
             if verbose:
                 print('------------------------')
                 print(f'Lineup #{i+1}, Week {self.week}, {self.year}')
@@ -248,8 +249,55 @@ class LineupOptimizer:
 # %%
 
 
-# self = LineupOptimizer(year=2018, week=16, league='FanDuel')
-# self.get_optimal_lineup(stack=True, verbose=True, result=True)
+# weeks = list(range(1, 18))
+#
+# res = defaultdict(list)
+# for week in tqdm(weeks):
+#     n = 3
+#     mppts = [1, 2, 3]
+#     stacks = [0, 1]
+#
+#     for mppt in mppts:
+#         if mppt == 1:
+#             stack = False
+#             self = LineupOptimizer(year=2018, week=week, league='FanDuel')
+#             self.get_optimal_lineup(
+#                 n_lineups=n,
+#                 result=True,
+#                 stack=stack,
+#                 max_players_per_team=mppt,
+#                 )
+#             for key, lp in self.lineups.items():
+#                 res['week'] = week
+#                 res['lp_num'].append(key)
+#                 res['proj'].append(lp['proj'].iloc[-1])
+#                 res['score'].append(lp['actual'].iloc[-1])
+#                 res['stack'].append(1 if self._stack else 0)
+#                 res['mppt'].append(self.max_players_per_team)
+#
+#         if mppt >= 2:
+#             for stack in stacks:
+#                 self = LineupOptimizer(year=2018, week=week, league='FanDuel')
+#                 self.get_optimal_lineup(
+#                     n_lineups=n,
+#                     result=True,
+#                     stack=stack,
+#                     max_players_per_team=mppt,
+#                     )
+#                 for key, lp in self.lineups.items():
+#                     res['week'] = week
+#                     res['lp_num'].append(key)
+#                     res['proj'].append(lp['proj'].iloc[-1])
+#                     res['score'].append(lp['actual'].iloc[-1])
+#                     res['stack'].append(1 if self._stack else 0)
+#                     res['mppt'].append(self.max_players_per_team)
+#
+# # %%
+# pd.DataFrame.from_dict(res).to_csv(
+#     '../lineups/2018/0/lineups.csv',
+#     index=False,
+#     )
 
+# %%
 if __name__ == '__main__':
     main()
