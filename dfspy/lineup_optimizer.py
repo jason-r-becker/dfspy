@@ -24,6 +24,7 @@ def main():
     optimizer.get_optimal_lineup(
         n_lineups=args.n_lineups,
         max_players_per_team=args.max_players,
+        stack=args.stack,
         save=args.save,
         verbose=args.verbose,
         )
@@ -36,6 +37,7 @@ def parse_args():
     parser.add_argument('-l', '--league', help='FanDuel, DraftKings, etc.')
     parser.add_argument('-n', '--n_lineups', type=int, help='Number of lineups')
     parser.add_argument('-m', '--max_players', type=int, help='Max plyrs/team')
+    parser.add_argument('-st', '--stack', action='store_true', help='Stack?')
     parser.add_argument('-s', '--save', action='store_true', help='Save?')
     parser.add_argument('-v', '--verbose', action='store_true', help='Print?')
 
@@ -65,6 +67,7 @@ def parse_args():
         league=default_league,
         n_lineups=1,
         max_players=3,
+        QBSTack=False,
         save=False,
         verbose=False,
         )
@@ -83,6 +86,8 @@ class LineupOptimizer:
             'ESPN': None,
             }[league]
         self.data = self._load_data()
+        self._pt_lim = 10000
+        self.max_players_per_team = 3
 
     def _load_data(self, source='NFL'):
         POS = 'QB RB WR TE DST'.split()
@@ -126,15 +131,20 @@ class LineupOptimizer:
         """Return N by 1 vector of data column from self.data """
         return self.data[col].values.reshape(-1, 1)
 
-    def _optimize(self, pt_lim):
+    def _optimize(self):
         N = len(self.data)
         W = cp.Variable((N, 1), boolean=True)
-        idx = self.data[self.data['pos']=='DST'].index.max()+1
+
+        DSTe = self.data[self.data['pos']=='DST'].index.max()+1
+        WRs = self.data[self.data['pos']=='WR'].index.min()
+        WRe = self.data[self.data['pos']=='WR'].index.max()+1
+        QBs = self.data[self.data['pos']=='QB'].index.min()
+        QBe = self.data[self.data['pos']=='QB'].index.max()+1
 
         teams = self.data['team'].unique()
         constrs = [
-            cp.matmul(W.T, self._data_col_vector('salary'))<=self.budget,
-            cp.matmul(W.T, self._data_col_vector('proj'))<=pt_lim,
+            cp.matmul(W.T, self._data_col_vector('salary')) <= self.budget,
+            cp.matmul(W.T, self._data_col_vector('proj')) <= self._pt_lim,
             cp.sum(W)==9,
             cp.matmul(W.T, self._data_col_vector('QB')) == 1,
             cp.matmul(W.T, self._data_col_vector('RB')) <= 3,
@@ -144,9 +154,16 @@ class LineupOptimizer:
             cp.matmul(W.T, self._data_col_vector('TE')) <= 2,
             cp.matmul(W.T, self._data_col_vector('TE')) >= 1,
             cp.matmul(W.T, self._data_col_vector('DST')) == 1,
-            cp.max(cp.matmul(W[idx:].T,
-                self.data[teams].values[idx:, :])) <= self.max_players_per_team,
+            cp.max(cp.matmul(W[DSTe:].T,
+                self.data[teams].values[DSTe:, :])) <= self.max_players_per_team,
             ]
+
+        if self._stack:
+            constrs.append(cp.norm(
+                    cp.matmul(W[WRs:WRe].T, self.data[teams].values[WRs:WRe]) -
+                    cp.matmul(W[QBs:QBe].T, self.data[teams].values[QBs:QBe]),
+                    2) <= np.sqrt(3)
+                    )
 
         obj = cp.Maximize(cp.matmul(W.T, self._data_col_vector('proj')))
         prob = cp.Problem(obj, constrs)
@@ -164,6 +181,7 @@ class LineupOptimizer:
         lineup = lineup.sort_values('pos_num')
         lineup.drop('pos_num', axis=1, inplace=True)
         lineup = lineup.append(lineup.sum(numeric_only=True), ignore_index=True)
+
         return lineup, proj_pts
 
     def _save_lineups(self):
@@ -173,24 +191,27 @@ class LineupOptimizer:
             lineup.to_csv(f'{path}/op_lineup_{i}.csv', index=False)
 
     def get_optimal_lineup(self, n_lineups=1, max_players_per_team=3,
-                           save=False, verbose=False):
+                           stack=False, save=False, verbose=False):
+
         self.max_players_per_team = max_players_per_team
+        self._stack = stack
         lineups = {}
-        pt_lim=10000
         for i in range(n_lineups):
-            lineup, proj = self._optimize(pt_lim=pt_lim)
+            lineup, proj = self._optimize()
             lineups[i+1] = lineup
-            pt_lim = proj-0.1
+            self._pt_lim = proj-0.1
             if verbose:
                 print('------------------------')
                 print(f'Lineup #{i+1}, Week {self.week}, {self.year}')
                 lineup['salary'] = lineup['salary'].astype(int)
-                print(tabulate(
-                    lineup.set_index('player'),
-                    headers='keys',
-                    tablefmt='psql',
-                    floatfmt='.2f',
-                    ))
+                print(
+                        tabulate(
+                            lineup.set_index('player'),
+                            headers='keys',
+                            tablefmt='psql',
+                            floatfmt='.2f',
+                            )
+                        )
 
         self.lineups = lineups
         if save:
@@ -200,8 +221,9 @@ class LineupOptimizer:
 
 
 # self = LineupOptimizer(year=2018, week=4, league='FanDuel')
-# self.get_optimal_lineup(n_lineups=3, max_players_per_team=3)
-# self.get_optimal_lineup(n_lineups=1, max_players_per_team=3)
+# # self.get_optimal_lineup(n_lineups=3, max_players_per_team=3)
+# self.get_optimal_lineup(stack=True, verbose=True)
+
 
 if __name__ == '__main__':
     main()
