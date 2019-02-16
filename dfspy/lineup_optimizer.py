@@ -187,7 +187,7 @@ class LineupOptimizer:
         lineup = lineup.sort_values('pos_num proj'.split())
         lineup.drop('pos_num', axis=1, inplace=True)
         lineup = lineup.append(lineup.sum(numeric_only=True), ignore_index=True)
-
+        lineup['player'] = lineup['player'].replace(np.nan, 'Total')
         return lineup, proj_pts
 
     def _save_lineups(self):
@@ -210,13 +210,12 @@ class LineupOptimizer:
             if verbose:
                 print('------------------------')
                 print(f'Lineup #{i+1}, Week {self.week}, {self.year}')
-                lineup['salary'] = lineup['salary'].astype(int)
                 print(
                         tabulate(
-                            lineups[i+1],
+                            lineups[i+1].set_index('player'),
                             headers='keys',
                             tablefmt='psql',
-                            floatfmt='.2f',
+                            floatfmt=['', '', '', ',.0f', ',.2f', '.2f']
                             )
                         )
 
@@ -243,16 +242,14 @@ class LineupOptimizer:
         result_df = result_df.reset_index()
         result_df = result_df.append(result_df.sum(numeric_only=True),
                                      ignore_index=True)
-        result_df.set_index('player', inplace=True)
-
+        result_df['player'] = result_df['player'].replace(np.nan, 'Total')
         return result_df
 
 # %%
 
 
 # self = LineupOptimizer(year=2018, week=16, league='FanDuel')
-# self.get_optimal_lineup(n_lineups=3, max_players_per_team=3)
-# self.get_optimal_lineup(stack=True, verbose=True, result=False)
+# self.get_optimal_lineup(stack=True, verbose=True, result=True)
 
 if __name__ == '__main__':
     main()
