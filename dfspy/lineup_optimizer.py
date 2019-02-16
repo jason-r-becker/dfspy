@@ -10,8 +10,9 @@ import pandas as pd
 from tabulate import tabulate
 from tqdm import tqdm
 
-from scoring import scoring_QB, scoring_RB, scoring_WR, scoring_TE, scoring_DST
+from scoring import *
 from scrape_data import mkdir
+from results import get_season_data
 # %%
 
 def main():
@@ -25,9 +26,11 @@ def main():
         n_lineups=args.n_lineups,
         max_players_per_team=args.max_players,
         stack=args.stack,
+        result=args.res,
         save=args.save,
         verbose=args.verbose,
         )
+
 
 def parse_args():
     """Collect settings from command line and set defaults"""
@@ -38,6 +41,7 @@ def parse_args():
     parser.add_argument('-n', '--n_lineups', type=int, help='Number of lineups')
     parser.add_argument('-m', '--max_players', type=int, help='Max plyrs/team')
     parser.add_argument('-st', '--stack', action='store_true', help='Stack?')
+    parser.add_argument('-r', '--res', action='store_true', help='See result?')
     parser.add_argument('-s', '--save', action='store_true', help='Save?')
     parser.add_argument('-v', '--verbose', action='store_true', help='Print?')
 
@@ -67,7 +71,8 @@ def parse_args():
         league=default_league,
         n_lineups=1,
         max_players=3,
-        QBSTack=False,
+        stack=False,
+        res=False,
         save=False,
         verbose=False,
         )
@@ -86,6 +91,7 @@ class LineupOptimizer:
             'ESPN': None,
             }[league]
         self.data = self._load_data()
+        self.resdf = self._load_results()
         self._pt_lim = 10000
         self.max_players_per_team = 3
 
@@ -174,11 +180,11 @@ class LineupOptimizer:
             if w == 1:
                 idx.append(i)
         proj_pts = self.data.iloc[idx]['proj'].sum()
-        lineup = self.data.iloc[idx]['player team pos proj salary'.split()]
+        lineup = self.data.iloc[idx]['player team pos salary proj'.split()]
         pos_map = {'QB': 1, 'RB': 2, 'WR': 3, 'TE': 4, 'DST': 5}
         pos_num = [pos_map[pos] for pos in lineup['pos'].values]
         lineup['pos_num'] = pos_num
-        lineup = lineup.sort_values('pos_num')
+        lineup = lineup.sort_values('pos_num proj'.split())
         lineup.drop('pos_num', axis=1, inplace=True)
         lineup = lineup.append(lineup.sum(numeric_only=True), ignore_index=True)
 
@@ -191,14 +197,15 @@ class LineupOptimizer:
             lineup.to_csv(f'{path}/op_lineup_{i}.csv', index=False)
 
     def get_optimal_lineup(self, n_lineups=1, max_players_per_team=3,
-                           stack=False, save=False, verbose=False):
+                           stack=False, result=False,
+                           save=False, verbose=False):
 
         self.max_players_per_team = max_players_per_team
         self._stack = stack
         lineups = {}
         for i in range(n_lineups):
             lineup, proj = self._optimize()
-            lineups[i+1] = lineup
+            lineups[i+1] = self.get_results(lineup) if result else lineup
             self._pt_lim = proj-0.1
             if verbose:
                 print('------------------------')
@@ -206,7 +213,7 @@ class LineupOptimizer:
                 lineup['salary'] = lineup['salary'].astype(int)
                 print(
                         tabulate(
-                            lineup.set_index('player'),
+                            lineups[i+1],
                             headers='keys',
                             tablefmt='psql',
                             floatfmt='.2f',
@@ -217,13 +224,35 @@ class LineupOptimizer:
         if save:
             self._save_lineups()
 
+    def _load_results(self):
+        try:
+            resdf = get_season_data(weeks=[self.week])
+        except:
+            raise ValueError('No past data for this week')
+
+        return resdf
+
+    def get_results(self, lineup):
+
+        resdf = self.resdf.set_index('player team pos'.split())
+
+        # get results for lineup
+        result_df = lineup.set_index('player team pos'.split()).join(
+                            resdf['actual'], how='left'
+                            ).dropna()
+        result_df = result_df.reset_index()
+        result_df = result_df.append(result_df.sum(numeric_only=True),
+                                     ignore_index=True)
+        result_df.set_index('player', inplace=True)
+
+        return result_df
+
 # %%
 
 
-# self = LineupOptimizer(year=2018, week=4, league='FanDuel')
-# # self.get_optimal_lineup(n_lineups=3, max_players_per_team=3)
-# self.get_optimal_lineup(stack=True, verbose=True)
-
+# self = LineupOptimizer(year=2018, week=16, league='FanDuel')
+# self.get_optimal_lineup(n_lineups=3, max_players_per_team=3)
+# self.get_optimal_lineup(stack=True, verbose=True, result=False)
 
 if __name__ == '__main__':
     main()
