@@ -10,7 +10,7 @@ import pandas as pd
 from tabulate import tabulate
 from tqdm import tqdm
 
-from scoring import *
+from scoring import get_score
 from scrape_data import mkdir
 from results import get_season_data
 # %%
@@ -97,21 +97,17 @@ class LineupOptimizer:
 
     def _load_data(self, source='NFL'):
         POS = 'QB RB WR TE DST'.split()
-        d = {
-            'QB': scoring_QB,
-            'RB': scoring_RB,
-            'WR': scoring_WR,
-            'TE': scoring_TE,
-            'DST': scoring_DST,
-            }
 
         player_dfs = {}
         for pos in POS:
             filepath = f'../data/{self.year}/{self.week}/{pos}/'
             df = pd.read_csv(filepath+source+'.csv')
-            df = d[pos](df)
+            df = get_score(df, pos=pos, league=self.league)
+            df.columns = 'player team pos proj'.split()
+
             costs = pd.read_csv(filepath+self.league+'.csv')
             costs.columns = 'player team salary'.split()
+
             if pos == 'DST':
                 df = df.set_index('team').join(
                     costs.set_index('team'),
@@ -181,10 +177,10 @@ class LineupOptimizer:
                 idx.append(i)
         proj_pts = self.data.iloc[idx]['proj'].sum()
         lineup = self.data.iloc[idx]['player team pos salary proj'.split()]
-        pos_map = {'QB': 1, 'RB': 2, 'WR': 3, 'TE': 4, 'DST': 5}
+        pos_map = {'QB': 5, 'RB': 4, 'WR': 3, 'TE': 2, 'DST': 1}
         pos_num = [pos_map[pos] for pos in lineup['pos'].values]
         lineup['pos_num'] = pos_num
-        lineup = lineup.sort_values('pos_num proj'.split())
+        lineup = lineup.sort_values('pos_num proj'.split(), ascending=False)
         lineup.drop('pos_num', axis=1, inplace=True)
         lineup = lineup.append(lineup.sum(numeric_only=True), ignore_index=True)
         lineup['player'] = lineup['player'].replace(np.nan, 'Total')
@@ -215,7 +211,7 @@ class LineupOptimizer:
                             lineups[i+1].set_index('player'),
                             headers='keys',
                             tablefmt='psql',
-                            floatfmt=['', '', '', ',.0f', ',.2f', '.2f']
+                            floatfmt=['', '', '', ',.0f', '.2f', '.2f']
                             )
                         )
 
@@ -225,7 +221,11 @@ class LineupOptimizer:
 
     def _load_results(self):
         try:
-            resdf = get_season_data(weeks=[self.week])
+            resdf = get_season_data(
+                                    years=[self.year],
+                                    weeks=[self.week],
+                                    league=self.league,
+                                    )
         except:
             raise ValueError('No past data for this week')
 

@@ -10,7 +10,8 @@ plt.style.use('fivethirtyeight')
 def get_season_data(
                     years=[2018],
                     weeks=list(range(1, 18)),
-                    positions='QB RB WR TE DST'.split()
+                    positions=['QB', 'RB', 'WR', 'TE', 'DST'],
+                    league='FanDuel',
                     ):
 
     act = {}
@@ -21,11 +22,20 @@ def get_season_data(
                 # projections
                 fid = f'../data/{year}/{week}/{pos}/NFL.csv'
                 projdf = pd.read_csv(fid)
-                proj[(year, week, pos)] = get_score(projdf, pos=pos, type='Proj')
+                proj[(year, week, pos)] = get_score(
+                                                    projdf,
+                                                    pos=pos,
+                                                    type='Proj',
+                                                    league=league,
+                                                    )
                 # actual stats
                 fid = f'../data/{year}/{week}/{pos}/STATS.csv'
                 actdf = pd.read_csv(fid)
-                act[(year, week, pos)] = get_score(actdf, pos=pos, type='Actual')
+                act[(year, week, pos)] = get_score(
+                                                   actdf, pos=pos,
+                                                   type='Actual',
+                                                   league=league,
+                                                   )
 
 
     projdf = pd.concat(proj)
