@@ -79,6 +79,7 @@ def get_projections(df, pos, league='FanDuel'):
             pass
 
     if pos == 'DST':
+        # interpolate fantasy points using distance from tier centers
         pts_allow = [0, 3.5, 10, 17, 24, 31, 38]
         ftsy_pts = [10, 7, 4, 1, 0, -1, -4]
         pts = df['Pts Allow'].values
