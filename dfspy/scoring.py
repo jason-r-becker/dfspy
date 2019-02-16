@@ -59,7 +59,7 @@ import pandas as pd
 #     json.dump(DraftKings_scoring, fid, indent=4)
 
 
-def get_projections(df, pos, league='FanDuel'):
+def get_score(df, pos, league='FanDuel', type='Proj'):
     """
     Calculate fantasy point projections for any position given league scoring
     rules and raw stat projections.
@@ -70,10 +70,10 @@ def get_projections(df, pos, league='FanDuel'):
         stat_map = json.load(fid)
 
     # loop through possible stats to calculate fantasy point projection
-    proj = np.zeros(len(df))
+    score = np.zeros(len(df))
     for stat, pts in stat_map.items():
         try:
-            proj += df[stat].values * stat_map[stat]
+            score += df[stat].values * stat_map[stat]
         except:
             pass
 
@@ -82,14 +82,13 @@ def get_projections(df, pos, league='FanDuel'):
         pts_allow = [0, 3.5, 10, 17, 24, 31, 38]
         ftsy_pts = [10, 7, 4, 1, 0, -1, -4]
         pts = df['Pts Allow'].values
-        proj += np.array([np.interp(pt, pts_allow, ftsy_pts) for pt in pts])
+        score += np.array([np.interp(pt, pts_allow, ftsy_pts) for pt in pts])
 
 
     # TODO: model probability of reaching milestone for DraftKings leagus
 
-    df['Proj'] = proj
-    return df['Player Team POS Proj'.split()]
-
+    df[type] = score
+    return df[['Player', 'Team', 'POS', type]]
 
 def scoring_DST(df):
     sack, int, fum, saf, td, block, ret_td, pts = 1, 2, 2, 2, 6, 1, 6, -5
