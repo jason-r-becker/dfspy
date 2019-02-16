@@ -1,7 +1,6 @@
 import json
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 
 # FanDuel_scoring = {
 #     'Rush Yds': 0.1,
