@@ -25,6 +25,13 @@ import pandas as pd
 #     'Saf': 2.0,
 #     'Block': 2.0,
 #     'Int': 2.0,
+#     'Pts Allow 0': 10.0,
+#     'Pts Allow 1-6': 7.0,
+#     'Pts Allow 7-13': 4.0,
+#     'Pts Allow 14-20': 1.0,
+#     'Pts Allow 21-27': 0.0,
+#     'Pts Allow 28-34': -1.0,
+#     'Pts Allow 35+': -4.0,
 #     }
 #
 # DraftKings_scoring = {
@@ -50,6 +57,13 @@ import pandas as pd
 #     'Saf': 2.0,
 #     'Block': 2.0,
 #     'Int': 2.0,
+#     'Pts Allow 0': 10.0,
+#     'Pts Allow 1-6': 7.0,
+#     'Pts Allow 7-13': 4.0,
+#     'Pts Allow 14-20': 1.0,
+#     'Pts Allow 21-27': 0.0,
+#     'Pts Allow 28-34': -1.0,
+#     'Pts Allow 35+': -4.0,
 #     }
 #
 # with open('../data/.FanDuel_scoring.json', 'w') as fid:
@@ -76,7 +90,7 @@ def get_score(df, pos, league='FanDuel', type='proj'):
         except:
             pass
 
-    if pos == 'DST':
+    if (pos == 'DST') & (type == 'proj'):
         # interpolate fantasy points using distance from tier centers
         pts_allow = [0, 3.5, 10, 17, 24, 31, 38]
         ftsy_pts = [10, 7, 4, 1, 0, -1, -4]
@@ -88,7 +102,7 @@ def get_score(df, pos, league='FanDuel', type='proj'):
 
     df[type] = score
     final_df = df[['Player', 'Team', 'POS', type]].copy()
-    final_df.columns = 'player team pos proj'.split()
+    final_df.columns = ['player', 'team', 'pos', type]
 
     return final_df
 #

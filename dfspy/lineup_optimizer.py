@@ -3,17 +3,16 @@ import os
 from collections import defaultdict
 from datetime import datetime as dt
 from datetime import timedelta
+from tabulate import tabulate
 
 import cvxpy as cp
 import empiricalutilities as eu
 import numpy as np
 import pandas as pd
-from tabulate import tabulate
 from tqdm import tqdm
 
 from scoring import get_score
 from scrape_data import mkdir
-from results import get_season_data
 # %%
 
 def main():
@@ -25,6 +24,7 @@ def main():
 
     optimizer.get_optimal_lineup(
         league=args.league,
+        type=args.type,
         n_lineups=args.n_lineups,
         mppt=args.max_players,
         stack=args.stack,
@@ -46,6 +46,7 @@ def parse_args():
     parser.add_argument('-r', '--res', action='store_true', help='See result?')
     parser.add_argument('-s', '--save', action='store_true', help='Save?')
     parser.add_argument('-v', '--verbose', action='store_true', help='Print?')
+    parser.add_argument('-t', '--type', help="'actual' or 'proj'")
 
     today = dt.utcnow()
     default_year = today.year if today.month > 7 else today.year - 1
@@ -70,6 +71,7 @@ def parse_args():
         year=default_year,
         week=default_week,
         league='FanDuel',
+        type='proj',
         n_lineups=1,
         max_players=3,
         stack=False,
@@ -85,7 +87,7 @@ class LineupOptimizer:
     def __init__(self, year, week):
         self.year = year
         self.week = week
-        self.data = self._load_data()
+        self.data, self.results = self._load_data()
 
     def __repr__(self):
         return f'Lineup Optimizer for week #{self.week}, {self.year}'
@@ -93,19 +95,31 @@ class LineupOptimizer:
     def _load_data(self, source='NFL'):
         positions = 'QB RB WR TE DST'.split()
         player_dfs = {}
+        results_dfs = {}
         for pos in positions:
             filepath = f'../data/{self.year}/{self.week}/{pos}/'
-            df = pd.read_csv(filepath+source+'.csv')
-            player_dfs[pos] = df
+            player_dfs[pos] = pd.read_csv(filepath+source+'.csv')
+            try:
+                results_dfs[pos] = pd.read_csv(filepath+'STATS.csv')
+            except:
+                pass
 
-        return player_dfs
+        return player_dfs, results_dfs
 
-    def _get_projections(self, league):
+    def _get_input_data(self, league, type='proj'):
         positions = 'QB RB WR TE DST'.split()
         dfs = []
         for pos in positions:
             df = self.data[pos].copy()
-            df = get_score(df, pos=pos, league=league).copy()
+            df = get_score(df, pos, league, type='proj').copy()
+
+            if type == 'actual':
+                df1 = self.results[pos].copy()
+                df1 = get_score(df1, pos, league, type=type).copy()
+
+                df = df.set_index('player team pos'.split()).join(
+                        df1.set_index('player team pos'.split())
+                        ).reset_index()
 
             filepath = f'../data/{self.year}/{self.week}/{pos}/'
             costs_df = pd.read_csv(filepath+league+'.csv')
@@ -117,7 +131,8 @@ class LineupOptimizer:
                             how='left',
                             sort=False,
                             rsuffix='_').dropna().reset_index()
-                cols = 'player team pos proj salary'.split()
+                cols = list(jointdf)
+                cols[0], cols[1] = 'player', 'team'
                 jointdf = jointdf[cols].copy()
             else:
                 jointdf = df.set_index(['player', 'team']).join(
@@ -134,52 +149,44 @@ class LineupOptimizer:
 
         return finaldf.reset_index(drop=True)
 
-    def _load_results(self, league):
-        try:
-            results = get_season_data(
-                                    years=[self.year],
-                                    weeks=[self.week],
-                                    league=league,
-                                    )
-        except:
-            raise ValueError('No past data for this week')
-
-        cols = 'player team pos actual'.split()
-        return results[cols].set_index('player team pos'.split()).copy()
-
     def _get_results(self, lineup, league):
-        results = self._load_results(league)
-        # get results for lineup
-        result_df = lineup.set_index('player team pos'.split()).join(
-                        results, how='left').dropna().reset_index()
-        result_df = result_df.append(result_df.sum(numeric_only=True),
-                                     ignore_index=True)
-        result_df['player'] = result_df['player'].replace(np.nan, 'Total')
-        return result_df
+        positions = 'QB RB WR TE DST'.split()
+        res = []
+        for pos in positions:
+            res.append(get_score(self.results[pos], pos, league, type='actual'))
 
-    def _save_lineups(self, lineup):
+        results = pd.concat(res).set_index('player team pos'.split())
+        lp = lineup.set_index('player team pos'.split()).copy()
+        lp = lp.join(results).reset_index()
+        lp['actual'] = lp['actual'].replace(np.nan, lp['actual'].sum())
+
+        return lp
+
+    def _save_lineups(self, lineup, type):
         path = f'../lineups/{self.year}/{self.week}/{self.league}/{self.budget}'
         mkdir(path)
-        lineup.to_csv(f'{path}/op_lineup_{i}.csv', index=False)
+        lineup.to_csv(f'{path}/op_{type}_{i}.csv', index=False)
 
-
-    def _format_lineup(self, data, lineups):
+    def _format_lineup(self, data, lineups, type):
         cols = 'player team pos salary proj'.split()
+        if type == 'actual':
+            cols += [type]
+
         formatted_lineups = []
         for idxs in lineups:
-            proj_pts = data.iloc[idxs]['proj'].sum()
+            proj_pts = data.iloc[idxs][type].sum()
             lineup = data.iloc[idxs][cols].copy()
             pos_map = {'QB': 5, 'RB': 4, 'WR': 3, 'TE': 2, 'DST': 1}
             pos_num = [pos_map[pos] for pos in lineup['pos'].values]
             lineup['pos_num'] = pos_num
-            lineup = lineup.sort_values('pos_num proj'.split(), ascending=False)
+            lineup = lineup.sort_values(['pos_num', type], ascending=False)
             lineup.drop('pos_num', axis=1, inplace=True)
             lineup = lineup.append(lineup.sum(numeric_only=True), ignore_index=True)
             lineup['player'] = lineup['player'].replace(np.nan, 'Total')
             formatted_lineups.append(lineup)
         return formatted_lineups
 
-    def _problem_setup(self, data, league, mppt, stack, proj='proj'):
+    def _problem_setup(self, data, league, mppt, stack, type='proj'):
         # QB index start for stacking rule
         QBs = data[data['pos']=='DST'].index.max()+1
         teams = data['team'].unique()
@@ -219,21 +226,21 @@ class LineupOptimizer:
                     )
 
         obj = cp.Maximize(
-            cp.matmul(W.T, data[proj].values.reshape(-1, 1)))
+            cp.matmul(W.T, data[type].values.reshape(-1, 1)))
 
         return W, obj, constraints
 
-    def _optimize(self, data, league, mppt, stack, n_lineups):
+    def _optimize(self, data, league, mppt, stack, n_lineups, type):
         W, obj, constraints = self._problem_setup(
                                 data,
                                 league,
                                 mppt,
                                 stack,
-                                'proj'
+                                type,
                                 )
 
         constraints.append(
-            cp.matmul(W.T, data['proj'].values.reshape(-1, 1)) <= 10000
+            cp.matmul(W.T, data[type].values.reshape(-1, 1)) <= 10000
             )
 
         lineups = []
@@ -251,13 +258,14 @@ class LineupOptimizer:
             # update pt limit to make new unique lineup
             point_limit = prob.value - 0.1
             constraints[-1] = cp.matmul(W.T,
-                data['proj'].values.reshape(-1, 1)) <= point_limit
+                data[type].values.reshape(-1, 1)) <= point_limit
 
         return lineups
 
     def get_optimal_lineup(
         self,
         league='FanDuel',
+        type='proj',
         n_lineups=1,
         mppt=3,
         stack=False,
@@ -266,12 +274,12 @@ class LineupOptimizer:
         verbose=False,
         ):
 
-        data = self._get_projections(league).copy()
-        lineups = self._optimize(data, league, mppt, stack, n_lineups)
-        fmt_lineups = self._format_lineup(data, lineups)
+        data = self._get_input_data(league, type).copy()
+        lineups = self._optimize(data, league, mppt, stack, n_lineups, type)
+        fmt_lineups = self._format_lineup(data, lineups, type)
 
         for i, lineup in enumerate(fmt_lineups):
-            lp = self._get_results(lineup, league) if result else lineup
+            lp = self._get_results(lineup, league) if result else lineup.copy()
 
             if verbose:
                 print('------------------------')
@@ -285,11 +293,11 @@ class LineupOptimizer:
                             )
                         )
             if save:
-                self._save_lineup(lp)
+                self._save_lineup(lp, type)
 
 
-# self = LineupOptimizer(2018, 4)
-# self.get_optimal_lineup(verbose=True, stack=True, result=True)
+# self = LineupOptimizer(2018, 2)
+# self.get_optimal_lineup(verbose=True, stack=False, type='proj', n_lineups=2)
 # self.get_optimal_lineup(verbose=True, stack=False, n_lineups=3, mppt=1)
 
 # %%
