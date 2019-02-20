@@ -106,16 +106,16 @@ class LineupOptimizer:
 
         return player_dfs, results_dfs
 
-    def _get_input_data(self, league, type='proj'):
+    def _get_input_data(self, league='FanDuel', type='proj'):
         positions = 'QB RB WR TE DST'.split()
         dfs = []
         for pos in positions:
             df = self.data[pos].copy()
-            df = get_score(df, pos, league, type='proj').copy()
+            df = get_score(df, pos, league, 'proj').copy()
 
             if type == 'actual':
                 df1 = self.results[pos].copy()
-                df1 = get_score(df1, pos, league, type=type).copy()
+                df1 = get_score(df1, pos, league, 'actual').copy()
 
                 df = df.set_index('player team pos'.split()).join(
                         df1.set_index('player team pos'.split())
@@ -149,11 +149,11 @@ class LineupOptimizer:
 
         return finaldf.reset_index(drop=True)
 
-    def _get_results(self, lineup, league):
+    def _get_results(self, lineup, league='FanDuel'):
         positions = 'QB RB WR TE DST'.split()
         res = []
         for pos in positions:
-            res.append(get_score(self.results[pos], pos, league, type='actual'))
+            res.append(get_score(self.results[pos], pos, league, 'actual'))
 
         results = pd.concat(res).set_index('player team pos'.split())
         lp = lineup.set_index('player team pos'.split()).copy()
