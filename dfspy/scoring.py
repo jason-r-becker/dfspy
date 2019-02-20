@@ -58,7 +58,6 @@ import pandas as pd
 # with open('../data/.DraftKings_scoring.json', 'w') as fid:
 #     json.dump(DraftKings_scoring, fid, indent=4)
 
-
 def get_score(df, pos, league='FanDuel', type='proj'):
     """
     Calculate fantasy point projections for any position given league scoring
@@ -88,8 +87,10 @@ def get_score(df, pos, league='FanDuel', type='proj'):
     # TODO: model probability of reaching milestone for DraftKings leagus
 
     df[type] = score
+    final_df = df[['Player', 'Team', 'POS', type]].copy()
+    final_df.columns = 'player team pos proj'.split()
 
-    return df[['Player', 'Team', 'POS', type]]
+    return final_df
 #
 # def scoring_DST(df):
 #     sack, int, fum, saf, td, block, ret_td, pts = 1, 2, 2, 2, 6, 1, 6, -5
