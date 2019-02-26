@@ -20,5 +20,12 @@
     "TD": 6.0,
     "Saf": 2.0,
     "Block": 2.0,
-    "Int": 2.0
+    "Int": 2.0,
+    "Pts Allow 0": 10.0,
+    "Pts Allow 1-6": 7.0,
+    "Pts Allow 7-13": 4.0,
+    "Pts Allow 14-20": 1.0,
+    "Pts Allow 21-27": 0.0,
+    "Pts Allow 28-34": -1.0,
+    "Pts Allow 35+": -4.0
 }
