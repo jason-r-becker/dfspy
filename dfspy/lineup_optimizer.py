@@ -1,8 +1,10 @@
 import argparse
+import json
 import os
 from collections import defaultdict
 from datetime import datetime as dt
 from datetime import timedelta
+from datetime import time
 from tabulate import tabulate
 
 import cvxpy as cp
@@ -13,6 +15,7 @@ from tqdm import tqdm
 
 from scoring import get_score
 from scrape_data import mkdir
+from scrape_schedule import get_yearly_schedule
 # %%
 
 def main():
@@ -87,6 +90,7 @@ class LineupOptimizer:
     def __init__(self, year, week):
         self.year = year
         self.week = week
+        self.schedule = get_yearly_schedule([year], [week])[year]
         self.data, self.results = self._load_data()
 
     def __repr__(self):
@@ -106,7 +110,7 @@ class LineupOptimizer:
 
         return player_dfs, results_dfs
 
-    def _get_input_data(self, league='FanDuel', type='proj'):
+    def _get_input_data(self, teams, league='FanDuel', type='proj'):
         positions = 'QB RB WR TE DST'.split()
         dfs = []
         for pos in positions:
@@ -142,9 +146,10 @@ class LineupOptimizer:
             dfs.append(jointdf)
 
         fulldf = pd.concat(dfs, axis=0).reset_index(drop=True)
-        pos_dummies = pd.get_dummies(fulldf['pos'])
-        team_dummies = pd.get_dummies(fulldf['team'])
-        finaldf = fulldf.join([pos_dummies, team_dummies],
+        fulldf1 = fulldf.loc[fulldf['team'].isin(teams)].copy()
+        pos_dummies = pd.get_dummies(fulldf1['pos'])
+        team_dummies = pd.get_dummies(fulldf1['team'])
+        finaldf = fulldf1.join([pos_dummies, team_dummies],
                     how='left').sort_values(['pos', 'team']).copy()
 
         return finaldf.reset_index(drop=True)
@@ -161,6 +166,38 @@ class LineupOptimizer:
         lp['actual'] = lp['actual'].replace(np.nan, lp['actual'].sum())
 
         return lp
+
+    def _valid_teams(self, days=['Thu', 'Sat', 'Sun', 'Mon'],
+                     start='12:00AM', end='11:59PM'):
+        """
+        Returns list of teams playing on the specified day, within the specified
+        time period.
+
+        day: str: One of 'Thu', 'Sat', 'Sun', 'Mon'
+        start: str: '1:00PM', '9:30AM', '4:25PM', ...
+        end: str: same as start
+        """
+
+        df = self.schedule
+        df1 = df.loc[df['game_day_of_week'].isin(days)].copy()
+        # start time
+        hour = int(start.split(':')[0])
+        min = int(start.split(':')[1][:2])
+        M = start[-2:]
+        tsStart = time(hour+12, min) if M == 'PM' else time(hour, min)
+        # end time
+        hour = int(end.split(':')[0])
+        min = int(end.split(':')[1][:2])
+        M = end[-2:]
+        tsEnd = time(hour+12, min) if M == 'PM' else time(hour, min)
+
+        df2 = df1[(df1['gametime']>=tsStart)&(df1['gametime']<tsEnd)].copy()
+        teams = list(df2['team'].unique())
+        with open(f'../data/.team_mappings.json', 'r') as fid:
+            team_map = json.load(fid)
+        teams = [team_map[team] for team in teams]
+        return teams
+
 
     def _save_lineups(self, lineup, type):
         path = f'../lineups/{self.year}/{self.week}/{self.league}/{self.budget}'
@@ -232,11 +269,11 @@ class LineupOptimizer:
 
     def _optimize(self, data, league, mppt, stack, n_lineups, type):
         W, obj, constraints = self._problem_setup(
-                                data,
-                                league,
-                                mppt,
-                                stack,
-                                type,
+                                data=data,
+                                league=league,
+                                mppt=mppt,
+                                stack=stack,
+                                type=type,
                                 )
 
         constraints.append(
@@ -267,15 +304,26 @@ class LineupOptimizer:
         league='FanDuel',
         type='proj',
         n_lineups=1,
-        mppt=3,
+        mppt=7,
         stack=False,
         result=False,
         save=False,
         verbose=False,
+        days=['Thu', 'Sat', 'Sun', 'Mon'],
+        start='12:00AM',
+        end='11:59PM',
         ):
 
-        data = self._get_input_data(league, type).copy()
-        lineups = self._optimize(data, league, mppt, stack, n_lineups, type)
+        teams = self._valid_teams(days, start, end)
+        data = self._get_input_data(teams, league, type).copy()
+        lineups = self._optimize(
+            data=data,
+            league=league,
+            type=type,
+            n_lineups=n_lineups,
+            mppt=mppt,
+            stack=stack,
+            )
         fmt_lineups = self._format_lineup(data, lineups, type)
 
         for i, lineup in enumerate(fmt_lineups):
@@ -296,8 +344,14 @@ class LineupOptimizer:
                 self._save_lineup(lp, type)
 
 
-# self = LineupOptimizer(2018, 2)
-# self.get_optimal_lineup(verbose=True, stack=False, type='proj', n_lineups=2)
+self = LineupOptimizer(2018, 1)
+self.get_optimal_lineup(
+    verbose=True,
+    stack=False,
+    type='proj',
+    result=True,
+    days=['Thu'],
+    )
 # self.get_optimal_lineup(verbose=True, stack=False, n_lineups=3, mppt=1)
 
 # %%
