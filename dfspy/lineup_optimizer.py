@@ -27,6 +27,9 @@ def main():
 
     optimizer.get_optimal_lineup(
         league=args.league,
+        days=args.days,
+        start=args.starttime,
+        end=args.endtime,
         type=args.type,
         n_lineups=args.n_lineups,
         mppt=args.max_players,
@@ -42,6 +45,9 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('-y', '--year', type=int, help='Year of season')
     parser.add_argument('-w', '--week', type=int, help='Week of season')
+    parser.add_argument('-d', '--days', help='Day(s) of games')
+    parser.add_argument('-ts', '--starttime', help='Start of gametimes (start)')
+    parser.add_argument('-te', '--endtime', help='End of gametimes (start)')
     parser.add_argument('-l', '--league', help='FanDuel, DraftKings, etc.')
     parser.add_argument('-n', '--n_lineups', type=int, help='Number of lineups')
     parser.add_argument('-m', '--max_players', type=int, help='Max plyrs/team')
@@ -73,6 +79,9 @@ def parse_args():
     parser.set_defaults(
         year=default_year,
         week=default_week,
+        days='Thu Sat Sun Mon',
+        starttime='12:00AM',
+        endtime='11:59PM',
         league='FanDuel',
         type='proj',
         n_lineups=1,
@@ -309,12 +318,12 @@ class LineupOptimizer:
         result=False,
         save=False,
         verbose=False,
-        days=['Thu', 'Sat', 'Sun', 'Mon'],
+        days='Thu Sat Sun Mon',
         start='12:00AM',
         end='11:59PM',
         ):
 
-        teams = self._valid_teams(days, start, end)
+        teams = self._valid_teams(days.split(), start, end)
         data = self._get_input_data(teams, league, type).copy()
         lineups = self._optimize(
             data=data,
@@ -344,15 +353,14 @@ class LineupOptimizer:
                 self._save_lineup(lp, type)
 
 
-self = LineupOptimizer(2018, 1)
-self.get_optimal_lineup(
-    verbose=True,
-    stack=False,
-    type='proj',
-    result=True,
-    days=['Thu'],
-    )
-# self.get_optimal_lineup(verbose=True, stack=False, n_lineups=3, mppt=1)
+# self = LineupOptimizer(2018, 1)
+# self.get_optimal_lineup(
+#     verbose=True,
+#     stack=False,
+#     type='proj',
+#     result=True,
+#     days='Sun Mon',
+#     )
 
 # %%
 if __name__ == '__main__':
