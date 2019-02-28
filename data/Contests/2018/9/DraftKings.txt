@@ -1,0 +1,813 @@
+NFL $3.25M Roman Fantasy Football Millionaire [$1M to 1st]	$20.00	$3,250,000	150	191,176	191,176	23%	245.42	$1,000,000	165.68	$30.00
+NFL $1.25M Play-Action [$100K to 1st]	$3.00	$1,250,000	20	495,441	0	0%		$0		$0.00
+NFL $1.2M Wildcat [$200K to 1st]	$333.00	$1,200,000	120	4,004	0	0%		$0		$0.00
+NFL $850K Luxury Box [$200K to 1st]	$3,000.00	$850,000	9	300	0	0%		$0		$0.00
+NFL $500K Power Sweep [3 Entry Max, $100K to 1st]	$150.00	$500,000	3	3,703	0	0%		$0		$0.00
+NFL $400K Slant	$9.00	$400,000	150	52,287	0	0%		$0		$0.00
+$10M Fantasy Football World Championship MEGAQualifier #	$5,425.00	$313,056	2	67	64	7%	223.00	$0	193.34	$0.00
+NFL $200K First Down	$1.00	$200,000	20	237,812	0	0%		$0		$0.00
+NFL $200K Three-Point Stance [5 Entry Max]	$33.00	$200,000	5	7,067	0	0%		$0		$0.00
+NFL $200K Spy [Single Entry, $30K to 1st]	$100.00	$200,000	1	2,222	0	0%		$0		$0.00
+NFL MASSIVE $25 Double Up	$25.00	$150,000	150	6,896	0	0%		$0		$0.00
+NFL MASSIVE $25 Double Up [Single Entry]	$25.00	$150,000	1	6,896	0	0%		$0		$0.00
+NFL $150K Week 9 Special [$30K to 1st]	$20.00	$150,000	150	8,823	0	0%		$0		$0.00
+NFL $150K Fair Catch [Single Entry]	$12.00	$150,000	1	14,705	0	0%		$0		$0.00
+NFL MASSIVE $5 Double Up	$5.00	$125,000	150	28,735	0	0%		$0		$0.00
+NFL $125K Checkdown Pass [3 Entry Max]	$777.00	$125,000	3	178	0	0%		$0		$0.00
+NFL $102K Game Changer [Single Entry]	$1,500.00	$102,000	1	72	0	0%		$0		$0.00
+NFL MASSIVE $100 Double Up [Single Entry]	$100.00	$100,000	1	1,111	0	0%		$0		$0.00
+NFL $100K Juke [3 Entry Max]	$400.00	$100,000	3	277	0	0%		$0		$0.00
+NFL $100K Spy [Single Entry, $10K to 1st]	$100.00	$100,000	1	1,111	0	0%		$0		$0.00
+NFL MASSIVE $5 Double Up	$5.00	$100,000	150	22,988	0	0%		$0		$0.00
+NFL MASSIVE $50 Double Up [Single Entry]	$50.00	$100,000	1	2,272	0	0%		$0		$0.00
+NFL $100K Pylon [Single Entry]	$3.00	$100,000	1	39,635	0	0%		$0		$0.00
+NFL $100K Thunderdome [Single Entry]	$5,300.00	$100,000	1	20	0	0%		$0		$0.00
+NFL $100K Red Zone [Single Entry]	$50.00	$100,000	1	2,272	0	0%		$0		$0.00
+NFL $100K Nickel [3 Entry Max]	$5.00	$100,000	3	23,781	0	0%		$0		$0.00
+NFL $100K Power Sweep [3 Entry Max]	$150.00	$100,000	3	740	0	0%		$0		$0.00
+NFL GIANT $10 Double Up	$10.00	$75,000	150	8,620	0	0%		$0		$0.00
+NFL $75K Flea Flicker	$5.00	$75,000	150	17,835	0	0%		$0		$0.00
+NFL GIANT $250 Double Up [Single Entry]	$250.00	$75,000	1	333	0	0%		$0		$0.00
+NFL $75K Super Booster [Top 75 Win $1,000]	$27.00	$75,000	97	3,239	0	0%		$0		$0.00
+$10M Fantasy Football World Championship Qualifier #89	$500.00	$71,811	5	167	159	7%	205.82	$0	183.34	$500.00
+$10M Fantasy Football World Championship Qualifier #86	$5.00	$70,096	150	16,669	16,669	7%	230.24	$0	182.74	$5.00
+$10M Fantasy Football World Championship Qualifier #87	$16.00	$68,991	150	5,072	5,072	6%	223.94	$0	184.04	$16.00
+$10M Fantasy Football World Championship Qualifier #88	$150.00	$68,111	16	534	534	5%	223.00	$0	190.84	$150.00
+$10M Fantasy Football World Championship Qualifier #90	$1,100.00	$65,311	2	69	68	4%	199.44	$0	197.24	$1,100.00
+$10M Fantasy Football World Championship Qualifier #91	$5,600.00	$62,611	1	13	13	8%	184.24	$0	184.24	$0.00
+NFL $60K Play-Action [$10K to 1st]	$3.00	$60,000	20	23,781	0	0%		$0		$0.00
+NFL $50K Mini-MAX [150 Max Entry]	$0.50	$50,000	150	118,906	0	0%		$0		$0.00
+NFL GIANT $25 Double Up	$25.00	$50,000	68	2,298	0	0%		$0		$0.00
+NFL $50K Engage Eight [3 Entry Max]	$8.00	$50,000	3	7,352	0	0%		$0		$0.00
+NFL GIANT $10 Double Up [Single Entry]	$10.00	$50,000	1	5,747	0	0%		$0		$0.00
+NFL GIANT $5 Double Up [Single Entry]	$5.00	$50,000	1	11,494	0	0%		$0		$0.00
+NFL GIANT $25 Double Up [Single Entry]	$25.00	$50,000	1	2,298	0	0%		$0		$0.00
+NFL $40K Quarter Jukebox [Just $0.25!]	$0.25	$40,000	20	190,249	0	0%		$0		$0.00
+NFL GIANT $1,060 50-50	$1,060.00	$40,000	1	40	0	0%		$0		$0.00
+NFL GIANT $2,120 50-50	$2,120.00	$40,000	1	20	0	0%		$0		$0.00
+NFL $36K Touchdown	$200.00	$36,000	6	200	0	0%		$0		$0.00
+NFL GIANT $100 Double Up	$100.00	$35,000	11	388	0	0%		$0		$0.00
+NFL $35K Hot Route	$100.00	$35,000	11	388	0	0%		$0		$0.00
+NFL GIANT $50 Double Up	$50.00	$35,000	23	795	0	0%		$0		$0.00
+NFL GIANT $530 50-50	$530.00	$35,000	2	70	0	0%		$0		$0.00
+NFL $35K Hail Mary	$12.00	$35,000	102	3,431	0	0%		$0		$0.00
+NFL $35K Chop Block [$5K to 1st]	$50.00	$35,000	23	795	0	0%		$0		$0.00
+NFL $30K Fair Catch [Single Entry]	$12.00	$30,000	1	2,941	0	0%		$0		$0.00
+NFL $30K Spin Move [Single Entry]	$300.00	$30,000	1	111	0	0%		$0		$0.00
+NFL $30K Stiff Arm [Single Entry]	$555.00	$30,000	1	60	0	0%		$0		$0.00
+NFL GIANT $2 Double Up	$2.00	$30,000	20	17,241	0	0%		$0		$0.00
+NFL GIANT $25 Double Up [Single Entry]	$25.00	$25,000	1	1,149	0	0%		$0		$0.00
+NFL $25K Power Sweep [3 Entry Max]	$150.00	$25,000	3	185	0	0%		$0		$0.00
+NFL GIANT $10 Double Up	$10.00	$25,000	86	2,873	0	0%		$0		$0.00
+NFL GIANT $25 Double Up [Single Entry]	$25.00	$25,000	1	1,149	0	0%		$0		$0.00
+NFL GIANT $50 Double Up [Single Entry]	$50.00	$25,000	1	568	0	0%		$0		$0.00
+NFL GIANT $250 Double Up [Single Entry]	$250.00	$25,000	1	111	0	0%		$0		$0.00
+NFL GIANT $100 Double Up [Single Entry]	$100.00	$25,000	1	277	0	0%		$0		$0.00
+NFL $25K Blind Side [Single Entry]	$27.00	$25,000	1	1,079	0	0%		$0		$0.00
+NFL GIANT $5 Double Up [Single Entry]	$5.00	$25,000	1	5,747	0	0%		$0		$0.00
+NFL $25K Red Zone [Single Entry]	$50.00	$25,000	1	568	0	0%		$0		$0.00
+NFL GIANT $25 Double Up [Single Entry]	$25.00	$25,000	1	1,149	0	0%		$0		$0.00
+NFL GIANT $10 Double Up [Single Entry]	$10.00	$25,000	1	2,873	0	0%		$0		$0.00
+NFL GIANT $250 Double Up	$250.00	$25,000	3	111	0	0%		$0		$0.00
+NFL $25K Three-Point Stance [3 Entry Max]	$33.00	$25,000	3	883	0	0%		$0		$0.00
+NFL $20K Super Booster [Top 200 Win $100]	$4.00	$20,000	20	5,882	0	0%		$0		$0.00
+NFL $20K First Down [20 Entry Max]	$1.00	$20,000	20	23,781	0	0%		$0		$0.00
+NFL $20K Mini-MAX [150 Max Entry]	$0.50	$20,000	150	47,562	0	0%		$0		$0.00
+NFL $20K Singleback [3 Entry Max]	$1.00	$20,000	3	23,781	0	0%		$0		$0.00
+NFL Single Entry $5 Double Up	$5.00	$15,000	1	3,448	0	0%		$0		$0.00
+NFL $15K Fair Catch [Single Entry]	$12.00	$15,000	1	1,470	0	0%		$0		$0.00
+NFL $15K Safety	$2.00	$15,000	20	8,917	0	0%		$0		$0.00
+NFL $15K Spy [Single Entry]	$100.00	$15,000	1	166	0	0%		$0		$0.00
+NFL $15K Post Pattern	$8.00	$15,000	65	2,205	0	0%		$0		$0.00
+NFL $14.2K Luxury Box [Single Entry]	$1,500.00	$14,200	1	10	0	0%		$0		$0.00
+$2.5M Sports Betting National Championship Qualifier [$1M to 1st	$27.00	$13,130	17	567	567	4%	225.24	$0	194.04	$0.00
+NFL $25 Double Up	$25.00	$12,000	16	551	0	0%		$0		$0.00
+NFL Single Entry $5 Double Up	$5.00	$10,000	1	2,298	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [500x]	$1.00	$10,000	20	11,890	11,890	4%	241.24	$0	187.24	$0.00
+NFL $10K Blind Side [Single Entry]	$27.00	$10,000	1	431	0	0%		$0		$0.00
+NFL Single Entry $25 Double Up	$25.00	$10,000	1	459	0	0%		$0		$0.00
+NFL $10K Daily Dollar [Single Entry]	$1.00	$10,000	1	11,890	0	0%		$0		$0.00
+NFL BIG 10x Booster [Top 500 Win $20]	$2.00	$10,000	20	5,882	0	0%		$0		$0.00
+NFL $10K Red Zone [Single Entry]	$50.00	$10,000	1	227	0	0%		$0		$0.00
+NFL Single Entry $2 Double Up	$2.00	$10,000	1	5,747	0	0%		$0		$0.00
+NFL $10K Three-Point Stance [3 Entry Max]	$33.00	$10,000	3	353	0	0%		$0		$0.00
+NFL Single Entry $10 Double Up	$10.00	$10,000	1	1,149	0	0%		$0		$0.00
+NFL Single Entry $100 Double Up	$100.00	$10,000	1	111	0	0%		$0		$0.00
+NFL $530 50-50 [Top 50% Win]	$530.00	$10,000	1	20	0	0%		$0		$0.00
+NFL $530 50-50 [Top 50% Win]	$530.00	$10,000	1	20	0	0%		$0		$0.00
+NFL $1,060 50-50 [Top 50% Win]	$1,060.00	$10,000	1	10	0	0%		$0		$0.00
+NFL Single Entry $100 Double Up	$100.00	$10,000	1	111	0	0%		$0		$0.00
+NFL $10K Engage Eight [3 Entry Max]	$8.00	$10,000	3	1,470	0	0%		$0		$0.00
+NFL $1,060 50-50 [Top 50% Win]	$1,060.00	$10,000	1	10	0	0%		$0		$0.00
+$50 50-50 ***	$50.00	$9,000	1	200	0	0%		$0		$0.00
+NFL $1M King of the Beach Qualifier #131	$20.00	$8,598	5	505	505	6%	225.54	$0	183.94	$30.00
+NFL $1M King of the Beach Qualifier #130	$20.00	$8,598	5	505	505	6%	225.54	$0	188.04	$30.00
+NFL $1M King of the Beach Qualifier #128	$4.00	$8,558	5	2,543	2,543	5%	217.14	$0	188.40	$6.00
+NFL $1M King of the Beach Qualifier #129	$12.00	$8,538	5	837	837	5%	221.94	$0	190.44	$20.00
+NFL $8K Stiff Arm [Single Entry]	$555.00	$8,000	1	16	0	0%		$0		$0.00
+NFL $6K Hail Mary	$12.00	$6,000	17	588	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$6,000	20	689	0	0%		$0		$0.00
+NFL Single Entry $50 Double Up	$50.00	$6,000	1	136	0	0%		$0		$0.00
+NFL Single Entry $50 Double Up	$50.00	$6,000	1	136	0	0%		$0		$0.00
+NFL $5,600 FFWC Qualifier Satellite	$565.00	$5,600	1	11	11	9%	184.34	$0	184.34	$0.00
+NFL $530 50-50 [Top 50% Win]	$530.00	$5,000	1	10	0	0%		$0		$0.00
+NFL $530 50-50 [Top 50% Win]	$530.00	$5,000	1	10	0	0%		$0		$0.00
+NFL $5K Mini Slant	$9.00	$5,000	19	653	0	0%		$0		$0.00
+NFL $5K Mini Gridiron	$27.00	$5,000	6	215	0	0%		$0		$0.00
+NFL $25 Double Up	$25.00	$5,000	6	229	0	0%		$0		$0.00
+NFL $5K Mini Play-Action	$3.00	$5,000	20	1,981	0	0%		$0		$0.00
+NFL $5K Mini Hail Mary	$12.00	$5,000	14	490	0	0%		$0		$0.00
+NFL $5K Mini Flea Flicker	$5.00	$5,000	35	1,189	0	0%		$0		$0.00
+NFL $5K Singleback [3 Entry Max]	$1.00	$5,000	3	5,945	0	0%		$0		$0.00
+NFL $5K Singleback [3 Entry Max]	$1.00	$5,000	3	5,945	0	0%		$0		$0.00
+NFL $5K Quarter Jukebox [Just $0.25!]	$0.25	$5,000	20	23,781	0	0%		$0		$0.00
+NFL Single Entry $50 Double Up	$50.00	$5,000	1	113	0	0%		$0		$0.00
+Casual NFL $5K Front Four	$4.00	$5,000	10	1,486	0	0%		$0		$0.00
+NFL $5K Quarter Jukebox [Just $0.25!]	$0.25	$5,000	20	23,781	0	0%		$0		$0.00
+NFL $5K Chop Block [3 Entry Max]	$50.00	$5,000	3	113	0	0%		$0		$0.00
+NFL $5K Hail Mary	$12.00	$5,000	14	490	0	0%		$0		$0.00
+NFL $5K Blind Side [Single Entry]	$27.00	$5,000	1	215	0	0%		$0		$0.00
+NFL Fourth Down Conversion Satellite	$410.00	$4,444	1	12	11	8%	178.84	$0	178.84	$0.00
+NFL Fourth Down Conversion Satellite	$410.00	$4,444	1	12	10	8%	173.24	$0	173.24	$0.00
+NFL Fourth Down Conversion Satellite	$5.00	$4,444	31	1,056	1,056	0%	221.70	$0	221.70	$0.00
+NFL Fourth Down Conversion Satellite	$50.00	$4,444	3	101	101	1%	200.44	$0	200.44	$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [200x]	$3.00	$4,000	20	1,585	1,585	13%	219.34	$0	174.88	$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [200x]	$0.25	$4,000	20	19,024	19,024	1%	237.30	$0	202.44	$0.00
+NFL BIG 10x Booster [Top 15 Win $250]	$25.00	$3,750	5	176	0	0%		$0		$0.00
+$4K Winner Takes All - Only 200 Participants #1	$20.00	$3,600	1	200	0	0%		$0		$0.00
+Spookyexpress.com Bonuses and Free Picks Wildcard #1	$20.00	$3,600	1	200	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$3,000	20	689	0	0%		$0		$0.00
+NFL BIG 10x Booster [Top 30 Win $100]	$10.00	$3,000	10	352	0	0%		$0		$0.00
+NFL $3K Safety	$2.00	$3,000	20	1,783	0	0%		$0		$0.00
+NFL $3K Daily Dollar [Single Entry]	$1.00	$3,000	1	3,567	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$3,000	20	1,149	0	0%		$0		$0.00
+NFL BIG 10x Booster [Top 30 Win $100]	$10.00	$3,000	10	352	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$3,000	20	689	0	0%		$0		$0.00
+NFL $3K Flea Flicker	$5.00	$3,000	21	713	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$3,000	20	689	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [150x]	$5.00	$3,000	21	713	713	21%	226.90	$0	164.42	$0.00
+Casual NFL $3K Gridiron	$27.00	$3,000	3	129	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$3,000	10	344	0	0%		$0		$0.00
+NFL BIG $25 Triple Up [Top 36 Win $75]	$25.00	$2,700	1	124	0	0%		$0		$0.00
+NFL Beginner $2.5K Play-Action	$3.00	$2,500	5	990	0	0%		$0		$0.00
+NFL BIG 10x Booster [Top 50 Win $50]	$5.00	$2,500	17	594	0	0%		$0		$0.00
+NFL $2K Nickel [3 Entry Max]	$5.00	$2,000	3	475	0	0%		$0		$0.00
+NFL $2K Safety	$2.00	$2,000	20	1,189	0	0%		$0		$0.00
+NFL $2 Double Up	$2.00	$2,000	20	1,149	0	0%		$0		$0.00
+NFL BIG 10x Booster [Top 100 Win $20]	$2.00	$2,000	20	1,189	0	0%		$0		$0.00
+NFL $10 200-Player (Top 3 Win)	$10.00	$1,800	1	200	0	0%		$0		$0.00
+Spookyexpress.com Newsletter and Bonuses Championship #1	$10.00	$1,800	1	200	0	0%		$0		$0.00
+Morning Games #1	$10.00	$1,800	1	200	0	0%		$0		$0.00
+first down #1	$10.00	$1,800	1	200	0	0%		$0		$0.00
+NFL $10 50-50 #1	$10.00	$1,800	1	200	0	0%		$0		$0.00
+NFL $10 200-Player (Top 10 Win)	$10.00	$1,800	1	200	0	0%		$0		$0.00
+NFL $10 50-50 #1	$10.00	$1,800	1	200	0	0%		$0		$0.00
+NFL $5 Double Up [3 Entry Max]	$5.00	$1,500	3	344	0	0%		$0		$0.00
+NFL $5 Double Up [3 Entry Max]	$5.00	$1,500	3	344	0	0%		$0		$0.00
+NFL $5 Double Up [3 Entry Max]	$5.00	$1,500	3	344	0	0%		$0		$0.00
+NFL $5 Double Up [3 Entry Max]	$5.00	$1,500	3	344	0	0%		$0		$0.00
+NFL $5 Double Up [3 Entry Max]	$5.00	$1,500	3	344	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+Casual NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+Casual NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+Casual NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+Beginner NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $10 Double Up	$10.00	$1,080	1	124	0	0%		$0		$0.00
+NFL $9 Winner Take All [$1K to 1st]	$9.00	$1,000	3	130	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$1,000	20	1,149	0	0%		$0		$0.00
+NFL $5 Winner Take All [$1K to 1st]	$5.00	$1,000	6	237	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$1,000	20	1,149	0	0%		$0		$0.00
+Casual NFL 10x Booster [Top 10 Win $100]	$10.00	$1,000	3	117	0	0%		$0		$0.00
+Casual NFL $1K Front Four	$4.00	$1,000	8	297	0	0%		$0		$0.00
+NFL $3 Winner Take All [$1K to 1st]	$3.00	$1,000	10	396	0	0%		$0		$0.00
+Casual NFL 10x Booster [Top 10 Win $100]	$10.00	$1,000	3	117	0	0%		$0		$0.00
+NFL $5 Winner Take All [$1K to 1st]	$5.00	$1,000	6	237	0	0%		$0		$0.00
+Beginner NFL $1K Pylon [Single Entry]	$3.00	$1,000	1	396	0	0%		$0		$0.00
+NFL $3 Contest	$3.00	$1,000	11	396	0	0%		$0		$0.00
+NFL $2 Double Up	$2.00	$1,000	17	574	0	0%		$0		$0.00
+NFL $9 Contest	$9.00	$1,000	3	130	0	0%		$0		$0.00
+NFL $5 Contest	$5.00	$1,000	7	237	0	0%		$0		$0.00
+Beginner NFL $1K First Down	$1.00	$1,000	5	1,189	0	0%		$0		$0.00
+NFL $9 Winner Take All [$1K to 1st]	$9.00	$1,000	3	130	0	0%		$0		$0.00
+NFL $3 Winner Take All [$1K to 1st]	$3.00	$1,000	10	396	0	0%		$0		$0.00
+Beginner NFL $1K Button Hook [Single Entry]	$9.00	$1,000	1	130	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $100]	$10.00	$1,000	3	117	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $100]	$10.00	$1,000	3	117	0	0%		$0		$0.00
+Casual NFL 10x Booster [Top 10 Win $100]	$10.00	$1,000	3	117	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$1,000	20	1,149	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$1,000	20	1,149	0	0%		$0		$0.00
+Beginner NFL 10x Booster [Top 10 Win $100]	$10.00	$1,000	3	117	0	0%		$0		$0.00
+NFL $3 Contest	$3.00	$1,000	11	396	0	0%		$0		$0.00
+NFL SUPERSat to NBA $1M High Flyer [3x]	$11.00	$999	3	106	0	0%		$0		$0.00
+NFL $3 Double Up [3 Entry Max]	$3.00	$900	3	344	0	0%		$0		$0.00
+NFL $5 200-Player (Top 15 Win)	$5.00	$900	1	200	0	0%		$0		$0.00
+NFL $10 Triple Up [Top 30 Win $30] (Multi-Entry)	$10.00	$900	3	103	0	0%		$0		$0.00
+NFL BIG $5 Triple Up [Top 60 Win $15]	$5.00	$900	1	206	0	0%		$0		$0.00
+NFL $5 200-Player (Top 20 Win)	$5.00	$900	1	200	0	0%		$0		$0.00
+Spookyexpress.com Free Pick and Bonuses Championship #1	$5.00	$900	1	200	0	0%		$0		$0.00
+NFL $5 50-50 #1	$5.00	$900	1	200	0	0%		$0		$0.00
+NFL $5 50-50	$5.00	$900	1	200	0	0%		$0		$0.00
+Let’s Run It	$5.00	$900	1	200	0	0%		$0		$0.00
+NFL $3 Double Up [3 Entry Max]	$3.00	$900	3	344	0	0%		$0		$0.00
+NFL $3 Double Up [3 Entry Max]	$3.00	$900	3	344	0	0%		$0		$0.00
+NFL $3 Double Up [3 Entry Max]	$3.00	$900	3	344	0	0%		$0		$0.00
+NFL $5 200-Player (Top 20 Win)	$5.00	$900	1	200	0	0%		$0		$0.00
+NFL $3 Double Up [3 Entry Max]	$3.00	$900	3	344	0	0%		$0		$0.00
+NFL $5 200-Player (Top 5 Win)	$5.00	$900	1	200	0	0%		$0		$0.00
+NFL $1 Double Up [3 Entry Max]	$1.00	$750	3	862	0	0%		$0		$0.00
+Casual NFL 10x Booster [Top 25 Win $30]	$3.00	$750	8	297	0	0%		$0		$0.00
+NFL $1 Double Up [3 Entry Max]	$1.00	$750	3	862	0	0%		$0		$0.00
+Casual NFL 10x Booster [Top 25 Win $30]	$3.00	$750	8	297	0	0%		$0		$0.00
+Beginner NFL 10x Booster [Top 25 Win $30]	$3.00	$750	3	297	0	0%		$0		$0.00
+NFL $1 Double Up [3 Entry Max]	$1.00	$750	3	862	0	0%		$0		$0.00
+NFL $5 150-Player (Top 10 Win)	$5.00	$675	1	150	0	0%		$0		$0.00
+NFL $5 Triple Up [Top 45 Win $15] (Multi-Entry)	$5.00	$675	4	155	0	0%		$0		$0.00
+NFL $5 50-50	$5.00	$675	1	150	0	0%		$0		$0.00
+NFL SUPERSat to NBA $1M High Flyer [2x]	$5.00	$666	4	158	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$600	1	229	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$600	1	229	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$600	1	229	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$600	1	229	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$600	1	229	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$600	1	229	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$600	1	229	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$600	1	229	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$600	1	229	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$600	1	229	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $3 200-Player (Top 2 Win)	$3.00	$540	1	200	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $3 50-50	$3.00	$540	1	200	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $3 50-50	$3.00	$540	1	200	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+Casual NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $3 200-Player (Winner Takes All)	$3.00	$540	1	200	0	0%		$0		$0.00
+NFL $3 200-Player (Winner Takes All)	$3.00	$540	1	200	0	0%		$0		$0.00
+NFL $3 50-50 #1	$3.00	$540	1	200	0	0%		$0		$0.00
+NFL $3 200-Player (Top 20 Win)	$3.00	$540	1	200	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+Casual NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $3 200-Player (Top 3 Win)	$3.00	$540	1	200	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $3 50-50	$3.00	$540	1	200	0	0%		$0		$0.00
+NFL $3 200-Player (Top 20 Win)	$3.00	$540	1	200	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+Beginner NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+Casual NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+NFL $5 Double Up	$5.00	$540	1	124	0	0%		$0		$0.00
+Casual NFL 10x Booster [Top 10 Win $50]	$5.00	$500	3	118	0	0%		$0		$0.00
+NFL $5 Contest	$5.00	$500	3	118	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$500 to 1st]	$0.25	$500	20	2,378	0	0%		$0		$0.00
+NFL $1 Contest	$1.00	$500	17	594	0	0%		$0		$0.00
+NFL $1 Winner Take All [$500 to 1st]	$1.00	$500	15	594	0	0%		$0		$0.00
+Beginner NFL $500 Daily Dollar [Single Entry]	$1.00	$500	1	594	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$500	20	2,378	0	0%		$0		$0.00
+NFL $5 Contest	$5.00	$500	3	118	0	0%		$0		$0.00
+NFL $1 Contest	$1.00	$500	17	594	0	0%		$0		$0.00
+NFL $5 Contest	$5.00	$500	3	118	0	0%		$0		$0.00
+NFL $1 Contest	$1.00	$500	17	594	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$500	20	2,378	0	0%		$0		$0.00
+NFL BIG 40x Micro Booster [Top 50 Win $10]	$0.25	$500	20	2,378	0	0%		$0		$0.00
+NFL $1 Winner Take All [$500 to 1st]	$1.00	$500	15	594	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $50]	$5.00	$500	3	118	0	0%		$0		$0.00
+Casual NFL 10x Booster [Top 10 Win $50]	$5.00	$500	3	118	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$500 to 1st]	$0.25	$500	20	2,378	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$500	20	2,378	0	0%		$0		$0.00
+NFL $5 Contest	$5.00	$500	3	118	0	0%		$0		$0.00
+NFL $5 Contest	$5.00	$500	3	118	0	0%		$0		$0.00
+NFL $5 Contest	$5.00	$500	3	118	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $50]	$5.00	$500	3	118	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $50]	$5.00	$500	3	118	0	0%		$0		$0.00
+NFL BIG 40x Micro Booster [Top 50 Win $10]	$0.25	$500	20	2,378	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $50]	$5.00	$500	3	118	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $50]	$5.00	$500	3	118	0	0%		$0		$0.00
+NFL 10x Booster [Top 25 Win $20]	$2.00	$500	8	297	0	0%		$0		$0.00
+NFL BIG 40x Micro Booster [Top 50 Win $10]	$0.25	$500	20	2,378	0	0%		$0		$0.00
+NFL BIG 40x Micro Booster [Top 50 Win $10]	$0.25	$500	20	2,378	0	0%		$0		$0.00
+NFL $1 Winner Take All [$500 to 1st]	$1.00	$500	15	594	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$500	20	2,378	0	0%		$0		$0.00
+Casual NFL 10x Booster [Top 10 Win $50]	$5.00	$500	3	118	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$500	20	2,378	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$500	20	2,378	0	0%		$0		$0.00
+Beginner NFL 10x Booster [Top 10 Win $50]	$5.00	$500	3	118	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $50]	$5.00	$500	3	118	0	0%		$0		$0.00
+NFL BIG $1 Triple Up [Top 150 Win $3]	$1.00	$450	1	517	0	0%		$0		$0.00
+NFL $3 50-50	$3.00	$405	1	150	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$400	1	459	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$400	1	459	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$400	1	459	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$400	1	459	0	0%		$0		$0.00
+NFL $2 50-50 #1	$2.00	$360	1	200	0	0%		$0		$0.00
+NFL $2 50-50 #1	$2.00	$360	1	200	0	0%		$0		$0.00
+NFL $2 50-50 #1 x2	$2.00	$360	1	200	0	0%		$0		$0.00
+NFL $2 200-Player (Top 20 Win)	$2.00	$360	1	200	0	0%		$0		$0.00
+NFL $2 200-Player (Top 20 Win)	$2.00	$360	1	200	0	0%		$0		$0.00
+NFL $2 200-Player (Top 5 Win)	$2.00	$360	1	200	0	0%		$0		$0.00
+NFL Satellite to NBA $1M High Flyer	$2.00	$333	5	197	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+Casual NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+Casual NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+Casual NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+Beginner NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Double Up	$3.00	$324	1	124	0	0%		$0		$0.00
+NFL $3 Contest	$3.00	$300	3	118	0	0%		$0		$0.00
+NFL $3 Contest	$3.00	$300	3	118	0	0%		$0		$0.00
+NFL $3 Contest	$3.00	$300	3	118	0	0%		$0		$0.00
+NFL $3 Contest	$3.00	$300	3	118	0	0%		$0		$0.00
+NFL $3 Contest	$3.00	$300	3	118	0	0%		$0		$0.00
+NFL $2 50-50	$2.00	$270	1	150	0	0%		$0		$0.00
+NFL $2 150-Player (Top 2 Win)	$2.00	$270	1	150	0	0%		$0		$0.00
+NFL $2 150-Player (Top 15 Win)	$2.00	$270	1	150	0	0%		$0		$0.00
+NFL $2 50-50	$2.00	$270	1	150	0	0%		$0		$0.00
+NFL $2 150-Player (Top 15 Win)	$2.00	$270	1	150	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL 40x Micro Booster [Top 20 Win $10]	$0.25	$200	20	951	0	0%		$0		$0.00
+NFL 40x Micro Booster [Top 20 Win $10]	$0.25	$200	20	951	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $20]	$2.00	$200	3	118	0	0%		$0		$0.00
+NFL 40x Micro Booster [Top 20 Win $10]	$0.25	$200	20	951	0	0%		$0		$0.00
+NFL 40x Micro Booster [Top 20 Win $10]	$0.25	$200	20	951	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $20]	$2.00	$200	3	118	0	0%		$0		$0.00
+NFL 40x Micro Booster [Top 20 Win $10]	$0.25	$200	20	951	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL 40x Micro Booster [Top 20 Win $10]	$0.25	$200	20	951	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $20]	$2.00	$200	3	118	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $20]	$2.00	$200	3	118	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $20]	$2.00	$200	3	118	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $20]	$2.00	$200	3	118	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL 40x Micro Booster [Top 20 Win $10]	$0.25	$200	20	951	0	0%		$0		$0.00
+Beginner NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Contest	$1.00	$200	7	237	0	0%		$0		$0.00
+NFL $1 Contest	$1.00	$200	7	237	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $20]	$2.00	$200	3	118	0	0%		$0		$0.00
+NFL $1 Contest	$1.00	$200	7	237	0	0%		$0		$0.00
+NFL 40x Micro Booster [Top 20 Win $10]	$0.25	$200	20	951	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $20]	$2.00	$200	3	118	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $20]	$2.00	$200	3	118	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $20]	$2.00	$200	3	118	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $20]	$2.00	$200	3	118	0	0%		$0		$0.00
+NFL $1 Contest	$1.00	$200	7	237	0	0%		$0		$0.00
+NFL 40x Micro Booster [Top 20 Win $10]	$0.25	$200	20	951	0	0%		$0		$0.00
+NFL 40x Micro Booster [Top 20 Win $10]	$0.25	$200	20	951	0	0%		$0		$0.00
+NFL $1 Contest	$1.00	$200	7	237	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $20]	$2.00	$200	3	118	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL 40x Micro Booster [Top 20 Win $10]	$0.25	$200	20	951	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL 40x Micro Booster [Top 20 Win $10]	$0.25	$200	20	951	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $20]	$2.00	$200	3	118	0	0%		$0		$0.00
+NFL 40x Micro Booster [Top 20 Win $10]	$0.25	$200	20	951	0	0%		$0		$0.00
+NFL 40x Micro Booster [Top 20 Win $10]	$0.25	$200	20	951	0	0%		$0		$0.00
+NFL $1 Contest	$1.00	$200	7	237	0	0%		$0		$0.00
+NFL 40x Micro Booster [Top 20 Win $10]	$0.25	$200	20	951	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL 40x Micro Booster [Top 20 Win $10]	$0.25	$200	20	951	0	0%		$0		$0.00
+NFL 40x Micro Booster [Top 20 Win $10]	$0.25	$200	20	951	0	0%		$0		$0.00
+NFL 40x Micro Booster [Top 20 Win $10]	$0.25	$200	20	951	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $20]	$2.00	$200	3	118	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $20]	$2.00	$200	3	118	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL 40x Micro Booster [Top 20 Win $10]	$0.25	$200	20	951	0	0%		$0		$0.00
+NFL $1 Contest	$1.00	$200	7	237	0	0%		$0		$0.00
+NFL $1 Contest	$1.00	$200	7	237	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL 10x Booster [Top 10 Win $20]	$2.00	$200	3	118	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Contest	$1.00	$200	7	237	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Contest	$1.00	$200	7	237	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$200	1	229	0	0%		$0		$0.00
+NFL $1 200-Player (Top 2 Win)	$1.00	$180	1	200	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 60 Win $3] (Multi-Entry)	$1.00	$180	6	206	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 60 Win $3] (Multi-Entry)	$1.00	$180	6	206	0	0%		$0		$0.00
+NFL $1 50-50	$1.00	$180	1	200	0	0%		$0		$0.00
+NFL $1 50-50 #1	$1.00	$180	1	200	0	0%		$0		$0.00
+NFL $1 200-Player (Winner Takes All)	$1.00	$180	1	200	0	0%		$0		$0.00
+NFL $1 200-Player (Top 3 Win)	$1.00	$180	1	200	0	0%		$0		$0.00
+NFL $1 50-50 #1	$1.00	$180	1	200	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 60 Win $3] (Multi-Entry)	$1.00	$180	6	206	0	0%		$0		$0.00
+NFL $1 200-Player (Top 2 Win)	$1.00	$180	1	200	0	0%		$0		$0.00
+NFL $1 200-Player (Top 3 Win)	$1.00	$180	1	200	0	0%		$0		$0.00
+NFL $1 200-Player (Top 3 Win)	$1.00	$180	1	200	0	0%		$0		$0.00
+Hawgball Showdown	$1.00	$180	1	200	0	0%		$0		$0.00
+NFL $1 50-50	$1.00	$180	1	200	0	0%		$0		$0.00
+NFL $1 200-Player (Top 3 Win)	$1.00	$180	1	200	0	0%		$0		$0.00
+NFL $1 200-Player (Top 5 Win)	$1.00	$180	1	200	0	0%		$0		$0.00
+NFL $1 50-50 #1	$1.00	$180	1	200	0	0%		$0		$0.00
+NFL $1 200-Player (Top 20 Win)	$1.00	$180	1	200	0	0%		$0		$0.00
+midseasonMADNESS #1	$1.00	$180	1	200	0	0%		$0		$0.00
+NFL $1 50-50	$1.00	$180	1	200	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 60 Win $3] (Multi-Entry)	$1.00	$180	6	206	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 60 Win $3] (Multi-Entry)	$1.00	$180	6	206	0	0%		$0		$0.00
+NFL $1 200-Player (Top 20 Win)	$1.00	$180	1	200	0	0%		$0		$0.00
+NFL $1 200-Player (Winner Takes All)	$1.00	$180	1	200	0	0%		$0		$0.00
+NFL $1 200-Player (Top 20 Win)	$1.00	$180	1	200	0	0%		$0		$0.00
+NFL $1 200-Player (Top 20 Win)	$1.00	$180	1	200	0	0%		$0		$0.00
+NFL $150 FFWC Qualifier Satellite	$1.00	$150	5	178	0	0%		$0		$0.00
+NFL $150 FFWC Qualifier Satellite	$1.00	$150	5	178	0	0%		$0		$0.00
+NFL $150 FFWC Qualifier Satellite	$1.00	$150	5	178	0	0%		$0		$0.00
+NFL $150 FFWC Qualifier Satellite	$1.00	$150	5	178	0	0%		$0		$0.00
+NFL $150 FFWC Qualifier Satellite	$1.00	$150	5	178	0	0%		$0		$0.00
+NFL $150 FFWC Qualifier Satellite	$1.00	$150	5	178	0	0%		$0		$0.00
+NFL $1 150-Player (Top 20 Win)	$1.00	$135	1	150	0	0%		$0		$0.00
+NFL $1 50-50	$1.00	$135	1	150	0	0%		$0		$0.00
+NFL $1 Quintuple Up [Top 25 Win $5]	$1.00	$125	1	143	0	0%		$0		$0.00
+NFL $1 Quintuple Up [Top 25 Win $5]	$1.00	$125	1	143	0	0%		$0		$0.00
+NFL $1 Quintuple Up [Top 25 Win $5]	$1.00	$125	1	143	0	0%		$0		$0.00
+NFL $1 Quintuple Up [Top 25 Win $5]	$1.00	$125	1	143	0	0%		$0		$0.00
+NFL $1 Quintuple Up [Top 25 Win $5]	$1.00	$125	1	143	0	0%		$0		$0.00
+NFL $1 Quintuple Up [Top 25 Win $5]	$1.00	$125	1	143	0	0%		$0		$0.00
+NFL $1 Quintuple Up [Top 25 Win $5]	$1.00	$125	1	143	0	0%		$0		$0.00
+NFL $1 Quintuple Up [Top 25 Win $5]	$1.00	$125	1	143	0	0%		$0		$0.00
+NFL $1 Quintuple Up [Top 25 Win $5]	$1.00	$125	1	143	0	0%		$0		$0.00
+NFL $1 Quintuple Up [Top 25 Win $5]	$1.00	$125	1	143	0	0%		$0		$0.00
+NFL $1 Quintuple Up [Top 25 Win $5]	$1.00	$125	1	143	0	0%		$0		$0.00
+NFL $1 Quintuple Up [Top 25 Win $5]	$1.00	$125	1	143	0	0%		$0		$0.00
+NFL $1 Quintuple Up [Top 25 Win $5]	$1.00	$125	1	143	0	0%		$0		$0.00
+NFL $1 Quintuple Up [Top 25 Win $5]	$1.00	$125	1	143	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+Casual NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+Casual NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+Casual NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+Casual NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+Casual NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+Casual NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+Casual NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+Casual NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+Casual NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+Casual NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+Beginner NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+NFL $1 Double Up	$1.00	$108	1	124	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL SUPERSatellite to NHL Tuesday Special [5x]	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $1 Winner Take All [$100 to 1st]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL SUPERSatellite to NHL Tuesday Special [5x]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL SUPERSatellite to NHL Tuesday Special [5x]	$0.10	$100	20	1,189	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $1 Winner Take All [$100 to 1st]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $1 Winner Take All [$100 to 1st]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL SUPERSatellite to NHL Tuesday Special [5x]	$0.10	$100	20	1,189	0	0%		$0		$0.00
+NFL SUPERSatellite to NHL Tuesday Special [5x]	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $1 Winner Take All [$100 to 1st]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $1 Winner Take All [$100 to 1st]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL $1 Winner Take All [$100 to 1st]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL $1 Winner Take All [$100 to 1st]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $1 Winner Take All [$100 to 1st]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL SUPERSatellite to NHL Tuesday Special [5x]	$0.10	$100	20	1,189	0	0%		$0		$0.00
+NFL SUPERSatellite to NHL Tuesday Special [5x]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL SUPERSatellite to NHL Tuesday Special [5x]	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $1 Winner Take All [$100 to 1st]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL $1 Winner Take All [$100 to 1st]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $1 Winner Take All [$100 to 1st]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL SUPERSatellite to NHL Tuesday Special [5x]	$0.10	$100	20	1,189	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $1 Winner Take All [$100 to 1st]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $1 Winner Take All [$100 to 1st]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $1 Winner Take All [$100 to 1st]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL SUPERSatellite to NHL Tuesday Special [5x]	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $1 Winner Take All [$100 to 1st]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL SUPERSatellite to NHL Tuesday Special [5x]	$0.10	$100	20	1,189	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $1 Winner Take All [$100 to 1st]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $1 Winner Take All [$100 to 1st]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL SUPERSatellite to NHL Tuesday Special [5x]	$0.10	$100	20	1,189	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $1 Winner Take All [$100 to 1st]	$1.00	$100	3	118	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL SUPERSatellite to NHL Tuesday Special [5x]	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL SUPERSatellite to NHL Tuesday Special [5x]	$0.10	$100	20	1,189	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL SUPERSatellite to NHL Tuesday Special [5x]	$0.10	$100	20	1,189	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL SUPERSatellite to NHL Tuesday Special [5x]	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Contest	$0.25	$100	14	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $0.25 Winner Take All [$100 to 1st]	$0.25	$100	10	475	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $1 Triple Up [Top 30 Win $3]	$1.00	$90	1	103	0	0%		$0		$0.00
+NFL $16 FFWC Qualifier SUPERSatellite [3x]	$0.25	$48	6	228	0	0%		$0		$0.00
+NFL $16 FFWC Qualifier SUPERSatellite [3x]	$0.25	$48	6	228	0	0%		$0		$0.00
+NFL $16 FFWC Qualifier SUPERSatellite [3x]	$0.25	$48	6	228	0	0%		$0		$0.00
+NFL $16 FFWC Qualifier SUPERSatellite [3x]	$0.25	$48	6	228	0	0%		$0		$0.00
+NFL $16 FFWC Qualifier SUPERSatellite [3x]	$0.25	$48	6	228	0	0%		$0		$0.00
+NFL $16 FFWC Qualifier SUPERSatellite [3x]	$0.25	$48	6	228	0	0%		$0		$0.00
+NFL $16 FFWC Qualifier SUPERSatellite [3x]	$0.25	$48	6	228	0	0%		$0		$0.00
+NFL $16 FFWC Qualifier SUPERSatellite [3x]	$0.25	$48	6	228	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL Fantasy Football Millionaire SUPERSatellite [2x]	$0.25	$40	5	190	0	0%		$0		$0.00
+NFL $5 FFWC Qualifier SUPERSatellite [6x]	$0.25	$30	4	142	0	0%		$0		$0.00
+NFL $5 FFWC Qualifier SUPERSatellite [6x]	$0.25	$30	4	142	0	0%		$0		$0.00
+NFL $5 FFWC Qualifier SUPERSatellite [6x]	$0.25	$30	4	142	0	0%		$0		$0.00
+NFL $5 FFWC Qualifier SUPERSatellite [6x]	$0.25	$30	4	142	0	0%		$0		$0.00
+NFL $5 FFWC Qualifier SUPERSatellite [6x]	$0.25	$30	4	142	0	0%		$0		$0.00
+NFL $5 FFWC Qualifier SUPERSatellite [6x]	$0.25	$30	4	142	0	0%		$0		$0.00
+NFL $5 FFWC Qualifier SUPERSatellite [6x]	$0.25	$30	4	142	0	0%		$0		$0.00
+NFL $5 FFWC Qualifier SUPERSatellite [6x]	$0.25	$30	4	142	0	0%		$0		$0.00
+NFL $5 FFWC Qualifier SUPERSatellite [6x]	$0.25	$30	4	142	0	0%		$0		$0.00
+NFL $5 FFWC Qualifier SUPERSatellite [6x]	$0.25	$30	4	142	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to $2.5M Sports Betting National Championship $27	$0.10	$27	9	321	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to South of the Border Showdown	$0.10	$11	3	130	0	0%		$0		$0.00
+NFL Satellite to EL November Friday Frenzy	$0.10	$10	3	118	0	0%		$0		$0.00
+NFL Satellite to EL November Friday Frenzy	$0.10	$10	3	118	0	0%		$0		$0.00
+NFL Satellite to EL November Friday Frenzy	$0.10	$10	3	118	0	0%		$0		$0.00
+NFL Satellite to EL November Friday Frenzy	$0.10	$10	3	118	0	0%		$0		$0.00
+NFL Satellite to EL November Friday Frenzy	$0.10	$10	3	118	0	0%		$0		$0.00
