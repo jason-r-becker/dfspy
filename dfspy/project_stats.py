@@ -94,6 +94,10 @@ class TrainProjections:
     stats: list[str]
         Statistics to be projected for specified postion.
     
+    Methods
+    -------
+    load_data(weeks): Load and impute projections for specified weeks.
+        Stat DataFrames are saved in self.stat_dfs dict with stat name keys.
     """
         
     def __init__(self, pos, year=2018, season=False):
@@ -109,6 +113,21 @@ class TrainProjections:
                 'Pass Yds', 'Pass TD', 'Pass Int', 'Rush Yds', 'Rush TD',
                 'Receptions', 'Rec Yds', 'Rec TD', '2PT',
                 ]
+        self.essential_stats = {
+            'QB': ['Pass Yds', 'Pass TD', 'Pass Int', 'Rush Yds', 'Rush TD'],
+            'RB': ['Rush Yds', 'Rush TD', 'Receptions', 'Rec Yds', 'Rec TD'],
+            'WR': ['Rush Yds', 'Rush TD', 'Receptions', 'Rec Yds', 'Rec TD'],
+            'TE': ['Receptions', 'Rec Yds', 'Rec TD'],
+            'DST': ['PA', 'YdA', 'TD', 'Sack', 'Int', 'Fum Rec'],
+            }
+        self.nonessential_stats = {
+            'QB': ['Receptions', 'Rec Yds', 'Rec TD', '2PT'],
+            'RB': ['Pass Yds', 'Pass TD', 'Pass Int', '2PT'],
+            'WR': ['Pass Yds', 'Pass TD', 'Pass Int', '2PT'],
+            'TE': ['Pass Yds', 'Pass TD', 'Pass Int',
+                   'Rush Yds', 'Rush TD', '2PT'],
+            'DST': ['Saf', 'Blk'],
+            }
         
     def load_data(self, weeks, impute_method='IterativeImpute'):
         """
@@ -117,10 +136,16 @@ class TrainProjections:
         Parameters
         ----------
         weeks: int/range/list[int]
-            
-        impute_method: {False, 'Mean', 'NuclearNorm', 'SoftImpute',
-                        'IterativeImpute','BiScalar'}, default='IterativeImpute'
+            Weeks of the season to include in DataFrame.
+        impute_method: str/bool, default='IterativeImpute'
             Imputation method for missing data.
+                - False: Do not impute missing data.
+                - 'BiScaler'
+                - 'IterativeImpute'
+                - 'IterativeSVD'
+                - 'KNN': Impute with nearest neighbors.
+                - 'Mean': Impute missing with average of other sources.
+                - 'NuclearNorm'
             
         """
         self.impute_method = impute_method
@@ -145,7 +170,7 @@ class TrainProjections:
             for stat in self.stats:
                 stats_df_lists[stat].append(week_stats_df[stat])
         
-        self._stats_df = {stat: pd.concat(
+        self.stat_dfs = {stat: pd.concat(
             stats_df_lists[stat], ignore_index=True, sort=False) \
             for stat in self.stats}
         
