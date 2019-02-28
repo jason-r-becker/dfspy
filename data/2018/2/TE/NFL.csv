@@ -27,7 +27,7 @@ Alex Ellis,KC,1.0,0.03,0.0,0.15,2.02,0.03,TE
 Rhett Ellison,NYG,1.0,0.08,0.0,1.4,12.37,0.09,TE
 Evan Engram,NYG,1.0,0.66,0.01,4.61,47.84,0.28,TE
 Zach Ertz,PHI,1.0,0.09,0.0,5.48,59.26,0.38,TE
-Gerald Everett,LA,1.0,0.06,0.0,0.48,5.92,0.04,TE
+Gerald Everett,LAR,1.0,0.06,0.0,0.48,5.92,0.04,TE
 Darren Fells,CLE,1.0,0.07,0.0,1.05,9.74,0.07,TE
 Anthony Firkser,TEN,1.0,0.05,0.0,0.38,4.51,0.04,TE
 Antonio Gates,LAC,1.0,0.02,0.0,2.15,22.89,0.15,TE
@@ -42,7 +42,7 @@ Clark Harris,CIN,1.0,0.02,0.0,0.04,0.6,0.02,TE
 Demetrius Harris,KC,1.0,0.03,0.0,1.21,12.8,0.12,TE
 Chris Herndon,NYJ,1.0,0.05,0.0,0.25,3.05,0.03,TE
 Jeff Heuerman,DEN,1.0,0.07,0.0,1.3,15.34,0.1,TE
-Tyler Higbee,LA,1.0,0.04,0.0,1.08,11.98,0.06,TE
+Tyler Higbee,LAR,1.0,0.04,0.0,1.08,11.98,0.06,TE
 Josh Hill,NO,1.0,0.04,0.0,1.22,12.31,0.08,TE
 Jacob Hollister,NE,1.0,0.15,0.0,0.23,2.9,0.02,TE
 Gabe Holmes,ARI,1.0,0.03,0.0,0.62,6.13,0.04,TE
@@ -60,10 +60,10 @@ Marcedes Lewis,GB,1.0,0.06,0.0,0.91,7.75,0.05,TE
 Chris Manhertz,CAR,1.0,0.02,0.0,0.31,2.46,0.02,TE
 Vance McDonald,PIT,1.0,0.09,0.0,2.4,24.5,0.14,TE
 David Morgan,MIN,1.0,0.02,0.0,0.61,5.7,0.05,TE
-Johnny Mundt,LA,1.0,0.03,0.0,0.47,4.24,0.03,TE
+Johnny Mundt,LAR,1.0,0.03,0.0,0.47,4.24,0.03,TE
 David Njoku,CLE,1.0,0.04,0.0,2.67,30.74,0.25,TE
 James O'Shaughnessy,JAX,1.0,0.02,0.0,1.08,10.9,0.07,TE
-Niles Paul,,1.0,0.56,0.0,0.5,5.79,0.05,TE
+Niles Paul,FA,1.0,0.56,0.0,0.5,5.79,0.05,TE
 Logan Paulsen,ATL,1.0,0.03,0.0,0.06,0.78,0.01,TE
 Josh Perkins,PHI,1.0,0.03,0.0,0.12,1.59,0.01,TE
 Jordan Reed,WAS,1.0,0.07,0.0,4.65,49.42,0.41,TE

@@ -1,13 +1,13 @@
 Player,Team,Salary
-Jameis Winston,TAM,5800
-Patrick Mahomes II,KAN,6900
-Aaron Rodgers,GNB,6600
+Jameis Winston,TB,5800
+Patrick Mahomes,KC,6900
+Aaron Rodgers,GB,6600
 Mitchell Trubisky,CHI,5300
 Brock Osweiler,MIA,4300
 Matt Ryan,ATL,6800
 Dak Prescott,DAL,4700
 Andrew Luck,IND,6200
-Tom Brady,NWE,6600
+Tom Brady,NE,6600
 Ben Roethlisberger,PIT,6500
 Carson Wentz,PHI,6100
 Cam Newton,CAR,6100
@@ -15,13 +15,13 @@ Case Keenum,DEN,5500
 Russell Wilson,SEA,5700
 Kirk Cousins,MIN,6700
 Sam Darnold,NYJ,5300
-C.J. Beathard,SFO,5200
+C.J. Beathard,SF,5200
 Andy Dalton,CIN,6300
 Alex Smith,WAS,5400
 Philip Rivers,LAC,5900
 Baker Mayfield,CLE,5500
 Joe Flacco,BAL,5200
-Blake Bortles,JAC,5600
+Blake Bortles,JAX,5600
 Eli Manning,NYG,5300
 Josh Rosen,ARI,4700
 Jared Goff,LAR,6000
@@ -29,9 +29,7 @@ Deshaun Watson,HOU,6400
 Marcus Mariota,TEN,5400
 Derek Carr,OAK,5100
 Josh Allen,BUF,4700
-Nathan Peterman,BUF,4000
 Lamar Jackson,BAL,4500
 Geno Smith,LAC,4300
 Cooper Rush,DAL,4200
 Joe Webb,HOU,4000
-Chad Kelly,DEN,4500

@@ -1,12 +1,12 @@
 Player,Team,Salary
-Ryan Fitzpatrick,TAM,6200
-Drew Brees,NOR,8400
+Ryan Fitzpatrick,TB,6200
+Drew Brees,NO,8400
 Philip Rivers,LAC,7500
-Patrick Mahomes II,KAN,6700
-Aaron Rodgers,GNB,8700
+Patrick Mahomes,KC,6700
+Aaron Rodgers,GB,8700
 Tyrod Taylor,CLE,6600
 Russell Wilson,SEA,7900
-Tom Brady,NWE,8600
+Tom Brady,NE,8600
 Case Keenum,DEN,6300
 Joe Flacco,BAL,6100
 Andrew Luck,IND,7300
@@ -17,11 +17,11 @@ Andy Dalton,CIN,6800
 Jared Goff,LAR,7500
 Ryan Tannehill,MIA,6200
 Sam Darnold,NYJ,6100
-Blake Bortles,JAC,6600
+Blake Bortles,JAX,6600
 Mitchell Trubisky,CHI,6500
 Deshaun Watson,HOU,8200
 Matthew Stafford,DET,7800
-Jimmy Garoppolo,SFO,7100
+Jimmy Garoppolo,SF,7100
 Ben Roethlisberger,PIT,8000
 Matt Ryan,ATL,7000
 Derek Carr,OAK,6600
@@ -29,12 +29,7 @@ Dak Prescott,DAL,7000
 Eli Manning,NYG,6300
 Nick Foles,PHI,7400
 Josh Allen,BUF,6000
-Lamar Jackson,BAL,6100
-Sam Bradford,ARI,6400
 Blaine Gabbert,TEN,6000
 Marcus Mariota,TEN,7200
-Taysom Hill,NOR,6000
-Joe Webb,HOU,6000
 Matt Cassel,DET,6000
-DeShone Kizer,GNB,6000
-Nathan Peterman,BUF,6000
+DeShone Kizer,GB,6000

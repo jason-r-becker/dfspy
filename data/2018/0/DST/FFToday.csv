@@ -1,33 +1,33 @@
-Player,Bye,Sack,FR,INT,DefTD,PA,PaYd/G,RuYd/G,Safety,KickTD,FPts
-Jacksonville Jaguars,9,49,9,17,4,282,190.0,111.4,1,1,133.0
-Baltimore Ravens,10,39,11,19,4,308,226.3,103.4,0,1,129.0
-Los Angeles Chargers,8,44,10,16,4,321,219.4,114.4,1,1,128.0
-Philadelphia Eagles,9,41,10,17,4,297,239.3,87.6,1,1,127.0
-Los Angeles Rams,12,44,9,17,3,339,228.8,118.1,0,1,120.0
-Minnesota Vikings,10,45,8,15,3,291,208.0,96.2,1,1,117.0
-Pittsburgh Steelers,7,43,12,15,2,330,216.9,104.1,0,1,115.0
-Denver Broncos,10,38,11,13,3,376,190.4,110.6,1,1,112.0
-Houston Texans,10,40,9,14,3,365,245.3,105.3,0,1,110.0
-Detroit Lions,6,33,10,14,2,382,254.8,110.0,2,2,109.0
-New Orleans Saints,6,39,9,17,2,370,240.6,110.6,0,1,109.0
-Seattle Seahawks,7,40,11,16,2,340,219.3,111.0,1,0,108.0
-Arizona Cardinals,9,36,9,14,3,352,217.5,93.1,1,1,108.0
-Carolina Panthers,4,43,9,13,2,348,242.5,90.8,1,1,107.0
-Kansas City Chiefs,12,30,12,13,2,362,258.1,111.8,1,2,106.0
-New England Patriots,11,39,9,13,2,282,259.7,108.7,1,1,103.0
-Chicago Bears,5,39,11,9,3,360,216.3,114.6,0,1,103.0
-Tampa Bay Buccaneers,5,28,11,15,3,390,259.4,110.0,1,0,100.0
-Dallas Cowboys,8,39,11,9,2,311,242.5,90.6,0,1,97.0
-Atlanta Falcons,8,36,10,11,3,339,232.3,106.3,0,0,96.0
-Miami Dolphins,11,31,7,11,2,386,240.9,121.3,1,2,93.0
-Green Bay Packers,7,36,9,13,2,360,259.9,103.4,0,0,92.0
-Buffalo Bills,11,31,7,14,3,363,235.0,128.5,0,0,91.0
-Tennessee Titans,8,35,8,12,2,306,246.4,92.5,1,0,89.0
-Washington Redskins,4,36,7,13,1,379,229.7,129.9,0,1,88.0
-San Francisco 49ers,11,29,10,10,1,420,245.4,109.7,1,1,83.0
-Cincinnati Bengals,9,37,6,13,1,320,234.1,120.0,0,0,81.0
-New York Giants,9,31,7,11,2,400,266.8,116.1,1,0,81.0
-Cleveland Browns,11,31,7,11,1,416,232.8,108.8,0,1,79.0
-New York Jets,11,30,7,10,1,371,255.1,108.2,0,0,70.0
-Oakland Raiders,7,29,10,8,0,386,256.8,114.3,1,0,67.0
-Indianapolis Colts,9,28,6,9,1,416,265.0,122.5,1,0,66.0
+Player,POS,Team,PA,YdA,Int,Fum Rec,Sack,Saf,Bye,TD
+Jacksonville Jaguars,DST,JAX,282,4822.4,17,9,49,1,9,5
+Baltimore Ravens,DST,BAL,308,5275.200000000001,19,11,39,0,10,5
+Los Angeles Chargers,DST,LAC,321,5340.8,16,10,44,1,8,5
+Philadelphia Eagles,DST,PHI,297,5230.4,17,10,41,1,9,5
+Los Angeles Rams,DST,LAR,339,5550.4,17,9,44,0,12,4
+Minnesota Vikings,DST,MIN,291,4867.2,15,8,45,1,10,4
+Pittsburgh Steelers,DST,PIT,330,5136.0,15,12,43,0,7,3
+Denver Broncos,DST,DEN,376,4816.0,13,11,38,1,10,4
+Houston Texans,DST,HOU,365,5609.6,14,9,40,0,10,4
+Detroit Lions,DST,DET,382,5836.8,14,10,33,2,6,4
+New Orleans Saints,DST,NO,370,5619.2,17,9,39,0,6,3
+Arizona Cardinals,DST,ARI,352,4969.6,14,9,36,1,9,4
+Seattle Seahawks,DST,SEA,340,5284.8,16,11,40,1,7,2
+Carolina Panthers,DST,CAR,348,5332.8,13,9,43,1,4,3
+Kansas City Chiefs,DST,KC,362,5918.400000000001,13,12,30,1,12,4
+New England Patriots,DST,NE,282,5894.4,13,9,39,1,11,3
+Chicago Bears,DST,CHI,360,5294.4,9,11,39,0,5,4
+Tampa Bay Buccaneers,DST,TB,390,5910.4,15,11,28,1,5,3
+Dallas Cowboys,DST,DAL,311,5329.6,9,11,39,0,8,3
+Atlanta Falcons,DST,ATL,339,5417.6,11,10,36,0,8,3
+Miami Dolphins,DST,MIA,386,5795.2,11,7,31,1,11,4
+Green Bay Packers,DST,GB,360,5812.799999999999,13,9,36,0,7,2
+Buffalo Bills,DST,BUF,363,5816.0,14,7,31,0,11,3
+Tennessee Titans,DST,TEN,306,5422.4,12,8,35,1,8,2
+Washington Redskins,DST,WAS,379,5753.6,13,7,36,0,4,2
+San Francisco 49ers,DST,SF,420,5681.6,10,10,29,1,11,2
+New York Giants,DST,NYG,400,6126.4,11,7,31,1,9,2
+Cincinnati Bengals,DST,CIN,320,5665.6,13,6,37,0,9,1
+Cleveland Browns,DST,CLE,416,5465.6,11,7,31,0,11,2
+New York Jets,DST,NYJ,371,5812.8,10,7,30,0,11,1
+Oakland Raiders,DST,OAK,386,5937.6,8,10,29,1,7,0
+Indianapolis Colts,DST,IND,416,6200.0,9,6,28,1,9,1

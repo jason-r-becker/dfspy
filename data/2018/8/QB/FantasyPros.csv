@@ -1,78 +1,51 @@
-Player,ATT,CMP,YDS,TDS,INTS,ATT,YDS,TDS,FL,FPTS,POS
-Patrick Mahomes KC,35.9,22.8,290.8,2.6,0.6,3.4,13.8,0.2,0.2,22.8,QB
-Aaron Rodgers GB,40.3,25.9,303.1,2.2,0.6,3.5,18.9,0.1,0.3,21.8,QB
-Jameis Winston TB,41.2,26.3,313.5,2.0,1.0,3.5,16.5,0.1,0.2,20.6,QB
-Andrew Luck IND,41.5,26.5,297.0,2.3,1.2,3.1,12.7,0.1,0.2,20.1,QB
-Kirk Cousins MIN,38.7,25.8,301.3,2.1,0.7,2.6,8.3,0.1,0.2,19.9,QB
-Jared Goff LAR,34.6,22.8,285.3,2.2,0.8,2.3,8.2,0.1,0.2,19.6,QB
-Mitch Trubisky CHI,34.8,21.7,250.4,1.8,0.7,5.7,30.3,0.2,0.3,19.6,QB
-Ben Roethlisberger PIT,40.1,25.3,301.0,2.3,1.1,1.9,5.1,0.1,0.3,19.5,QB
-Drew Brees NO,38.0,26.3,295.6,2.0,0.5,1.4,2.1,0.1,0.2,19.3,QB
-Deshaun Watson HOU,34.3,21.3,271.8,1.7,1.1,5.9,30.7,0.2,0.3,19.2,QB
-Tom Brady NE,38.5,25.6,278.6,2.1,0.6,1.8,5.5,0.1,0.2,19.2,QB
-Russell Wilson SEA,31.6,20.3,247.4,1.9,0.5,3.3,16.8,0.1,0.3,18.0,QB
-Matthew Stafford DET,37.6,24.1,262.5,1.9,0.9,2.1,6.8,0.0,0.3,16.4,QB
-Baker Mayfield CLE,39.5,23.5,271.9,1.6,1.0,2.7,14.1,0.0,0.2,16.2,QB
-Case Keenum DEN,38.2,23.5,283.1,1.4,1.0,1.5,6.7,0.1,0.3,15.9,QB
-Joe Flacco BAL,38.0,24.3,271.2,1.6,0.9,1.9,5.4,0.0,0.2,15.8,QB
-Eli Manning NYG,38.2,23.9,264.3,1.6,0.8,1.6,4.0,0.0,0.2,15.2,QB
-Derek Carr OAK,37.1,24.0,264.0,1.6,1.0,1.7,4.9,0.0,0.3,14.9,QB
-Blake Bortles JAC,32.9,19.9,227.6,1.2,1.0,3.9,22.5,0.1,0.2,13.9,QB
-C.J. Beathard SF,34.8,21.1,244.7,1.2,1.3,3.2,13.5,0.2,0.3,13.8,QB
-Brock Osweiler MIA,33.3,20.8,235.6,1.3,1.0,1.7,6.3,0.0,0.2,13.0,QB
-Josh Rosen ARI,32.2,18.7,217.9,1.2,1.0,2.1,8.3,0.0,0.2,12.2,QB
-Sam Darnold NYJ,32.8,19.7,231.0,1.2,1.2,2.2,6.1,0.1,0.3,12.0,QB
-Derek Anderson BUF,32.7,18.8,206.6,0.9,1.1,1.6,5.5,0.0,0.2,9.9,QB
-Lamar Jackson BAL,0.5,0.3,4.1,0.0,0.0,2.1,13.3,0.1,0.1,1.8,QB
-Taysom Hill NO,0.4,0.3,3.4,0.0,0.0,2.7,12.1,0.1,0.1,1.8,QB
-Cody Kessler JAC,4.8,3.0,32.5,0.1,0.2,0.3,1.0,0.0,0.1,1.6,QB
-Ryan Fitzpatrick TB,0.8,0.5,6.3,0.0,0.0,0.1,0.4,0.0,0.0,0.4,QB
-Jacoby Brissett IND,1.0,0.6,7.0,0.1,0.0,0.0,0.2,0.0,0.0,0.4,QB
-Trevor Siemian MIN,0.9,0.6,6.4,0.0,0.0,0.1,0.2,0.0,0.0,0.4,QB
-Tyrod Taylor CLE,1.0,0.5,5.6,0.0,0.0,0.1,0.7,0.0,0.0,0.4,QB
-Joshua Dobbs PIT,1.0,0.6,6.7,0.1,0.0,0.0,0.2,0.0,0.1,0.4,QB
-Brett Hundley SEA,0.7,0.5,5.1,0.0,0.0,0.1,0.2,0.0,0.0,0.3,QB
-Josh McCown NYJ,0.9,0.5,5.9,0.0,0.0,0.1,0.2,0.0,0.0,0.3,QB
-AJ McCarron OAK,0.8,0.5,5.3,0.0,0.0,0.0,0.1,0.0,0.0,0.3,QB
-Nick Foles PHI,0.9,0.5,5.2,0.0,0.0,0.1,0.3,0.0,0.0,0.3,QB
-Mike Glennon ARI,0.8,0.5,5.0,0.0,0.0,0.0,0.1,0.0,0.0,0.3,QB
-Brian Hoyer NE,0.7,0.4,4.9,0.0,0.0,0.1,0.2,0.0,0.0,0.3,QB
-Brandon Weeden HOU,0.7,0.4,4.8,0.0,0.0,0.1,0.2,0.0,0.0,0.3,QB
-Chad Henne KC,0.6,0.4,4.3,0.0,0.0,0.0,0.2,0.0,0.0,0.3,QB
-Chase Daniel CHI,0.6,0.4,4.3,0.0,0.0,0.1,0.2,0.0,0.0,0.3,QB
-Jeff Driskel CIN,0.3,0.2,2.4,0.0,0.0,0.0,0.0,0.0,0.0,0.2,QB
-Teddy Bridgewater NO,0.6,0.3,3.9,0.0,0.0,0.0,0.1,0.0,0.0,0.2,QB
-Alex Tanney NYG,0.6,0.4,3.7,0.0,0.0,0.0,0.1,0.0,0.0,0.2,QB
-Sean Mannion LAR,0.3,0.2,2.1,0.0,0.0,0.0,0.1,0.0,0.0,0.1,QB
-DeShone Kizer GB,0.4,0.2,2.3,0.0,0.0,0.0,0.2,0.0,0.0,0.1,QB
-Matt Cassel DET,0.4,0.2,1.6,0.0,0.0,0.0,0.1,0.0,0.0,0.1,QB
-Tom Savage CIN,0.2,0.2,1.8,0.0,0.0,0.0,0.0,0.0,0.0,0.1,QB
-Kevin Hogan DEN,0.2,0.1,1.2,0.0,0.0,0.0,0.2,0.0,0.0,0.1,QB
-Nick Mullens SF,0.2,0.1,1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Nathan Peterman OAK,0.2,0.1,0.9,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-David Fales MIA,0.1,0.1,0.6,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Mason Rudolph PIT,0.0,0.0,0.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Kyle Lauletta NYG,0.0,0.0,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Jake Rudock MIA,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Robert Griffin BAL,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Drew Stanton CLE,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Alex McGough JAC,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Brandon Allen LAR,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Matt Barkley BUF,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Kyle Sloter MIN,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Tanner Lee JAC,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Connor Cook DET,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Joe Webb HOU,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Joe Callahan TB,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Ryan Tannehill MIA,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Luke Falk MIA,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Tim Boyle GB,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Nate Sudfeld PHI,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Ryan Griffin HOU,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Danny Etling NE,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Davis Webb NYJ,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Josh Johnson WAS,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Quinton Flowers CIN,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Brad Kaaya IND,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-Garrett Gilbert CAR,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
-J.T. Barrett NO,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,QB
+Player,POS,Team,Pass Yds,Pass TD,Pass Int,Rush Yds,Rush TD
+Patrick Mahomes,QB,KC,290.8,2.6,0.6,13.8,0.2
+Aaron Rodgers,QB,GB,303.1,2.2,0.6,18.9,0.1
+Jameis Winston,QB,TB,313.5,2.0,1.0,16.5,0.1
+Andrew Luck,QB,IND,297.0,2.3,1.2,12.7,0.1
+Kirk Cousins,QB,MIN,301.3,2.1,0.7,8.3,0.1
+Jared Goff,QB,LAR,285.3,2.2,0.8,8.2,0.1
+Mitchell Trubisky,QB,CHI,250.4,1.8,0.7,30.3,0.2
+Ben Roethlisberger,QB,PIT,301.0,2.3,1.1,5.1,0.1
+Drew Brees,QB,NO,295.6,2.0,0.5,2.1,0.1
+Deshaun Watson,QB,HOU,271.8,1.7,1.1,30.7,0.2
+Tom Brady,QB,NE,278.6,2.1,0.6,5.5,0.1
+Russell Wilson,QB,SEA,247.4,1.9,0.5,16.8,0.1
+Matthew Stafford,QB,DET,262.5,1.9,0.9,6.8,0.0
+Baker Mayfield,QB,CLE,271.9,1.6,1.0,14.1,0.0
+Case Keenum,QB,DEN,283.1,1.4,1.0,6.7,0.1
+Joe Flacco,QB,BAL,271.2,1.6,0.9,5.4,0.0
+Eli Manning,QB,NYG,264.3,1.6,0.8,4.0,0.0
+Derek Carr,QB,OAK,264.0,1.6,1.0,4.9,0.0
+Blake Bortles,QB,JAX,227.6,1.2,1.0,22.5,0.1
+C.J. Beathard,QB,SF,244.7,1.2,1.3,13.5,0.2
+Brock Osweiler,QB,MIA,235.6,1.3,1.0,6.3,0.0
+Josh Rosen,QB,ARI,217.9,1.2,1.0,8.3,0.0
+Sam Darnold,QB,NYJ,231.0,1.2,1.2,6.1,0.1
+Derek Anderson,QB,BUF,206.6,0.9,1.1,5.5,0.0
+Lamar Jackson,QB,BAL,4.1,0.0,0.0,13.3,0.1
+Taysom Hill,QB,NO,3.4,0.0,0.0,12.1,0.1
+Cody Kessler,QB,JAX,32.5,0.1,0.2,1.0,0.0
+Ryan Fitzpatrick,QB,TB,6.3,0.0,0.0,0.4,0.0
+Jacoby Brissett,QB,IND,7.0,0.1,0.0,0.2,0.0
+Trevor Siemian,QB,MIN,6.4,0.0,0.0,0.2,0.0
+Tyrod Taylor,QB,CLE,5.6,0.0,0.0,0.7,0.0
+Joshua Dobbs,QB,PIT,6.7,0.1,0.0,0.2,0.0
+Brett Hundley,QB,SEA,5.1,0.0,0.0,0.2,0.0
+Josh McCown,QB,NYJ,5.9,0.0,0.0,0.2,0.0
+AJ McCarron,QB,OAK,5.3,0.0,0.0,0.1,0.0
+Nick Foles,QB,PHI,5.2,0.0,0.0,0.3,0.0
+Mike Glennon,QB,ARI,5.0,0.0,0.0,0.1,0.0
+Brian Hoyer,QB,NE,4.9,0.0,0.0,0.2,0.0
+Brandon Weeden,QB,HOU,4.8,0.0,0.0,0.2,0.0
+Chad Henne,QB,KC,4.3,0.0,0.0,0.2,0.0
+Chase Daniel,QB,CHI,4.3,0.0,0.0,0.2,0.0
+Jeff Driskel,QB,CIN,2.4,0.0,0.0,0.0,0.0
+Teddy Bridgewater,QB,NO,3.9,0.0,0.0,0.1,0.0
+Sean Mannion,QB,LAR,2.1,0.0,0.0,0.1,0.0
+DeShone Kizer,QB,GB,2.3,0.0,0.0,0.2,0.0
+Matt Cassel,QB,DET,1.6,0.0,0.0,0.1,0.0
+Kevin Hogan,QB,DEN,1.2,0.0,0.0,0.2,0.0
+Nathan Peterman,QB,OAK,0.9,0.0,0.0,0.0,0.0
+David Fales,QB,MIA,0.6,0.0,0.0,0.0,0.0
+Joe Webb,QB,HOU,0.0,0.0,0.0,0.0,0.0

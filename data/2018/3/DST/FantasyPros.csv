@@ -1,33 +1,33 @@
-Player,SACK,INT,FR,FF,TD,SAFETY,PA,YDS AGN,FPTS,POS
-Minnesota Vikings,2.9,1.2,0.6,0.7,0.3,0.0,13.0,246.5,9.0,DST
-Jacksonville Jaguars,2.7,1.3,0.6,1.0,0.3,0.0,15.3,270.5,9.0,DST
-Cleveland Browns,2.9,1.1,0.7,1.2,0.2,0.0,18.5,295.2,8.9,DST
-Philadelphia Eagles,2.5,1.1,0.7,1.0,0.2,0.1,18.5,312.1,8.6,DST
-Chicago Bears,3.0,0.9,0.7,1.2,0.2,0.0,15.9,272.1,8.3,DST
-Baltimore Ravens,2.3,1.1,0.6,1.1,0.2,0.0,17.3,310.0,8.1,DST
-Carolina Panthers,2.6,0.8,0.7,1.2,0.2,0.0,20.0,315.2,8.0,DST
-Houston Texans,2.3,0.9,0.6,1.0,0.2,0.0,19.7,325.7,7.7,DST
-New York Jets,2.6,0.7,0.7,1.1,0.2,0.0,18.6,301.5,7.4,DST
-Arizona Cardinals,2.4,0.8,0.7,1.0,0.1,0.1,19.5,304.8,7.4,DST
-Pittsburgh Steelers,2.6,1.0,0.7,1.0,0.2,0.0,24.1,376.3,7.4,DST
-Dallas Cowboys,2.9,0.8,0.7,1.2,0.2,0.1,20.6,339.9,7.3,DST
-Kansas City Chiefs,2.3,1.1,0.7,1.1,0.3,0.0,23.6,398.3,7.3,DST
-New York Giants,2.3,1.0,0.6,1.0,0.2,0.0,22.8,340.6,7.0,DST
-New England Patriots,2.4,1.0,0.6,0.9,0.2,0.0,21.4,359.8,6.9,DST
-Miami Dolphins,1.6,0.9,0.6,1.0,0.2,0.0,19.3,330.0,6.9,DST
-Los Angeles Rams,2.0,1.1,0.6,0.8,0.2,0.0,21.4,373.3,6.8,DST
-Tampa Bay Buccaneers,1.7,0.9,0.8,1.4,0.2,0.0,26.9,435.4,6.4,DST
-Los Angeles Chargers,2.2,0.8,0.6,1.0,0.2,0.1,28.2,385.6,6.4,DST
-Cincinnati Bengals,2.4,0.9,0.5,0.7,0.2,0.0,22.9,328.9,6.3,DST
-Green Bay Packers,2.6,0.6,0.7,1.2,0.2,0.0,22.6,356.3,6.3,DST
-Washington Redskins,2.7,0.7,0.6,0.8,0.2,0.0,22.7,337.2,6.3,DST
-Oakland Raiders,2.0,0.8,0.6,1.0,0.2,0.0,22.9,341.4,6.2,DST
-Tennessee Titans,2.0,0.8,0.6,0.9,0.2,0.0,24.8,363.2,6.1,DST
-Indianapolis Colts,2.1,0.7,0.8,1.2,0.2,0.0,27.1,383.4,6.1,DST
-Seattle Seahawks,2.2,0.8,0.6,0.8,0.2,0.0,20.7,327.7,6.1,DST
-Denver Broncos,1.9,0.8,0.6,0.9,0.2,0.0,23.0,284.8,5.8,DST
-San Francisco 49ers,2.0,0.8,0.6,0.7,0.2,0.0,30.7,382.1,5.7,DST
-New Orleans Saints,1.8,0.9,0.5,0.6,0.2,0.0,26.8,395.0,5.6,DST
-Detroit Lions,1.9,0.6,0.6,0.9,0.2,0.1,30.3,405.2,5.4,DST
-Atlanta Falcons,1.7,0.7,0.7,1.1,0.2,0.0,26.2,393.3,5.4,DST
-Buffalo Bills,1.7,0.7,0.6,0.8,0.1,0.0,27.9,374.8,5.4,DST
+Player,POS,Team,PA,YdA,Int,Fum Rec,Sack,Saf,TD
+Minnesota Vikings,DST,MIN,13.0,246.5,1.2,0.6,2.9,0.0,0.3
+Jacksonville Jaguars,DST,JAX,15.3,270.5,1.3,0.6,2.7,0.0,0.3
+Cleveland Browns,DST,CLE,18.5,295.2,1.1,0.7,2.9,0.0,0.2
+Philadelphia Eagles,DST,PHI,18.5,312.1,1.1,0.7,2.5,0.1,0.2
+Chicago Bears,DST,CHI,15.9,272.1,0.9,0.7,3.0,0.0,0.2
+Baltimore Ravens,DST,BAL,17.3,310.0,1.1,0.6,2.3,0.0,0.2
+Carolina Panthers,DST,CAR,20.0,315.2,0.8,0.7,2.6,0.0,0.2
+Houston Texans,DST,HOU,19.7,325.7,0.9,0.6,2.3,0.0,0.2
+New York Jets,DST,NYJ,18.6,301.5,0.7,0.7,2.6,0.0,0.2
+Arizona Cardinals,DST,ARI,19.5,304.8,0.8,0.7,2.4,0.1,0.1
+Pittsburgh Steelers,DST,PIT,24.1,376.3,1.0,0.7,2.6,0.0,0.2
+Dallas Cowboys,DST,DAL,20.6,339.9,0.8,0.7,2.9,0.1,0.2
+Kansas City Chiefs,DST,KC,23.6,398.3,1.1,0.7,2.3,0.0,0.3
+New York Giants,DST,NYG,22.8,340.6,1.0,0.6,2.3,0.0,0.2
+New England Patriots,DST,NE,21.4,359.8,1.0,0.6,2.4,0.0,0.2
+Miami Dolphins,DST,MIA,19.3,330.0,0.9,0.6,1.6,0.0,0.2
+Los Angeles Rams,DST,LAR,21.4,373.3,1.1,0.6,2.0,0.0,0.2
+Tampa Bay Buccaneers,DST,TB,26.9,435.4,0.9,0.8,1.7,0.0,0.2
+Los Angeles Chargers,DST,LAC,28.2,385.6,0.8,0.6,2.2,0.1,0.2
+Cincinnati Bengals,DST,CIN,22.9,328.9,0.9,0.5,2.4,0.0,0.2
+Green Bay Packers,DST,GB,22.6,356.3,0.6,0.7,2.6,0.0,0.2
+Washington Redskins,DST,WAS,22.7,337.2,0.7,0.6,2.7,0.0,0.2
+Oakland Raiders,DST,OAK,22.9,341.4,0.8,0.6,2.0,0.0,0.2
+Tennessee Titans,DST,TEN,24.8,363.2,0.8,0.6,2.0,0.0,0.2
+Indianapolis Colts,DST,IND,27.1,383.4,0.7,0.8,2.1,0.0,0.2
+Seattle Seahawks,DST,SEA,20.7,327.7,0.8,0.6,2.2,0.0,0.2
+Denver Broncos,DST,DEN,23.0,284.8,0.8,0.6,1.9,0.0,0.2
+San Francisco 49ers,DST,SF,30.7,382.1,0.8,0.6,2.0,0.0,0.2
+New Orleans Saints,DST,NO,26.8,395.0,0.9,0.5,1.8,0.0,0.2
+Detroit Lions,DST,DET,30.3,405.2,0.6,0.6,1.9,0.1,0.2
+Atlanta Falcons,DST,ATL,26.2,393.3,0.7,0.7,1.7,0.0,0.2
+Buffalo Bills,DST,BUF,27.9,374.8,0.7,0.6,1.7,0.0,0.1

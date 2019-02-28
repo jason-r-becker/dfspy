@@ -1,33 +1,33 @@
-Player,OPP,STATUS ET,TT,SCK,FF,FR,INT,ITD,FTD,PTS,POS
-Bears D/ST D/ST,@Buf,W 41-9,0,1.5,0.6,0.4,1,0.1,0,8.7,DST
-Raiders D/ST D/ST,@SF,L 3-34,0,1.8,0.5,0.3,1,0.1,0,7,DST
-Panthers D/ST D/ST,TB,W 42-28,0,2.1,0.9,0.6,1.3,0.1,0.1,6.5,DST
-Chiefs D/ST D/ST,@Cle,W 37-21,0,2.5,0.9,0.6,1,0.1,0.1,6.3,DST
-Cowboys D/ST D/ST,Ten,L 14-28,0,2,0.7,0.4,0.6,0.1,0.1,6.3,DST
-Texans D/ST D/ST,@Den,W 19-17,0,2.3,0.8,0.6,1.1,0.1,0.1,6.3,DST
-Dolphins D/ST D/ST,NYJ,W 13-6,0,1.1,0.7,0.5,1.2,0.1,0.1,6.1,DST
-Broncos D/ST D/ST,Hou,L 17-19,0,2.5,0.8,0.5,0.8,0.1,0.1,5.7,DST
-Titans D/ST D/ST,@Dal,W 28-14,0,2.1,0.8,0.5,0.5,0.1,0.1,5.6,DST
-Redskins D/ST D/ST,Atl,L 14-38,0,2.9,0.9,0.6,0.6,0.1,0.1,5.6,DST
-49ers D/ST D/ST,Oak,W 34-3,0,1.8,0.7,0.4,0.8,0.1,0.1,5.6,DST
-Ravens D/ST D/ST,Pit,L 16-23,0,1.9,0.8,0.5,1,0.1,0.1,5.3,DST
-Lions D/ST D/ST,@Min,L 9-24,0,2.7,0.8,0.5,0.6,0.1,0.1,5.3,DST
-Jets D/ST D/ST,@Mia,L 6-13,0,1,0.8,0.5,0.8,0.1,0.1,5.3,DST
-Vikings D/ST D/ST,Det,W 24-9,0,2.2,0.7,0.4,0.9,0.1,0.1,5.2,DST
-Steelers D/ST D/ST,@Bal,W 23-16,0,2.4,0.8,0.5,0.7,0.1,0.1,5.2,DST
-Chargers D/ST D/ST,@Sea,W 25-17,0,2.3,0.5,0.3,0.5,0.1,0,5.1,DST
-Patriots D/ST D/ST,GB,W 31-17,0,2.6,0.7,0.4,0.6,0.1,0.1,4.9,DST
-Bills D/ST D/ST,Chi,L 9-41,0,1.3,0.9,0.6,0.9,0.1,0.1,4.7,DST
-Seahawks D/ST D/ST,LAC,L 17-25,0,1.7,0.8,0.5,0.7,0.1,0.1,4.4,DST
-Rams D/ST D/ST,@NO,L 35-45,0,2.1,0.9,0.6,0.6,0.1,0.1,3.8,DST
-Falcons D/ST D/ST,@Wsh,W 38-14,0,1.9,0.6,0.4,0.3,0,0.1,3.4,DST
-Packers D/ST D/ST,@NE,L 17-31,0,2,0.6,0.4,0.7,0.1,0.1,3.2,DST
-Saints D/ST D/ST,LAR,W 45-35,0,1.7,0.8,0.5,0.6,0.1,0.1,3.1,DST
-Buccaneers D/ST D/ST,@Car,L 28-42,0,1.7,0.7,0.5,0.6,0.1,0.1,2.9,DST
-Browns D/ST D/ST,KC,L 21-37,0,1.7,0.9,0.6,0.8,0.1,0.1,1.9,DST
-Bengals D/ST D/ST,** BYE **,--,--,--,--,--,--,--,--,,DST
-Colts D/ST D/ST,** BYE **,--,--,--,--,--,--,--,--,,DST
-Giants D/ST D/ST,** BYE **,--,--,--,--,--,--,--,--,,DST
-Eagles D/ST D/ST,** BYE **,--,--,--,--,--,--,--,--,,DST
-Cardinals D/ST D/ST,** BYE **,--,--,--,--,--,--,--,--,,DST
-Jaguars D/ST D/ST,** BYE **,--,--,--,--,--,--,--,--,,DST
+Player,POS,Team,PA,Int,Fum Rec,Sack,Status,TD
+Chicago Bears,DST,CHI,8.7,1.0,0.4,1.5, ,0.1
+Oakland Raiders,DST,OAK,7.0,1.0,0.3,1.8, ,0.1
+Carolina Panthers,DST,CAR,6.5,1.3,0.6,2.1, ,0.2
+Kansas City Chiefs,DST,KC,6.3,1.0,0.6,2.5, ,0.2
+Dallas Cowboys,DST,DAL,6.3,0.6,0.4,2.0, ,0.2
+Houston Texans,DST,HOU,6.3,1.1,0.6,2.3, ,0.2
+Miami Dolphins,DST,MIA,6.1,1.2,0.5,1.1, ,0.2
+Denver Broncos,DST,DEN,5.7,0.8,0.5,2.5, ,0.2
+Tennessee Titans,DST,TEN,5.6,0.5,0.5,2.1, ,0.2
+Washington Redskins,DST,WAS,5.6,0.6,0.6,2.9, ,0.2
+San Francisco 49ers,DST,SF,5.6,0.8,0.4,1.8, ,0.2
+Baltimore Ravens,DST,BAL,5.3,1.0,0.5,1.9, ,0.2
+Detroit Lions,DST,DET,5.3,0.6,0.5,2.7, ,0.2
+New York Jets,DST,NYJ,5.3,0.8,0.5,1.0, ,0.2
+Minnesota Vikings,DST,MIN,5.2,0.9,0.4,2.2, ,0.2
+Pittsburgh Steelers,DST,PIT,5.2,0.7,0.5,2.4, ,0.2
+Los Angeles Chargers,DST,LAC,5.1,0.5,0.3,2.3, ,0.1
+New England Patriots,DST,NE,4.9,0.6,0.4,2.6, ,0.2
+Buffalo Bills,DST,BUF,4.7,0.9,0.6,1.3, ,0.2
+Seattle Seahawks,DST,SEA,4.4,0.7,0.5,1.7, ,0.2
+Los Angeles Rams,DST,LAR,3.8,0.6,0.6,2.1, ,0.2
+Atlanta Falcons,DST,ATL,3.4,0.3,0.4,1.9, ,0.1
+Green Bay Packers,DST,GB,3.2,0.7,0.4,2.0, ,0.2
+New Orleans Saints,DST,NO,3.1,0.6,0.5,1.7, ,0.2
+Tampa Bay Buccaneers,DST,TB,2.9,0.6,0.5,1.7, ,0.2
+Cleveland Browns,DST,CLE,1.9,0.8,0.6,1.7, ,0.2
+Cincinnati Bengals,DST,CIN,,,,, ,
+Indianapolis Colts,DST,IND,,,,, ,
+New York Giants,DST,NYG,,,,, ,
+Philadelphia Eagles,DST,PHI,,,,, ,
+Arizona Cardinals,DST,ARI,,,,, ,
+Jacksonville Jaguars,DST,JAX,,,,, ,

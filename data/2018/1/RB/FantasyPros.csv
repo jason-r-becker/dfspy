@@ -1,159 +1,100 @@
-Player,ATT,YDS,TDS,REC,YDS,TDS,FL,FPTS,POS
-Todd Gurley LAR,16.4,76.4,0.7,4.1,36.9,0.2,0.2,16.5,RB
-Melvin Gordon LAC,16.9,73.2,0.6,3.7,30.1,0.1,0.1,14.8,RB
-David Johnson ARI,18.1,72.6,0.5,4.6,39.7,0.1,0.2,14.7,RB
-Ezekiel Elliott DAL,18.0,76.3,0.6,2.6,23.1,0.1,0.1,14.0,RB
-Saquon Barkley NYG,17.6,73.5,0.4,4.5,33.6,0.2,0.1,13.9,RB
-Sony Michel NE,18.4,84.7,0.7,1.2,8.9,0.0,0.1,13.5,RB
-Leonard Fournette JAC,17.9,68.2,0.6,3.0,23.4,0.1,0.1,13.0,RB
-Alvin Kamara NO,10.8,52.4,0.4,3.7,33.0,0.3,0.1,12.7,RB
-James Conner PIT,16.0,62.5,0.7,2.4,17.4,0.1,0.1,12.4,RB
-Christian McCaffrey CAR,11.3,47.8,0.4,4.8,38.2,0.2,0.1,12.1,RB
-Devonta Freeman ATL,13.9,56.1,0.6,3.2,27.3,0.1,0.1,12.1,RB
-Joe Mixon CIN,15.2,60.9,0.6,3.0,23.6,0.1,0.1,12.0,RB
-Dalvin Cook MIN,15.9,61.2,0.5,3.4,23.2,0.1,0.1,11.9,RB
-Derrick Henry TEN,16.6,67.2,0.6,1.4,10.9,0.0,0.2,11.6,RB
-LeSean McCoy BUF,14.3,57.8,0.4,3.1,21.9,0.1,0.1,10.8,RB
-Jamaal Williams GB,15.1,62.5,0.3,2.3,17.5,0.1,0.1,10.5,RB
-Jeff Wilson SF,14.6,59.4,0.3,2.9,23.0,0.1,0.1,10.4,RB
-Jordan Howard CHI,16.0,61.3,0.5,1.8,13.7,0.0,0.1,10.3,RB
-Royce Freeman DEN,14.2,57.9,0.4,2.0,15.4,0.1,0.1,10.1,RB
-Kenyan Drake MIA,12.2,47.8,0.4,3.3,23.9,0.1,0.1,10.1,RB
-Elijah McGuire NYJ,12.7,49.5,0.3,3.4,25.6,0.1,0.1,10.0,RB
-Chris Carson SEA,14.1,61.1,0.4,1.7,12.3,0.1,0.1,9.9,RB
-Peyton Barber TB,15.0,61.6,0.3,1.8,13.3,0.0,0.1,9.4,RB
-Adrian Peterson WAS,14.7,57.2,0.5,1.3,8.8,0.0,0.2,9.3,RB
-Josh Adams PHI,13.7,58.1,0.4,1.1,7.9,0.0,0.1,9.0,RB
-Lamar Miller HOU,13.4,54.0,0.2,2.2,18.2,0.1,0.1,8.5,RB
-Rex Burkhead NE,8.5,32.8,0.5,1.9,16.3,0.1,0.0,8.2,RB
-Marlon Mack IND,10.4,49.1,0.3,1.5,10.6,0.1,0.1,7.9,RB
-Jaylen Samuels PIT,7.9,33.4,0.3,2.6,20.4,0.1,0.1,7.5,RB
-Dwayne Washington NO,11.2,43.0,0.4,1.6,8.5,0.0,0.1,7.4,RB
-James White NE,5.4,22.1,0.1,4.3,34.7,0.2,0.1,7.4,RB
-Tevin Coleman ATL,9.2,38.2,0.2,2.1,19.5,0.1,0.1,7.4,RB
-Gus Edwards BAL,9.6,43.1,0.3,0.9,8.2,0.0,0.1,7.0,RB
-Dion Lewis TEN,9.0,37.3,0.2,2.8,19.4,0.1,0.1,7.0,RB
-Carlos Hyde JAC,9.4,37.4,0.4,1.3,9.7,0.0,0.2,6.7,RB
-Tarik Cohen CHI,5.7,22.5,0.1,3.9,32.1,0.1,0.1,6.4,RB
-Rod Smith DAL,8.4,37.7,0.3,1.6,10.4,0.0,0.1,6.2,RB
-Doug Martin OAK,8.9,38.1,0.2,1.4,10.0,0.0,0.1,6.2,RB
-Devontae Booker DEN,8.1,31.0,0.1,2.6,20.1,0.1,0.1,6.1,RB
-Damien Williams KC,6.4,30.4,0.2,1.9,14.0,0.1,0.0,6.1,RB
-Keith Ford BUF,7.5,32.6,0.2,2.0,14.1,0.1,0.1,6.0,RB
-Zach Zenner DET,8.9,39.1,0.2,1.4,9.3,0.0,0.1,5.7,RB
-Nick Chubb CLE,8.9,38.5,0.2,1.0,7.4,0.0,0.1,5.7,RB
-Alfred Morris SF,7.8,31.2,0.3,0.7,5.0,0.0,0.0,5.5,RB
-Chris Thompson WAS,4.6,18.6,0.1,3.2,26.8,0.1,0.1,5.4,RB
-C.J. Anderson LAR,7.9,33.5,0.2,1.1,7.8,0.0,0.0,5.3,RB
-Nyheim Hines IND,5.7,23.2,0.1,2.5,19.0,0.1,0.1,5.3,RB
-Theo Riddick DET,3.8,14.8,0.1,4.0,27.0,0.1,0.1,5.2,RB
-Corey Clement PHI,6.5,25.8,0.2,1.4,13.9,0.1,0.2,5.0,RB
-Giovani Bernard CIN,5.8,22.9,0.1,2.4,19.5,0.1,0.1,5.0,RB
-Spencer Ware KC,6.0,28.0,0.2,1.1,10.2,0.1,0.1,5.0,RB
-Austin Ekeler LAC,5.7,24.9,0.1,1.6,14.8,0.1,0.2,5.0,RB
-Brian Hill ATL,6.5,25.9,0.2,1.6,9.7,0.1,0.1,5.0,RB
-Duke Johnson CLE,4.3,17.8,0.1,2.9,25.4,0.1,0.1,4.9,RB
-Jordan Wilkins IND,8.0,31.5,0.2,1.0,8.0,0.0,0.1,4.9,RB
-Kalen Ballage MIA,7.7,32.2,0.1,1.6,10.0,0.0,0.1,4.7,RB
-LeGarrette Blount DET,8.2,30.6,0.2,0.6,3.3,0.0,0.1,4.7,RB
-Mark Ingram NO,5.5,24.9,0.2,0.7,5.1,0.0,0.0,4.6,RB
-Latavius Murray MIN,7.8,29.2,0.2,0.9,5.7,0.0,0.1,4.5,RB
-Alfred Blue HOU,7.9,30.4,0.1,1.0,8.2,0.0,0.1,4.4,RB
-D'Onta Foreman HOU,4.3,12.0,0.1,2.5,23.1,0.1,0.0,4.4,RB
-Cordarrelle Patterson NE,1.1,8.2,0.0,2.4,23.7,0.2,0.0,4.4,RB
-Darren Sproles PHI,3.8,17.2,0.1,2.4,18.7,0.1,0.1,4.3,RB
-Jalen Richard OAK,3.5,15.0,0.1,2.6,21.7,0.1,0.1,4.2,RB
-Ty Montgomery BAL,4.1,17.9,0.1,2.0,15.2,0.0,0.0,4.2,RB
-Jacquizz Rodgers TB,4.7,20.0,0.1,1.7,12.7,0.0,0.1,3.8,RB
-T.J. Yeldon JAC,4.8,18.6,0.1,1.7,14.0,0.0,0.1,3.7,RB
-Javorius Allen BAL,4.1,16.7,0.1,1.6,11.7,0.1,0.0,3.6,RB
-Rashaad Penny SEA,5.4,22.2,0.1,1.1,7.6,0.0,0.1,3.6,RB
-Kenneth Dixon BAL,5.0,20.8,0.1,1.1,7.9,0.0,0.0,3.5,RB
-Chris Ivory BUF,5.5,20.2,0.1,0.8,7.1,0.0,0.1,3.2,RB
-Chase Edmonds ARI,4.9,19.2,0.1,1.1,7.3,0.0,0.1,3.1,RB
-Mike Davis SEA,4.4,18.1,0.1,1.3,8.2,0.0,0.1,3.0,RB
-Phillip Lindsay DEN,3.9,14.3,0.1,1.1,8.3,0.0,0.1,2.8,RB
-Cameron Artis-Payne CAR,4.0,16.3,0.1,0.5,4.5,0.0,0.0,2.6,RB
-Tavon Austin DAL,1.4,8.8,0.0,1.1,10.9,0.1,0.0,2.6,RB
-Kyle Juszczyk SF,0.7,2.8,0.0,2.2,18.6,0.1,0.1,2.5,RB
-Wendell Smallwood PHI,3.0,13.1,0.1,0.7,5.2,0.0,0.1,2.3,RB
-Wayne Gallman NYG,3.4,13.1,0.0,1.2,7.7,0.0,0.1,2.2,RB
-Stevan Ridley PIT,3.1,12.4,0.1,0.4,2.9,0.0,0.0,2.1,RB
-Trenton Cannon NYJ,2.6,10.6,0.0,1.0,7.4,0.0,0.0,2.0,RB
-Justin Jackson LAC,2.6,11.3,0.1,0.4,3.0,0.0,0.0,1.9,RB
-Darrel Williams KC,1.5,6.9,0.1,0.4,4.1,0.1,0.0,1.8,RB
-John Kelly LAR,2.5,9.8,0.1,0.4,3.3,0.0,0.0,1.6,RB
-Robert Kelley WAS,3.1,10.6,0.1,0.4,2.6,0.0,0.1,1.6,RB
-David Williams JAC,3.3,11.2,0.0,0.1,1.0,0.0,0.1,1.4,RB
-J.D. McKissic SEA,2.2,9.5,0.1,0.1,0.6,0.0,0.0,1.3,RB
-Charcandrick West KC,0.8,3.1,0.0,0.7,5.5,0.0,0.0,1.3,RB
-Detrez Newsome LAC,1.3,5.5,0.0,0.4,4.1,0.0,0.0,1.3,RB
-Jonathan Stewart NYG,2.6,10.2,0.0,0.2,1.1,0.0,0.1,1.2,RB
-Brandon Bolden MIA,1.5,6.2,0.0,0.5,3.6,0.0,0.0,1.2,RB
-Elijhaa Penny NYG,1.4,5.4,0.0,0.6,4.1,0.0,0.0,1.2,RB
-Jamize Olawale DAL,1.2,5.7,0.0,0.4,3.8,0.0,0.0,1.1,RB
-Byron Marshall WAS,0.6,3.0,0.0,1.1,8.0,0.0,0.0,1.1,RB
-DeAndre Washington OAK,1.1,4.5,0.0,0.5,3.9,0.0,0.0,1.1,RB
-Ronald Jones II TB,1.8,6.3,0.0,0.3,2.0,0.0,0.0,1.1,RB
-Kenjon Barner CAR,1.0,3.6,0.0,0.8,5.3,0.0,0.0,1.0,RB
-Dan Vitale GB,1.7,6.0,0.0,0.1,1.1,0.0,0.0,0.9,RB
-Jeremy Langford ATL,0.7,2.6,0.0,0.4,3.0,0.0,0.0,0.7,RB
-Jonathan Williams IND,1.0,3.7,0.0,0.2,1.6,0.0,0.0,0.7,RB
-Andy Janovich DEN,0.4,1.9,0.0,0.5,3.7,0.0,0.0,0.7,RB
-Dontrell Hilliard CLE,0.6,2.0,0.0,0.6,4.2,0.0,0.0,0.7,RB
-Tra Carson GB,0.9,3.6,0.0,0.3,2.3,0.0,0.0,0.6,RB
-Alex Armah CAR,1.0,2.7,0.0,0.2,1.1,0.0,0.0,0.6,RB
-Taquan Mizzell CHI,0.8,2.6,0.0,0.4,2.9,0.0,0.0,0.6,RB
-Gregory Howell HOU,0.6,2.4,0.0,0.4,2.5,0.0,0.0,0.6,RB
-Travaris Cadet CAR,0.6,2.8,0.0,0.3,2.4,0.0,0.0,0.6,RB
-Darius Jackson DAL,0.5,2.3,0.0,0.3,2.5,0.0,0.0,0.6,RB
-T.J. Logan ARI,0.9,3.6,0.0,0.4,2.4,0.0,0.0,0.6,RB
-Trey Edmunds PIT,0.7,2.8,0.0,0.3,2.2,0.0,0.0,0.6,RB
-Samaje Perine WAS,1.1,3.9,0.0,0.2,1.1,0.0,0.0,0.5,RB
-Kapri Bibbs GB,0.3,1.9,0.0,0.2,1.1,0.0,0.0,0.5,RB
-Boston Scott PHI,0.5,1.9,0.0,0.4,2.7,0.0,0.0,0.5,RB
-Patrick Ricard BAL,0.4,1.8,0.0,0.3,2.3,0.0,0.0,0.5,RB
-Tre Madden SEA,0.6,2.1,0.0,0.1,0.4,0.0,0.0,0.4,RB
-De'Lance Turner BAL,0.4,1.7,0.0,0.2,1.5,0.0,0.0,0.4,RB
-Zach Line NO,0.3,1.4,0.0,0.4,2.0,0.0,0.0,0.4,RB
-Senorise Perry MIA,0.6,2.2,0.0,0.2,1.4,0.0,0.0,0.4,RB
-Patrick DiMarco BUF,0.2,1.1,0.0,0.3,2.2,0.0,0.0,0.4,RB
-Anthony Sherman KC,0.3,1.2,0.0,0.2,1.7,0.0,0.0,0.4,RB
-James Develin NE,0.2,0.9,0.0,0.3,2.1,0.0,0.0,0.4,RB
-Ameer Abdullah MIN,0.4,1.5,0.0,0.1,1.4,0.0,0.0,0.3,RB
-Dare Ogunbowale TB,0.3,1.3,0.0,0.2,1.6,0.0,0.0,0.3,RB
-Benny Cunningham CHI,0.2,0.6,0.0,0.3,2.6,0.0,0.0,0.3,RB
-Mark Walton CIN,0.4,1.0,0.0,0.4,1.9,0.0,0.0,0.3,RB
-Nick Bellore DET,0.1,0.3,0.0,0.3,2.1,0.0,0.0,0.3,RB
-Matthew Dayes SF,0.3,1.0,0.0,0.2,1.6,0.0,0.0,0.3,RB
-Mike Boone MIN,0.4,1.3,0.0,0.1,0.3,0.0,0.0,0.3,RB
-Keith Smith OAK,0.2,0.6,0.0,0.3,2.2,0.0,0.0,0.3,RB
-Derek Watt LAC,0.2,0.8,0.0,0.2,1.5,0.0,0.0,0.3,RB
-Tommy Bohanon JAC,0.1,0.4,0.0,0.3,2.0,0.0,0.0,0.2,RB
-CJ Ham MIN,0.2,0.7,0.0,0.3,1.6,0.0,0.0,0.2,RB
-David Fluellen TEN,0.5,1.9,0.0,0.1,0.5,0.0,0.0,0.2,RB
-Roosevelt Nix PIT,0.1,0.3,0.0,0.2,1.4,0.0,0.0,0.2,RB
-Justin Davis LAR,0.5,1.4,0.0,0.0,0.2,0.0,0.0,0.2,RB
-Michael Burton CHI,0.1,0.2,0.0,0.2,1.2,0.0,0.0,0.2,RB
-Derrick Coleman ARI,0.1,0.6,0.0,0.1,0.9,0.0,0.0,0.1,RB
-Jeremy McNichols TEN,0.2,0.5,0.0,0.1,0.2,0.0,0.0,0.1,RB
-Tyler Ervin BAL,0.0,0.1,0.0,0.2,1.1,0.0,0.0,0.1,RB
-Ricky Ortiz ATL,0.0,0.0,0.0,0.2,1.1,0.0,0.0,0.1,RB
-Taiwan Jones BUF,0.1,0.5,0.0,0.0,0.2,0.0,0.0,0.1,RB
-Ryan Hewitt IND,0.0,0.0,0.0,0.0,0.1,0.0,0.0,0.0,RB
-Donnie Ernsberger TB,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,RB
-Russell Hansbrough WAS,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,RB
-Josh Ferguson HOU,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,RB
-Devante Mays CLE,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,RB
-Kerwynn Williams DET,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,RB
-Donnel Pumphrey PHI,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,RB
-Johnny Stanton MIN,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,RB
-Brandon Wilson CIN,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,RB
-Thomas Rawls JAC,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,RB
-Lavon Coleman GB,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,RB
-Khalfani Muhammad DEN,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,RB
-Dimitri Flowers JAC,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,RB
-Bo Scarbrough SEA,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,RB
-Khalid Hill SEA,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,RB
-Shane Vereen NO,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,RB
-Paul Perkins NYG,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,RB
+Player,POS,Team,Rush Yds,Rush TD,Receptions,Rec Yds,Rec TD
+Todd Gurley,RB,LAR,76.4,0.7,4.1,36.9,0.2
+Melvin Gordon,RB,LAC,73.2,0.6,3.7,30.1,0.1
+David Johnson,RB,ARI,72.6,0.5,4.6,39.7,0.1
+Ezekiel Elliott,RB,DAL,76.3,0.6,2.6,23.1,0.1
+Saquon Barkley,RB,NYG,73.5,0.4,4.5,33.6,0.2
+Sony Michel,RB,NE,84.7,0.7,1.2,8.9,0.0
+Leonard Fournette,RB,JAX,68.2,0.6,3.0,23.4,0.1
+Alvin Kamara,RB,NO,52.4,0.4,3.7,33.0,0.3
+James Conner,RB,PIT,62.5,0.7,2.4,17.4,0.1
+Christian McCaffrey,RB,CAR,47.8,0.4,4.8,38.2,0.2
+Devonta Freeman,RB,ATL,56.1,0.6,3.2,27.3,0.1
+Joe Mixon,RB,CIN,60.9,0.6,3.0,23.6,0.1
+Dalvin Cook,RB,MIN,61.2,0.5,3.4,23.2,0.1
+Derrick Henry,RB,TEN,67.2,0.6,1.4,10.9,0.0
+LeSean McCoy,RB,BUF,57.8,0.4,3.1,21.9,0.1
+Jamaal Williams,RB,GB,62.5,0.3,2.3,17.5,0.1
+Jordan Howard,RB,CHI,61.3,0.5,1.8,13.7,0.0
+Royce Freeman,RB,DEN,57.9,0.4,2.0,15.4,0.1
+Kenyan Drake,RB,MIA,47.8,0.4,3.3,23.9,0.1
+Chris Carson,RB,SEA,61.1,0.4,1.7,12.3,0.1
+Peyton Barber,RB,TB,61.6,0.3,1.8,13.3,0.0
+Adrian Peterson,RB,WAS,57.2,0.5,1.3,8.8,0.0
+Lamar Miller,RB,HOU,54.0,0.2,2.2,18.2,0.1
+Rex Burkhead,RB,NE,32.8,0.5,1.9,16.3,0.1
+Marlon Mack,RB,IND,49.1,0.3,1.5,10.6,0.1
+Jaylen Samuels,RB,PIT,33.4,0.3,2.6,20.4,0.1
+James White,RB,NE,22.1,0.1,4.3,34.7,0.2
+Tevin Coleman,RB,ATL,38.2,0.2,2.1,19.5,0.1
+Dion Lewis,RB,TEN,37.3,0.2,2.8,19.4,0.1
+Carlos Hyde,RB,JAX,37.4,0.4,1.3,9.7,0.0
+Tarik Cohen,RB,CHI,22.5,0.1,3.9,32.1,0.1
+Rod Smith,RB,DAL,37.7,0.3,1.6,10.4,0.0
+Doug Martin,RB,OAK,38.1,0.2,1.4,10.0,0.0
+Devontae Booker,RB,DEN,31.0,0.1,2.6,20.1,0.1
+Damien Williams,RB,KC,30.4,0.2,1.9,14.0,0.1
+Nick Chubb,RB,CLE,38.5,0.2,1.0,7.4,0.0
+Alfred Morris,RB,SF,31.2,0.3,0.7,5.0,0.0
+Chris Thompson,RB,WAS,18.6,0.1,3.2,26.8,0.1
+C.J. Anderson,RB,LAR,33.5,0.2,1.1,7.8,0.0
+Nyheim Hines,RB,IND,23.2,0.1,2.5,19.0,0.1
+Theo Riddick,RB,DET,14.8,0.1,4.0,27.0,0.1
+Corey Clement,RB,PHI,25.8,0.2,1.4,13.9,0.1
+Giovani Bernard,RB,CIN,22.9,0.1,2.4,19.5,0.1
+Spencer Ware,RB,KC,28.0,0.2,1.1,10.2,0.1
+Austin Ekeler,RB,LAC,24.9,0.1,1.6,14.8,0.1
+Duke Johnson,RB,CLE,17.8,0.1,2.9,25.4,0.1
+Jordan Wilkins,RB,IND,31.5,0.2,1.0,8.0,0.0
+Kalen Ballage,RB,MIA,32.2,0.1,1.6,10.0,0.0
+LeGarrette Blount,RB,DET,30.6,0.2,0.6,3.3,0.0
+Latavius Murray,RB,MIN,29.2,0.2,0.9,5.7,0.0
+Alfred Blue,RB,HOU,30.4,0.1,1.0,8.2,0.0
+Darren Sproles,RB,PHI,17.2,0.1,2.4,18.7,0.1
+Jalen Richard,RB,OAK,15.0,0.1,2.6,21.7,0.1
+Ty Montgomery,RB,BAL,17.9,0.1,2.0,15.2,0.0
+Jacquizz Rodgers,RB,TB,20.0,0.1,1.7,12.7,0.0
+T.J. Yeldon,RB,JAX,18.6,0.1,1.7,14.0,0.0
+Javorius Allen,RB,BAL,16.7,0.1,1.6,11.7,0.1
+Rashaad Penny,RB,SEA,22.2,0.1,1.1,7.6,0.0
+Kenneth Dixon,RB,BAL,20.8,0.1,1.1,7.9,0.0
+Chris Ivory,RB,BUF,20.2,0.1,0.8,7.1,0.0
+Chase Edmonds,RB,ARI,19.2,0.1,1.1,7.3,0.0
+Phillip Lindsay,RB,DEN,14.3,0.1,1.1,8.3,0.0
+Cameron Artis-Payne,RB,CAR,16.3,0.1,0.5,4.5,0.0
+Kyle Juszczyk,RB,SF,2.8,0.0,2.2,18.6,0.1
+Wendell Smallwood,RB,PHI,13.1,0.1,0.7,5.2,0.0
+Wayne Gallman,RB,NYG,13.1,0.0,1.2,7.7,0.0
+Stevan Ridley,RB,PIT,12.4,0.1,0.4,2.9,0.0
+Trenton Cannon,RB,NYJ,10.6,0.0,1.0,7.4,0.0
+John Kelly,RB,LAR,9.8,0.1,0.4,3.3,0.0
+Rob Kelley,RB,WAS,10.6,0.1,0.4,2.6,0.0
+Detrez Newsome,RB,LAC,5.5,0.0,0.4,4.1,0.0
+Jonathan Stewart,RB,NYG,10.2,0.0,0.2,1.1,0.0
+Brandon Bolden,RB,MIA,6.2,0.0,0.5,3.6,0.0
+Jamize Olawale,RB,DAL,5.7,0.0,0.4,3.8,0.0
+Ronald Jones,RB,TB,6.3,0.0,0.3,2.0,0.0
+Jonathan Williams,RB,IND,3.7,0.0,0.2,1.6,0.0
+Andy Janovich,RB,DEN,1.9,0.0,0.5,3.7,0.0
+Alex Armah,RB,CAR,2.7,0.0,0.2,1.1,0.0
+T.J. Logan,RB,ARI,3.6,0.0,0.4,2.4,0.0
+Tre Madden,RB,SEA,2.1,0.0,0.1,0.4,0.0
+Zach Line,RB,NO,1.4,0.0,0.4,2.0,0.0
+Patrick DiMarco,RB,BUF,1.1,0.0,0.3,2.2,0.0
+Anthony Sherman,RB,KC,1.2,0.0,0.2,1.7,0.0
+James Develin,RB,NE,0.9,0.0,0.3,2.1,0.0
+Ameer Abdullah,RB,MIN,1.5,0.0,0.1,1.4,0.0
+Benny Cunningham,RB,CHI,0.6,0.0,0.3,2.6,0.0
+Mark Walton,RB,CIN,1.0,0.0,0.4,1.9,0.0
+Mike Boone,RB,MIN,1.3,0.0,0.1,0.3,0.0
+Keith Smith,RB,OAK,0.6,0.0,0.3,2.2,0.0
+Derek Watt,RB,LAC,0.8,0.0,0.2,1.5,0.0
+Tommy Bohanon,RB,JAX,0.4,0.0,0.3,2.0,0.0
+C.J. Ham,RB,MIN,0.7,0.0,0.3,1.6,0.0
+David Fluellen,RB,TEN,1.9,0.0,0.1,0.5,0.0
+Roosevelt Nix,RB,PIT,0.3,0.0,0.2,1.4,0.0
+Michael Burton,RB,CHI,0.2,0.0,0.2,1.2,0.0
+Derrick Coleman,RB,ARI,0.6,0.0,0.1,0.9,0.0
+Tyler Ervin,RB,BAL,0.1,0.0,0.2,1.1,0.0
+Ricky Ortiz,RB,ATL,0.0,0.0,0.2,1.1,0.0
+Taiwan Jones,RB,BUF,0.5,0.0,0.0,0.2,0.0

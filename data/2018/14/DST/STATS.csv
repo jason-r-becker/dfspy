@@ -1,4 +1,4 @@
-Player,Team,GP,Sack,Int,Fum Rec,Fum Forc,Saf,TD,Block,Return Yds,Pts Allow,Pts Allow 1-6,Pts Allow 7-13,Pts Allow 14-20,Pts Allow 21-27,Pts Allow 28-34,Yds Allow,200-299 Yds Allow,300-399 Yds Allow,400-449 Yds Allow,500+ Yds Allow,POS
+Player,Team,GP,Sack,Int,Fum Rec,Fum Forc,Saf,TD,Blk,Return Yds,PA,Pts Allow 1-6,Pts Allow 7-13,Pts Allow 14-20,Pts Allow 21-27,Pts Allow 28-34,YdA,200-299 Yds Allow,300-399 Yds Allow,400-449 Yds Allow,500+ Yds Allow,POS
 San Francisco 49ers,SF,1.0,2.0,0.0,0.0,2.0,0.0,0.0,0.0,72.0,14.0,0.0,0.0,1.0,0.0,0.0,274.0,1.0,0.0,0.0,0.0,DST
 Chicago Bears,CHI,1.0,3.0,4.0,0.0,1.0,1.0,0.0,0.0,42.0,6.0,1.0,0.0,0.0,0.0,0.0,214.0,1.0,0.0,0.0,0.0,DST
 Cincinnati Bengals,CIN,1.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,144.0,26.0,0.0,0.0,0.0,1.0,0.0,288.0,1.0,0.0,0.0,0.0,DST
@@ -22,7 +22,7 @@ Green Bay Packers,GB,1.0,2.0,1.0,1.0,1.0,0.0,1.0,0.0,26.0,20.0,0.0,0.0,1.0,0.0,0
 Carolina Panthers,CAR,1.0,1.0,0.0,2.0,2.0,0.0,0.0,0.0,56.0,26.0,0.0,0.0,0.0,1.0,0.0,348.0,0.0,1.0,0.0,0.0,DST
 New England Patriots,NE,1.0,5.0,0.0,0.0,2.0,0.0,0.0,1.0,37.0,34.0,0.0,0.0,0.0,0.0,1.0,412.0,0.0,0.0,1.0,0.0,DST
 Oakland Raiders,OAK,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,34.0,21.0,0.0,0.0,0.0,1.0,0.0,340.0,0.0,1.0,0.0,0.0,DST
-Los Angeles Rams,LA,1.0,1.0,3.0,0.0,0.0,0.0,0.0,0.0,59.0,13.0,0.0,1.0,0.0,0.0,0.0,294.0,1.0,0.0,0.0,0.0,DST
+Los Angeles Rams,LAR,1.0,1.0,3.0,0.0,0.0,0.0,0.0,0.0,59.0,13.0,0.0,1.0,0.0,0.0,0.0,294.0,1.0,0.0,0.0,0.0,DST
 Baltimore Ravens,BAL,1.0,3.0,1.0,0.0,0.0,0.0,0.0,0.0,85.0,27.0,0.0,0.0,0.0,1.0,0.0,442.0,0.0,0.0,1.0,0.0,DST
 Washington Redskins,WAS,1.0,2.0,1.0,0.0,0.0,0.0,0.0,0.0,56.0,34.0,0.0,0.0,0.0,0.0,1.0,402.0,0.0,0.0,1.0,0.0,DST
 New Orleans Saints,NO,1.0,4.0,1.0,0.0,1.0,0.0,0.0,1.0,105.0,14.0,0.0,0.0,1.0,0.0,0.0,279.0,1.0,0.0,0.0,0.0,DST

@@ -1,0 +1,725 @@
+{
+    "QB": {
+        "BUF": [
+            "Matt Barkley"
+        ],
+        "SF": [
+            "C.J. Beathard",
+            "Nick Mullens"
+        ],
+        "NE": [
+            "Tom Brady",
+            "Brian Hoyer"
+        ],
+        "NO": [
+            "Drew Brees",
+            "Teddy Bridgewater",
+            "Taysom Hill"
+        ],
+        "OAK": [
+            "Derek Carr",
+            "AJ McCarron",
+            "Nathan Peterman"
+        ],
+        "DET": [
+            "Matt Cassel",
+            "Matthew Stafford"
+        ],
+        "MIN": [
+            "Kirk Cousins",
+            "Trevor Siemian"
+        ],
+        "CHI": [
+            "Chase Daniel",
+            "Mitchell Trubisky"
+        ],
+        "NYJ": [
+            "Sam Darnold",
+            "Josh McCown"
+        ],
+        "PIT": [
+            "Joshua Dobbs",
+            "Ben Roethlisberger"
+        ],
+        "MIA": [
+            "David Fales",
+            "Brock Osweiler"
+        ],
+        "TB": [
+            "Ryan Fitzpatrick",
+            "Jameis Winston"
+        ],
+        "BAL": [
+            "Joe Flacco",
+            "Lamar Jackson"
+        ],
+        "TEN": [
+            "Blaine Gabbert",
+            "Marcus Mariota"
+        ],
+        "LAR": [
+            "Jared Goff",
+            "Sean Mannion"
+        ],
+        "CAR": [
+            "Taylor Heinicke",
+            "Cam Newton"
+        ],
+        "KC": [
+            "Chad Henne",
+            "Patrick Mahomes"
+        ],
+        "DEN": [
+            "Kevin Hogan",
+            "Case Keenum"
+        ],
+        "SEA": [
+            "Brett Hundley",
+            "Russell Wilson"
+        ],
+        "GB": [
+            "DeShone Kizer",
+            "Aaron Rodgers"
+        ],
+        "CLE": [
+            "Baker Mayfield",
+            "Tyrod Taylor"
+        ],
+        "WAS": [
+            "Colt McCoy",
+            "Alex Smith"
+        ],
+        "DAL": [
+            "Dak Prescott",
+            "Cooper Rush"
+        ],
+        "LAC": [
+            "Philip Rivers",
+            "Geno Smith"
+        ],
+        "ATL": [
+            "Matt Ryan",
+            "Matt Schaub"
+        ],
+        "HOU": [
+            "Deshaun Watson",
+            "Joe Webb"
+        ]
+    },
+    "RB": {
+        "BAL": [
+            "Javorius Allen",
+            "Alex Collins",
+            "Tyler Ervin"
+        ],
+        "LAR": [
+            "C.J. Anderson",
+            "Malcolm Brown",
+            "Todd Gurley"
+        ],
+        "CAR": [
+            "Alex Armah",
+            "Kenjon Barner",
+            "Christian McCaffrey"
+        ],
+        "MIA": [
+            "Kalen Ballage",
+            "Brandon Bolden",
+            "Kenyan Drake",
+            "Frank Gore",
+            "Senorise Perry"
+        ],
+        "TB": [
+            "Peyton Barber",
+            "Jacquizz Rodgers",
+            "Shaun Wilson"
+        ],
+        "GB": [
+            "Kapri Bibbs",
+            "Tra Carson",
+            "Aaron Jones",
+            "Jamaal Williams"
+        ],
+        "DET": [
+            "LeGarrette Blount",
+            "Kerryon Johnson",
+            "Theo Riddick"
+        ],
+        "HOU": [
+            "Alfred Blue",
+            "Buddy Howell",
+            "Lamar Miller"
+        ],
+        "DEN": [
+            "Devontae Booker",
+            "Andy Janovich",
+            "Phillip Lindsay"
+        ],
+        "MIN": [
+            "Mike Boone",
+            "Dalvin Cook",
+            "C.J. Ham",
+            "Latavius Murray"
+        ],
+        "SF": [
+            "Matt Breida",
+            "Kyle Juszczyk",
+            "Alfred Morris",
+            "Raheem Mostert"
+        ],
+        "NYJ": [
+            "Trenton Cannon",
+            "Isaiah Crowell",
+            "Elijah McGuire"
+        ],
+        "SEA": [
+            "Chris Carson",
+            "Mike Davis",
+            "Tre Madden",
+            "Rashaad Penny"
+        ],
+        "CLE": [
+            "Nick Chubb",
+            "Dontrell Hilliard",
+            "Duke Johnson"
+        ],
+        "CHI": [
+            "Tarik Cohen",
+            "Benny Cunningham",
+            "Jordan Howard",
+            "Taquan Mizzell"
+        ],
+        "ATL": [
+            "Tevin Coleman",
+            "Ricky Ortiz",
+            "Ito Smith"
+        ],
+        "PIT": [
+            "James Conner",
+            "Roosevelt Nix",
+            "Stevan Ridley",
+            "Jaylen Samuels"
+        ],
+        "NE": [
+            "James Develin",
+            "James White"
+        ],
+        "BUF": [
+            "Patrick DiMarco",
+            "Chris Ivory",
+            "LeSean McCoy",
+            "Marcus Murphy"
+        ],
+        "LAC": [
+            "Austin Ekeler",
+            "Melvin Gordon",
+            "Justin Jackson",
+            "Derek Watt"
+        ],
+        "DAL": [
+            "Ezekiel Elliott",
+            "Jamize Olawale",
+            "Rod Smith"
+        ],
+        "TEN": [
+            "David Fluellen",
+            "Derrick Henry",
+            "Dion Lewis"
+        ],
+        "FA": [
+            "Kareem Hunt"
+        ],
+        "NO": [
+            "Mark Ingram",
+            "Alvin Kamara",
+            "Zach Line",
+            "Dwayne Washington"
+        ],
+        "OAK": [
+            "Doug Martin",
+            "Jalen Richard",
+            "Keith Smith",
+            "DeAndre Washington"
+        ],
+        "WAS": [
+            "Samaje Perine",
+            "Adrian Peterson"
+        ],
+        "KC": [
+            "Anthony Sherman",
+            "Spencer Ware",
+            "Damien Williams"
+        ]
+    },
+    "WR": {
+        "GB": [
+            "Davante Adams",
+            "Randall Cobb",
+            "Equanimeous St. Brown",
+            "Robert Tonyan",
+            "Marquez Valdes-Scantling"
+        ],
+        "LAC": [
+            "Keenan Allen",
+            "Travis Benjamin",
+            "Geremy Davis",
+            "Mike Williams",
+            "Tyrell Williams"
+        ],
+        "MIA": [
+            "Danny Amendola",
+            "Leonte Carroo",
+            "Jakeem Grant",
+            "DeVante Parker"
+        ],
+        "NYJ": [
+            "Robby Anderson",
+            "Deontay Burnett",
+            "Jermaine Kearse",
+            "Rishard Matthews",
+            "Charone Peake",
+            "Andre Roberts"
+        ],
+        "SEA": [
+            "Doug Baldwin",
+            "Jaron Brown",
+            "Tyler Lockett",
+            "David Moore"
+        ],
+        "TEN": [
+            "Cameron Batson",
+            "Corey Davis",
+            "Darius Jennings",
+            "Tajae Sharpe",
+            "Taywan Taylor"
+        ],
+        "DAL": [
+            "Cole Beasley",
+            "Amari Cooper",
+            "Michael Gallup",
+            "Allen Hurns"
+        ],
+        "CHI": [
+            "Josh Bellamy",
+            "Taylor Gabriel",
+            "Anthony Miller",
+            "Javon Wims"
+        ],
+        "KC": [
+            "Kelvin Benjamin",
+            "Chris Conley",
+            "Tyreek Hill",
+            "Marcus Kemp",
+            "Demarcus Robinson",
+            "Sammy Watkins"
+        ],
+        "SF": [
+            "Kendrick Bourne",
+            "Pierre Garcon",
+            "Marquise Goodwin",
+            "Richie James",
+            "Dante Pettis"
+        ],
+        "PIT": [
+            "Antonio Brown",
+            "Darrius Heyward-Bey",
+            "JuJu Smith-Schuster",
+            "Ryan Switzer"
+        ],
+        "BAL": [
+            "John Brown",
+            "Michael Crabtree",
+            "Chris Moore",
+            "Willie Snead"
+        ],
+        "OAK": [
+            "Martavis Bryant",
+            "Dwayne Harris",
+            "Brandon LaFell",
+            "Jordy Nelson",
+            "Seth Roberts"
+        ],
+        "CAR": [
+            "Damiere Byrd",
+            "Devin Funchess",
+            "D.J. Moore",
+            "Curtis Samuel",
+            "Jarius Wright"
+        ],
+        "CLE": [
+            "Antonio Callaway",
+            "Rashard Higgins",
+            "Jarvis Landry",
+            "Breshad Perriman",
+            "Damion Ratley"
+        ],
+        "NO": [
+            "Austin Carr",
+            "Justin Hardee",
+            "Cameron Meredith",
+            "Tre'Quan Smith",
+            "Michael Thomas"
+        ],
+        "WAS": [
+            "Jehu Chesson",
+            "Josh Doctson",
+            "Michael Floyd",
+            "Maurice Harris",
+            "Paul Richardson"
+        ],
+        "FA": [
+            "Sammie Coates",
+            "Terrelle Pryor"
+        ],
+        "LAR": [
+            "Brandin Cooks",
+            "Cooper Kupp",
+            "JoJo Natson",
+            "Josh Reynolds",
+            "Robert Woods"
+        ],
+        "NE": [
+            "Phillip Dorsett",
+            "Julian Edelman",
+            "Josh Gordon",
+            "Chris Hogan",
+            "Cordarrelle Patterson",
+            "Matthew Slater"
+        ],
+        "TB": [
+            "Mike Evans",
+            "Chris Godwin",
+            "Adam Humphries",
+            "DeSean Jackson",
+            "Justin Watson"
+        ],
+        "ATL": [
+            "Russell Gage",
+            "Marvin Hall",
+            "Justin Hardy",
+            "Julio Jones",
+            "Calvin Ridley",
+            "Mohamed Sanu"
+        ],
+        "DET": [
+            "Kenny Golladay",
+            "Marvin Jones",
+            "T.J. Jones",
+            "Brandon Powell"
+        ],
+        "DEN": [
+            "Andre Holmes",
+            "Tim Patrick",
+            "Emmanuel Sanders",
+            "Courtland Sutton"
+        ],
+        "HOU": [
+            "DeAndre Hopkins",
+            "Vyncint Smith",
+            "Demaryius Thomas"
+        ],
+        "BUF": [
+            "Zay Jones",
+            "Ray-Ray McCloud",
+            "Deonte Thompson"
+        ],
+        "MIN": [
+            "Aldrick Robinson",
+            "Adam Thielen",
+            "Laquon Treadwell",
+            "Brandon Zylstra"
+        ]
+    },
+    "TE": {
+        "HOU": [
+            "Jordan Akins",
+            "Ryan Griffin",
+            "Jordan Thomas"
+        ],
+        "NE": [
+            "Dwayne Allen"
+        ],
+        "BAL": [
+            "Mark Andrews",
+            "Nick Boyle",
+            "Hayden Hurst"
+        ],
+        "NO": [
+            "Dan Arnold",
+            "Josh Hill",
+            "Benjamin Watson"
+        ],
+        "TB": [
+            "Antony Auclair",
+            "Cameron Brate",
+            "Alan Cross",
+            "O.J. Howard"
+        ],
+        "CHI": [
+            "Daniel Brown",
+            "Trey Burton",
+            "Dion Sims"
+        ],
+        "OAK": [
+            "Derek Carrier",
+            "Jared Cook",
+            "Lee Smith"
+        ],
+        "SF": [
+            "Garrett Celek",
+            "Ross Dwelley",
+            "George Kittle"
+        ],
+        "CLE": [
+            "Orson Charles",
+            "Seth DeValve",
+            "Darren Fells",
+            "David Njoku"
+        ],
+        "BUF": [
+            "Charles Clay",
+            "Jason Croom",
+            "Logan Thomas"
+        ],
+        "MIN": [
+            "Tyler Conklin",
+            "David Morgan",
+            "Kyle Rudolph"
+        ],
+        "LAC": [
+            "Sean Culkin",
+            "Antonio Gates",
+            "Virgil Green"
+        ],
+        "ARI": [
+            "Darrell Daniels"
+        ],
+        "WAS": [
+            "Vernon Davis",
+            "Jordan Reed",
+            "Jeremy Sprinkle"
+        ],
+        "SEA": [
+            "Ed Dickson",
+            "Nick Vannett"
+        ],
+        "LAR": [
+            "Gerald Everett",
+            "Tyler Higbee"
+        ],
+        "TEN": [
+            "Anthony Firkser",
+            "MyCole Pruitt",
+            "Jonnu Smith",
+            "Luke Stocker"
+        ],
+        "DAL": [
+            "Rico Gathers",
+            "Blake Jarwin",
+            "Dalton Schultz"
+        ],
+        "MIA": [
+            "Mike Gesicki",
+            "Nick O'Leary",
+            "Durham Smythe"
+        ],
+        "GB": [
+            "Jimmy Graham",
+            "Lance Kendricks",
+            "Marcedes Lewis"
+        ],
+        "PIT": [
+            "Xavier Grimble",
+            "Jesse James",
+            "Vance McDonald"
+        ],
+        "KC": [
+            "Demetrius Harris",
+            "Travis Kelce",
+            "Deon Yelder"
+        ],
+        "NYJ": [
+            "Chris Herndon",
+            "Jordan Leggett",
+            "Eric Tomlinson"
+        ],
+        "DEN": [
+            "Jeff Heuerman",
+            "Matt LaCosse",
+            "Brian Parker"
+        ],
+        "ATL": [
+            "Austin Hooper",
+            "Logan Paulsen",
+            "Eric Saubert"
+        ],
+        "CAR": [
+            "Chris Manhertz",
+            "Greg Olsen",
+            "Ian Thomas"
+        ],
+        "DET": [
+            "Michael Roberts",
+            "Levine Toilolo",
+            "Luke Willson"
+        ]
+    },
+    "K": {
+        "MIN": [
+            "Dan Bailey"
+        ],
+        "PIT": [
+            "Chris Boswell"
+        ],
+        "KC": [
+            "Harrison Butker"
+        ],
+        "OAK": [
+            "Daniel Carlson"
+        ],
+        "CAR": [
+            "Chandler Catanzaro",
+            "Graham Gano"
+        ],
+        "GB": [
+            "Mason Crosby"
+        ],
+        "HOU": [
+            "Ka'imi Fairbairn"
+        ],
+        "NE": [
+            "Stephen Gostkowski"
+        ],
+        "SF": [
+            "Robbie Gould"
+        ],
+        "BUF": [
+            "Stephen Hauschka"
+        ],
+        "WAS": [
+            "Dustin Hopkins"
+        ],
+        "SEA": [
+            "Sebastian Janikowski"
+        ],
+        "CLE": [
+            "Greg Joseph"
+        ],
+        "NO": [
+            "Wil Lutz"
+        ],
+        "DAL": [
+            "Brett Maher"
+        ],
+        "DEN": [
+            "Brandon McManus"
+        ],
+        "NYJ": [
+            "Jason Myers"
+        ],
+        "CHI": [
+            "Cody Parkey"
+        ],
+        "DET": [
+            "Matt Prater"
+        ],
+        "MIA": [
+            "Jason Sanders"
+        ],
+        "FA": [
+            "Caleb Sturgis"
+        ],
+        "TEN": [
+            "Ryan Succop"
+        ],
+        "ATL": [
+            "Giorgio Tavecchio"
+        ],
+        "BAL": [
+            "Justin Tucker"
+        ],
+        "LAR": [
+            "Greg Zuerlein"
+        ]
+    },
+    "DST": {
+        "SF": [
+            "San Francisco 49ers"
+        ],
+        "CHI": [
+            "Chicago Bears"
+        ],
+        "BUF": [
+            "Buffalo Bills"
+        ],
+        "DEN": [
+            "Denver Broncos"
+        ],
+        "CLE": [
+            "Cleveland Browns"
+        ],
+        "TB": [
+            "Tampa Bay Buccaneers"
+        ],
+        "LAC": [
+            "Los Angeles Chargers"
+        ],
+        "KC": [
+            "Kansas City Chiefs"
+        ],
+        "DAL": [
+            "Dallas Cowboys"
+        ],
+        "MIA": [
+            "Miami Dolphins"
+        ],
+        "ATL": [
+            "Atlanta Falcons"
+        ],
+        "NYJ": [
+            "New York Jets"
+        ],
+        "DET": [
+            "Detroit Lions"
+        ],
+        "GB": [
+            "Green Bay Packers"
+        ],
+        "CAR": [
+            "Carolina Panthers"
+        ],
+        "NE": [
+            "New England Patriots"
+        ],
+        "OAK": [
+            "Oakland Raiders"
+        ],
+        "LAR": [
+            "Los Angeles Rams"
+        ],
+        "BAL": [
+            "Baltimore Ravens"
+        ],
+        "WAS": [
+            "Washington Redskins"
+        ],
+        "NO": [
+            "New Orleans Saints"
+        ],
+        "SEA": [
+            "Seattle Seahawks"
+        ],
+        "PIT": [
+            "Pittsburgh Steelers"
+        ],
+        "HOU": [
+            "Houston Texans"
+        ],
+        "TEN": [
+            "Tennessee Titans"
+        ],
+        "MIN": [
+            "Minnesota Vikings"
+        ]
+    }
+}

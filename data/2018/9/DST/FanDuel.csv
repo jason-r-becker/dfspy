@@ -1,27 +1,27 @@
 Player,Team,Salary
-Chicago,CHI,5400
-Miami,MIA,4200
-Minnesota,MIN,4100
-San Francisco,SFO,4500
-LA Chargers,LAC,3600
-Tennessee,TEN,3400
-New York J,NYJ,3700
-Dallas,DAL,4200
-Detroit,DET,3300
-Carolina,CAR,4300
-Kansas City,KAN,3900
-Atlanta,ATL,3600
-Denver,DEN,3400
-Houston,HOU,4700
-New England,NWE,3500
-Seattle,SEA,4000
-Pittsburgh,PIT,3800
-Buffalo,BUF,3000
-Green Bay,GNB,3300
-Baltimore,BAL,3500
-Cleveland,CLE,3000
-Washington,WAS,3400
-Oakland,OAK,3300
-Tampa Bay,TAM,3000
-New Orleans,NOR,3200
-LA Rams,LAR,3400
+Chicago Bears,CHI,5400
+Miami Dolphins,MIA,4200
+Minnesota Vikings,MIN,4100
+San Francisco 49ers,SF,4500
+Los Angeles Chargers,LAC,3600
+Tennessee Titans,TEN,3400
+New York Jets,NYJ,3700
+Dallas Cowboys,DAL,4200
+Detroit Lions,DET,3300
+Carolina Panthers,CAR,4300
+Kansas City Chiefs,KC,3900
+Atlanta Falcons,ATL,3600
+Denver Broncos,DEN,3400
+Houston Texans,HOU,4700
+New England Patriots,NE,3500
+Seattle Seahawks,SEA,4000
+Pittsburgh Steelers,PIT,3800
+Buffalo Bills,BUF,3000
+Green Bay Packers,GB,3300
+Baltimore Ravens,BAL,3500
+Cleveland Browns,CLE,3000
+Washington Redskins,WAS,3400
+Oakland Raiders,OAK,3300
+Tampa Bay Buccaneers,TB,3000
+New Orleans Saints,NO,3200
+Los Angeles Rams,LAR,3400

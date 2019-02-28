@@ -1,33 +1,33 @@
 Player,Team,Salary
-Buffalo,BUF,2000
-Pittsburgh,PIT,2600
-Seattle,SEA,2900
-LA Rams,LAR,3100
-Chicago,CHI,3500
-Tennessee,TEN,2300
-Carolina,CAR,2700
-Indianapolis,IND,2100
-Cleveland,CLE,3000
-Detroit,DET,2000
-Miami,MIA,2700
-Arizona,ARI,2400
-Jacksonville,JAC,4000
-Washington,WAS,2000
-New York G,NYG,2300
-Denver,DEN,2400
-Baltimore,BAL,2800
-Tampa Bay,TAM,2300
-New York J,NYJ,2500
-Houston,HOU,2800
-Kansas City,KAN,2300
-Philadelphia,PHI,3000
-Minnesota,MIN,4300
-New England,NWE,2900
-Dallas,DAL,2200
-New Orleans,NOR,2500
-Green Bay,GNB,2600
-LA Chargers,LAC,2300
-Oakland,OAK,2400
-Cincinnati,CIN,2500
-San Francisco,SFO,2100
-Atlanta,ATL,2200
+Buffalo Bills,BUF,2000
+Pittsburgh Steelers,PIT,2600
+Seattle Seahawks,SEA,2900
+Los Angeles Rams,LAR,3100
+Chicago Bears,CHI,3500
+Tennessee Titans,TEN,2300
+Carolina Panthers,CAR,2700
+Indianapolis Colts,IND,2100
+Cleveland Browns,CLE,3000
+Detroit Lions,DET,2000
+Miami Dolphins,MIA,2700
+Arizona Cardinals,ARI,2400
+Jacksonville Jaguars,JAX,4000
+Washington Redskins,WAS,2000
+New York Giants,NYG,2300
+Denver Broncos,DEN,2400
+Baltimore Ravens,BAL,2800
+Tampa Bay Buccaneers,TB,2300
+New York Jets,NYJ,2500
+Houston Texans,HOU,2800
+Kansas City Chiefs,KC,2300
+Philadelphia Eagles,PHI,3000
+Minnesota Vikings,MIN,4300
+New England Patriots,NE,2900
+Dallas Cowboys,DAL,2200
+New Orleans Saints,NO,2500
+Green Bay Packers,GB,2600
+Los Angeles Chargers,LAC,2300
+Oakland Raiders,OAK,2400
+Cincinnati Bengals,CIN,2500
+San Francisco 49ers,SF,2100
+Atlanta Falcons,ATL,2200

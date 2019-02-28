@@ -1,121 +1,65 @@
-Player,OPP,STATUS ET,C/A,YDS,TD,INT,RUSH,YDS,TD,REC,YDS,TD,PTS,POS
-"Patrick Mahomes, KC QB",@Sea,L 31-38,24.2/37.5,301,2.5,0.8,3.8,15.7,0.2,0,0,0,22.7,QB
-"Andrew Luck, Ind QB",NYG,W 28-27,24.6/37.8,271.5,2.4,1.1,2.9,13,0.1,0,0,0,19.9,QB
-"Russell Wilson, Sea QB",KC,W 38-31,18.1/27.5,217.7,2.3,0.5,4.3,23.9,0.1,0,0,0,19.8,QB
-"Aaron Rodgers, GB QB Q",@NYJ,W 44-38,23.4/37.7,284.7,1.8,0.3,3,16.7,0.1,0,0,0,19.8,QB
-"Dak Prescott, Dal QB",TB,W 27-20,21.3/32.4,246.4,1.7,0.6,4.4,23.9,0.3,0,0,0,19.7,QB
-"Drew Brees, NO QB",Pit,W 31-28,22.4/31.9,244.6,2.3,0.3,2.1,1.5,0.2,0,0,0,19.6,QB
-"Jared Goff, LAR QB",@Ari,W 31-9,23.6/37.5,287.3,1.9,0.7,3,10.5,0.1,0,0,0,19.4,QB
-"Ben Roethlisberger, Pit QB",@NO,L 28-31,27.5/42.4,322.5,1.9,1,1.8,3.3,0.1,0,0,0,19.1,QB
-"Matt Ryan, Atl QB",@Car,W 24-10,25.8/38.7,303.5,1.8,0.6,2.1,7.1,0.1,0,0,0,19,QB
-"Mitchell Trubisky, Chi QB",@SF,W 14-9,21/33,239.6,1.8,0.8,4.8,28.2,0.2,0,0,0,18.9,QB
-"Deshaun Watson, Hou QB",@Phi,L 30-32,20.4/31.4,244.5,1.5,0.8,5.3,33.5,0.1,0,0,0,18.1,QB
-"Philip Rivers, LAC QB Q",Bal,L 10-22,22.5/33.8,262.6,2,0.4,1.6,3,0,0,0,0,18,QB
-"Jameis Winston, TB QB",@Dal,L 20-27,23.7/38,291.4,1.5,1.3,5.3,23.8,0.2,0,0,0,17.8,QB
-"Baker Mayfield, Cle QB",Cin,W 26-18,20.8/33.4,245.4,1.9,0.9,3.1,11.5,0.2,0,0,0,17.7,QB
-"Kirk Cousins, Min QB",@Det,W 27-9,23.2/33.9,256.3,1.6,0.6,3.4,9.5,0.2,0,0,0,17.2,QB
-"Josh Allen, Buf QB",@NE,L 12-24,18.9/32.9,226,1,1,7.6,46.6,0.4,0,0,0,17.2,QB
-"Tom Brady, NE QB",Buf,W 24-12,23.7/36.7,268.7,1.6,0.7,1.5,1.5,0.1,0,0,0,16.5,QB
-"Nick Foles, Phi QB",Hou,W 32-30,24.1/37.1,260.5,1.7,1,2.2,5.9,0.1,0,0,0,15.9,QB
-"Ryan Tannehill, Mia QB",Jax,L 7-17,18.5/29,209.2,1.8,0.6,2.6,11.2,0.1,0,0,0,15.6,QB
-"Lamar Jackson, Bal QB",@LAC,W 22-10,14.8/25,164.9,0.8,0.7,11.5,57.6,0.3,0,0,0,15.5,QB
-"Case Keenum, Den QB",@Oak,L 14-27,21.8/34.8,251.1,1.5,0.8,1.4,4.6,0.1,0,0,0,15.2,QB
-"Sam Darnold, NYJ QB",GB,L 38-44,20.3/33.9,238.7,1.3,0.9,3.2,10.5,0.1,0,0,0,14.6,QB
-"Eli Manning, NYG QB",@Ind,L 27-28,23.3/35.8,252.2,1.4,0.7,1.2,1.7,0,0,0,0,14.3,QB
-"Jeff Driskel, Cin QB",@Cle,L 18-26,21.8/35.2,234.9,1.1,0.8,3.1,14.1,0.1,0,0,0,14.2,QB
-"Derek Carr, Oak QB",Den,W 27-14,22.7/34.3,256.1,1.1,0.6,1.9,5.4,0.1,0,0,0,14.2,QB
-"Marcus Mariota, Ten QB Q",Wsh,W 25-16,17/26.1,188.9,1,0.8,4.7,24.8,0.3,0,0,0,13.9,QB
-"Nick Mullens, SF QB",Chi,L 9-14,22.9/35.7,268.1,1,1.1,2.7,10.5,0.1,0,0,0,13.7,QB
-"Taylor Heinicke*, Car QB IR",Atl,L 10-24,21.9/34.4,240.3,1.2,1.2,2.8,11.7,0.1,0,0,0,13.6,QB
-"Matthew Stafford, Det QB",Min,L 9-27,23.1/35,246.8,1,0.8,1.8,6.5,0.1,0,0,0,13.1,QB
-"Cody Kessler, Jax QB",@Mia,W 17-7,20.6/32.2,221.5,0.8,0.7,4.2,17.4,0.1,0,0,0,12.5,QB
-"Josh Johnson, Wsh QB",@Ten,L 16-25,20.7/34.3,226.7,0.6,1.1,5.8,27.4,0.1,0,0,0,12.3,QB
-"Josh Rosen, Ari QB",LAR,L 9-31,18.3/30.3,203.2,1.4,1,1.8,7.4,0,0,0,0,12.1,QB
-"Taysom Hill, NO QB",Pit,W 31-28,0.2/0.3,2.1,0,0,1.2,5.8,0.1,0,0,0,1.4,QB
-"Joe Webb III, Hou QB",@Phi,L 30-32,0/0,0,0,0,0,0,0,0.4,4.6,0,1,QB
-"Joe Flacco, Bal QB",@LAC,W 22-10,0.5/0.8,5.6,0,0,0,0.1,0,0,0,0,0.3,QB
-"Chad Henne, KC QB",@Sea,L 31-38,0.1/0.2,1.3,0,0,0,0,0,0,0,0,0.1,QB
-"Jacoby Brissett, Ind QB",NYG,W 28-27,0.1/0.2,1.3,0,0,0,0,0,0,0,0,0.1,QB
-"Joshua Dobbs, Pit QB",@NO,L 28-31,0.1/0.2,1.4,0,0,0,0,0,0,0,0,0.1,QB
-"DeShone Kizer, GB QB",@NYJ,W 44-38,0.1/0.2,1.3,0,0,0,0,0,0,0,0,0.1,QB
-"Sean Mannion, LAR QB",@Ari,W 31-9,0.1/0.2,1.2,0,0,0,0,0,0,0,0,0.1,QB
-"Ryan Fitzpatrick, TB QB",@Dal,L 20-27,0.1/0.2,1.4,0,0,0,0,0,0,0,0,0.1,QB
-"Teddy Bridgewater, NO QB",Pit,W 31-28,0.1/0.2,1,0,0,0,0,0,0,0,0,0.1,QB
-"Cooper Rush, Dal QB",TB,W 27-20,0.1/0.2,1.2,0,0,0,0,0,0,0,0,0.1,QB
-"Brett Hundley, Sea QB",KC,W 38-31,0.1/0.1,1,0,0,0,0,0,0,0,0,0.1,QB
-"Chase Daniel, Chi QB",@SF,W 14-9,0.1/0.2,1.2,0,0,0,0,0,0,0,0,0.1,QB
-"Matt Schaub, Atl QB",@Car,W 24-10,0.1/0.2,1.3,0,0,0,0,0,0,0,0,0.1,QB
-"Tyrod Taylor, Cle QB",Cin,W 26-18,0.1/0.2,1.1,0,0,0,0,0,0,0,0,0.1,QB
-"Geno Smith, LAC QB",Bal,L 10-22,0.1/0.2,1.1,0,0,0,0,0,0,0,0,0.1,QB
-"Nate Sudfeld, Phi QB",Hou,W 32-30,0.1/0.2,1.3,0,0,0,0,0,0,0,0,0.1,QB
-"Trevor Siemian, Min QB",@Det,W 27-9,0.1/0.2,1.2,0,0,0,0,0,0,0,0,0.1,QB
-"Kevin Hogan, Den QB",@Oak,L 14-27,0.1/0.2,1.2,0,0,0,0,0,0,0,0,0.1,QB
-"Brock Osweiler, Mia QB",Jax,L 7-17,0.1/0.1,1,0,0,0,0,0,0,0,0,0.1,QB
-"Brian Hoyer, NE QB",Buf,W 24-12,0.1/0.2,1.2,0,0,0,0,0,0,0,0,0.1,QB
-"Josh McCown, NYJ QB",GB,L 38-44,0.1/0.2,1.2,0,0,0,0,0,0,0,0,0.1,QB
-"Brandon Weeden, Hou QB",@Phi,L 30-32,0.1/0.2,1.2,0,0,0,0,0,0,0,0,0.1,QB
-"Alex Tanney, NYG QB",@Ind,L 27-28,0.1/0.2,1.2,0,0,0,0,0,0,0,0,0.1,QB
-"Mike Glennon, Ari QB",LAR,L 9-31,0.1/0.2,1.1,0,0,0,0,0,0,0,0,0.1,QB
-"Matt Barkley, Buf QB",@NE,L 12-24,0.1/0.2,1.2,0,0,0,0,0,0,0,0,0.1,QB
-"AJ McCarron, Oak QB",Den,W 27-14,0.1/0.2,1.2,0,0,0,0,0,0,0,0,0.1,QB
-"Tom Savage, Cin QB",@Cle,L 18-26,0.1/0.2,1.2,0,0,0,0,0,0,0,0,0.1,QB
-"Matt Cassel, Det QB",Min,L 9-27,0.1/0.2,1.2,0,0,0,0,0,0,0,0,0.1,QB
-"Mark Sanchez, Wsh QB",@Ten,L 16-25,0.1/0.2,1.2,0,0,0,0,0,0,0,0,0.1,QB
-"Blake Bortles, Jax QB",@Mia,W 17-7,0.1/0.2,1.2,0,0,0,0,0,0,0,0,0.1,QB
-"C.J. Beathard, SF QB",Chi,L 9-14,0.1/0.2,1.2,0,0,0,0,0,0,0,0,0.1,QB
-"Blaine Gabbert, Ten QB",Wsh,W 25-16,0.1/0.1,1,0,0,0,0,0,0,0,0,0.1,QB
-"Shaun Hill, Min QB",@Det,W 27-9,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Carson Palmer, FA QB",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,QB
-"Alex Smith*, Wsh QB IR",@Ten,L 16-25,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Derek Anderson, Buf QB",@NE,L 12-24,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Jay Cutler, FA QB",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,QB
-"Kellen Clemens, LAC QB",Bal,L 10-22,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Charlie Whitehurst, Cle QB Q",Cin,W 26-18,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Drew Stanton, Cle QB",Cin,W 26-18,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Matt Moore, FA QB",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,QB
-"Josh Freeman, Ind QB",NYG,W 28-27,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Sam Bradford, Ari QB",LAR,L 9-31,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Colt McCoy*, Wsh QB IR",@Ten,L 16-25,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Cam Newton, Car QB Q",Atl,L 10-24,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Colin Kaepernick, FA QB",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,QB
-"Andy Dalton*, Cin QB IR",@Cle,L 18-26,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Ryan Mallett, FA QB",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,QB
-"T.J. Yates, FA QB",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,QB
-"Scott Tolzien, FA QB",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,QB
-"Robert Griffin III, Bal QB",@LAC,W 22-10,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Austin Davis, Ten QB",Wsh,W 25-16,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"EJ Manuel, Oak QB",Den,W 27-14,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Ryan Nassib, Jax QB",@Mia,W 17-7,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Landry Jones, Jax QB",@Mia,W 17-7,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Zac Dysert, Ari QB Q",LAR,L 9-31,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Ryan Griffin, TB QB",@Dal,L 20-27,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Tyler Bray, Chi QB",@SF,W 14-9,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Matt McGloin, KC QB",@Sea,L 31-38,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Johnny Manziel, FA QB",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,QB
-"Jimmy Garoppolo*, SF QB IR",Chi,L 9-14,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Zach Mettenberger, Pit QB",@NO,L 28-31,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"David Fales, Mia QB",Jax,L 7-17,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Bryce Petty, Mia QB",Jax,L 7-17,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Garrett Grayson, Den QB",@Oak,L 14-27,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Carson Wentz, Phi QB Q",Hou,W 32-30,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Paxton Lynch, Den QB",@Oak,L 14-27,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Christian Hackenberg, Phi QB",Hou,W 32-30,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Connor Cook, Oak QB",Den,W 27-14,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Cardale Jones, LAC QB",Bal,L 10-22,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Jake Rudock, Det QB",Min,L 9-27,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Brandon Allen, LAR QB",@Ari,W 31-9,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Brandon Doughty, Ari QB",LAR,L 9-31,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Trevone Boykin, Sea QB",KC,W 38-31,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Stephen Morris, Hou QB",@Phi,L 30-32,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Joe Callahan, TB QB",@Dal,L 20-27,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Brad Kaaya*, Ind QB IR",NYG,W 28-27,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Chad Kelly, Den QB",@Oak,L 14-27,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Nathan Peterman, Oak QB",Den,W 27-14,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Davis Webb, NYJ QB",GB,L 38-44,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Mason Rudolph, Pit QB",@NO,L 28-31,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Kyle Lauletta, NYG QB",@Ind,L 27-28,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Mike White, Dal QB",TB,W 27-20,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Luke Falk*, Mia QB IR",Jax,L 7-17,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Tanner Lee, Jax QB",@Mia,W 17-7,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Danny Etling, NE QB",Buf,W 24-12,0/0,0,0,0,0,0,0,0,0,0,0,QB
-"Alex McGough, Sea QB",KC,W 38-31,0/0,0,0,0,0,0,0,0,0,0,0,QB
+Player,POS,Team,Pass Yds,Pass TD,Pass Int,Rush Yds,Rush TD,Receptions,Rec Yds,Rec TD,Status
+Patrick Mahomes,QB,KC,301.0,2.5,0.8,15.7,0.2,0.0,0.0,0.0, 
+Andrew Luck,QB,IND,271.5,2.4,1.1,13.0,0.1,0.0,0.0,0.0, 
+Russell Wilson,QB,SEA,217.7,2.3,0.5,23.9,0.1,0.0,0.0,0.0, 
+Aaron Rodgers,QB,GB,284.7,1.8,0.3,16.7,0.1,0.0,0.0,0.0,Q
+Dak Prescott,QB,DAL,246.4,1.7,0.6,23.9,0.3,0.0,0.0,0.0, 
+Drew Brees,QB,NO,244.6,2.3,0.3,1.5,0.2,0.0,0.0,0.0, 
+Jared Goff,QB,LAR,287.3,1.9,0.7,10.5,0.1,0.0,0.0,0.0, 
+Ben Roethlisberger,QB,PIT,322.5,1.9,1.0,3.3,0.1,0.0,0.0,0.0, 
+Matt Ryan,QB,ATL,303.5,1.8,0.6,7.1,0.1,0.0,0.0,0.0, 
+Mitchell Trubisky,QB,CHI,239.6,1.8,0.8,28.2,0.2,0.0,0.0,0.0, 
+Deshaun Watson,QB,HOU,244.5,1.5,0.8,33.5,0.1,0.0,0.0,0.0, 
+Philip Rivers,QB,LAC,262.6,2.0,0.4,3.0,0.0,0.0,0.0,0.0,Q
+Jameis Winston,QB,TB,291.4,1.5,1.3,23.8,0.2,0.0,0.0,0.0, 
+Baker Mayfield,QB,CLE,245.4,1.9,0.9,11.5,0.2,0.0,0.0,0.0, 
+Kirk Cousins,QB,MIN,256.3,1.6,0.6,9.5,0.2,0.0,0.0,0.0, 
+Josh Allen,QB,BUF,226.0,1.0,1.0,46.6,0.4,0.0,0.0,0.0, 
+Tom Brady,QB,NE,268.7,1.6,0.7,1.5,0.1,0.0,0.0,0.0, 
+Nick Foles,QB,PHI,260.5,1.7,1.0,5.9,0.1,0.0,0.0,0.0, 
+Ryan Tannehill,QB,MIA,209.2,1.8,0.6,11.2,0.1,0.0,0.0,0.0, 
+Lamar Jackson,QB,BAL,164.9,0.8,0.7,57.6,0.3,0.0,0.0,0.0, 
+Case Keenum,QB,DEN,251.1,1.5,0.8,4.6,0.1,0.0,0.0,0.0, 
+Sam Darnold,QB,NYJ,238.7,1.3,0.9,10.5,0.1,0.0,0.0,0.0, 
+Eli Manning,QB,NYG,252.2,1.4,0.7,1.7,0.0,0.0,0.0,0.0, 
+Jeff Driskel,QB,CIN,234.9,1.1,0.8,14.1,0.1,0.0,0.0,0.0, 
+Derek Carr,QB,OAK,256.1,1.1,0.6,5.4,0.1,0.0,0.0,0.0, 
+Marcus Mariota,QB,TEN,188.9,1.0,0.8,24.8,0.3,0.0,0.0,0.0,Q
+Nick Mullens,QB,SF,268.1,1.0,1.1,10.5,0.1,0.0,0.0,0.0, 
+Taylor Heinicke,QB,CAR,240.3,1.2,1.2,11.7,0.1,0.0,0.0,0.0,IR
+Matthew Stafford,QB,DET,246.8,1.0,0.8,6.5,0.1,0.0,0.0,0.0, 
+Cody Kessler,QB,JAX,221.5,0.8,0.7,17.4,0.1,0.0,0.0,0.0, 
+Josh Johnson,QB,WAS,226.7,0.6,1.1,27.4,0.1,0.0,0.0,0.0, 
+Josh Rosen,QB,ARI,203.2,1.4,1.0,7.4,0.0,0.0,0.0,0.0, 
+Taysom Hill,QB,NO,2.1,0.0,0.0,5.8,0.1,0.0,0.0,0.0, 
+Joe Webb,QB,HOU,0.0,0.0,0.0,0.0,0.0,0.4,4.6,0.0, 
+Joe Flacco,QB,BAL,5.6,0.0,0.0,0.1,0.0,0.0,0.0,0.0, 
+Chad Henne,QB,KC,1.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Jacoby Brissett,QB,IND,1.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Joshua Dobbs,QB,PIT,1.4,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+DeShone Kizer,QB,GB,1.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Sean Mannion,QB,LAR,1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Teddy Bridgewater,QB,NO,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Cooper Rush,QB,DAL,1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Brett Hundley,QB,SEA,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Chase Daniel,QB,CHI,1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Matt Schaub,QB,ATL,1.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Tyrod Taylor,QB,CLE,1.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Geno Smith,QB,LAC,1.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Nate Sudfeld,QB,PHI,1.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Trevor Siemian,QB,MIN,1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Kevin Hogan,QB,DEN,1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Brock Osweiler,QB,MIA,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Brian Hoyer,QB,NE,1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Josh McCown,QB,NYJ,1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Brandon Weeden,QB,HOU,1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Alex Tanney,QB,NYG,1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Mike Glennon,QB,ARI,1.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Matt Barkley,QB,BUF,1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+AJ McCarron,QB,OAK,1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Tom Savage,QB,CIN,1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Matt Cassel,QB,DET,1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Mark Sanchez,QB,WAS,1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Blake Bortles,QB,JAX,1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+C.J. Beathard,QB,SF,1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Blaine Gabbert,QB,TEN,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 

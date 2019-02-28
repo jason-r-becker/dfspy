@@ -1,275 +1,107 @@
-Player,OPP,STATUS ET,C/A,YDS,TD,INT,RUSH,YDS,TD,REC,YDS,TD,PTS,POS
-"Todd Gurley II, LAR RB",Phi,L 23-30,0/0,0,0,0,19.1,89.9,1,4,38.2,0.2,23.8,RB
-"Saquon Barkley, NYG RB",Ten,L 0-17,0/0,0,0,0,18,83.5,0.6,5.1,41.2,0.2,22.3,RB
-"Ezekiel Elliott, Dal RB",@Ind,L 0-23,0/0,0,0,0,18.9,80.4,0.6,5.3,42.9,0.2,22.2,RB
-"Christian McCaffrey, Car RB",NO,L 9-12,0/0,0,0,0,13.4,55.6,0.6,6.6,54.1,0.2,22.2,RB
-"Alvin Kamara, NO RB",@Car,W 12-9,0/0,0,0,0,13.9,59.7,0.8,4.5,39,0.3,21,RB
-"Nick Chubb, Cle RB",@Den,W 17-16,0/0,0,0,0,20.4,92.7,0.7,3.1,26.4,0.1,20.1,RB
-"Leonard Fournette, Jax RB Q",Wsh,L 13-16,0/0,0,0,0,20.8,86.7,0.6,2.9,22.8,0.1,17.8,RB
-"Joe Mixon, Cin RB",Oak,W 30-16,0/0,0,0,0,17.2,75.3,0.6,3.4,26.6,0.1,17.7,RB
-"Jaylen Samuels, Pit RB",NE,W 17-10,0/0,0,0,0,11.4,44.1,0.6,4.6,36.7,0.2,17.3,RB
-"Phillip Lindsay*, Den RB IR",Cle,L 16-17,0/0,0,0,0,16.3,76,0.7,2.6,19.4,0.1,17.1,RB
-"Dalvin Cook, Min RB",Mia,W 41-17,0/0,0,0,0,16.2,68.9,0.5,3.9,29,0.1,17.1,RB
-"David Johnson, Ari RB",@Atl,L 14-40,0/0,0,0,0,17,69.3,0.4,3.5,28.2,0.2,16.7,RB
-"Justin Jackson, LAC RB",@KC,W 29-28,0/0,0,0,0,13.1,58.5,0.3,3.3,27.9,0.2,15,RB
-"Aaron Jones*, GB RB IR",@Chi,L 17-24,0/0,0,0,0,13.8,62.6,0.3,3.5,27.1,0.1,14.9,RB
-"Tarik Cohen, Chi RB",GB,W 24-17,0/0,0,0,0,6.5,27.7,0.2,4.5,44.7,0.3,14.6,RB
-"Lamar Miller, Hou RB",@NYJ,W 29-22,0/0,0,0,0,18,78.7,0.4,2.2,17.4,0.1,14.5,RB
-"Chris Carson, Sea RB",@SF,L 23-26,0/0,0,0,0,17.2,71.4,0.6,1.7,13.8,0.1,14,RB
-"Mark Ingram II, NO RB",@Car,W 12-9,0/0,0,0,0,12.1,54.4,0.6,2.2,17.7,0.1,13.7,RB
-"Doug Martin, Oak RB",@Cin,L 16-30,0/0,0,0,0,15,59.3,0.7,1.6,13.2,0,13.5,RB
-"Elijah McGuire, NYJ RB",Hou,L 22-29,0/0,0,0,0,13.3,50,0.3,3,25.4,0.1,12.8,RB
-"James White, NE RB",@Pit,L 10-17,0/0,0,0,0,3.5,13.7,0.2,4.8,41.1,0.2,12.6,RB
-"Sony Michel, NE RB",@Pit,L 10-17,0/0,0,0,0,16,64.9,0.7,0.8,6.6,0,12.4,RB
-"Marlon Mack, Ind RB Q",Dal,W 23-0,0/0,0,0,0,15.7,64,0.5,1.4,10.3,0.1,12.3,RB
-"Tevin Coleman, Atl RB",Ari,W 40-14,0/0,0,0,0,11.1,46.2,0.3,2.6,23.9,0.2,12.2,RB
-"Derrick Henry, Ten RB",@NYG,W 17-0,0/0,0,0,0,13.8,60.6,0.5,1.6,12,0,12.2,RB
-"Damien Williams, KC RB",LAC,L 28-29,0/0,0,0,0,9,35.3,0.4,2.8,22.4,0.2,12.1,RB
-"Kenyan Drake, Mia RB",@Min,L 17-41,0/0,0,0,0,6.4,26.9,0.1,3.9,31.4,0.2,11.7,RB
-"Theo Riddick, Det RB Q",@Buf,L 13-14,0/0,0,0,0,4.6,17.8,0.1,5,35.5,0.1,11.6,RB
-"Marcus Murphy*, Buf RB IR",Det,W 14-13,0/0,0,0,0,11.7,52.1,0.4,2,16.8,0.1,11.4,RB
-"Dion Lewis, Ten RB",@NYG,W 17-0,0/0,0,0,0,9.4,37.8,0.3,3.1,21.5,0.1,11.2,RB
-"Matt Breida*, SF RB IR",Sea,W 26-23,0/0,0,0,0,12.1,55.7,0.3,1.8,15.3,0.1,11.1,RB
-"Gus Edwards, Bal RB",TB,W 20-12,0/0,0,0,0,17.7,76.2,0.6,0.1,0.7,0,11,RB
-"Jalen Richard, Oak RB",@Cin,L 16-30,0/0,0,0,0,4.6,21.2,0.2,3.9,32.9,0.1,10.9,RB
-"Jordan Howard, Chi RB",GB,W 24-17,0/0,0,0,0,14.3,59.1,0.5,0.9,7.2,0,10.7,RB
-"Nyheim Hines, Ind RB",Dal,W 23-0,0/0,0,0,0,6.8,26.6,0.2,3.4,24.3,0.2,10.6,RB
-"LeGarrette Blount, Det RB",@Buf,L 13-14,0/0,0,0,0,12.8,48.8,0.4,1.6,12.5,0,10.3,RB
-"Chris Thompson, Wsh RB",@Jax,W 16-13,0/0,0,0,0,4.3,19.6,0.1,4.1,32.9,0.1,10.3,RB
-"Jeff Wilson Jr., SF RB Q",Sea,W 26-23,0/0,0,0,0,10.6,43.7,0.3,2.1,16.5,0.1,10.1,RB
-"Adrian Peterson, Wsh RB",@Jax,W 16-13,0/0,0,0,0,14.1,60.6,0.3,1.2,10.1,0,10,RB
-"Peyton Barber, TB RB",@Bal,L 12-20,0/0,0,0,0,12.9,48.9,0.4,1.4,11,0,9.8,RB
-"Josh Adams, Phi RB",@LAR,W 30-23,0/0,0,0,0,13.1,57.5,0.4,0.8,6.7,0,9.5,RB
-"Frank Gore*, Mia RB IR",@Min,L 17-41,0/0,0,0,0,12.5,50.9,0.2,1.4,12.2,0.1,9.2,RB
-"Ito Smith*, Atl RB IR",Ari,W 40-14,0/0,0,0,0,8.7,34.9,0.3,2.1,15.6,0.1,9.1,RB
-"Mike Davis, Sea RB",@SF,L 23-26,0/0,0,0,0,9.4,35.9,0.3,1.7,12.7,0.1,8.7,RB
-"T.J. Yeldon, Jax RB",Wsh,L 13-16,0/0,0,0,0,3.9,16.4,0.1,3.1,25.6,0.1,8.3,RB
-"Kenneth Dixon, Bal RB",TB,W 20-12,0/0,0,0,0,8.3,35.2,0.3,1.4,12,0.1,8.1,RB
-"Trenton Cannon, NYJ RB",Hou,L 22-29,0/0,0,0,0,6.4,23.6,0.2,2.3,19.7,0,7.8,RB
-"Keith Ford, Buf RB",Det,W 14-13,0/0,0,0,0,8.8,35.3,0.3,0.8,7.1,0,7,RB
-"Detrez Newsome, LAC RB",@KC,W 29-28,0/0,0,0,0,5.1,20.7,0.2,1.9,15.3,0.1,7,RB
-"Royce Freeman, Den RB",Cle,L 16-17,0/0,0,0,0,7.6,32.1,0.4,0.8,6,0,6.9,RB
-"Darren Sproles, Phi RB",@LAR,W 30-23,0/0,0,0,0,3.3,15.3,0.1,2.3,18.2,0.1,6.7,RB
-"Giovani Bernard, Cin RB",Oak,W 30-16,0/0,0,0,0,2.4,10.5,0.1,2.6,20.6,0.1,6.5,RB
-"Alfred Blue, Hou RB",@NYJ,W 29-22,0/0,0,0,0,9.6,36.7,0.2,0.7,5.6,0,6.3,RB
-"Darrel Williams, KC RB",LAC,L 28-29,0/0,0,0,0,5.6,21.6,0.3,1.1,9.1,0.1,6.1,RB
-"Stevan Ridley, Pit RB",NE,W 17-10,0/0,0,0,0,6.5,25.8,0.3,0.6,5.2,0,5.9,RB
-"Jacquizz Rodgers, TB RB",@Bal,L 12-20,0/0,0,0,0,1.3,5.1,0,2.6,21.6,0.1,5.9,RB
-"Duke Johnson Jr., Cle RB",@Den,W 17-16,0/0,0,0,0,2.6,11,0.1,1.8,16.4,0.1,5.4,RB
-"Rex Burkhead, NE RB",@Pit,L 10-17,0/0,0,0,0,3.7,15,0.2,1.4,11.3,0,5.2,RB
-"Devontae Booker, Den RB",Cle,L 16-17,0/0,0,0,0,0.8,3.2,0,2.3,18.8,0.1,5.1,RB
-"Zach Zenner, Det RB",@Buf,L 13-14,0/0,0,0,0,4.9,18.7,0.1,1.1,8,0,4.6,RB
-"Wayne Gallman, NYG RB",Ten,L 0-17,0/0,0,0,0,3.3,13.6,0.1,1.3,10.1,0,4.4,RB
-"Chase Edmonds, Ari RB",@Atl,L 14-40,0/0,0,0,0,4.2,17.2,0.1,1.1,8.9,0,4.4,RB
-"Javorius Allen, Bal RB",TB,W 20-12,0/0,0,0,0,2,7.8,0.1,1.5,12.8,0.1,4.4,RB
-"Cordarrelle Patterson, NE WR, RB",@Pit,L 10-17,0/0,0,0,0,0.5,2.3,0,1.5,17.2,0.1,4.4,RB
-"Kyle Juszczyk, SF RB",Sea,W 26-23,0/0,0,0,0,0.8,3.2,0,1.8,17.1,0.1,4.3,RB
-"Latavius Murray, Min RB",Mia,W 41-17,0/0,0,0,0,6,23.8,0.2,0.3,2.2,0,4.2,RB
-"Wendell Smallwood, Phi RB",@LAR,W 30-23,0/0,0,0,0,2.3,9.5,0.1,1.4,11.8,0,4.1,RB
-"DeAndre Washington, Oak RB",@Cin,L 16-30,0/0,0,0,0,4.1,17.3,0.2,0.5,4.3,0,3.8,RB
-"Derek Watt, LAC RB",@KC,W 29-28,0/0,0,0,0,0.9,3.1,0.1,1.4,11.6,0.1,3.8,RB
-"Charcandrick West, KC RB",LAC,L 28-29,0/0,0,0,0,2.8,10.9,0.1,0.8,6.7,0,3.6,RB
-"Rod Smith, Dal RB",@Ind,L 0-23,0/0,0,0,0,2.7,10.5,0.1,0.8,6.2,0,3.2,RB
-"Jamaal Williams, GB RB",@Chi,L 17-24,0/0,0,0,0,2.9,10.8,0.1,0.9,6.6,0,3.1,RB
-"Ronald Jones, TB RB",@Bal,L 12-20,0/0,0,0,0,3.5,12.1,0.1,0.6,4.6,0,2.9,RB
-"J.D. McKissic, Sea RB",@SF,L 23-26,0/0,0,0,0,0.9,3.6,0,1,8.3,0.1,2.7,RB
-"Taquan Mizzell, Chi RB",GB,W 24-17,0/0,0,0,0,1.8,7.2,0.1,0.7,5.9,0,2.7,RB
-"Justin Davis, LAR RB",Phi,L 23-30,0/0,0,0,0,2,8,0.1,0.5,4.3,0,2.5,RB
-"Andy Janovich, Den RB",Cle,L 16-17,0/0,0,0,0,0.3,0.9,0,1,8.8,0.1,2.4,RB
-"Elijhaa Penny, NYG RB",Ten,L 0-17,0/0,0,0,0,0,0,0,1,8.6,0,2.1,RB
-"Anthony Sherman, KC RB",LAC,L 28-29,0/0,0,0,0,0.6,2.4,0,0.5,4.8,0,1.8,RB
-"Jordan Wilkins, Ind RB",Dal,W 23-0,0/0,0,0,0,0.8,3.2,0,0.6,4.3,0,1.6,RB
-"Byron Marshall, Wsh RB",@Jax,W 16-13,0/0,0,0,0,1.3,5.1,0,0.5,3.8,0,1.6,RB
-"James Develin, NE RB",@Pit,L 10-17,0/0,0,0,0,1.1,3.4,0.1,0.3,2.2,0,1.5,RB
-"Zach Line, NO RB",@Car,W 12-9,0/0,0,0,0,0.3,1.1,0,0.4,3.9,0,1.3,RB
-"Patrick DiMarco, Buf RB",Det,W 14-13,0/0,0,0,0,0,0,0,0.6,5.3,0,1.3,RB
-"CJ Ham, Min RB Q",Mia,W 41-17,0/0,0,0,0,0.3,0.9,0,0.5,4.5,0,1.3,RB
-"Dontrell Hilliard, Cle RB",@Den,W 17-16,0/0,0,0,0,0.1,0.5,0,0.5,4.5,0,1.2,RB
-"David Williams, Jax RB",Wsh,L 13-16,0/0,0,0,0,1.1,4.5,0,0.2,1.8,0,1.1,RB
-"Brandon Bolden, Mia RB",@Min,L 17-41,0/0,0,0,0,1.1,4.5,0,0.2,1.9,0,1.1,RB
-"Ameer Abdullah, Min RB",Mia,W 41-17,0/0,0,0,0,0.3,1,0,0.3,2.2,0,0.7,RB
-"De'Angelo Henderson, Den RB",Cle,L 16-17,0/0,0,0,0,0.4,1.6,0,0.3,2.1,0,0.7,RB
-"T.J. Logan, Ari RB",@Atl,L 14-40,0/0,0,0,0,0.5,1.9,0,0.2,1.9,0,0.7,RB
-"Roosevelt Nix, Pit RB",NE,W 17-10,0/0,0,0,0,0,0,0,0.3,2.7,0,0.7,RB
-"Cameron Artis-Payne, Car RB",NO,L 9-12,0/0,0,0,0,1.1,4.2,0,0,0,0,0.7,RB
-"Derrick Coleman, Ari RB",@Atl,L 14-40,0/0,0,0,0,0.2,0.8,0,0.2,1.9,0,0.6,RB
-"Alex Armah, Car RB",NO,L 9-12,0/0,0,0,0,0.6,2,0.1,0,0,0,0.6,RB
-"Keith Smith, Oak RB",@Cin,L 16-30,0/0,0,0,0,0,0,0,0.3,2.2,0,0.5,RB
-"Tre Madden, Sea RB Q",@SF,L 23-26,0/0,0,0,0,0,0,0,0.2,1.7,0,0.5,RB
-"Tommy Bohanon, Jax RB",Wsh,L 13-16,0/0,0,0,0,0,0,0,0.2,1.9,0,0.5,RB
-"Trey Edmunds, Pit RB",NE,W 17-10,0/0,0,0,0,0.6,2.4,0,0,0,0,0.4,RB
-"Mark Walton, Cin RB",Oak,W 30-16,0/0,0,0,0,0.4,1.9,0,0,0,0,0.3,RB
-"Dwayne Washington, NO RB",@Car,W 12-9,0/0,0,0,0,0.3,1.1,0,0,0,0,0.2,RB
-"Senorise Perry, Mia RB",@Min,L 17-41,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Ty Montgomery, Bal RB",TB,W 20-12,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Benny Cunningham, Chi RB",GB,W 24-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"John Kuhn, NO RB Q",@Car,W 12-9,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"DeAngelo Williams, FA RB",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,RB
-"Marshawn Lynch*, Oak RB IR",@Cin,L 16-30,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Darren McFadden, FA RB",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,RB
-"Jonathan Stewart*, NYG RB IR",Ten,L 0-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Chris Johnson, FA RB",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,RB
-"Matt Forte, FA RB",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,RB
-"Jamaal Charles, Jax RB",Wsh,L 13-16,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Jerome Felton, Buf RB",Det,W 14-13,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Tim Hightower, SF RB",Sea,W 26-23,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Justin Forsett, Den RB",Cle,L 16-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Mike Tolbert, Buf RB",Det,W 14-13,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Marcel Reece, Sea RB",@SF,L 23-26,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Danny Woodhead, FA RB",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,RB
-"Rashad Jennings, NYG RB",Ten,L 0-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"LeSean McCoy, Buf RB",Det,W 14-13,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Cedric Peerman, Cin RB Q",Oak,W 30-16,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Antone Smith, TB RB",@Bal,L 12-20,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"C.J. Spiller, KC RB",LAC,L 28-29,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Ryan Mathews, Phi RB",@LAR,W 30-23,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Dexter McCluster, LAC RB",@KC,W 29-28,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"James Starks, GB RB",@Chi,L 17-24,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Joique Bell, Det RB",@Buf,L 13-14,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Chris Ivory, Buf RB",Det,W 14-13,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"DeMarco Murray, FA RB",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,RB
-"Shane Vereen, NO RB Q",@Car,W 12-9,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Bilal Powell*, NYJ RB IR",Hou,L 22-29,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Taiwan Jones*, Buf RB IR",Det,W 14-13,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Jordan Todman, Hou RB Q",@NYJ,W 29-22,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"DuJuan Harris, Jax RB",Wsh,L 13-16,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Matt Asiata, Det RB",@Buf,L 13-14,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Shaun Draughn, NYG RB",Ten,L 0-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Isaiah Pead*, Mia RB O",@Min,L 17-41,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Robert Turbin, Ind RB",Dal,W 23-0,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Ronnie Hillman, Dal RB",@Ind,L 0-23,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Alfred Morris, SF RB",Sea,W 26-23,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Daryl Richardson, Ind RB",Dal,W 23-0,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Cory Harkey, LAR RB",Phi,L 23-30,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Joe Banyard, Buf RB",Det,W 14-13,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Lance Dunbar, LAR RB",Phi,L 23-30,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Travaris Cadet, Car RB",NO,L 9-12,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Bobby Rainey Jr., Bal RB",TB,W 20-12,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Jonathan Grimes, Jax RB",Wsh,L 13-16,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Jamize Olawale, Dal RB",@Ind,L 0-23,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Fozzy Whittaker*, Car RB IR",NO,L 9-12,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Tavon Austin, Dal RB, WR",@Ind,L 0-23,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Le'Veon Bell*, Pit RB O",NE,W 17-10,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Knile Davis, Chi RB",GB,W 24-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Eddie Lacy, FA RB",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,RB
-"Christine Michael, Ind RB",Dal,W 23-0,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Andre Ellington, Hou RB",@NYJ,W 29-22,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Kenjon Barner*, Car RB IR",NO,L 9-12,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Denard Robinson, Jax RB",Wsh,L 13-16,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Mike Gillislee, NO RB",@Car,W 12-9,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Mike James, Det RB Q",@Buf,L 13-14,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Stepfan Taylor, Ari RB",@Atl,L 14-40,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Spencer Ware, KC RB",LAC,L 28-29,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Kerwynn Williams, Det RB",@Buf,L 13-14,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"C.J. Anderson, LAR RB",Phi,L 23-30,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"George Winn, Ind RB Q",Dal,W 23-0,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Khiry Robinson, NYJ RB",Hou,L 22-29,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Charles Sims, TB RB",@Bal,L 12-20,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Carlos Hyde, Jax RB",Wsh,L 13-16,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Jerick McKinnon*, SF RB IR",Sea,W 26-23,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Terrance West, NO RB",@Car,W 12-9,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Tre Mason, LAR RB",Phi,L 23-30,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Bishop Sankey, Min RB Q",Mia,W 41-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Jeremy Hill*, NE RB IR",@Pit,L 10-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Tyler Gaffney, Jax RB",Wsh,L 13-16,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Andre Williams, LAC RB Q",@KC,W 29-28,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Ka'Deem Carey, Chi RB Q",GB,W 24-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Devonta Freeman*, Atl RB IR",Ari,W 40-14,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Lorenzo Taliaferro, Bal RB",TB,W 20-12,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Isaiah Crowell*, NYJ RB IR",Hou,L 22-29,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Juwan Thompson, Den RB",Cle,L 16-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Kapri Bibbs, GB RB",@Chi,L 17-24,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Branden Oliver, Ind RB",Dal,W 23-0,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Antonio Andrews, Ten RB",@NYG,W 17-0,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Ryan Hewitt, Ind RB",Dal,W 23-0,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Austin Johnson, TB RB",@Bal,L 12-20,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Jay Prosch, Hou RB",@NYJ,W 29-22,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Orleans Darkwa, FA RB",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,RB
-"Fitzgerald Toussaint, Pit RB",NE,W 17-10,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Michael Burton, Chi RB",GB,W 24-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Jeremy Langford, Atl RB",Ari,W 40-14,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Jalston Fowler, Ten RB",@NYG,W 17-0,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Malcolm Johnson, SF RB",Sea,W 26-23,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Jay Ajayi*, Phi RB IR",@LAR,W 30-23,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Melvin Gordon, LAC RB",@KC,W 29-28,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Karlos Williams, Pit RB SSPD",NE,W 17-10,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Kenny Hilliard, Wsh RB",@Jax,W 16-13,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Aaron Ripkowski, GB RB",@Chi,L 17-24,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Matt Jones, Phi RB",@LAR,W 30-23,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"John Crockett, Bal RB",TB,W 20-12,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Terrence Magee, Atl RB",Ari,W 40-14,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Thomas Rawls, FA RB",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,RB
-"Malcolm Brown*, LAR RB IR",Phi,L 23-30,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Terron Ward, Atl RB",Ari,W 40-14,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Corey Grant*, Jax RB IR",Wsh,L 13-16,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Raheem Mostert*, SF RB IR",Sea,W 26-23,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Trey Williams, Dal RB Q",@Ind,L 0-23,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Akeem Hunt, KC RB Q",LAC,L 28-29,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"C.J. Prosise*, Sea RB IR",@SF,L 23-26,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Paul Perkins*, NYG RB O",Ten,L 0-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Jonathan Williams, Ind RB",Dal,W 23-0,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Alex Collins*, Bal RB IR",TB,W 20-12,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Danny Vitale, GB RB",@Chi,L 17-24,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Kelvin Taylor, Cle RB",@Den,W 17-16,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Darius Jackson, Dal RB",@Ind,L 0-23,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Daniel Lasco*, NO RB O",@Car,W 12-9,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Keith Marshall, Wsh RB Q",@Jax,W 16-13,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Zac Brooks, Sea RB",@SF,L 23-26,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Josh Ferguson, Ind RB",Dal,W 23-0,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Terrell Watson, LAC RB",@KC,W 29-28,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Brandon Wilds, FA RB",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,RB
-"Jhurell Pressley, NYG RB",Ten,L 0-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"George Atkinson III, NYJ RB",Hou,L 22-29,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"D.J. Foster*, Ari RB IR",@Atl,L 14-40,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Devon Johnson, Car RB",NO,L 9-12,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Rob Kelley*, Wsh RB IR",@Jax,W 16-13,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Troymaine Pope, LAC RB",@KC,W 29-28,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Glenn Gronkowski, NE RB",@Pit,L 10-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Julian Howsare, NYJ RB",Hou,L 22-29,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Kenneth Farrow, NE RB",@Pit,L 10-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Paul Lasike, Chi RB",GB,W 24-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Don Jackson, GB RB",@Chi,L 17-24,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"George Farmer, Sea RB",@SF,L 23-26,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Mack Brown, Min RB",Mia,W 41-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Donnel Pumphrey, Phi RB",@LAR,W 30-23,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Samaje Perine, Wsh RB",@Jax,W 16-13,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Elijah Hood*, Car RB IR",NO,L 9-12,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"D'Onta Foreman, Hou RB",@NYJ,W 29-22,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Marquez Williams, Cle RB",@Den,W 17-16,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Kareem Hunt, FA RB",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,RB
-"James Conner, Pit RB",NE,W 17-10,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Sam Rogers, Buf RB",Det,W 14-13,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Devante Mays, Cle RB",@Den,W 17-16,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Joe Williams, SF RB Q",Sea,W 26-23,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Matt Dayes, SF RB",Sea,W 26-23,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Khalfani Muhammad, Den RB",Cle,L 16-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Jeremy McNichols, Ten RB",@NYG,W 17-0,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Brian Hill, Atl RB",Ari,W 40-14,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Freddie Stevenson, Chi RB",GB,W 24-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Corey Clement*, Phi RB IR",@LAR,W 30-23,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Algernon Brown, KC RB",LAC,L 28-29,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Jahad Thomas, NYJ RB",Hou,L 22-29,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Austin Ekeler, LAC RB",@KC,W 29-28,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"David Fluellen*, Ten RB IR",@NYG,W 17-0,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Cethan Carter*, Cin RB IR",Oak,W 30-16,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Shane Smith, NYG RB",Ten,L 0-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Tion Green, Ind RB",Dal,W 23-0,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"LeShun Daniels Jr., GB RB",@Chi,L 17-24,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Rashaad Penny, Sea RB",@SF,L 23-26,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Kerryon Johnson*, Det RB IR",@Buf,L 13-14,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Derrius Guice*, Wsh RB IR",@Jax,W 16-13,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Kalen Ballage, Mia RB",@Min,L 17-41,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"John Kelly, LAR RB",Phi,L 23-30,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Boston Scott, Phi RB",@LAR,W 30-23,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Bo Scarbrough, Sea RB",@SF,L 23-26,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Nick Bawden*, Det RB IR",@Buf,L 13-14,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Akrum Wadley, Ten RB",@NYG,W 17-0,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Roc Thomas, Min RB",Mia,W 41-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Chris Warren*, Oak RB IR",@Cin,L 16-30,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Shaun Wilson*, TB RB IR",@Bal,L 12-20,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Mike Boone, Min RB",Mia,W 41-17,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Buddy Howell, Hou RB Q",@NYJ,W 29-22,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Tra Carson*, GB RB IR",@Chi,L 17-24,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Ricky Ortiz, Atl RB",Ari,W 40-14,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"De'Lance Turner*, Bal RB IR",TB,W 20-12,0/0,0,0,0,0,0,0,0,0,0,0,RB
-"Dare Ogunbowale, TB RB",@Bal,L 12-20,0/0,0,0,0,0,0,0,0,0,0,0,RB
+Player,POS,Team,Pass Yds,Pass TD,Pass Int,Rush Yds,Rush TD,Receptions,Rec Yds,Rec TD,Status
+Todd Gurley,RB,LAR,0,0,0,89.9,1.0,4.0,38.2,0.2, 
+Saquon Barkley,RB,NYG,0,0,0,83.5,0.6,5.1,41.2,0.2, 
+Ezekiel Elliott,RB,DAL,0,0,0,80.4,0.6,5.3,42.9,0.2, 
+Christian McCaffrey,RB,CAR,0,0,0,55.6,0.6,6.6,54.1,0.2, 
+Alvin Kamara,RB,NO,0,0,0,59.7,0.8,4.5,39.0,0.3, 
+Nick Chubb,RB,CLE,0,0,0,92.7,0.7,3.1,26.4,0.1, 
+Leonard Fournette,RB,JAX,0,0,0,86.7,0.6,2.9,22.8,0.1,Q
+Joe Mixon,RB,CIN,0,0,0,75.3,0.6,3.4,26.6,0.1, 
+Jaylen Samuels,RB,PIT,0,0,0,44.1,0.6,4.6,36.7,0.2, 
+Phillip Lindsay,RB,DEN,0,0,0,76.0,0.7,2.6,19.4,0.1,IR
+Dalvin Cook,RB,MIN,0,0,0,68.9,0.5,3.9,29.0,0.1, 
+David Johnson,RB,ARI,0,0,0,69.3,0.4,3.5,28.2,0.2, 
+Justin Jackson,RB,LAC,0,0,0,58.5,0.3,3.3,27.9,0.2, 
+Aaron Jones,RB,GB,0,0,0,62.6,0.3,3.5,27.1,0.1,IR
+Tarik Cohen,RB,CHI,0,0,0,27.7,0.2,4.5,44.7,0.3, 
+Lamar Miller,RB,HOU,0,0,0,78.7,0.4,2.2,17.4,0.1, 
+Chris Carson,RB,SEA,0,0,0,71.4,0.6,1.7,13.8,0.1, 
+Mark Ingram,RB,NO,0,0,0,54.4,0.6,2.2,17.7,0.1, 
+Doug Martin,RB,OAK,0,0,0,59.3,0.7,1.6,13.2,0.0, 
+Elijah McGuire,RB,NYJ,0,0,0,50.0,0.3,3.0,25.4,0.1, 
+James White,RB,NE,0,0,0,13.7,0.2,4.8,41.1,0.2, 
+Sony Michel,RB,NE,0,0,0,64.9,0.7,0.8,6.6,0.0, 
+Marlon Mack,RB,IND,0,0,0,64.0,0.5,1.4,10.3,0.1,Q
+Tevin Coleman,RB,ATL,0,0,0,46.2,0.3,2.6,23.9,0.2, 
+Derrick Henry,RB,TEN,0,0,0,60.6,0.5,1.6,12.0,0.0, 
+Damien Williams,RB,KC,0,0,0,35.3,0.4,2.8,22.4,0.2, 
+Kenyan Drake,RB,MIA,0,0,0,26.9,0.1,3.9,31.4,0.2, 
+Theo Riddick,RB,DET,0,0,0,17.8,0.1,5.0,35.5,0.1,Q
+Marcus Murphy,RB,BUF,0,0,0,52.1,0.4,2.0,16.8,0.1,IR
+Dion Lewis,RB,TEN,0,0,0,37.8,0.3,3.1,21.5,0.1, 
+Matt Breida,RB,SF,0,0,0,55.7,0.3,1.8,15.3,0.1,IR
+Gus Edwards,RB,BAL,0,0,0,76.2,0.6,0.1,0.7,0.0, 
+Jalen Richard,RB,OAK,0,0,0,21.2,0.2,3.9,32.9,0.1, 
+Jordan Howard,RB,CHI,0,0,0,59.1,0.5,0.9,7.2,0.0, 
+Nyheim Hines,RB,IND,0,0,0,26.6,0.2,3.4,24.3,0.2, 
+LeGarrette Blount,RB,DET,0,0,0,48.8,0.4,1.6,12.5,0.0, 
+Chris Thompson,RB,WAS,0,0,0,19.6,0.1,4.1,32.9,0.1, 
+Jeff Wilson,RB,SF,0,0,0,43.7,0.3,2.1,16.5,0.1,Q
+Adrian Peterson,RB,WAS,0,0,0,60.6,0.3,1.2,10.1,0.0, 
+Peyton Barber,RB,TB,0,0,0,48.9,0.4,1.4,11.0,0.0, 
+Josh Adams,RB,PHI,0,0,0,57.5,0.4,0.8,6.7,0.0, 
+Frank Gore,RB,MIA,0,0,0,50.9,0.2,1.4,12.2,0.1,IR
+Ito Smith,RB,ATL,0,0,0,34.9,0.3,2.1,15.6,0.1,IR
+Mike Davis,RB,SEA,0,0,0,35.9,0.3,1.7,12.7,0.1, 
+T.J. Yeldon,RB,JAX,0,0,0,16.4,0.1,3.1,25.6,0.1, 
+Kenneth Dixon,RB,BAL,0,0,0,35.2,0.3,1.4,12.0,0.1, 
+Trenton Cannon,RB,NYJ,0,0,0,23.6,0.2,2.3,19.7,0.0, 
+Detrez Newsome,RB,LAC,0,0,0,20.7,0.2,1.9,15.3,0.1, 
+Royce Freeman,RB,DEN,0,0,0,32.1,0.4,0.8,6.0,0.0, 
+Darren Sproles,RB,PHI,0,0,0,15.3,0.1,2.3,18.2,0.1, 
+Giovani Bernard,RB,CIN,0,0,0,10.5,0.1,2.6,20.6,0.1, 
+Alfred Blue,RB,HOU,0,0,0,36.7,0.2,0.7,5.6,0.0, 
+Darrel Williams,RB,KC,0,0,0,21.6,0.3,1.1,9.1,0.1, 
+Stevan Ridley,RB,PIT,0,0,0,25.8,0.3,0.6,5.2,0.0, 
+Jacquizz Rodgers,RB,TB,0,0,0,5.1,0.0,2.6,21.6,0.1, 
+Duke Johnson,RB,CLE,0,0,0,11.0,0.1,1.8,16.4,0.1, 
+Rex Burkhead,RB,NE,0,0,0,15.0,0.2,1.4,11.3,0.0, 
+Devontae Booker,RB,DEN,0,0,0,3.2,0.0,2.3,18.8,0.1, 
+Zach Zenner,RB,DET,0,0,0,18.7,0.1,1.1,8.0,0.0, 
+Wayne Gallman,RB,NYG,0,0,0,13.6,0.1,1.3,10.1,0.0, 
+Chase Edmonds,RB,ARI,0,0,0,17.2,0.1,1.1,8.9,0.0, 
+Javorius Allen,RB,BAL,0,0,0,7.8,0.1,1.5,12.8,0.1, 
+Kyle Juszczyk,RB,SF,0,0,0,3.2,0.0,1.8,17.1,0.1, 
+Latavius Murray,RB,MIN,0,0,0,23.8,0.2,0.3,2.2,0.0, 
+Wendell Smallwood,RB,PHI,0,0,0,9.5,0.1,1.4,11.8,0.0, 
+DeAndre Washington,RB,OAK,0,0,0,17.3,0.2,0.5,4.3,0.0, 
+Derek Watt,RB,LAC,0,0,0,3.1,0.1,1.4,11.6,0.1, 
+Charcandrick West,RB,KC,0,0,0,10.9,0.1,0.8,6.7,0.0, 
+Rod Smith,RB,DAL,0,0,0,10.5,0.1,0.8,6.2,0.0, 
+Jamaal Williams,RB,GB,0,0,0,10.8,0.1,0.9,6.6,0.0, 
+Ronald Jones,RB,TB,0,0,0,12.1,0.1,0.6,4.6,0.0, 
+J.D. McKissic,RB,SEA,0,0,0,3.6,0.0,1.0,8.3,0.1, 
+Taquan Mizzell,RB,CHI,0,0,0,7.2,0.1,0.7,5.9,0.0, 
+Justin Davis,RB,LAR,0,0,0,8.0,0.1,0.5,4.3,0.0, 
+Andy Janovich,RB,DEN,0,0,0,0.9,0.0,1.0,8.8,0.1, 
+Elijhaa Penny,RB,NYG,0,0,0,0.0,0.0,1.0,8.6,0.0, 
+Anthony Sherman,RB,KC,0,0,0,2.4,0.0,0.5,4.8,0.0, 
+Jordan Wilkins,RB,IND,0,0,0,3.2,0.0,0.6,4.3,0.0, 
+James Develin,RB,NE,0,0,0,3.4,0.1,0.3,2.2,0.0, 
+Zach Line,RB,NO,0,0,0,1.1,0.0,0.4,3.9,0.0, 
+Patrick DiMarco,RB,BUF,0,0,0,0.0,0.0,0.6,5.3,0.0, 
+C.J. Ham,RB,MIN,0,0,0,0.9,0.0,0.5,4.5,0.0,Q
+Dontrell Hilliard,RB,CLE,0,0,0,0.5,0.0,0.5,4.5,0.0, 
+Brandon Bolden,RB,MIA,0,0,0,4.5,0.0,0.2,1.9,0.0, 
+Ameer Abdullah,RB,MIN,0,0,0,1.0,0.0,0.3,2.2,0.0, 
+T.J. Logan,RB,ARI,0,0,0,1.9,0.0,0.2,1.9,0.0, 
+Roosevelt Nix,RB,PIT,0,0,0,0.0,0.0,0.3,2.7,0.0, 
+Cameron Artis-Payne,RB,CAR,0,0,0,4.2,0.0,0.0,0.0,0.0, 
+Derrick Coleman,RB,ARI,0,0,0,0.8,0.0,0.2,1.9,0.0, 
+Alex Armah,RB,CAR,0,0,0,2.0,0.1,0.0,0.0,0.0, 
+Keith Smith,RB,OAK,0,0,0,0.0,0.0,0.3,2.2,0.0, 
+Tre Madden,RB,SEA,0,0,0,0.0,0.0,0.2,1.7,0.0,Q
+Tommy Bohanon,RB,JAX,0,0,0,0.0,0.0,0.2,1.9,0.0, 
+Trey Edmunds,RB,PIT,0,0,0,2.4,0.0,0.0,0.0,0.0, 
+Mark Walton,RB,CIN,0,0,0,1.9,0.0,0.0,0.0,0.0, 
+Dwayne Washington,RB,NO,0,0,0,1.1,0.0,0.0,0.0,0.0, 
+Benny Cunningham,RB,CHI,0,0,0,0.0,0.0,0.0,0.0,0.0, 
+Jamize Olawale,RB,DAL,0,0,0,0.0,0.0,0.0,0.0,0.0, 
+Kenjon Barner,RB,CAR,0,0,0,0.0,0.0,0.0,0.0,0.0,IR
+Danny Vitale,RB,GB,0,0,0,0.0,0.0,0.0,0.0,0.0, 
+Troymaine Pope,RB,LAC,0,0,0,0.0,0.0,0.0,0.0,0.0, 
+Matt Dayes,RB,SF,0,0,0,0.0,0.0,0.0,0.0,0.0, 
+Brian Hill,RB,ATL,0,0,0,0.0,0.0,0.0,0.0,0.0, 
+Kalen Ballage,RB,MIA,0,0,0,0.0,0.0,0.0,0.0,0.0, 
+John Kelly,RB,LAR,0,0,0,0.0,0.0,0.0,0.0,0.0, 
+Buddy Howell,RB,HOU,0,0,0,0.0,0.0,0.0,0.0,0.0,Q

@@ -1,197 +1,83 @@
-Player,OPP,STATUS ET,C/A,YDS,TD,INT,RUSH,YDS,TD,REC,YDS,TD,PTS,POS
-"Zach Ertz, Phi TE",Min,L 21-23,0/0,0,0,0,0,0,0,6.1,67.9,0.5,15.9,TE
-"Travis Kelce, KC TE",Jax,W 30-14,0/0,0,0,0,0.1,0.4,0,5.7,67.9,0.5,15.5,TE
-"Jordan Reed*, Wsh TE IR",@NO,L 19-43,0/0,0,0,0,0,0,0,5.2,57.4,0.5,13.7,TE
-"Rob Gronkowski, NE TE",Ind,W 38-24,0/0,0,0,0,0,0,0,4,56.6,0.5,12.7,TE
-"Jared Cook, Oak TE",@LAC,L 10-26,0/0,0,0,0,0,0,0,4.7,56.9,0.3,12.2,TE
-"Eric Ebron, Ind TE",@NE,L 24-38,0/0,0,0,0,0,0,0,4.5,46.4,0.4,11.7,TE
-"Jimmy Graham, GB TE",@Det,L 23-31,0/0,0,0,0,0,0,0,3.9,46.6,0.5,11.4,TE
-"George Kittle, SF TE",Ari,L 18-28,0/0,0,0,0,0,0,0,4,50,0.3,10.8,TE
-"Vance McDonald, Pit TE",Atl,W 41-17,0/0,0,0,0,0,0,0,3.2,35.4,0.3,8.8,TE
-"Kyle Rudolph, Min TE",@Phi,W 23-21,0/0,0,0,0,0,0,0,3.5,34.4,0.3,8.7,TE
-"Austin Hooper, Atl TE",@Pit,L 17-41,0/0,0,0,0,0,0,0,3.2,35.1,0.3,8.5,TE
-"David Njoku, Cle TE",Bal,W 12-9,0/0,0,0,0,0,0,0,3.4,37.2,0.2,8.5,TE
-"Austin Seferian-Jenkins*, Jax TE IR",@KC,L 14-30,0/0,0,0,0,0,0,0,3.3,30.1,0.3,8.1,TE
-"Antonio Gates, LAC TE",Oak,W 26-10,0/0,0,0,0,0,0,0,2.5,28.3,0.4,7.8,TE
-"Ricky Seals-Jones, Ari TE Q",@SF,W 28-18,0/0,0,0,0,0,0,0,3,33.8,0.2,7.6,TE
-"Benjamin Watson, NO TE Q",Wsh,W 43-19,0/0,0,0,0,0,0,0,2.7,28.6,0.3,7.1,TE
-"C.J. Uzomah, Cin TE",Mia,W 27-17,0/0,0,0,0,0,0,0,2.7,27,0.3,7,TE
-"Nick Vannett, Sea TE",LAR,L 31-33,0/0,0,0,0,0,0,0,2.6,28.2,0.3,7,TE
-"Rhett Ellison, NYG TE Q",@Car,L 31-33,0/0,0,0,0,0,0,0,3,29.3,0.2,7,TE
-"Geoff Swaim*, Dal TE IR",@Hou,L 16-19,0/0,0,0,0,0,0,0,2.7,28.7,0.2,6.7,TE
-"Jeff Heuerman*, Den TE IR",@NYJ,L 16-34,0/0,0,0,0,0,0,0,2.6,27.7,0.2,6.4,TE
-"Ian Thomas, Car TE",NYG,W 33-31,0/0,0,0,0,0,0,0,2.4,25.7,0.2,6.3,TE
-"Mike Gesicki, Mia TE",@Cin,L 17-27,0/0,0,0,0,0,0,0,2.3,25.1,0.2,6.2,TE
-"Charles Clay, Buf TE",Ten,W 13-12,0/0,0,0,0,0,0,0,2.6,28.7,0.1,6.2,TE
-"Hayden Hurst, Bal TE",@Cle,L 9-12,0/0,0,0,0,0,0,0,2.3,25.1,0.1,5.7,TE
-"Ryan Griffin, Hou TE",Dal,W 19-16,0/0,0,0,0,0,0,0,1.8,20.4,0.2,4.9,TE
-"Luke Willson, Det TE Q",GB,W 31-23,0/0,0,0,0,0,0,0,1.8,17.9,0.2,4.8,TE
-"Vernon Davis, Wsh TE Q",@NO,L 19-43,0/0,0,0,0,0,0,0,1.6,23,0.1,4.7,TE
-"Demetrius Harris, KC TE",Jax,W 30-14,0/0,0,0,0,0,0,0,1.6,18.3,0.2,4.3,TE
-"Dallas Goedert, Phi TE",Min,L 21-23,0/0,0,0,0,0,0,0,1.5,16.7,0.1,3.8,TE
-"Tyler Kroft*, Cin TE IR",Mia,W 27-17,0/0,0,0,0,0,0,0,1.4,15.1,0.1,3.8,TE
-"Nick Boyle, Bal TE",@Cle,L 9-12,0/0,0,0,0,0,0,0,1.7,13.9,0.1,3.7,TE
-"Gerald Everett, LAR TE",@Sea,W 33-31,0/0,0,0,0,0,0,0,1.3,14,0.2,3.7,TE
-"Luke Stocker, Ten TE Q",@Buf,L 12-13,0/0,0,0,0,0,0,0,1.4,15.5,0.1,3.6,TE
-"Jordan Akins, Hou TE",Dal,W 19-16,0/0,0,0,0,0,0,0,1.3,14.7,0.1,3.6,TE
-"Jason Croom, Buf TE",Ten,W 13-12,0/0,0,0,0,0,0,0,1.4,16.1,0.1,3.4,TE
-"Virgil Green, LAC TE",Oak,W 26-10,0/0,0,0,0,0,0,0,1.2,12.5,0.2,3.3,TE
-"Mark Andrews, Bal TE",@Cle,L 9-12,0/0,0,0,0,0,0,0,1.3,14.8,0.1,3.3,TE
-"Darrell Daniels, Ari TE",@SF,W 28-18,0/0,0,0,0,0,0,0,1.2,12.9,0.1,3.3,TE
-"Matt LaCosse, Den TE",@NYJ,L 16-34,0/0,0,0,0,0,0,0,1.3,14.3,0.1,3.2,TE
-"Jordan Leggett, NYJ TE",Den,W 34-16,0/0,0,0,0,0,0,0,1.3,14.1,0.1,3.2,TE
-"Chris Herndon, NYJ TE",Den,W 34-16,0/0,0,0,0,0,0,0,1.3,14.5,0.1,3.2,TE
-"Jonnu Smith*, Ten TE IR",@Buf,L 12-13,0/0,0,0,0,0,0,0,1.2,12.8,0.1,3,TE
-"Jesse James, Pit TE",Atl,W 41-17,0/0,0,0,0,0,0,0,1.1,12.6,0.1,3,TE
-"Darren Fells, Cle TE",Bal,W 12-9,0/0,0,0,0,0,0,0,1.2,12.7,0.1,2.9,TE
-"Lance Kendricks, GB TE",@Det,L 23-31,0/0,0,0,0,0,0,0,1.1,11.5,0.1,2.9,TE
-"Maxx Williams, Bal TE",@Cle,L 9-12,0/0,0,0,0,0.1,0.5,0,1.1,11.5,0.1,2.7,TE
-"James O'Shaughnessy, Jax TE",@KC,L 14-30,0/0,0,0,0,0,0,0,1,11.2,0.1,2.6,TE
-"Josh Hill, NO TE",Wsh,W 43-19,0/0,0,0,0,0,0,0,1,10,0.1,2.6,TE
-"Tyler Higbee, LAR TE",@Sea,W 33-31,0/0,0,0,0,0,0,0,0.9,10,0.1,2.5,TE
-"Durham Smythe, Mia TE",@Cin,L 17-27,0/0,0,0,0,0,0,0,0.9,10,0.1,2.4,TE
-"Levine Toilolo, Det TE",GB,W 31-23,0/0,0,0,0,0,0,0,0.9,9.4,0.1,2.4,TE
-"Scott Simonson, NYG TE",@Car,L 31-33,0/0,0,0,0,0,0,0,1,10.6,0.1,2.4,TE
-"Eric Tomlinson*, NYJ TE IR",Den,W 34-16,0/0,0,0,0,0,0,0,0.9,9.6,0.1,2.1,TE
-"Niles Paul, Jax TE Q",@KC,L 14-30,0/0,0,0,0,0,0,0,0.7,8.4,0.1,2,TE
-"Jacob Hollister*, NE TE IR",Ind,W 38-24,0/0,0,0,0,0,0,0,0.7,7.7,0.1,2,TE
-"David Morgan, Min TE",@Phi,W 23-21,0/0,0,0,0,0,0,0,0.8,8.2,0.1,1.9,TE
-"Garrett Celek, SF TE Q",Ari,L 18-28,0/0,0,0,0,0,0,0,0.6,7.3,0.1,1.7,TE
-"Jermaine Gresham, Ari TE",@SF,W 28-18,0/0,0,0,0,0,0,0,0.6,6.6,0,1.5,TE
-"Rico Gathers, Dal TE",@Hou,L 16-19,0/0,0,0,0,0,0,0,0.6,6.8,0,1.5,TE
-"Logan Thomas, Buf TE",Ten,W 13-12,0/0,0,0,0,0,0,0,0.6,6.5,0,1.4,TE
-"Logan Paulsen, Atl TE",@Pit,L 17-41,0/0,0,0,0,0,0,0,0.5,5.5,0,1.3,TE
-"Derek Carrier, Oak TE Q",@LAC,L 10-26,0/0,0,0,0,0,0,0,0.5,5.7,0,1.3,TE
-"Lee Smith, Oak TE",@LAC,L 10-26,0/0,0,0,0,0,0,0,0.5,5.6,0,1.3,TE
-"Jordan Thomas, Hou TE",Dal,W 19-16,0/0,0,0,0,0,0,0,0.4,5,0,1.2,TE
-"Blake Jarwin, Dal TE",@Hou,L 16-19,0/0,0,0,0,0,0,0,0.4,4.6,0,1,TE
-"Tyler Conklin, Min TE",@Phi,W 23-21,0/0,0,0,0,0,0,0,0.3,2.7,0,0.6,TE
-"Mason Schreck*, Cin TE IR",Mia,W 27-17,0/0,0,0,0,0,0,0,0.2,2.5,0,0.6,TE
-"Josh Perkins*, Phi TE IR",Min,L 21-23,0/0,0,0,0,0,0,0,0.2,2.8,0,0.6,TE
-"Seth DeValve, Cle TE",Bal,W 12-9,0/0,0,0,0,0,0,0,0.2,2.5,0,0.6,TE
-"Chris Manhertz, Car TE",NYG,W 33-31,0/0,0,0,0,0,0,0,0.2,2.2,0,0.5,TE
-"Xavier Grimble, Pit TE",Atl,W 41-17,0/0,0,0,0,0,0,0,0.1,1.4,0,0.4,TE
-"Eric Saubert, Atl TE",@Pit,L 17-41,0/0,0,0,0,0,0,0,0.1,1.4,0,0.3,TE
-"Dwayne Allen, NE TE",Ind,W 38-24,0/0,0,0,0,0,0,0,0.1,1.3,0,0.3,TE
-"Jeremy Sprinkle, Wsh TE",@NO,L 19-43,0/0,0,0,0,0,0,0,0.1,1.3,0,0.3,TE
-"Jason Witten, FA TE",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,TE
-"Marcedes Lewis, GB TE",@Det,L 23-31,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Anthony Fasano, Mia TE",@Cin,L 17-27,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Delanie Walker*, Ten TE IR",@Buf,L 12-13,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Greg Olsen*, Car TE IR",NYG,W 33-31,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Brent Celek, Phi TE",Min,L 21-23,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Martellus Bennett, FA TE",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,TE
-"Gary Barnidge, FA TE",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,TE
-"Kellen Davis, NYJ TE Q",Den,W 34-16,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Matthew Mulligan, Det TE",GB,W 31-23,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"David Johnson, Pit TE",Atl,W 41-17,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Chase Coffman, Ind TE",@NE,L 24-38,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"John Phillips, Ari TE",@SF,W 28-18,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Zach Miller*, Chi TE IR",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,TE
-"Brandon Myers, TB TE",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,TE
-"Dennis Pitta*, Bal TE O",@Cle,L 9-12,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Ed Dickson, Sea TE",LAR,L 31-33,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Jim Dray, Ari TE",@SF,W 28-18,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Clay Harbor, NO TE",Wsh,W 43-19,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Michael Hoomanawanui*, NO TE IR",Wsh,W 43-19,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Andrew Quarless, Det TE",GB,W 31-23,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Jeff Cumberland, LAC TE",Oak,W 26-10,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Rob Housler, NE TE Q",Ind,W 38-24,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Bruce Miller, SF TE",Ari,L 18-28,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Jordan Cameron, FA TE Q",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,TE
-"Julius Thomas, FA TE",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,TE
-"Coby Fleener, FA TE Q",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,TE
-"Orson Charles*, Cle TE IR",Bal,W 12-9,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Ladarius Green, Pit TE Q",Atl,W 41-17,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"James Hanna, Dal TE",@Hou,L 16-19,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Greg Scruggs, NE TE Q",Ind,W 38-24,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Phillip Supernaw, Ten TE",@Buf,L 12-13,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Beau Brinkley, Ten TE",@Buf,L 12-13,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Dominique Jones, Mia TE",@Cin,L 17-27,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Sean McGrath, Det TE",GB,W 31-23,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Brandon Bostick, NYJ TE",Den,W 34-16,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Larry Donnell, Bal TE",@Cle,L 9-12,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Ifeanyi Momah, Ari TE Q",@SF,W 28-18,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Tyler Eifert*, Cin TE IR",Mia,W 27-17,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Gavin Escobar, Mia TE",@Cin,L 17-27,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Mychal Rivera, Jax TE Q",@KC,L 14-30,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Chris Gragg, NYJ TE Q",Den,W 34-16,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Dion Sims*, Chi TE IR",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,TE
-"Tim Wright, KC TE",Jax,W 30-14,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Brandon Williams, Ind TE Q",@NE,L 24-38,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"MarQueis Gray*, Mia TE IR",@Cin,L 17-27,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Jack Doyle*, Ind TE IR",@NE,L 24-38,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"C.J. Fiedorowicz, Hou TE",Dal,W 19-16,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Crockett Gillmore, Bal TE Q",@Cle,L 9-12,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Richard Rodgers, Phi TE",Min,L 21-23,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Jace Amaro, KC TE",Jax,W 30-14,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Troy Niklas, NE TE",Ind,W 38-24,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Trey Burton, Chi TE Q",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,TE
-"Asante Cleveland, LAC TE",Oak,W 26-10,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Justin Perillo, Chi TE",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,TE
-"MyCole Pruitt, Ten TE",@Buf,L 12-13,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Randall Telfer, Cle TE",Bal,W 12-9,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Gerald Christian, Ari TE",@SF,W 28-18,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Clive Walford, NYJ TE",Den,W 34-16,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Neal Sterling*, NYJ TE IR",Den,W 34-16,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Blake Bell, Jax TE",@KC,L 14-30,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Nick O'Leary, Mia TE",@Cin,L 17-27,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Darren Waller, Oak TE",@LAC,L 10-26,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Ben Koyack, Jax TE Q",@KC,L 14-30,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Kennard Backman, Det TE",GB,W 31-23,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"A.J. Derby*, Mia TE IR",@Cin,L 17-27,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Vince Mayle, Bal TE",@Cle,L 9-12,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"E.J. Bibbs, Wsh TE",@NO,L 19-43,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Khari Lee, Buf TE",Ten,W 13-12,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Will Tye, NE TE",Ind,W 38-24,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Cameron Brate, TB TE Q",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,TE
-"Daniel Brown, Chi TE",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,TE
-"Hunter Henry, LAC TE",Oak,W 26-10,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Temarrick Hemingway, Den TE",@NYJ,L 16-34,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Jerell Adams, NYG TE",@Car,L 31-33,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Thomas Duarte, Mia TE",@Cin,L 17-27,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Beau Sandland, GB TE Q",@Det,L 23-31,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Ben Braunecker, Chi TE",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,TE
-"Cole Wick*, Ten TE IR",@Buf,L 12-13,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Stephen Anderson, Hou TE",Dal,W 19-16,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Erik Swoope, NO TE",Wsh,W 43-19,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Bryce Williams, Ari TE",@SF,W 28-18,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Devon Cajuste, Cle TE",Bal,W 12-9,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Alan Cross*, TB TE IR",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,TE
-"Braedon Bowman, LAC TE",Oak,W 26-10,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Brian Parker, Den TE",@NYJ,L 16-34,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Ross Travis*, Ind TE IR",@NE,L 24-38,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"D.J. Tialavea, Atl TE",@Pit,L 17-41,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Matt Lengel, Cin TE",Mia,W 27-17,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Alex Ellis*, KC TE IR",Jax,W 30-14,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Michael Roberts*, Det TE IR",GB,W 31-23,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Jake Butt*, Den TE IR",@NYJ,L 16-34,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Adam Shaheen, Chi TE",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,TE
-"O.J. Howard*, TB TE IR",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,TE
-"Bucky Hodges, Pit TE",Atl,W 41-17,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Evan Engram, NYG TE",@Car,L 31-33,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Antony Auclair, TB TE",** BYE **,0/0,0,0,0,0,0,0,0,0,0,--,,TE
-"Hakeem Valles*, Det TE O",GB,W 31-23,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Cole Hikutini, Min TE",@Phi,W 23-21,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Sean Culkin, LAC TE",Oak,W 26-10,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Evan Baylis, Car TE",NYG,W 33-31,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Henry Krieger-Coble, LAR TE",@Sea,W 33-31,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Austin Traylor, Den TE",@NYJ,L 16-34,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Will Dissly*, Sea TE IR",LAR,L 31-33,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Dalton Schultz, Dal TE",@Hou,L 16-19,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Troy Fumagalli*, Den TE IR",@NYJ,L 16-34,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Ryan Izzo*, NE TE IR",Ind,W 38-24,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Robert Tonyan, GB TE",@Det,L 23-31,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Dan Arnold, NO TE",Wsh,W 43-19,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Gabe Holmes, Ari TE",@SF,W 28-18,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Johnny Mundt, LAR TE",@Sea,W 33-31,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Anthony Firkser, Ten TE",@Buf,L 12-13,0/0,0,0,0,0,0,0,0,0,0,0,TE
-"Jerome Cunningham, Det TE",GB,W 31-23,--/--,--,--,--,--,--,--,--,--,--,--,TE
-"Mo Alie-Cox, Ind TE",@NE,L 24-38,--/--,--,--,--,--,--,--,--,--,--,--,TE
-"Tyrone Swoopes, Sea TE",LAR,L 31-33,--/--,--,--,--,--,--,--,--,--,--,--,TE
-"Garrett Dickerson, NYG TE",@Car,L 31-33,--/--,--,--,--,--,--,--,--,--,--,--,TE
-"David Grinnage, Jax TE",@KC,L 14-30,--/--,--,--,--,--,--,--,--,--,--,--,TE
-"Ross Dwelley, SF TE",Ari,L 18-28,--/--,--,--,--,--,--,--,--,--,--,--,TE
-"Jordan Franks, Cin TE",Mia,W 27-17,--/--,--,--,--,--,--,--,--,--,--,--,TE
-"Matt Flanagan, Wsh TE",@NO,L 19-43,--/--,--,--,--,--,--,--,--,--,--,--,TE
-"Donnie Ernsberger, TB TE",** BYE **,--/--,--,--,--,--,--,--,--,--,--,--,,TE
+Player,POS,Team,Pass Yds,Pass TD,Pass Int,Rush Yds,Rush TD,Receptions,Rec Yds,Rec TD,Status
+Zach Ertz,TE,PHI,0.0,0.0,0.0,0.0,0.0,6.1,67.9,0.5, 
+Travis Kelce,TE,KC,0.0,0.0,0.0,0.4,0.0,5.7,67.9,0.5, 
+Jordan Reed,TE,WAS,0.0,0.0,0.0,0.0,0.0,5.2,57.4,0.5,IR
+Rob Gronkowski,TE,NE,0.0,0.0,0.0,0.0,0.0,4.0,56.6,0.5, 
+Jared Cook,TE,OAK,0.0,0.0,0.0,0.0,0.0,4.7,56.9,0.3, 
+Eric Ebron,TE,IND,0.0,0.0,0.0,0.0,0.0,4.5,46.4,0.4, 
+Jimmy Graham,TE,GB,0.0,0.0,0.0,0.0,0.0,3.9,46.6,0.5, 
+George Kittle,TE,SF,0.0,0.0,0.0,0.0,0.0,4.0,50.0,0.3, 
+Vance McDonald,TE,PIT,0.0,0.0,0.0,0.0,0.0,3.2,35.4,0.3, 
+Kyle Rudolph,TE,MIN,0.0,0.0,0.0,0.0,0.0,3.5,34.4,0.3, 
+Austin Hooper,TE,ATL,0.0,0.0,0.0,0.0,0.0,3.2,35.1,0.3, 
+David Njoku,TE,CLE,0.0,0.0,0.0,0.0,0.0,3.4,37.2,0.2, 
+Austin Seferian-Jenkins,TE,JAX,0.0,0.0,0.0,0.0,0.0,3.3,30.1,0.3,IR
+Antonio Gates,TE,LAC,0.0,0.0,0.0,0.0,0.0,2.5,28.3,0.4, 
+Ricky Seals-Jones,TE,ARI,0.0,0.0,0.0,0.0,0.0,3.0,33.8,0.2,Q
+Benjamin Watson,TE,NO,0.0,0.0,0.0,0.0,0.0,2.7,28.6,0.3,Q
+C.J. Uzomah,TE,CIN,0.0,0.0,0.0,0.0,0.0,2.7,27.0,0.3, 
+Nick Vannett,TE,SEA,0.0,0.0,0.0,0.0,0.0,2.6,28.2,0.3, 
+Rhett Ellison,TE,NYG,0.0,0.0,0.0,0.0,0.0,3.0,29.3,0.2,Q
+Geoff Swaim,TE,DAL,0.0,0.0,0.0,0.0,0.0,2.7,28.7,0.2,IR
+Jeff Heuerman,TE,DEN,0.0,0.0,0.0,0.0,0.0,2.6,27.7,0.2,IR
+Ian Thomas,TE,CAR,0.0,0.0,0.0,0.0,0.0,2.4,25.7,0.2, 
+Mike Gesicki,TE,MIA,0.0,0.0,0.0,0.0,0.0,2.3,25.1,0.2, 
+Charles Clay,TE,BUF,0.0,0.0,0.0,0.0,0.0,2.6,28.7,0.1, 
+Hayden Hurst,TE,BAL,0.0,0.0,0.0,0.0,0.0,2.3,25.1,0.1, 
+Ryan Griffin,TE,HOU,0.0,0.0,0.0,0.0,0.0,1.8,20.4,0.2, 
+Luke Willson,TE,DET,0.0,0.0,0.0,0.0,0.0,1.8,17.9,0.2,Q
+Vernon Davis,TE,WAS,0.0,0.0,0.0,0.0,0.0,1.6,23.0,0.1,Q
+Demetrius Harris,TE,KC,0.0,0.0,0.0,0.0,0.0,1.6,18.3,0.2, 
+Dallas Goedert,TE,PHI,0.0,0.0,0.0,0.0,0.0,1.5,16.7,0.1, 
+Tyler Kroft,TE,CIN,0.0,0.0,0.0,0.0,0.0,1.4,15.1,0.1,IR
+Nick Boyle,TE,BAL,0.0,0.0,0.0,0.0,0.0,1.7,13.9,0.1, 
+Gerald Everett,TE,LAR,0.0,0.0,0.0,0.0,0.0,1.3,14.0,0.2, 
+Luke Stocker,TE,TEN,0.0,0.0,0.0,0.0,0.0,1.4,15.5,0.1,Q
+Jordan Akins,TE,HOU,0.0,0.0,0.0,0.0,0.0,1.3,14.7,0.1, 
+Jason Croom,TE,BUF,0.0,0.0,0.0,0.0,0.0,1.4,16.1,0.1, 
+Virgil Green,TE,LAC,0.0,0.0,0.0,0.0,0.0,1.2,12.5,0.2, 
+Mark Andrews,TE,BAL,0.0,0.0,0.0,0.0,0.0,1.3,14.8,0.1, 
+Darrell Daniels,TE,ARI,0.0,0.0,0.0,0.0,0.0,1.2,12.9,0.1, 
+Matt LaCosse,TE,DEN,0.0,0.0,0.0,0.0,0.0,1.3,14.3,0.1, 
+Jordan Leggett,TE,NYJ,0.0,0.0,0.0,0.0,0.0,1.3,14.1,0.1, 
+Chris Herndon,TE,NYJ,0.0,0.0,0.0,0.0,0.0,1.3,14.5,0.1, 
+Jonnu Smith,TE,TEN,0.0,0.0,0.0,0.0,0.0,1.2,12.8,0.1,IR
+Jesse James,TE,PIT,0.0,0.0,0.0,0.0,0.0,1.1,12.6,0.1, 
+Darren Fells,TE,CLE,0.0,0.0,0.0,0.0,0.0,1.2,12.7,0.1, 
+Lance Kendricks,TE,GB,0.0,0.0,0.0,0.0,0.0,1.1,11.5,0.1, 
+Maxx Williams,TE,BAL,0.0,0.0,0.0,0.5,0.0,1.1,11.5,0.1, 
+James O'Shaughnessy,TE,JAX,0.0,0.0,0.0,0.0,0.0,1.0,11.2,0.1, 
+Josh Hill,TE,NO,0.0,0.0,0.0,0.0,0.0,1.0,10.0,0.1, 
+Tyler Higbee,TE,LAR,0.0,0.0,0.0,0.0,0.0,0.9,10.0,0.1, 
+Durham Smythe,TE,MIA,0.0,0.0,0.0,0.0,0.0,0.9,10.0,0.1, 
+Levine Toilolo,TE,DET,0.0,0.0,0.0,0.0,0.0,0.9,9.4,0.1, 
+Eric Tomlinson,TE,NYJ,0.0,0.0,0.0,0.0,0.0,0.9,9.6,0.1,IR
+Jacob Hollister,TE,NE,0.0,0.0,0.0,0.0,0.0,0.7,7.7,0.1,IR
+David Morgan,TE,MIN,0.0,0.0,0.0,0.0,0.0,0.8,8.2,0.1, 
+Garrett Celek,TE,SF,0.0,0.0,0.0,0.0,0.0,0.6,7.3,0.1,Q
+Jermaine Gresham,TE,ARI,0.0,0.0,0.0,0.0,0.0,0.6,6.6,0.0, 
+Rico Gathers,TE,DAL,0.0,0.0,0.0,0.0,0.0,0.6,6.8,0.0, 
+Logan Thomas,TE,BUF,0.0,0.0,0.0,0.0,0.0,0.6,6.5,0.0, 
+Logan Paulsen,TE,ATL,0.0,0.0,0.0,0.0,0.0,0.5,5.5,0.0, 
+Derek Carrier,TE,OAK,0.0,0.0,0.0,0.0,0.0,0.5,5.7,0.0,Q
+Lee Smith,TE,OAK,0.0,0.0,0.0,0.0,0.0,0.5,5.6,0.0, 
+Jordan Thomas,TE,HOU,0.0,0.0,0.0,0.0,0.0,0.4,5.0,0.0, 
+Blake Jarwin,TE,DAL,0.0,0.0,0.0,0.0,0.0,0.4,4.6,0.0, 
+Tyler Conklin,TE,MIN,0.0,0.0,0.0,0.0,0.0,0.3,2.7,0.0, 
+Mason Schreck,TE,CIN,0.0,0.0,0.0,0.0,0.0,0.2,2.5,0.0,IR
+Josh Perkins,TE,PHI,0.0,0.0,0.0,0.0,0.0,0.2,2.8,0.0,IR
+Seth DeValve,TE,CLE,0.0,0.0,0.0,0.0,0.0,0.2,2.5,0.0, 
+Chris Manhertz,TE,CAR,0.0,0.0,0.0,0.0,0.0,0.2,2.2,0.0, 
+Xavier Grimble,TE,PIT,0.0,0.0,0.0,0.0,0.0,0.1,1.4,0.0, 
+Eric Saubert,TE,ATL,0.0,0.0,0.0,0.0,0.0,0.1,1.4,0.0, 
+Dwayne Allen,TE,NE,0.0,0.0,0.0,0.0,0.0,0.1,1.3,0.0, 
+Jeremy Sprinkle,TE,WAS,0.0,0.0,0.0,0.0,0.0,0.1,1.3,0.0, 
+Marcedes Lewis,TE,GB,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+MyCole Pruitt,TE,TEN,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Nick O'Leary,TE,MIA,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Cole Wick,TE,TEN,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,IR
+Brian Parker,TE,DEN,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Sean Culkin,TE,LAC,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Gabe Holmes,TE,ARI,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Johnny Mundt,TE,LAR,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0, 
+Garrett Dickerson,TE,NYG,,,,,,,,, 

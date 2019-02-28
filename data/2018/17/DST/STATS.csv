@@ -1,4 +1,4 @@
-Player,Team,GP,Sack,Int,Fum Rec,Fum Forc,TD,Block,Return Yds,Pts Allow,Pts Allow 0,Pts Allow 1-6,Pts Allow 7-13,Pts Allow 14-20,Pts Allow 21-27,Pts Allow 28-34,Pts Allowed 35+,Yds Allow,Less 100 Yds Allowed,100-199 Yds Allow,200-299 Yds Allow,300-399 Yds Allow,400-449 Yds Allow,450-499 Yds Allow,Team Def 2pt Ret,POS
+Player,Team,GP,Sack,Int,Fum Rec,Fum Forc,TD,Blk,Return Yds,PA,Pts Allow 0,Pts Allow 1-6,Pts Allow 7-13,Pts Allow 14-20,Pts Allow 21-27,Pts Allow 28-34,Pts Allowed 35+,YdA,Less 100 Yds Allowed,100-199 Yds Allow,200-299 Yds Allow,300-399 Yds Allow,400-449 Yds Allow,450-499 Yds Allow,Team Def 2pt Ret,POS
 San Francisco 49ers,SF,1.0,0.0,0.0,0.0,0.0,0.0,0.0,25.0,42.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,377.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,DST
 Chicago Bears,CHI,1.0,4.0,0.0,0.0,0.0,0.0,0.0,-2.0,10.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,164.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,DST
 Cincinnati Bengals,CIN,1.0,1.0,1.0,0.0,1.0,1.0,0.0,88.0,16.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,343.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,DST
@@ -22,7 +22,7 @@ Green Bay Packers,GB,1.0,1.0,0.0,0.0,0.0,0.0,0.0,111.0,31.0,0.0,0.0,0.0,0.0,0.0,
 Carolina Panthers,CAR,1.0,2.0,1.0,0.0,0.0,0.0,0.0,0.0,14.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,294.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,DST
 New England Patriots,NE,1.0,4.0,0.0,3.0,3.0,1.0,0.0,28.0,3.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,239.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,DST
 Oakland Raiders,OAK,1.0,0.0,1.0,0.0,0.0,0.0,0.0,91.0,29.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,409.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,DST
-Los Angeles Rams,LA,1.0,3.0,3.0,1.0,1.0,1.0,0.0,11.0,32.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,391.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,DST
+Los Angeles Rams,LAR,1.0,3.0,3.0,1.0,1.0,1.0,0.0,11.0,32.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,391.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,DST
 Baltimore Ravens,BAL,1.0,0.0,3.0,0.0,0.0,0.0,0.0,37.0,24.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,426.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,DST
 Washington Redskins,WAS,1.0,3.0,1.0,0.0,0.0,0.0,0.0,75.0,24.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,360.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,DST
 New Orleans Saints,NO,1.0,1.0,0.0,0.0,0.0,0.0,0.0,18.0,33.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,374.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,DST

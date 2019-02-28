@@ -1,33 +1,33 @@
-Player,nfl_team,college,experience,draft_year,draft_round,draft_pick,pts_allowed,yds_allowed,pass_yds,pass_tds,rush_yds,rush_tds,sacks,ints,int_ret_tds,fumbles_recovered,fumble_ret_tds,POS
-Chicago Bears,CHI,,0,0,0,0,346,5593,0,0,0,0,38,9,0,7,0,DST
-Baltimore Ravens,BAL,,0,0,0,0,330,5535,0,0,0,0,37,20,0,9,0,DST
-Minnesota Vikings,MIN,,0,0,0,0,323,5330,0,0,0,0,44,17,0,7,0,DST
-Jacksonville Jaguars,JAC,,0,0,0,0,321,5379,0,0,0,0,46,20,0,9,0,DST
-Denver Broncos,DEN,,0,0,0,0,336,5227,0,0,0,0,40,11,0,8,0,DST
-Los Angeles Rams,LAR,,0,0,0,0,326,5483,0,0,0,0,40,18,0,9,0,DST
-Houston Texans,HOU,,0,0,0,0,332,5367,0,0,0,0,45,18,0,8,0,DST
-Carolina Panthers,CAR,,0,0,0,0,362,5758,0,0,0,0,42,11,0,10,0,DST
-Los Angeles Chargers,LAC,,0,0,0,0,323,5463,0,0,0,0,39,17,0,8,0,DST
-Dallas Cowboys,DAL,,0,0,0,0,365,5726,0,0,0,0,36,11,0,10,0,DST
-New England Patriots,NWE,,0,0,0,0,321,5541,0,0,0,0,43,12,0,6,0,DST
-Seattle Seahawks,SEA,,0,0,0,0,351,5749,0,0,0,0,34,12,0,8,0,DST
-New Orleans Saints,NOR,,0,0,0,0,341,5762,0,0,0,0,36,19,0,8,0,DST
-Pittsburgh Steelers,PIT,,0,0,0,0,356,5586,0,0,0,0,39,16,0,7,0,DST
-Indianapolis Colts,IND,,0,0,0,0,374,5975,0,0,0,0,29,12,0,6,0,DST
-Philadelphia Eagles,PHI,,0,0,0,0,318,5541,0,0,0,0,40,18,0,9,0,DST
-Atlanta Falcons,ATL,,0,0,0,0,352,5732,0,0,0,0,34,9,0,10,0,DST
-Kansas City Chiefs,KAN,,0,0,0,0,356,5891,0,0,0,0,34,15,0,8,0,DST
-Arizona Cardinals,ARI,,0,0,0,0,380,5561,0,0,0,0,39,14,0,11,0,DST
-New York Giants,NYG,,0,0,0,0,380,5895,0,0,0,0,26,13,0,9,0,DST
-Cincinnati Bengals,CIN,,0,0,0,0,346,5683,0,0,0,0,37,11,0,6,0,DST
-Green Bay Packers,GNB,,0,0,0,0,357,5734,0,0,0,0,46,11,0,7,0,DST
-Buffalo Bills,BUF,,0,0,0,0,353,5785,0,0,0,0,31,17,0,8,0,DST
-Tennessee Titans,TEN,,0,0,0,0,329,5568,0,0,0,0,40,12,0,7,0,DST
-Detroit Lions,DET,,0,0,0,0,374,5903,0,0,0,0,37,17,0,8,0,DST
-Cleveland Browns,CLE,,0,0,0,0,346,5683,0,0,0,0,35,8,0,9,0,DST
-New York Jets,NYJ,,0,0,0,0,401,5650,0,0,0,0,31,10,0,7,0,DST
-San Francisco 49ers,SFO,,0,0,0,0,360,5868,0,0,0,0,26,10,0,7,0,DST
-Washington Redskins,WAS,,0,0,0,0,363,5751,0,0,0,0,40,16,0,9,0,DST
-Miami Dolphins,MIA,,0,0,0,0,371,5672,0,0,0,0,37,9,0,8,0,DST
-Oakland Raiders,OAK,,0,0,0,0,355,5856,0,0,0,0,30,8,0,9,0,DST
-Tampa Bay Buccaneers,TAM,,0,0,0,0,363,5990,0,0,0,0,28,13,0,9,0,DST
+Player,POS,Team,PA,YdA,Int,Fum Rec,Sack,TD
+Chicago Bears,DST,CHI,346,5593,9,7,38,0
+Baltimore Ravens,DST,BAL,330,5535,20,9,37,0
+Minnesota Vikings,DST,MIN,323,5330,17,7,44,0
+Jacksonville Jaguars,DST,JAX,321,5379,20,9,46,0
+Denver Broncos,DST,DEN,336,5227,11,8,40,0
+Los Angeles Rams,DST,LAR,326,5483,18,9,40,0
+Houston Texans,DST,HOU,332,5367,18,8,45,0
+Carolina Panthers,DST,CAR,362,5758,11,10,42,0
+Los Angeles Chargers,DST,LAC,323,5463,17,8,39,0
+Dallas Cowboys,DST,DAL,365,5726,11,10,36,0
+New England Patriots,DST,NE,321,5541,12,6,43,0
+Seattle Seahawks,DST,SEA,351,5749,12,8,34,0
+New Orleans Saints,DST,NO,341,5762,19,8,36,0
+Pittsburgh Steelers,DST,PIT,356,5586,16,7,39,0
+Indianapolis Colts,DST,IND,374,5975,12,6,29,0
+Philadelphia Eagles,DST,PHI,318,5541,18,9,40,0
+Atlanta Falcons,DST,ATL,352,5732,9,10,34,0
+Kansas City Chiefs,DST,KC,356,5891,15,8,34,0
+Arizona Cardinals,DST,ARI,380,5561,14,11,39,0
+New York Giants,DST,NYG,380,5895,13,9,26,0
+Cincinnati Bengals,DST,CIN,346,5683,11,6,37,0
+Green Bay Packers,DST,GB,357,5734,11,7,46,0
+Buffalo Bills,DST,BUF,353,5785,17,8,31,0
+Tennessee Titans,DST,TEN,329,5568,12,7,40,0
+Detroit Lions,DST,DET,374,5903,17,8,37,0
+Cleveland Browns,DST,CLE,346,5683,8,9,35,0
+New York Jets,DST,NYJ,401,5650,10,7,31,0
+San Francisco 49ers,DST,SF,360,5868,10,7,26,0
+Washington Redskins,DST,WAS,363,5751,16,9,40,0
+Miami Dolphins,DST,MIA,371,5672,9,8,37,0
+Oakland Raiders,DST,OAK,355,5856,8,9,30,0
+Tampa Bay Buccaneers,DST,TB,363,5990,13,9,28,0

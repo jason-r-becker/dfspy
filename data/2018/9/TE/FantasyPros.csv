@@ -1,98 +1,76 @@
-Player,REC,YDS,TDS,FL,FPTS,POS
-Travis Kelce KC,6.2,76.6,0.7,0.0,11.7,TE
-George Kittle SF,4.7,62.7,0.5,0.0,9.4,TE
-Jared Cook OAK,5.1,62.5,0.5,0.1,9.0,TE
-Kyle Rudolph MIN,4.8,50.5,0.6,0.0,8.6,TE
-Jimmy Graham GB,4.4,52.7,0.5,0.0,8.4,TE
-Greg Olsen CAR,3.7,47.2,0.6,0.0,8.1,TE
-David Njoku CLE,4.5,49.9,0.5,0.0,7.9,TE
-O.J. Howard TB,3.4,48.4,0.5,0.0,7.6,TE
-Rob Gronkowski NE,3.5,52.0,0.3,0.0,7.1,TE
-Trey Burton CHI,4.1,47.7,0.3,0.0,6.5,TE
-Vance McDonald PIT,3.6,42.4,0.4,0.1,6.3,TE
-Jordan Reed WAS,4.7,46.0,0.3,0.1,6.0,TE
-Austin Hooper ATL,4.2,43.7,0.2,0.0,5.7,TE
-Benjamin Watson NO,2.9,32.5,0.2,0.0,4.5,TE
-Chris Herndon IV NYJ,2.4,28.9,0.2,0.0,4.2,TE
-Ed Dickson SEA,1.8,23.3,0.2,0.0,3.6,TE
-Ryan Griffin HOU,2.3,26.2,0.2,0.0,3.6,TE
-Jeff Heuerman DEN,2.4,24.2,0.2,0.0,3.4,TE
-Charles Clay BUF,2.6,26.9,0.1,0.0,3.1,TE
-Vernon Davis WAS,1.8,24.1,0.1,0.0,3.0,TE
-Nick Vannett SEA,2.0,21.3,0.2,0.0,3.0,TE
-Antonio Gates LAC,1.9,20.2,0.1,0.0,2.8,TE
-Mark Andrews BAL,1.6,18.5,0.2,0.0,2.8,TE
-Mike Gesicki MIA,1.9,19.0,0.1,0.0,2.6,TE
-Jesse James PIT,1.8,19.0,0.1,0.0,2.5,TE
-Jordan Thomas HOU,1.4,17.2,0.1,0.0,2.5,TE
-Cameron Brate TB,1.6,17.6,0.2,0.1,2.5,TE
-Nick O'Leary MIA,1.3,15.4,0.2,0.1,2.5,TE
-Michael Roberts DET,1.3,14.2,0.2,0.0,2.4,TE
-Hayden Hurst BAL,1.9,19.1,0.1,0.0,2.4,TE
-Gerald Everett LAR,1.5,17.6,0.1,0.0,2.3,TE
-Neal Sterling NYJ,1.4,14.3,0.1,0.0,2.0,TE
-Darren Fells CLE,1.0,12.1,0.1,0.0,2.0,TE
-Josh Hill NO,1.0,10.4,0.2,0.0,1.9,TE
-Luke Stocker TEN,1.3,13.4,0.1,0.0,1.9,TE
-Virgil Green LAC,1.2,13.1,0.1,0.0,1.9,TE
-Demetrius Harris KC,1.0,12.4,0.1,0.0,1.8,TE
-Blake Jarwin DAL,1.2,13.6,0.1,0.0,1.8,TE
-Jason Croom BUF,1.2,12.7,0.1,0.0,1.8,TE
-A.J. Derby MIA,1.0,11.3,0.1,0.1,1.8,TE
-Jonnu Smith TEN,1.2,12.6,0.1,0.0,1.7,TE
-Garrett Celek SF,0.9,9.8,0.1,0.0,1.6,TE
-Luke Willson DET,1.2,11.7,0.1,0.0,1.6,TE
-Rico Gathers DAL,1.0,10.5,0.1,0.0,1.6,TE
-Tyler Higbee LAR,0.7,10.6,0.1,0.0,1.6,TE
-Nick Boyle BAL,1.4,12.1,0.1,0.0,1.6,TE
-Matt LaCosse DEN,1.1,10.6,0.1,0.0,1.5,TE
-Jordan Leggett NYJ,0.9,9.8,0.1,0.0,1.5,TE
-Jordan Akins HOU,0.9,9.9,0.1,0.0,1.4,TE
-Seth DeValve CLE,0.7,8.9,0.1,0.0,1.4,TE
-Anthony Firkser TEN,0.9,9.1,0.1,0.0,1.3,TE
-Lance Kendricks GB,0.9,9.1,0.1,0.0,1.2,TE
-Adam Shaheen CHI,0.5,5.1,0.1,0.0,1.2,TE
-Ian Thomas CAR,0.8,7.6,0.1,0.0,1.1,TE
-Dalton Schultz DAL,0.8,8.2,0.1,0.0,1.1,TE
-Levine Toilolo DET,0.7,6.8,0.1,0.0,1.0,TE
-David Morgan MIN,0.7,6.4,0.1,0.0,1.0,TE
-Derek Carrier OAK,0.7,6.5,0.0,0.0,0.9,TE
-Eric Tomlinson NYJ,0.7,7.1,0.0,0.0,0.8,TE
-Dwayne Allen NE,0.5,4.5,0.1,0.0,0.8,TE
-Maxx Williams BAL,0.7,6.4,0.0,0.0,0.6,TE
-Tyrone Swoopes SEA,0.2,2.9,0.1,0.0,0.6,TE
-Logan Paulsen ATL,0.3,3.4,0.1,0.1,0.5,TE
-Logan Thomas BUF,0.4,4.3,0.0,0.0,0.5,TE
-Antony Auclair TB,0.4,3.7,0.0,0.1,0.4,TE
-Jacob Hollister NE,0.3,3.6,0.0,0.0,0.4,TE
-Dion Sims CHI,0.4,3.4,0.0,0.0,0.4,TE
-Dan Arnold NO,0.3,3.3,0.0,0.0,0.4,TE
-Marcedes Lewis GB,0.2,2.0,0.0,0.0,0.4,TE
-Eric Saubert ATL,0.3,3.0,0.0,0.0,0.3,TE
-Xavier Grimble PIT,0.2,2.7,0.0,0.0,0.3,TE
-Alan Cross TB,0.2,1.9,0.0,0.0,0.3,TE
-Daniel Brown CHI,0.2,1.8,0.0,0.0,0.3,TE
-MyCole Pruitt TEN,0.2,1.8,0.0,0.0,0.3,TE
-Tyler Conklin NE,0.3,2.5,0.0,0.0,0.3,TE
-Lee Smith OAK,0.2,1.9,0.0,0.0,0.2,TE
-Durham Smythe MIA,0.1,1.5,0.0,0.0,0.2,TE
-Jeremy Sprinkle WAS,0.2,1.6,0.0,0.0,0.2,TE
-Brian Parker DEN,0.2,1.5,0.0,0.0,0.2,TE
-Robert Tonyan GB,0.1,0.9,0.0,0.0,0.2,TE
-Chris Manhertz CAR,0.2,1.3,0.0,0.0,0.1,TE
-Orson Charles CLE,0.1,0.7,0.0,0.0,0.1,TE
-Ben Braunecker CHI,0.1,0.6,0.0,0.0,0.1,TE
-Stephen Anderson NE,0.0,0.0,0.0,0.0,0.0,TE
-Troy Fumagalli DEN,0.0,0.0,0.0,0.0,0.0,TE
-Henry Krieger Coble LAR,0.0,0.0,0.0,0.0,0.0,TE
-Austin Roberts LAC,0.0,0.0,0.0,0.0,0.0,TE
-Ross Dwelley SF,0.0,0.0,0.0,0.0,0.0,TE
-Delanie Walker TEN,0.0,0.0,0.0,0.0,0.0,TE
-Bucky Hodges PIT,0.0,0.0,0.0,0.0,0.0,TE
-Cole Wick TEN,0.0,0.0,0.0,0.0,0.0,TE
-Jevoni Robinson HOU,0.0,0.0,0.0,0.0,0.0,TE
-Clive Walford NYJ,0.0,0.0,0.0,0.0,0.0,TE
-Evan Baylis GB,0.0,0.0,0.0,0.0,0.0,TE
-Deon Yelder KC,0.0,0.0,0.0,0.0,0.0,TE
-Temarrick Hemingway DEN,0.0,0.0,0.0,0.0,0.0,TE
-Garrett Griffin NO,0.0,0.0,0.0,0.0,0.0,TE
+Player,POS,Team,Receptions,Rec Yds,Rec TD
+Travis Kelce,TE,KC,6.2,76.6,0.7
+George Kittle,TE,SF,4.7,62.7,0.5
+Jared Cook,TE,OAK,5.1,62.5,0.5
+Kyle Rudolph,TE,MIN,4.8,50.5,0.6
+Jimmy Graham,TE,GB,4.4,52.7,0.5
+Greg Olsen,TE,CAR,3.7,47.2,0.6
+David Njoku,TE,CLE,4.5,49.9,0.5
+O.J. Howard,TE,TB,3.4,48.4,0.5
+Trey Burton,TE,CHI,4.1,47.7,0.3
+Vance McDonald,TE,PIT,3.6,42.4,0.4
+Jordan Reed,TE,WAS,4.7,46.0,0.3
+Austin Hooper,TE,ATL,4.2,43.7,0.2
+Benjamin Watson,TE,NO,2.9,32.5,0.2
+Chris Herndon,TE,NYJ,2.4,28.9,0.2
+Ed Dickson,TE,SEA,1.8,23.3,0.2
+Ryan Griffin,TE,HOU,2.3,26.2,0.2
+Jeff Heuerman,TE,DEN,2.4,24.2,0.2
+Charles Clay,TE,BUF,2.6,26.9,0.1
+Vernon Davis,TE,WAS,1.8,24.1,0.1
+Nick Vannett,TE,SEA,2.0,21.3,0.2
+Antonio Gates,TE,LAC,1.9,20.2,0.1
+Mark Andrews,TE,BAL,1.6,18.5,0.2
+Mike Gesicki,TE,MIA,1.9,19.0,0.1
+Jesse James,TE,PIT,1.8,19.0,0.1
+Jordan Thomas,TE,HOU,1.4,17.2,0.1
+Cameron Brate,TE,TB,1.6,17.6,0.2
+Nick O'Leary,TE,MIA,1.3,15.4,0.2
+Michael Roberts,TE,DET,1.3,14.2,0.2
+Hayden Hurst,TE,BAL,1.9,19.1,0.1
+Gerald Everett,TE,LAR,1.5,17.6,0.1
+Darren Fells,TE,CLE,1.0,12.1,0.1
+Josh Hill,TE,NO,1.0,10.4,0.2
+Luke Stocker,TE,TEN,1.3,13.4,0.1
+Virgil Green,TE,LAC,1.2,13.1,0.1
+Demetrius Harris,TE,KC,1.0,12.4,0.1
+Blake Jarwin,TE,DAL,1.2,13.6,0.1
+Jason Croom,TE,BUF,1.2,12.7,0.1
+Jonnu Smith,TE,TEN,1.2,12.6,0.1
+Garrett Celek,TE,SF,0.9,9.8,0.1
+Luke Willson,TE,DET,1.2,11.7,0.1
+Rico Gathers,TE,DAL,1.0,10.5,0.1
+Tyler Higbee,TE,LAR,0.7,10.6,0.1
+Nick Boyle,TE,BAL,1.4,12.1,0.1
+Matt LaCosse,TE,DEN,1.1,10.6,0.1
+Jordan Leggett,TE,NYJ,0.9,9.8,0.1
+Jordan Akins,TE,HOU,0.9,9.9,0.1
+Seth DeValve,TE,CLE,0.7,8.9,0.1
+Anthony Firkser,TE,TEN,0.9,9.1,0.1
+Lance Kendricks,TE,GB,0.9,9.1,0.1
+Ian Thomas,TE,CAR,0.8,7.6,0.1
+Dalton Schultz,TE,DAL,0.8,8.2,0.1
+Levine Toilolo,TE,DET,0.7,6.8,0.1
+David Morgan,TE,MIN,0.7,6.4,0.1
+Derek Carrier,TE,OAK,0.7,6.5,0.0
+Eric Tomlinson,TE,NYJ,0.7,7.1,0.0
+Dwayne Allen,TE,NE,0.5,4.5,0.1
+Logan Paulsen,TE,ATL,0.3,3.4,0.1
+Logan Thomas,TE,BUF,0.4,4.3,0.0
+Antony Auclair,TE,TB,0.4,3.7,0.0
+Dion Sims,TE,CHI,0.4,3.4,0.0
+Dan Arnold,TE,NO,0.3,3.3,0.0
+Marcedes Lewis,TE,GB,0.2,2.0,0.0
+Eric Saubert,TE,ATL,0.3,3.0,0.0
+Xavier Grimble,TE,PIT,0.2,2.7,0.0
+Alan Cross,TE,TB,0.2,1.9,0.0
+Daniel Brown,TE,CHI,0.2,1.8,0.0
+MyCole Pruitt,TE,TEN,0.2,1.8,0.0
+Lee Smith,TE,OAK,0.2,1.9,0.0
+Durham Smythe,TE,MIA,0.1,1.5,0.0
+Jeremy Sprinkle,TE,WAS,0.2,1.6,0.0
+Brian Parker,TE,DEN,0.2,1.5,0.0
+Chris Manhertz,TE,CAR,0.2,1.3,0.0
+Orson Charles,TE,CLE,0.1,0.7,0.0
+Ross Dwelley,TE,SF,0.0,0.0,0.0
+Deon Yelder,TE,KC,0.0,0.0,0.0
