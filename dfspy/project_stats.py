@@ -19,6 +19,7 @@ def impute(df, method, verbose=False):
     method: str/bool
         Imputation method for missing data.
             - False: Do not impute missing data.
+            - None: Do not impute missing data.
             - 'BiScaler'
             - 'IterativeImpute'
             - 'IterativeSVD'
@@ -75,8 +76,41 @@ def impute(df, method, verbose=False):
         df[col] = imputed_df[col].values
     
     return df
-        
-        
+
+
+def impute_realized_stats(df, method):
+    """
+    Impute realized STATS column of DataFrame if it exists.
+    
+    Parameters
+    ----------
+    df: pd.DataFrame
+        Stat DataFrame with source columns and player/team  multi-index.
+    method: {0, 'drop', False, None}
+        Imputing method for NaN's in STATS column.
+            - 0: Replace with 0.
+            - drop: Drop rows wiht NaN values.
+            - False: Return df with NaN values.
+            - None: Return df with NaN values.
+    Returns
+    -------
+    df: pd.DataFrame
+        Imputed DataFrame with no NaNs in STATS column.
+    """
+    if 'STATS' in list(df):
+        if method is False:
+            pass
+        if method is None:
+            pass
+        elif method == 0:
+            df['STATS'].fillna(0, inplace=True)
+        elif method == 'drop':
+            drop_ix = df['STATS'].isnull()
+            df = df[~drop_ix].copy()
+    
+    return df
+    
+    
 class TrainProjections:
     """
     
@@ -98,6 +132,7 @@ class TrainProjections:
     -------
     load_data(weeks): Load and impute projections for specified weeks.
         Stat DataFrames are saved in self.stat_dfs dict with stat name keys.
+    read_data(stat_dfs): Read data from dict.
     """
         
     def __init__(self, pos, year=2018, season=False):
@@ -129,7 +164,8 @@ class TrainProjections:
             'DST': ['Saf', 'Blk'],
             }
         
-    def load_data(self, weeks, impute_method='IterativeImpute'):
+    def load_data(self, weeks, proj_impute_method='IterativeImpute',
+                  stat_impute_method=0):
         """
         Load data for given weeks and impute missing data.
         
@@ -137,7 +173,7 @@ class TrainProjections:
         ----------
         weeks: int/range/list[int]
             Weeks of the season to include in DataFrame.
-        impute_method: str/bool, default='IterativeImpute'
+        proj_impute_method: str/bool, default='IterativeImpute'
             Imputation method for missing data.
                 - False: Do not impute missing data.
                 - 'BiScaler'
@@ -146,9 +182,12 @@ class TrainProjections:
                 - 'KNN': Impute with nearest neighbors.
                 - 'Mean': Impute missing with average of other sources.
                 - 'NuclearNorm'
+        stat_impute_method: {0, 'drop'}, default=0
+            Imputation for missing data in realized STATS column.
             
         """
-        self.impute_method = impute_method
+        self.proj_impute_method = proj_impute_method
+        self.stat_impute_method = stat_impute_method
         
         # Convert weeks to appropriate range.
         if isinstance(weeks, int):
@@ -164,17 +203,19 @@ class TrainProjections:
         
         # Combine stats from specified weeks into a dictionary with stat names
         # as keys for DataFrames with projections from each source as columns.
-        stats_df_lists = defaultdict(list)
+        stat_df_lists = defaultdict(list)
         for week in weeks:
             week_stats_df = self._read_weekly_data(week)
             for stat in self.stats:
-                stats_df_lists[stat].append(week_stats_df[stat])
+                stat_df_lists[stat].append(week_stats_df[stat])
         
         self.stat_dfs = {stat: pd.concat(
-            stats_df_lists[stat], ignore_index=True, sort=False) \
+            stat_df_lists[stat], ignore_index=True, sort=False) \
             for stat in self.stats}
         
-        
+    def read_data(self, stat_dfs):
+        """Read stat_dfs from dict of stat dfs."""
+        self.stat_dfs = stat_dfs.copy()
         
     def _read_weekly_data(self, week):
         """
@@ -225,7 +266,9 @@ class TrainProjections:
         # Clean DataFrame for each stat and impute missing data.
         for stat in self.stats:
             clean_df = self._drop_bad_indices(stat_dfs[stat].copy())
-            imputed_df = impute(clean_df, self.impute_method)
+            proj_imputed_df = impute(clean_df, self.proj_impute_method)
+            imputed_df = impute_realized_stats(
+                proj_imputed_df, self.stat_impute_method)
             imputed_df['Week'] = week
             imputed_df.reset_index(inplace=True)
             stat_dfs[stat] = imputed_df
@@ -268,8 +311,15 @@ class TrainProjections:
         
 
         
-        
-# self = TrainProjections(pos='QB', season=False)
-
 
 # %%
+
+# self = TrainProjections(pos='QB')
+# # self.load_data(weeks=range(1,18))
+# # stat_dfs = self.stat_dfs
+#
+# self.read_data(stat_dfs)
+#
+# # %%
+# df = self.stat_dfs['Pass Yds'].copy()
+# df.head()
