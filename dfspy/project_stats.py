@@ -414,7 +414,7 @@ class TrainProjections:
             if method == 'FLOOR':
                 stat_df[stat] = np.min(X, axis=1)
             elif method == 'CEIL':
-                stat_df[stat] = np.min(X, axis=1)
+                stat_df[stat] = np.max(X, axis=1)
             elif method == 'MEAN':
                 stat_df[stat] = np.mean(X, axis=1)
             elif method == 'WEIGHTED':
@@ -447,7 +447,7 @@ class TrainProjections:
             if method == 'FLOOR':
                 stat_df[stat] = np.min(X, axis=1)
             elif method == 'CEIL':
-                stat_df[stat] = np.min(X, axis=1)
+                stat_df[stat] = np.max(X, axis=1)
             else:
                 stat_df[stat] = np.mean(X, axis=1)
             
@@ -539,7 +539,7 @@ class TrainProjections:
 #     mod = TrainProjections(pos)
 #     mod.load_data(weeks=weeks)
 #     for week in weeks:
-#         mod.make_projections(week, method='FLOOR')
+#         # mod.make_projections(week, method='FLOOR')
 #         mod.make_projections(week, method='CEIL')
-#         mod.make_projections(week, method='MEAN')
-        
+#         # mod.make_projections(week, method='MEAN')
+#
