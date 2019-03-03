@@ -136,7 +136,24 @@ In order to test which imputing method was best suited for the stat projection d
 Figures \ref{impute MAE} and \ref{impute RMSE} clearly indicate that the iterative imputing method provides the best estimates for missing values.  A comparison of imputing techniques for nonessential stats is provided in the appendix, where iterative imputing was again found to be optimal. Therefore iterative imputing was used to impute missing values for both essential and nonessential stats for the remainder of this study.
 
 \subsection{Data Exploration}
-TODO
+
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.450\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../figures/no_theshold_example_hists}
+    \caption{Raw histogram with threshold (red).}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.450\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../figures/no_theshold_example_hists_RB}
+    \caption{Histogram above threshold.}
+  \end{subfigure}
+  \caption{Example raw and thresholded histograms for QB passing yards and RB rushing yards.}
+\end{figure}
+
 
 \pagebreak
 \section{Methodology}
@@ -191,6 +208,94 @@ A. Rubinsteyn, \& S. Feldman (2019).
   \caption{Normalized RMSE of imputing methods for each nonessential stat.}
 \end{figure}
 
+\pagebreak
+\section{Essential Stats Histograms}
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.450\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../figures/no_threshold_hist_QB}
+    \caption{Raw histogram with threshold (red).}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.450\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../figures/threshold_hist_QB}
+    \caption{Histogram above threshold.}
+  \end{subfigure}
+  \caption{Essential stat raw histograms and thresholded histograms for QB.}
+\end{figure}
+
+\pagebreak
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.450\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../figures/no_threshold_hist_RB}
+    \caption{Raw histogram with threshold (red).}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.450\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../figures/threshold_hist_RB}
+    \caption{Histogram above threshold.}
+  \end{subfigure}
+  \caption{Essential stat raw histograms and thresholded histograms for RB.}
+\end{figure}
+
+\pagebreak
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.450\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../figures/no_threshold_hist_WR}
+    \caption{Raw histogram with threshold (red).}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.450\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../figures/threshold_hist_WR}
+    \caption{Histogram above threshold.}
+  \end{subfigure}
+  \caption{Essential stat raw histograms and thresholded histograms for WR.}
+\end{figure}
+
+\pagebreak
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.450\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../figures/no_threshold_hist_TE}
+    \caption{Raw histogram with threshold (red).}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.450\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../figures/threshold_hist_TE}
+    \caption{Histogram above threshold.}
+  \end{subfigure}
+  \caption{Essential stat raw histograms and thresholded histograms for TE.}
+\end{figure}
+
+\pagebreak
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.450\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../figures/no_threshold_hist_DST}
+    \caption{Raw histogram with threshold (red).}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.450\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../figures/threshold_hist_DST}
+    \caption{Histogram above threshold.}
+  \end{subfigure}
+  \caption{Essential stat raw histograms and thresholded histograms for DST.}
+\end{figure}
+
+\pagebreak
 
 
 
