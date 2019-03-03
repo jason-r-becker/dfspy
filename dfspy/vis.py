@@ -8,6 +8,7 @@ import seaborn as sns
 from tqdm import tqdm
 
 from project_stats import TrainProjections
+from scoring import get_score
 
 plt.style.use('fivethirtyeight')
 # %matplotlib qt
@@ -227,3 +228,96 @@ def plot_stat_hists(fdir='../figures', save=True):
             width=0.9,
             )
                 
+
+    def plot_weekly_pos_projections(pos, week, year=2018, n_players=None,
+                                    league='FanDuel', ax=None, figsize=[6, 6]):
+        """
+        Plot weekly projections for specified position.
+        
+        Parameters
+        ----------
+        pos: {'QB', 'RB', 'WR', 'TE', 'DST'}
+            Position to plot.
+        week: int
+            Week of the season to plot.
+        year: int, default=2018
+            Year of season to plot.
+        n_players: int, default=None
+            Number of players to include in plot.
+            If None, the respective numbers are used for each positon:
+            {'QB': 30, 'RB': 50, 'WR': 50, 'TE': 30, 'DST': 20}.
+        league: {'FanDuel', 'DraftKings', 'ESPN', 'Yahoo'}
+            League name to apply scoring rules from.
+        ax: matplotlib axis, default=None
+            Matplotlib axis to plot figure, if None one is created.
+        figsize: list or tuple, default=(6, 6)
+            Figure size.
+        """
+        pos = 'RB'
+        week = 5
+        year = 2018
+        n_players = None
+        league='FanDuel'
+
+
+        n_players = {'QB': 30, 'RB': 50, 'WR': 50, 'TE': 30, 'DST': 20}[pos] \
+            if n_players is None else n_players
+        
+
+        
+        # Load floor, projection, ceiling, and status for each player.
+        path = f'../data/{year}/{week}/{pos}/{{}}.csv'
+        def get_scores(score_type, path=path, pos=pos, league=league):
+            """Load data for FLOOR, CEIL, or PROJ and apply scoring rules."""
+            df = pd.read_csv(path.format(score_type))
+            df.set_index(['Player', 'Team'], inplace=True)
+            df[score_type] = get_score(df, pos, league)
+            return pd.DataFrame(df[score_type])
+        
+                
+        # Init empty DataFrame with proper index.
+        df = pd.DataFrame(columns=['Player', 'Team'])
+        df.set_index(['Player', 'Team'], inplace=True)
+        for score_type in 'FLOOR PROJ CEIL'.split():
+            df = df.join(get_scores(score_type), how='outer')
+        
+        # Load status of players.
+        espn_df = pd.read_csv(path.format('ESPN'))
+        espn_df.set_index(['Player', 'Team'], inplace=True)
+        df = df.join(pd.DataFrame(espn_df['Status']), how='inner')
+        df['Status'].fillna(' ', inplace=True)
+        
+        # Sort players by projected points and determine ranking.
+        df.sort_values('PROJ', inplace=True, ascending=True)
+        df.reset_index(inplace=True)
+        df = df.iloc[:n_players, :].copy()
+        df['RANK'] = n_players - df.index.values
+        
+        df
+        # %%
+        ax = None
+        figsize=[12, 12]
+        if ax is None:
+            fig, ax = plt.subplots(1, 1, figsize=figsize)
+        
+        xerr = [(df['PROJ']- df['FLOOR']).values,
+                (df['CEIL']- df['PROJ']).values]
+        
+        ax.errorbar(df['PROJ'], df['RANK'], xerr=xerr, fmt='o', ms=4,
+                    color='k', capsize=3, markeredgewidth=0.5, lw=0.5)
+        for _, row in df.iterrows():
+            if row['Status'] != ' ':
+                ax.text(row['CEIL']+0.2, row['RANK'], row['Status'], fontsize=6,
+                        color='firebrick', ha='left', va='center')
+                offset = 0.5
+            else:
+                offset = 0.2
+            ax.text(row['CEIL']+offset, row['RANK'], row['Player'], fontsize=6,
+                    ha='left', va='center')
+            
+        ax.set_ylabel('Rank')
+        ax.set_xlabel('Projected Points')
+        plt.ylim(n_players+2, -2)
+        plt.tight_layout()
+        plt.show()
+        
