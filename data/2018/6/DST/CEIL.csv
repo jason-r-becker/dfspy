@@ -1,33 +1,33 @@
 Player,Team,PA,YdA,TD,Sack,Int,Fum Rec,Saf,Blk
-Arizona Cardinals,ARI,22.0,340.0,0.1,1.9,0.6,0.4,0.0,0.0
-Atlanta Falcons,ATL,20.94,407.0,0.1,2.0,0.7,0.5,0.0,0.0
-Baltimore Ravens,BAL,18.23,274.0,0.1,2.2,1.0,0.5,0.0,0.0
-Buffalo Bills,BUF,23.8,354.0,0.11,2.2,0.7,0.4,0.0,0.0
-Carolina Panthers,CAR,22.03,354.0,0.1,2.2,0.5,0.5,0.0,0.09
-Chicago Bears,CHI,13.7,238.0,0.15000000000000002,2.2,0.8,0.5,0.0,0.09
-Cincinnati Bengals,CIN,23.04,377.0,0.12,1.5,0.66,0.4,0.0,0.09
-Cleveland Browns,CLE,19.0,346.0,0.09,1.2,0.69,0.5,0.0,0.0
-Dallas Cowboys,DAL,20.8,330.0,0.0,2.0,0.79,0.6,0.0,0.0
-Denver Broncos,DEN,25.26,360.0,0.11,1.6,0.5,0.4,0.0,0.0
+Arizona Cardinals,ARI,26.82,377.0,0.21,2.4,0.77,1.1,0.1,0.06
+Atlanta Falcons,ATL,27.4,425.0,0.3,2.5,1.1,0.8,0.03,0.07
+Baltimore Ravens,BAL,21.5,308.0,0.24,3.1,1.1,0.8,0.1,0.08
+Buffalo Bills,BUF,25.51,386.0,0.28,3.1,1.3,1.2,0.04,0.08
+Carolina Panthers,CAR,23.8,356.6,0.27,3.0,0.9,1.2,0.04,0.1
+Chicago Bears,CHI,17.72,288.0,0.33,2.9,1.4,1.0,0.1,0.1
+Cincinnati Bengals,CIN,26.3,391.0,0.25,2.3,1.3,0.66,0.03,0.1
+Cleveland Browns,CLE,25.0,409.0,0.23,2.3,1.0,0.9,0.03,0.08
+Dallas Cowboys,DAL,22.63,401.0,0.27,3.2,1.0,1.1,0.1,0.06
+Denver Broncos,DEN,29.7,414.0,0.22,2.08,0.8,0.7,0.04,0.11
 Detroit Lions,DET,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Green Bay Packers,GB,18.5,320.0,0.14,2.48,1.0,0.4,0.0,0.0
-Houston Texans,HOU,15.3,252.0,0.13,3.1,0.8,0.5,0.0,0.0
-Indianapolis Colts,IND,22.3,306.0,0.1,2.1,0.8,0.4,0.0,0.0
-Jacksonville Jaguars,JAX,18.6,276.0,0.1,2.5,0.8,0.5,0.0,0.0
-Kansas City Chiefs,KC,26.05,409.0,0.1,1.4,0.6,0.4,0.0,0.0
-Los Angeles Chargers,LAC,18.5,346.2,0.1,2.4,0.8,0.4,0.0,0.0
-Los Angeles Rams,LAR,19.85,332.0,0.12,2.14,0.9,0.5,0.0,0.0
-Miami Dolphins,MIA,21.9,349.0,0.16,2.0,0.7,0.4,0.0,0.0
-Minnesota Vikings,MIN,13.9,268.0,0.1,1.6,0.6,0.4,0.0,0.0
-New England Patriots,NE,20.29,412.7,0.1,1.6,0.5,0.4,0.0,0.09
+Green Bay Packers,GB,22.04,368.0,0.28,3.2,1.2,0.7,0.05,0.1
+Houston Texans,HOU,19.47,288.8,0.28,3.5,1.4,0.7,0.1,0.07
+Indianapolis Colts,IND,25.0,375.0,0.3,2.6,1.4,1.0,0.03,0.1
+Jacksonville Jaguars,JAX,21.51,326.0,0.30000000000000004,3.0,1.0,0.9,0.1,0.07
+Kansas City Chiefs,KC,31.5,454.0,0.31,1.9,1.0,0.7,0.1,0.09
+Los Angeles Chargers,LAC,22.0,353.0,0.26,3.7,1.01,1.0,0.04,0.07
+Los Angeles Rams,LAR,21.7,383.0,0.32,2.9,1.2,0.9,0.1,0.1
+Miami Dolphins,MIA,23.0,361.0,0.25,2.5,1.0,0.8,0.05,0.12
+Minnesota Vikings,MIN,18.03,295.7,0.30000000000000004,2.9,1.3,0.7,0.1,0.07
+New England Patriots,NE,28.3,434.0,0.21,2.4,0.82,0.7,0.1,0.1
 New Orleans Saints,NO,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-New York Giants,NYG,22.9,365.8,0.11,1.4,0.7,0.4,0.0,0.09
-New York Jets,NYJ,21.1,338.6,0.1,1.88,0.9,0.6,0.0,0.0
-Oakland Raiders,OAK,22.22,372.0,0.1,2.0,0.5,0.5,0.0,0.0
-Philadelphia Eagles,PHI,18.8,322.0,0.11,2.11,0.7,0.5,0.0,0.1
-Pittsburgh Steelers,PIT,21.1,325.0,0.12,2.2,0.7,0.4,0.0,0.1
-San Francisco 49ers,SF,23.71,342.0,0.1,1.9,0.2,0.4,0.0,0.0
-Seattle Seahawks,SEA,19.4,344.0,0.11,1.6,0.8,0.5,0.0,0.08
-Tampa Bay Buccaneers,TB,25.54,423.1849083338255,0.1,1.9653824015202026,0.6,0.5,0.0,0.08
-Tennessee Titans,TEN,21.5,340.0,0.12,1.8,0.7,0.6,0.0,0.07
-Washington Redskins,WAS,22.22,336.0,0.12,2.0,0.7,0.5,0.0,0.0
+New York Giants,NYG,26.36,375.0,0.30000000000000004,2.1,0.8,0.8,0.04,0.1
+New York Jets,NYJ,22.5,364.0,0.31,2.6,1.2,0.9,0.1,0.08
+Oakland Raiders,OAK,26.6,400.3,0.21,2.4,0.81,0.7,0.1,0.09
+Philadelphia Eagles,PHI,21.5,350.0,0.31,2.7,1.0,1.2,0.1,0.1
+Pittsburgh Steelers,PIT,23.3,375.0,0.25,3.1,1.2,0.8,0.1,0.11
+San Francisco 49ers,SF,28.4,378.1,0.2,2.8,0.79,0.8,0.03,0.09
+Seattle Seahawks,SEA,23.3,360.0,0.3,2.5,1.2,0.8,0.1,0.1
+Tampa Bay Buccaneers,TB,30.4,426.0,0.2775731956634322,2.3,0.7604858762361886,0.9378593435186481,0.02,0.1
+Tennessee Titans,TEN,24.61,362.0,0.30000000000000004,2.5,0.9,0.7,0.03,0.1
+Washington Redskins,WAS,23.8,368.0,0.26,2.4,1.0,0.7,0.04,0.09
