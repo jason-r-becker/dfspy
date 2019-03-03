@@ -10,11 +10,15 @@ from tqdm import tqdm
 from project_stats import TrainProjections
 
 plt.style.use('fivethirtyeight')
+# %matplotlib qt
+# %%
 
-
-# fdir = '../figures'
-# save = True
-
+def main():
+    fdir = '../figures'
+    save = False
+    # plot_missing_data(fdir, save)
+    # plot_stat_hists(fdir, save)
+    
 # %%
 def plot_missing_data(fdir='../figures', save=True):
     """Plot # of sources and % data missing for each essential stat."""
@@ -127,3 +131,99 @@ def plot_missing_data(fdir='../figures', save=True):
         cap += 'respective stat.'
         eu.latex_figure(fid, dir=fdir, width=0.95, caption=cap)
         
+
+def plot_stat_hists(fdir='../figures', save=True):
+    """
+    Plot all essential stat histograms for the appendix and
+    an example histograms figure for the main body of the paper.
+    """
+    # Load data.
+    positions = 'QB RB WR TE DST'.split()
+    stats = {pos: TrainProjections(pos) for pos in positions}
+    for pos in positions:
+        stats[pos].load_data(weeks=range(1, 18))
+    
+    
+    # Plot all no threshold histograms for appendix.
+    no_thresh_fids = {pos: f'no_threshold_hist_{pos}' for pos in positions}
+    for pos in positions:
+        n = len(stats[pos].essential_stats)
+        fig, axes = plt.subplots(n, 1, figsize=[6, 2.5*n])
+        for stat, ax in zip(stats[pos].essential_stats, axes.flat):
+            stats[pos].plot_projection_hist(
+                stat, bins=None, threshold=False, ax=ax)
+        plt.tight_layout()
+        if save:
+            eu.save_fig(no_thresh_fids[pos], dir=fdir)
+        else:
+            plt.show()
+            
+    # Plot all threshold histograms for appendix.
+    thresh_fids = {pos: f'threshold_hist_{pos}' for pos in positions}
+    for pos in positions:
+        n = len(stats[pos].essential_stats)
+        fig, axes = plt.subplots(n, 1, figsize=[6, 2.5*n])
+        for stat, ax in zip(stats[pos].essential_stats, axes.flat):
+            stats[pos].plot_projection_hist(
+                stat, bins=None, threshold=True, ax=ax)
+        plt.tight_layout()
+        if save:
+            eu.save_fig(thresh_fids[pos], dir=fdir)
+        else:
+            plt.show()
+    
+    # Create LaTeX code to plot figures.
+    if save:
+        for pos in positions:
+            cap = 'Essential stat raw histograms and thresholded histograms '
+            cap += f'for {pos}.'
+            
+            eu.latex_figure(
+                fids=[no_thresh_fids[pos], thresh_fids[pos]],
+                dir=fdir,
+                subcaptions=['Raw histogram with threshold (red).',
+                             'Histogram above threshold.'],
+                caption=cap,
+                width=0.9,
+                )
+            print()
+            print('\pagebreak')
+    
+    # Plot raw histograms for example stats.
+    fids = ['no_theshold_example_hists', 'no_theshold_example_hists_RB']
+    fig, axes = plt.subplots(2, 1, figsize=[6, 9])
+    for pos, stat, ax in zip(['QB', 'RB'], ['Pass Yds', 'Rush Yds'], axes.flat):
+        stats[pos].plot_projection_hist(
+                stat, bins=None, threshold=False, ax=ax)
+    plt.tight_layout()
+    if save:
+        eu.save_fig(fids[0], dir=fdir)
+    else:
+        plt.show()
+        
+    # Plot thresholded histograms for example stats.
+    fids = ['no_theshold_example_hists', 'no_theshold_example_hists_RB']
+    fig, axes = plt.subplots(2, 1, figsize=[6, 9])
+    for pos, stat, ax in zip(['QB', 'RB'], ['Pass Yds', 'Rush Yds'], axes.flat):
+        stats[pos].plot_projection_hist(
+            stat, bins=None, threshold=True, ax=ax)
+    plt.tight_layout()
+    if save:
+        eu.save_fig(fids[1], dir=fdir)
+    else:
+        plt.show()
+            
+    # Create LaTeX code to plot example stats figure.
+    if save:
+        print('\n\n\n')
+        cap = 'Example raw and thresholded histograms for QB passing yards '
+        cap += f'and RB rushing yards.'
+        eu.latex_figure(
+            fids=fids,
+            dir=fdir,
+            subcaptions=['Raw histogram with threshold (red).',
+                         'Histogram above threshold.'],
+            caption=cap,
+            width=0.9,
+            )
+                
