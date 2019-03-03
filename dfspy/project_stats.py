@@ -3,9 +3,12 @@ from collections import defaultdict
 from glob import glob
 
 import fancyimpute as fi
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
+plt.style.use('fivethirtyeight')
+# %matplotlib qt
 
 # %%
 def impute(df, method, verbose=False):
@@ -110,7 +113,7 @@ def impute_realized_stats(df, method):
     
     return df
     
-    
+# %%
 class TrainProjections:
     """
     
@@ -154,7 +157,7 @@ class TrainProjections:
             'WR': ['Rush Yds', 'Rush TD', 'Receptions', 'Rec Yds', 'Rec TD'],
             'TE': ['Receptions', 'Rec Yds', 'Rec TD'],
             'DST': ['PA', 'YdA', 'TD', 'Sack', 'Int', 'Fum Rec'],
-            }
+            }[self.pos]
         self.nonessential_stats = {
             'QB': ['Receptions', 'Rec Yds', 'Rec TD', '2PT'],
             'RB': ['Pass Yds', 'Pass TD', 'Pass Int', '2PT'],
@@ -162,7 +165,43 @@ class TrainProjections:
             'TE': ['Pass Yds', 'Pass TD', 'Pass Int',
                    'Rush Yds', 'Rush TD', '2PT'],
             'DST': ['Saf', 'Blk'],
-            }
+            }[self.pos]
+        self.thresholds = {
+            'QB': {
+                'Pass Yds': 100,
+                'Pass TD': 0.4,
+                'Pass Int': 0.2,
+                'Rush Yds': 2,
+                'Rush TD': 0.02,
+                },
+            'RB': {
+                'Rush Yds': 10,
+                'Rush TD': 0.1,
+                'Receptions': 0.1,
+                'Rec Yds': 5,
+                'Rec TD': 0.02,
+            },
+            'WR': {
+                'Rush Yds': 5,
+                'Rush TD': 0.02,
+                'Receptions': 1,
+                'Rec Yds': 5,
+                'Rec TD': 0.01,
+            },
+            'TE':  {
+                'Receptions': 1,
+                'Rec Yds': 5,
+                'Rec TD': 0.05,
+            },
+            'DST': {
+                'PA': 0,
+                'YdA': 200,
+                'TD': 0,
+                'Sack': 0,
+                'Int': 0,
+                'Fum Rec': 0,
+            },
+        }[self.pos]
         
     def load_data(self, weeks, proj_impute_method='IterativeImpute',
                   stat_impute_method=0):
@@ -302,24 +341,77 @@ class TrainProjections:
         df = df[df['NaN pct'] <= 0.5].copy()
         df.drop('NaN pct', axis=1, inplace=True)
         
-        
         # Make STATS column NaNs again.
         if 'STATS' in list(df):
             df['STATS'].replace('TEMP', np.NaN, inplace=True)
             
         return df
         
+    def plot_projection_hist(self, stat, bins=None, threshold=True,
+                             ax=None, figsize=[6, 6]):
+        """
+        Plot projection histogram.
+        
+        Parameters
+        ----------
+        stat: str
+            Stat to plot.
+        bins: int, default=None
+            Number of bins for historgram. If None, the respective bins are
+            used for each positon:
+            {'QB': 30, 'RB': 60, 'WR': 80, 'TE': 30, 'DST': 30}.
+        threshold: bool, default=True
+            If True, show values above starter thresholdself.
+            If False, show all values with starter threshold line.
+        ax: matplotlib axis, default=None
+            Matplotlib axis to plot figure, if None one is created.
+        figsize: list or tuple, default=(6, 6)
+            Figure size.
+        fontsize: int, default=8
+            Fontsize for asset labels.
+        """
+        if bins is None:
+            bins = {'QB': 30, 'RB': 60, 'WR': 80, 'TE': 30, 'DST': 30}[self.pos]
+        
+        if ax is None:
+            fig, ax = plt.subplots(1, 1, figsize=figsize)
+        
+        
+        # Get array of stat values.
+        df = self.stat_dfs[stat]
+        ignored_cols = ['Player', 'Team', 'Pos', 'Week', 'STATS']
+        proj_cols = [col for col in list(df) if col not in ignored_cols]
+        proj_vals = df[proj_cols].values.flatten()
+        
+        # Apply threshold.
+        if threshold:
+            proj_vals = proj_vals[proj_vals > self.thresholds[stat]]
+        
+        results, edges = np.histogram(proj_vals, bins=bins, density=True)
+        bin_width = edges[1] - edges[0]
+            
+        # Plot histogram.
+        ax.bar(edges[:-1], results*bin_width, bin_width,
+               color='steelblue', alpha=0.8)
+        
+        # Plot threshold if not used.
+        if not threshold:
+            ax.axvline(self.thresholds[stat], ls='--', color='firebrick',
+                       alpha=0.8, lw=2)
+                               
+        ax.set_ylabel('Percent (%)')
+        ax.set_yticklabels(['{:3.0f}%'.format(x*100) for x in ax.get_yticks()])
+        ax.set_xlabel(stat)
 
+        
         
 
 # %%
 
-# self = TrainProjections(pos='QB')
+# self = TrainProjections(pos='DST')
 # # self.load_data(weeks=range(1,18))
 # # stat_dfs = self.stat_dfs
 #
 # self.read_data(stat_dfs)
-#
-# # %%
-# df = self.stat_dfs['Pass Yds'].copy()
-# df.head()
+
+# %%
