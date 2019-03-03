@@ -1,6 +1,6 @@
-Player,POS,Team,PA,Int,Fum Rec,Sack,Status,TD
+Player,POS,Team,Fantasy Points,Int,Fum Rec,Sack,Status,TD
 Jacksonville Jaguars,DST,JAX,122.0,16.5,9.0,44.1, ,3.0
-Philadelphia Eagles,DST,PHI,113.3,14.9,9.0,38.4, ,2.9000000000000004
+Philadelphia Eagles,DST,PHI,113.3,14.9,9.0,38.4, ,2.9
 Minnesota Vikings,DST,MIN,109.0,13.3,7.2,45.5, ,2.4
 Baltimore Ravens,DST,BAL,108.4,14.7,8.9,36.5, ,2.8
 New England Patriots,DST,NE,107.3,14.7,5.8,43.1, ,2.3
@@ -24,7 +24,7 @@ Tampa Bay Buccaneers,DST,TB,83.6,14.3,9.6,28.1, ,2.8
 Atlanta Falcons,DST,ATL,82.6,11.3,9.6,33.9, ,2.5
 Kansas City Chiefs,DST,KC,80.9,11.7,8.0,34.4, ,2.3
 New York Giants,DST,NYG,79.9,14.0,8.2,26.6, ,2.6
-Cleveland Browns,DST,CLE,79.5,12.6,8.3,32.7, ,2.4000000000000004
+Cleveland Browns,DST,CLE,79.5,12.6,8.3,32.7, ,2.4
 Cincinnati Bengals,DST,CIN,77.3,13.3,5.8,35.1, ,2.2
 Seattle Seahawks,DST,SEA,77.2,11.0,7.2,35.2, ,2.2
 Indianapolis Colts,DST,IND,72.9,12.0,7.2,29.5, ,2.2
