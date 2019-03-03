@@ -94,7 +94,7 @@ def get_score(df, pos, league='FanDuel', type='proj'):
         # interpolate fantasy points using distance from tier centers
         pts_allow = [0, 3.5, 10, 17, 24, 31, 38]
         ftsy_pts = [10, 7, 4, 1, 0, -1, -4]
-        pts = df['Pts Allow'].values
+        pts = df['PA'].values
         scores += np.array([np.interp(pt, pts_allow, ftsy_pts) for pt in pts])
 
 
