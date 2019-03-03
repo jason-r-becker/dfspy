@@ -230,7 +230,7 @@ def plot_stat_hists(fdir='../figures', save=True):
                 
 
     def plot_weekly_pos_projections(pos, week, year=2018, n_players=None,
-                                    league='FanDuel', ax=None, figsize=[6, 6]):
+        league='FanDuel', ax=None, figsize=[12, 12]):
         """
         Plot weekly projections for specified position.
         
@@ -253,12 +253,6 @@ def plot_stat_hists(fdir='../figures', save=True):
         figsize: list or tuple, default=(6, 6)
             Figure size.
         """
-        pos = 'RB'
-        week = 5
-        year = 2018
-        n_players = None
-        league='FanDuel'
-
 
         n_players = {'QB': 30, 'RB': 50, 'WR': 50, 'TE': 30, 'DST': 20}[pos] \
             if n_players is None else n_players
@@ -287,16 +281,16 @@ def plot_stat_hists(fdir='../figures', save=True):
         df = df.join(pd.DataFrame(espn_df['Status']), how='inner')
         df['Status'].fillna(' ', inplace=True)
         
+        
         # Sort players by projected points and determine ranking.
+        df = df[df['FLOOR'] != df['CEIL']].copy()
+        df.sort_values('PROJ', inplace=True, ascending=False)
+        df = df.iloc[:n_players, :].copy()
         df.sort_values('PROJ', inplace=True, ascending=True)
         df.reset_index(inplace=True)
-        df = df.iloc[:n_players, :].copy()
         df['RANK'] = n_players - df.index.values
         
-        df
-        # %%
-        ax = None
-        figsize=[12, 12]
+        
         if ax is None:
             fig, ax = plt.subplots(1, 1, figsize=figsize)
         
@@ -321,3 +315,5 @@ def plot_stat_hists(fdir='../figures', save=True):
         plt.tight_layout()
         plt.show()
         
+
+# plot_weekly_pos_projections('RB', week=6)
