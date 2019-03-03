@@ -136,6 +136,8 @@ class TrainProjections:
     load_data(weeks): Load and impute projections for specified weeks.
         Stat DataFrames are saved in self.stat_dfs dict with stat name keys.
     read_data(stat_dfs): Read data from dict.
+    make_projections(week, method): Save projection files for given week.
+    plot_projection_hist(stat, threshold): Plot histogram of stat projections.
     """
         
     def __init__(self, pos, year=2018, season=False):
@@ -274,8 +276,9 @@ class TrainProjections:
         """
         # Get all stats filenames, ignoring DFS cost files.
         fids = glob(f'../data/{self.year}/{week}/{self.pos}/*.csv')
-        fids = [fid for fid in fids if not \
-            any(source in fid for source in ['FanDuel', 'DraftKings'])]
+        non_sources = ['FanDuel', 'DraftKings', 'FLOOR', 'CEIL', 'PROJ']
+        fids = [fid for fid in fids \
+                if not any(source in fid for source in non_sources)]
         
         # Init dict of empty DataFrames for each stat.
         df = pd.DataFrame(columns=['Player', 'Team'])
@@ -310,7 +313,20 @@ class TrainProjections:
                 proj_imputed_df, self.stat_impute_method)
             imputed_df['Week'] = week
             imputed_df.reset_index(inplace=True)
-            stat_dfs[stat] = imputed_df
+            
+            # Drop duplicate player indexes, keeping only highest projected.
+            players = list(imputed_df['Player'])
+            dupes = list(set([x for x in players if players.count(x) > 1]))
+            ix = [x not in dupes for x in players]
+            final_df = imputed_df[ix].copy()
+            
+            for player in dupes:
+                dupe_df = np.max(
+                    imputed_df[imputed_df['Player'] == player].copy(), axis=0)
+                final_df = final_df.append(dupe_df, ignore_index=True)
+            
+            # Append to stat DataFrames dict.
+            stat_dfs[stat] = final_df
         
         return stat_dfs
 
@@ -346,7 +362,108 @@ class TrainProjections:
             df['STATS'].replace('TEMP', np.NaN, inplace=True)
             
         return df
+
+    def make_projections(self, week, method):
+        """
+        Make projection file for specified week. Essentail stats are projected
+        using specified method while nonessential stats are projected using
+        simply the mean of projections unless FLOOR or CEIL is specified.
         
+        Parameters
+        ----------
+        week: int
+            Week of the season to project.
+        method: {'FLOOR', 'CEIL', 'MEAN', 'WEIGHTED', 'LR', 'RF'}, default=TODO
+            Ensemble method for created file.
+                - FLOOR: Minimum of projected stats.
+                - CEIL: Maximum of projected stats.
+                - MEAN: Mean of projected stats.
+                - WEIGHTED: Projected stats are computed using simple
+                            regression weiths.
+                - LR: Projection stats are computed using advanced linear
+                      regression with regularization.
+                - RF: Projection stats are computed using a random forest.
+                            
+        
+        Returns
+        -------
+        Saves file to data dir for specified projection method.
+        Filename is FLOOR.csv or CEIL.csv for FLOOR and CEIL projection
+        methods or PROJ.csv for all other methods.
+        """
+        
+        filename = 'PROJ' if method not in ['FLOOR', 'CEIL'] else f'{method}'
+        fid = f'../data/{self.year}/{week}/{self.pos}/{filename}.csv'
+        
+        # Init empty DataFrame with proper index.
+        df = pd.DataFrame(columns=['Player', 'Team'])
+        df.set_index(['Player', 'Team'], inplace=True)
+        stats = []
+        
+        # Append all essential stats using projection method.
+        for stat in self.essential_stats:
+            stats.append(stat)
+            stat_df = self.stat_dfs[stat].copy()
+            stat_df = stat_df[stat_df['Week'] == week].copy()
+            
+            # Get X array of projections.
+            cols = [c for c in stat_df.columns \
+                    if c not in ['Player', 'Team', 'Week', 'STATS']]
+            X = stat_df[cols].values
+            
+            if method == 'FLOOR':
+                stat_df[stat] = np.min(X, axis=1)
+            elif method == 'CEIL':
+                stat_df[stat] = np.min(X, axis=1)
+            elif method == 'MEAN':
+                stat_df[stat] = np.mean(X, axis=1)
+            elif method == 'WEIGHTED':
+                # TODO
+                pass
+            elif method == 'LR':
+                # TODO
+                pass
+            elif method == 'RF':
+                # TODO
+                pass
+            else:
+                raise ValueError(f"'{method}' is not a valid method.")
+            
+            # Append projection to main DataFrame.
+            stat_df.set_index(['Player', 'Team'], inplace=True)
+            df = df.join(pd.DataFrame(stat_df[stat]), how='outer')
+        
+        # Append all nonessential stats using projection method.
+        for stat in self.nonessential_stats:
+            stats.append(stat)
+            stat_df = self.stat_dfs[stat].copy()
+            stat_df = stat_df[stat_df['Week'] == week].copy()
+            
+            # Get X array of projections.
+            cols = [c for c in stat_df.columns \
+                    if c not in ['Player', 'Team', 'Week', 'STATS']]
+            X = stat_df[cols].values
+            
+            if method == 'FLOOR':
+                stat_df[stat] = np.min(X, axis=1)
+            elif method == 'CEIL':
+                stat_df[stat] = np.min(X, axis=1)
+            else:
+                stat_df[stat] = np.mean(X, axis=1)
+            
+            # Append projection to main DataFrame.
+            stat_df.set_index(['Player', 'Team'], inplace=True)
+            df = df.join(pd.DataFrame(stat_df[stat]), how='outer')
+        
+        # Fill any missing values with 0.
+        df.fillna(0, inplace=True)
+        
+        # Sort DataFrame by player name, organize columns and save.
+        df.sort_values('Player', inplace=True)
+        df.reset_index(inplace=True)
+        df = df[['Player', 'Team'] + stats]
+        df.to_csv(fid, index=False)
+            
     def plot_projection_hist(self, stat, bins=None, threshold=True,
                              ax=None, figsize=[6, 6]):
         """
@@ -404,14 +521,25 @@ class TrainProjections:
         ax.set_xlabel(stat)
 
         
-        
 
 # %%
 
-# self = TrainProjections(pos='DST')
-# # self.load_data(weeks=range(1,18))
-# # stat_dfs = self.stat_dfs
+# self = TrainProjections(pos='QB')
+# self.load_data(weeks=range(1,18))
+# stat_dfs = self.stat_dfs
 #
 # self.read_data(stat_dfs)
-
 # %%
+
+
+
+#
+# weeks = range(1, 18)
+# for pos in 'QB RB WR TE DST'.split():
+#     mod = TrainProjections(pos)
+#     mod.load_data(weeks=weeks)
+#     for week in weeks:
+#         mod.make_projections(week, method='FLOOR')
+#         mod.make_projections(week, method='CEIL')
+#         mod.make_projections(week, method='MEAN')
+        
