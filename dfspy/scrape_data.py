@@ -741,7 +741,7 @@ class SingleScrape:
                           'Rec TD',  '_', 'POS', 'Status', 'Team']
             elif self.pos == 'DST':
                 header = ['Player', '_', 'Sack', '_', 'Fum Rec', 'Int',
-                          'Int TD', 'Fum TD', 'PA', 'POS']
+                          'Int TD', 'Fum TD', 'Fantasy Points', 'POS']
             if self.week != 0:
                 # Two extra columns for weekly projections.
                 header.insert(1, '_')
@@ -1022,6 +1022,13 @@ if __name__ == '__main__':
 
 # from glob import glob
 # for week in tqdm(range(18)):
-#     for pos in 'QB RB WR TE DST'.split():
-#         fids = glob(f'../data/2018/{week}/{pos}/NFL.csv')
+#     # for pos in 'QB RB WR TE DST'.split():
+#     for pos in 'DST'.split():
+#         fids = glob(f'../data/2018/{week}/{pos}/ESPN.csv')
 #         for fid in fids:
+#             df = pd.read_csv(fid)
+#             cols = [col.replace('PA', 'Fantasy Points') for col in df.columns]
+#             # print(cols)
+#             df.columns = cols
+#             df.to_csv(fid, index=False)
+#
