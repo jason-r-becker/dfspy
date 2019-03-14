@@ -114,12 +114,12 @@ def impute_realized_stats(df, method):
     return df
     
 # %%
-class TrainProjections:
+class StatProjection:
     """
     
     Parameters
     ----------
-    pos: str
+    pos: {'QB', 'RB', 'WR', 'TE', 'DST'}
         Player position.
     year: int
         Year of the season.
@@ -156,14 +156,14 @@ class TrainProjections:
         self.essential_stats = {
             'QB': ['Pass Yds', 'Pass TD', 'Pass Int', 'Rush Yds', 'Rush TD'],
             'RB': ['Rush Yds', 'Rush TD', 'Receptions', 'Rec Yds', 'Rec TD'],
-            'WR': ['Rush Yds', 'Rush TD', 'Receptions', 'Rec Yds', 'Rec TD'],
+            'WR': ['Rush Yds', 'Receptions', 'Rec Yds', 'Rec TD'],
             'TE': ['Receptions', 'Rec Yds', 'Rec TD'],
             'DST': ['PA', 'YdA', 'TD', 'Sack', 'Int', 'Fum Rec'],
             }[self.pos]
         self.nonessential_stats = {
             'QB': ['Receptions', 'Rec Yds', 'Rec TD', '2PT'],
             'RB': ['Pass Yds', 'Pass TD', 'Pass Int', '2PT'],
-            'WR': ['Pass Yds', 'Pass TD', 'Pass Int', '2PT'],
+            'WR': ['Pass Yds', 'Pass TD', 'Pass Int', 'Rush TD', '2PT'],
             'TE': ['Pass Yds', 'Pass TD', 'Pass Int',
                    'Rush Yds', 'Rush TD', '2PT'],
             'DST': ['Saf', 'Blk'],
@@ -204,7 +204,7 @@ class TrainProjections:
                 'Fum Rec': 0,
             },
         }[self.pos]
-        
+    
     def load_data(self, weeks, proj_impute_method='IterativeImpute',
                   stat_impute_method=0):
         """
@@ -373,11 +373,13 @@ class TrainProjections:
         ----------
         week: int
             Week of the season to project.
-        method: {'FLOOR', 'CEIL', 'MEAN', 'WEIGHTED', 'LR', 'RF'}, default=TODO
+        method: {'FLOOR', 'CEIL', 'MEAN', 'MEDIAN',
+                 'WEIGHTED', 'LR', 'RF'}, default=TODO
             Ensemble method for created file.
                 - FLOOR: Minimum of projected stats.
                 - CEIL: Maximum of projected stats.
                 - MEAN: Mean of projected stats.
+                - MEDIAN: Median of projected stats.
                 - WEIGHTED: Projected stats are computed using simple
                             regression weiths.
                 - LR: Projection stats are computed using advanced linear
@@ -391,7 +393,7 @@ class TrainProjections:
         Filename is FLOOR.csv or CEIL.csv for FLOOR and CEIL projection
         methods or PROJ.csv for all other methods.
         """
-        
+
         filename = 'PROJ' if method not in ['FLOOR', 'CEIL'] else f'{method}'
         fid = f'../data/{self.year}/{week}/{self.pos}/{filename}.csv'
         
@@ -399,7 +401,7 @@ class TrainProjections:
         df = pd.DataFrame(columns=['Player', 'Team'])
         df.set_index(['Player', 'Team'], inplace=True)
         stats = []
-        
+
         # Append all essential stats using projection method.
         for stat in self.essential_stats:
             stats.append(stat)
@@ -417,6 +419,8 @@ class TrainProjections:
                 stat_df[stat] = np.max(X, axis=1)
             elif method == 'MEAN':
                 stat_df[stat] = np.mean(X, axis=1)
+            elif method == 'MEDIAN':
+                stat_df[stat] = np.median(X, axis=1)
             elif method == 'WEIGHTED':
                 # TODO
                 pass
@@ -524,22 +528,20 @@ class TrainProjections:
 
 # %%
 
-# self = TrainProjections(pos='QB')
+# self = StatProjection(pos='QB')
 # self.load_data(weeks=range(1,18))
 # stat_dfs = self.stat_dfs
-#
+
 # self.read_data(stat_dfs)
 # %%
 
 
-
 #
 # weeks = range(1, 18)
-# for pos in 'QB RB WR TE DST'.split():
-#     mod = TrainProjections(pos)
+# for pos in 'QB'.split():
+#     mod = StatProjection(pos)
 #     mod.load_data(weeks=weeks)
 #     for week in weeks:
-#         # mod.make_projections(week, method='FLOOR')
+#         mod.make_projections(week, method='FLOOR')
 #         mod.make_projections(week, method='CEIL')
-#         # mod.make_projections(week, method='MEAN')
-#
+#         mod.make_projections(week, method='MEAN')
