@@ -2,8 +2,8 @@
  
 \usepackage[margin=1in]{geometry}
 \usepackage[font=small,labelfont=bf]{caption}
-\usepackage{graphicx}
-%\usepackage[draft]{graphicx}
+%\usepackage{graphicx}
+\usepackage[draft]{graphicx}
 \usepackage{amsmath, amsthm, amssymb, bm, enumitem, nicefrac, float, booktabs, adjustbox, subcaption, fancyhdr, makecell, titlesec, dsfont, epigraph}
 \PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
 
@@ -157,9 +157,89 @@ Figures \ref{impute MAE} and \ref{impute RMSE} clearly indicate that the iterati
 
 \pagebreak
 \section{Methodology}
+\subsection{Projections}
 TODO
+\subsection{Lineup Optimization}
+Given optimal player projections, lineups must now be generated for competition at DraftKings and FanDuel. Both sites have the same lineup restrictions, only differing on their budget and point system (DraftKings is 50,000 budget and 1 pt per reception; FanDuel is 60,000 budget and is 0.5 pts per reception). As the goal is to score as many points as possible, projected points were maximized such that all lineup restrictions were met. \bigskip
 
+In order to use convex optimization to solve for the optimal lineup, as opposed to brute-force solving for all possible combinations, we define the following problem: \begin{itemize}
+	\item Let $N$ be the number of total players.
+	\item Let $B$ be the salary budget for the contest.
+	\item Let $w \in \mathbb{R}^{N}$ be a vector of player-weights, such that $w_i \in {0, 1}$.
+	\item Let $P \in \mathbb{R}^{N}$ be a vector of projected points.
+	\item Let $S \in \mathbb{R}^{N}$ be a vector of salaries.
+	\item Let $D \in \mathbb{R}^{N \times 5}$ be a matrix containing the position of  each player, using dummy variables for each position. That is, $p_{i, j} \in {0, 1}$.
+	\item Let $C \in \mathbb{R}^{N \times 32}$ be a matrix containing the team of each player, using dummy variables for each team. That is, $T_{i, j} \in {0, 1}$.
+\end{itemize}
+Then, we solve for the $w$ that solves:
+\begin{equation*}
+\begin{aligned}
+& \underset{w}{\text{maximize}}
+& & w^T \cdot P \\
+& \text{subject to}
+& & w^T \cdot S \leq B, \; \mathds{1} \cdot w = 9, \\
+&&& (w^T \cdot D)_1 = 1, \\
+&&& 2 \leq (w^T \cdot D)_2 \leq 3, \\
+&&& 3 \leq (w^T \cdot D)_3 \leq 4, \\
+&&& 1 \leq (w^T \cdot D)_4 \leq 2, \\
+&&& (w^T \cdot D)_5 = 1, \\ 
+&&& \max_i (w^T \cdot C)_i \leq 4 \\
+\end{aligned}
+\end{equation*}
+where the subscripts $1,\ldots ,5$ on $(w^T \cdot D)$ correspond to the positions QB, RB, WR, TE, and Defense, respectively. These constraints ensure that each lineup follows the composition rules defined in each contest.
 
+While this formulation worked perfectly when solving for the highest projected lineup, it failed when scaling to the solve for the highest $n$ projected lineups. As many contests allow for up to 150 lineup entries per person, this limitation must be solved for. Below in figure \ref{lineup times}, the exponential nature of the slowdown is shown.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{../figures/time_per_lineup}
+  \caption{Cumulative (in blue) and marginal (in red) time taken to generate lineups.}
+  \label{lineup times}
+\end{figure}
+
+As a remedy for this problem, we implement a dropout-like system in which players are dropped from the available pool with probability $p$ (CITE). Thus, the probability that the best possible lineup gets chosen is equal to $(1-p)^9$. Below in Table \ref{probs_of_lineups}, these probabilities are shown for different values of $p$.
+
+﻿\begin{table}[H]
+\caption{Probability of best lineup being selected for varying levels of dropout probability $p$.}
+\label{probs_of_lineups}
+\centering
+\begin{tabular}{lcc}
+\toprule
+{} &     $p$ &  $\Pr$(Max)  \\
+\midrule
+{} &  0.00 &  1.00 \\
+{} &  0.05 &  0.63 \\
+{} &  0.10 &  0.39 \\
+{} &  0.15 &  0.23 \\
+{} &  0.20 &  0.13 \\
+{} &  0.25 &  0.08 \\
+{} &  0.30 &  0.04 \\
+{} &  0.35 &  0.02 \\
+{} &  0.40 &  0.01 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Now of course, for what this approach gains in speed, it loses in precision. We have now introduced a non-zero probability that the best possible $n$ lineups will not be selected if we choose to generate exactly $n$ lineups, given the randomness of dropout. Using week 1 of 2018 as a test, 400 lineups were generated, and the first $n$ lineups generated are examined below in Figure \ref{lineups_vs_n}. Both the top 10 and top 150 lineups are studied.  
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.80\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../figures/lineups10_vs_n}
+    \caption{Top 10 lineups.}
+  \end{subfigure}
+  \par\bigskip
+  \begin{subfigure}[b]{0.80\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../figures/lineups150_vs_n}
+    \caption{Top 150 lineups.}
+  \end{subfigure}
+  \caption{Projected points are plotted against lineup rank for the first $n$ lineups generated.}
+\label{lineups_vs_n}
+\end{figure}
+
+From Figure \ref{lineups_vs_n}, it is clear that if $n$ lineups are needed, naively choosing $n$ lineups to generate will produce a sub-optimal output.
 
 \pagebreak
 \section{Results}
