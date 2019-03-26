@@ -105,12 +105,12 @@ class LineupOptimizer:
         self.year = year
         self.week = week
         self.league = league
-        # self.schedule = get_yearly_schedule([year], [week])[year]
-        self.schedule = pd.read_csv('week1schedule.csv', index_col=0)
-        gametimes = self.schedule['gametime'].values
-        times = [time(int(x.split(':')[0]), int(x.split(':')[1]))
-                    for x in gametimes]
-        self.schedule['gametime'] = times
+        self.schedule = get_yearly_schedule([year], [week])[year]
+        # self.schedule = pd.read_csv('week1schedule.csv', index_col=0)
+        # gametimes = self.schedule['gametime'].values
+        # times = [time(int(x.split(':')[0]), int(x.split(':')[1]))
+        #             for x in gametimes]
+        # self.schedule['gametime'] = times
         self.data, self.results = self._load_data()
         self.budg = {'FanDuel': 60000, 'DraftKings': 50000}[self.league]
 
