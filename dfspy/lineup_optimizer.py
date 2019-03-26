@@ -33,6 +33,7 @@ def main():
         start=args.starttime,
         end=args.endtime,
         type=args.type,
+        risk=args.risk,
         n_lineups=args.n_lineups,
         mppt=args.max_players,
         stack=args.stack,
@@ -58,6 +59,7 @@ def parse_args():
     parser.add_argument('-s', '--save', action='store_true', help='Save?')
     parser.add_argument('-v', '--verbose', action='store_true', help='Print?')
     parser.add_argument('-t', '--type', help="'actual' or 'proj'")
+    parser.add_argument('-ri', '--risk', type=float, help="-1 to 1")
 
     today = dt.utcnow()
     default_year = today.year if today.month > 7 else today.year - 1
@@ -86,6 +88,7 @@ def parse_args():
         endtime='11:59PM',
         league='FanDuel',
         type='proj',
+        risk=0,
         n_lineups=1,
         max_players=4,
         stack=False,
@@ -394,8 +397,8 @@ class LineupOptimizer:
                 self._save_lineups(lp, risk)
 
 # %%
-self = LineupOptimizer(2018, 1, 'DraftKings')
-self.get_optimal_lineup(verbose=True, risk=-0.5, result=True)
+# self = LineupOptimizer(2018, 1, 'DraftKings')
+# self.get_optimal_lineup(verbose=True, risk=-0.5, result=True)
 
 # %%
 if __name__ == '__main__':
