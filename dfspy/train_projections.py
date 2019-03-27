@@ -13,7 +13,7 @@ import pandas as pd
 import pickle
 import statsmodels.api as sms
 from operator import itemgetter
-from scipy.stats import randint, uniform, expon
+from scipy.stats import beta, expon, randint, uniform
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import ElasticNet
 from sklearn.model_selection import StratifiedKFold, RandomizedSearchCV
@@ -21,6 +21,7 @@ from sklearn.metrics import classification_report
 from sklearn.svm import SVR
 from sklearn.preprocessing import StandardScaler
 from tqdm import tqdm
+from xgboost.sklearn import XGBRegressor
 
 from project_stats import StatProjection
 
@@ -178,13 +179,15 @@ class TrainProjections:
         ----------
         stat: str
             Stat to train model for.
-        model: {'LR', 'SVR', 'RF'}
+        model: {'LR', 'SVR', 'RF', 'XGB'}
             Machine learning algorithm to train.
                 - LR: Projection stats are computed using advanced linear
                       regression with regularization.
                 - SVR: Projection stats are computed with
                        support vector machines.
                 - RF: Projection stats are computed using a random forest.
+                - XGB: Projection stats are computed using eXtreme gradient
+                       boosted trees.
         n_iters: int
             Number of training iterations.
         kfolds: int, default=5
@@ -231,21 +234,38 @@ class TrainProjections:
             'RF': {
                 'n_estimators': randint(low=1, high=100),
                 'max_depth': randint(low=2, high=6),
-                }
+                },
+            'XGB': {
+                'n_estimators': randint(3, 40),
+                'max_depth': randint(3, 40),
+                'learning_rate': uniform(0.05, 0.4),
+                'colsample_bytree': beta(10, 1) ,
+                'subsample': beta(10, 1) ,
+                'gamma': uniform(0, 10),
+                'reg_alpha': expon(0, 50),
+                'min_child_weight': expon(0, 50),
+                },
             }[model]
+            
         mod = {
             'LR': ElasticNet,
             'SVR': SVR,
             'RF': RandomForestRegressor,
+            'XGB': XGBRegressor,
             }[model]
         
+        
+        
         # Train model with cross-validation.
+        mod_kwargs = {'n_threads': -1} if model == 'XGB' else {}
+        n_jobs = 1 if model == 'XGB' else -1
         rnd_search = RandomizedSearchCV(
-            mod(),
+            mod(mod_kwargs),
             param_distributions=params,
             n_iter=n_iters,
             cv=skfolds.split(X_scaled, y_bins),
             scoring='neg_mean_absolute_error',
+            n_jobs=n_jobs,
             )
         
         rnd_search.fit(X_scaled, y)
