@@ -1,16 +1,60 @@
+import os
 import warnings
 from collections import defaultdict
 from glob import glob
 
 import fancyimpute as fi
+import joblib
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from tqdm import tqdm
 
 plt.style.use('fivethirtyeight')
 # %matplotlib qt
 
 # %%
+
+def main():
+    warnings.simplefilter(action='ignore', category=FutureWarning)
+    warnings.simplefilter(action='ignore', category=DeprecationWarning)
+    make_model_dirs()
+
+    # Read pickled data if it exists, otherwise generate imputed data.
+    positions = 'QB RB WR TE DST'.split()
+    try:
+        with open('../data/.imputed_data', 'rb') as fid:
+            data = pickle.load(fid)
+    except FileNotFoundError:
+        trainer_dict = {pos: TrainProjections(pos) for pos in positions}
+        data = {pos: trainer_dict[pos]._stat_dfs for pos in positions}
+        # Store imputed data.
+        with open('../data/.imputed_data', 'wb') as fid:
+            pickle.dump(data, fid)
+    trainer_dict = {
+        pos: TrainProjections(pos, data=data[pos]) for pos in positions}
+    
+    # Train model on essential stats.
+    args = parse_args()
+    if args.model == 'OLS':
+        train_simple_linear_regression(
+            trainers=trainer_dict,
+            period=args.period,
+            save=args.save,
+            verbose=args.verbose,
+            )
+    else:
+        train_ml_models(
+            model=args.model,
+            trainers=trainer_dict,
+            n_iters=args.n_iters,
+            period=args.period,
+            save=args.save,
+            verbose=args.verbose,
+            )
+
+
+
 def impute(df, method, verbose=False):
     """
     Impute missing data using specified imputation method.
@@ -112,7 +156,15 @@ def impute_realized_stats(df, method):
             df = df[~drop_ix].copy()
     
     return df
-    
+
+
+def mkdir(directory):
+    """Make directory if it does not already exist."""
+    try:
+        os.makedirs(directory)
+    except OSError:
+        pass
+        
 # %%
 class StatProjection:
     """
@@ -145,6 +197,13 @@ class StatProjection:
         self.year = year
         self.season = season
     
+        # Load optimal algorithms.
+        if self.season:
+            pass
+        else:
+            with open('../data/.models/weekly/optimal_models.json', 'r') as fid:
+                self._opt_models = json.load(fid)
+        
         # Store relevant stats.
         if self.pos == 'DST':
             self.stats = 'PA.YdA.TD.Sack.Saf.Int.Fum Rec.Blk'.split('.')
@@ -276,7 +335,7 @@ class StatProjection:
         """
         # Get all stats filenames, ignoring DFS cost files.
         fids = glob(f'../data/{self.year}/{week}/{self.pos}/*.csv')
-        non_sources = ['FanDuel', 'DraftKings', 'FLOOR', 'CEIL', 'PROJ']
+        non_sources = ['FanDuel', 'DraftKings']
         fids = [fid for fid in fids \
                 if not any(source in fid for source in non_sources)]
         
@@ -337,7 +396,7 @@ class StatProjection:
         Parameters
         ----------
         df: pd.DataFrame
-            Stat DataFrame with source columns and player/team  multi-index.
+            Stat DataFrame with source columns and player/team multi-index.
         
         Returns
         -------
@@ -373,29 +432,34 @@ class StatProjection:
         ----------
         week: int
             Week of the season to project.
-        method: {'FLOOR', 'CEIL', 'MEAN', 'MEDIAN',
-                 'WEIGHTED', 'LR', 'RF'}, default=TODO
+        method: {'PROJ', 'FLOOR', 'CEIL', 'MEAN', 'MEDIAN',
+                 'OLS', 'LR', 'SVR', 'RF', 'XGB'}, default='PROJ'
             Ensemble method for created file.
+                - PROJ: Use optimal model for each projected stat.
                 - FLOOR: Minimum of projected stats.
                 - CEIL: Maximum of projected stats.
                 - MEAN: Mean of projected stats.
                 - MEDIAN: Median of projected stats.
-                - WEIGHTED: Projected stats are computed using simple
+                - OLS: Projected stats are computed using simple
                             regression weiths.
                 - LR: Projection stats are computed using advanced linear
                       regression with regularization.
+                - SVR: Projection stats are computed with
+                       support vector machines.
                 - RF: Projection stats are computed using a random forest.
-                            
-        
+                - XGB: Projection stats are computed using eXtreme gradient
+                       boosted trees.
+                               
         Returns
         -------
         Saves file to data dir for specified projection method.
         Filename is FLOOR.csv or CEIL.csv for FLOOR and CEIL projection
         methods or PROJ.csv for all other methods.
         """
-
-        filename = 'PROJ' if method not in ['FLOOR', 'CEIL'] else f'{method}'
-        fid = f'../data/{self.year}/{week}/{self.pos}/{filename}.csv'
+        
+        fid = f'../data/{self.year}/{week}/{self.pos}/proj/{method}.csv'
+        mkdir(f'../data/{self.year}/{week}/{self.pos}/proj')
+        method_store = method  # store method for optimal models.
         
         # Init empty DataFrame with proper index.
         df = pd.DataFrame(columns=['Player', 'Team'])
@@ -411,28 +475,26 @@ class StatProjection:
             # Get X array of projections.
             cols = [c for c in stat_df.columns \
                     if c not in ['Player', 'Team', 'Week', 'STATS']]
-            X = stat_df[cols].values
-            
-            if method == 'FLOOR':
-                stat_df[stat] = np.min(X, axis=1)
-            elif method == 'CEIL':
-                stat_df[stat] = np.max(X, axis=1)
-            elif method == 'MEAN':
-                stat_df[stat] = np.mean(X, axis=1)
-            elif method == 'MEDIAN':
-                stat_df[stat] = np.median(X, axis=1)
-            elif method == 'WEIGHTED':
-                # TODO
-                pass
-            elif method == 'LR':
-                # TODO
-                pass
-            elif method == 'RF':
-                # TODO
-                pass
+            X = stat_df[sorted(cols)].values
+            method = method if method_store != 'PROJ' \
+                     else self._opt_models[self.pos][stat]
+            if method in 'FLOOR CEIL MEAN MEDIAN'.split():
+                stat_df[stat] = self._transform(X, method, stat)
             else:
-                raise ValueError(f"'{method}' is not a valid method.")
-            
+                mean_proj = self._transform(X, 'MEAN')
+                floor_proj = self._transform(X, 'FLOOR')
+                ceil_proj = self._transform(X, 'CEIL')
+                raw_proj = self._transform(X, method, stat)
+                
+                # Ensure stat projection is within range FLOOR < PROJ < CEIL.
+                ix = tuple([mean_proj < self.thresholds[stat]])
+                raw_proj[ix] = floor_proj[ix]
+                proj = []
+                for rp, fp, cp in zip(raw_proj, floor_proj, ceil_proj):
+                    proj.append(min(cp, max(fp, rp)))
+                    # proj = np.array([max(p, 0) for p in proj])
+                stat_df[stat] = np.array(proj)
+
             # Append projection to main DataFrame.
             stat_df.set_index(['Player', 'Team'], inplace=True)
             df = df.join(pd.DataFrame(stat_df[stat]), how='outer')
@@ -446,14 +508,13 @@ class StatProjection:
             # Get X array of projections.
             cols = [c for c in stat_df.columns \
                     if c not in ['Player', 'Team', 'Week', 'STATS']]
-            X = stat_df[cols].values
-            
-            if method == 'FLOOR':
-                stat_df[stat] = np.min(X, axis=1)
-            elif method == 'CEIL':
-                stat_df[stat] = np.max(X, axis=1)
+            X = stat_df[sorted(cols)].values
+                
+            if method in 'FLOOR CEIL MEAN MEDIAN'.split():
+                stat_df[stat] = self._transform(X, method)
             else:
-                stat_df[stat] = np.mean(X, axis=1)
+                # Use FLOOR.
+                stat_df[stat] = self._transform(X, 'FLOOR')
             
             # Append projection to main DataFrame.
             stat_df.set_index(['Player', 'Team'], inplace=True)
@@ -467,7 +528,98 @@ class StatProjection:
         df.reset_index(inplace=True)
         df = df[['Player', 'Team'] + stats]
         df.to_csv(fid, index=False)
-            
+    
+    def _transform(self, X, method, stat=None):
+        """
+        Transform projection using specified method.
+        
+        Parameters
+        ----------
+        X: np.array [n x m]
+            Array of [m] source projections for [n] players.
+        method: {'PROJ', 'FLOOR', 'CEIL', 'MEAN', 'MEDIAN',
+                 'OLS', 'LR', 'SVR', 'RF', 'XGB'}.
+            Algorithm for obtaining projection from source projections.
+        stat: str, default=None
+            Name of stat to be projected.
+        
+        Returns
+        -------
+        pred: np.array [n x 1]
+            Array of projections using specifed algorithm.
+        """
+        if method == 'FLOOR':
+            pred = np.min(X, axis=1)
+        elif method == 'CEIL':
+            pred = np.max(X, axis=1)
+        elif method == 'MEAN':
+            pred = np.mean(X, axis=1)
+        elif method == 'MEDIAN':
+            pred = np.median(X, axis=1)
+        elif method == 'OLS':
+            pred = self._transform_OLS(X, stat)
+        elif method in 'LR RF SVR XGB'.split():
+            pred = self._transform_ML(X, method, stat)
+        else:
+            raise ValueError(f"'{method}' is not a valid method.")
+        
+        return np.array([max(0, p) for p in pred])
+        
+    def _transform_OLS(self, X, stat):
+        """
+        Transform projection using OLS.csv file.
+        
+        Parameters
+        ----------
+        X: np.array [n x m]
+            Array of [m] source projections for [n] players.
+        stat: str
+            Name of stat to be projected.
+        
+        Returns
+        -------
+        pred: np.array [n x 1]
+            Array of projections using OLS.
+        """
+        # Load coefficients from saved file for stat.
+        fid = f'../data/.models/weekly/{self.pos}/' \
+            f'{stat.replace(" ", "_")}/OLS.csv'
+        coeffs = pd.read_csv(fid, index_col=0).values.ravel()
+        
+        # Make predictions using: alpha + beta (dot) X'.
+        preds = coeffs[0] + coeffs[1:] @ X.T
+        return preds
+        
+    def _transform_ML(self, X, method, stat):
+        """
+        Transform projections using ML algorithm file.
+        
+        Parameters
+        ----------
+        X: np.array [n x m]
+            Array of [m] source projections for [n] players.
+        method: {'PROJ', 'FLOOR', 'CEIL', 'MEAN', 'MEDIAN',
+                 'OLS', 'LR', 'SVR', 'RF', 'XGB'}.
+            Algorithm for obtaining projection from source projections.
+        stat: str, default=None
+            Name of stat to be projected.
+        
+        Returns
+        -------
+        pred: np.array [n x 1]
+            Array of projections using specifed ML algorithm.
+        """
+        # Load data for scaler and ML model.
+        fid = f'../data/.models/weekly/{self.pos}/' \
+            f'{stat.replace(" ", "_")}/{{}}.sav'
+        scaler = joblib.load(fid.format('scaler'))
+        mod = joblib.load(fid.format(method))
+        
+        # Make prediction using scaled data and saved model.
+        X_scaled = scaler.transform(X)
+        preds = mod.predict(X_scaled)
+        return preds
+        
     def plot_projection_hist(self, stat, bins=None, threshold=True,
                              ax=None, figsize=[6, 6]):
         """
@@ -524,7 +676,6 @@ class StatProjection:
         ax.set_yticklabels(['{:3.0f}%'.format(x*100) for x in ax.get_yticks()])
         ax.set_xlabel(stat)
 
-        
 
 # %%
 
@@ -534,14 +685,31 @@ class StatProjection:
 
 # self.read_data(stat_dfs)
 # %%
-
-
+# week = 1
+# method = 'XGB'
+# stat = 'Pass Yds'
+# %%
 #
 # weeks = range(1, 18)
-# for pos in 'QB'.split():
-#     mod = StatProjection(pos)
-#     mod.load_data(weeks=weeks)
-#     for week in weeks:
-#         mod.make_projections(week, method='FLOOR')
-#         mod.make_projections(week, method='CEIL')
-#         mod.make_projections(week, method='MEAN')
+# positions = 'QB RB WR TE DST'.split()
+# with tqdm(total=len(weeks) * len(positions)) as pbar:
+#     for pos in positions:
+#         mod = StatProjection(pos)
+#         mod.load_data(weeks=weeks)
+#         for week in weeks:
+#             mod.make_projections(week, method='FLOOR')
+#             mod.make_projections(week, method='CEIL')
+#             mod.make_projections(week, method='MEAN')
+#             mod.make_projections(week, method='MEDIAN')
+#             mod.make_projections(week, method='OLS')
+#             mod.make_projections(week, method='LR')
+#             mod.make_projections(week, method='SVR')
+#             mod.make_projections(week, method='RF')
+#             mod.make_projections(week, method='XGB')
+#             mod.make_projections(week, method='PROJ')
+#             pbar.update(1)
+
+# %%
+
+
+    
