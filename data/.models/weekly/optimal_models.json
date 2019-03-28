@@ -1,0 +1,35 @@
+{
+    "QB": {
+        "Pass Yds": "RF",
+        "Pass TD": "CEIL",
+        "Pass Int": "CEIL",
+        "Rush Yds": "RF",
+        "Rush TD": "RF"
+    },
+    "RB": {
+        "Rush Yds": "OLS",
+        "Rush TD": "CEIL",
+        "Receptions": "XGB",
+        "Rec Yds": "RF",
+        "Rec TD": "XGB"
+    },
+    "WR": {
+        "Rush Yds": "CEIL",
+        "Receptions": "RF",
+        "Rec Yds": "RF",
+        "Rec TD": "CEIL"
+    },
+    "TE": {
+        "Receptions": "CEIL",
+        "Rec Yds": "RF",
+        "Rec TD": "CEIL"
+    },
+    "DST": {
+        "PA": "RF",
+        "YdA": "RF",
+        "TD": "CEIL",
+        "Sack": "SVR",
+        "Int": "SVR",
+        "Fum Rec": "CEIL"
+    }
+}
