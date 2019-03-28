@@ -48,7 +48,7 @@ def main():
     
     # Train model on essential stats.
     args = parse_args()
-    if args.model == 'WEIGHTED':
+    if args.model == 'OLS':
         train_simple_linear_regression(
             trainers=trainer_dict,
             period=args.period,
@@ -98,7 +98,7 @@ class TrainProjections:
     
     Methods
     -------
-    train_simple_linear_regression(): train WEIGHTED simple linear
+    train_simple_linear_regression(): train OLS simple linear
         regression model.
     
     """
@@ -254,8 +254,6 @@ class TrainProjections:
             'XGB': XGBRegressor,
             }[model]
         
-        
-        
         # Train model with cross-validation.
         mod_kwargs = {'n_threads': -1} if model == 'XGB' else {}
         n_jobs = 1 if model == 'XGB' else -1
@@ -303,7 +301,7 @@ def make_model_dirs():
 def train_simple_linear_regression(
     trainers, period, n_iters, save, verbose):
     """
-    Train linear regression weighted model.
+    Train OLS linear regression model.
     
     Parameters
     ----------
@@ -320,7 +318,7 @@ def train_simple_linear_regression(
     """
     
     if verbose:
-        print('\n\nSimple linear regresssion WEIGHTED model:')
+        print('\n\nSimple linear regresssion OLS model:')
         t0 = perf_counter()
     positions = trainers.keys()
     
@@ -355,7 +353,7 @@ def train_simple_linear_regression(
                 
                 if save:
                     fid = f'../data/.models/{period}/{pos}/' \
-                        f'{stat.replace(" ", "_")}/WEIGHTED.csv'
+                        f'{stat.replace(" ", "_")}/OLS.csv'
                         
                     save_df = pd.DataFrame(ols.params, columns=['vals'])
                     save_df.to_csv(fid)
@@ -382,7 +380,7 @@ def train_simple_linear_regression(
 def train_ml_models(
     trainers, model, n_iters, period, save, verbose):
     """
-    Train linear regression weighted model.
+    Train OLS linear regression weighted model.
     
     Parameters
     ----------
