@@ -1,4 +1,5 @@
-import warnings
+# import warnings
+import json
 from collections import defaultdict
 from glob import glob
 
@@ -17,7 +18,7 @@ plt.style.use('fivethirtyeight')
 # %matplotlib qt
 # %%
 
-def main():
+# def main():
     fdir = '../figures'
     save = False
     # plot_missing_data(fdir, save)
@@ -314,9 +315,17 @@ def plot_weekly_pos_projections(pos, week, year=2018, n_players=None,
     
 # %%
 for i in range(1, 6):
-    plot_weekly_pos_projections('DST', i)
+    plot_weekly_pos_projections('TE', i)
     plt.show()
 
+# %%
+pos = 'TE'
+week = 17
+
+plot_weekly_pos_projections(pos, week, figsize=(12, 8))
+# plt.show()
+eu.save_fig(f'{pos}_{week}', dir=fdir)
+# %%
 
 # %%
 class CompareModels:
@@ -581,7 +590,7 @@ class CompareModels:
                     fmt=f'0.{prec}f', cbar=False, ax=ax)
         
         ax.xaxis.set_ticks_position('top')
-        ax.set_xticklabels(df.columns, fontsize=fontsize, format='bf')
+        ax.set_xticklabels(df.columns, fontsize=fontsize)
         ax.set_yticklabels(df.index, fontsize=fontsize)
         
     def save_optimal_projections(self):
@@ -590,11 +599,11 @@ class CompareModels:
 
 # %%
 
-
 def make_algo_comparison_tables(year=2018, fdir='../figures', save=True):
     # %%
     ess_train = CompareModels('essential', period='weekly', subset='train')
     ess_cv = CompareModels(stats='essential', period='weekly', subset='cv')
+    ess_test = CompareModels(stats='essential', period='weekly', subset='test')
     ess_thresh = CompareModels(
         'essential_below_thresh',period='weekly', subset='train')
     non_ess = CompareModels('non_essential', period='weekly', subset='train')
@@ -612,14 +621,14 @@ def make_algo_comparison_tables(year=2018, fdir='../figures', save=True):
     else:
         plt.show()
     
-    ess_train.plot_color_table(figsize=(9, 12), fontsize=12)
+    ess_train.plot_color_table(figsize=(9, 12), fontsize=12, prec=2)
     if save:
         eu.save_fig('essential_train_MAE_table', dir=fdir)
     else:
         plt.show()
     
     
-    ess_cv.plot_color_table(figsize=(9, 12), fontsize=12)
+    ess_cv.plot_color_table(figsize=(9, 12), fontsize=12, prec=2)
     if save:
         eu.save_fig('essential_cv_MAE_table', dir=fdir)
         cap = 'Mean Absolute Error (MAE) values for all essential stats '\
@@ -633,4 +642,59 @@ def make_algo_comparison_tables(year=2018, fdir='../figures', save=True):
             )
     else:
         plt.show()
+        
+    
+    ess_thresh.plot_color_table(figsize=(9, 12), fontsize=12)
+    if save:
+        eu.save_fig('essential_thresh_MAE_table', dir=fdir)
+    else:
+        plt.show()
+        
+    non_ess.plot_color_table(figsize=(9, 12), fontsize=12, prec=3)
+    if save:
+        eu.save_fig('nonessential_MAE_table', dir=fdir)
+    else:
+        plt.show()
+
+    
+    # %%
+    # Make train/cv/test table and print to LaTeX.
+    
+    with open('../data/.models/weekly/optimal_models.json', 'r') as fid:
+        opt_models = json.load(fid)
+    
+    def get_set_mae_list(subset_comparison, models=opt_models):
+        df = subset_comparison.mae_df
+        mae_list = []
+        for _, row in df.iterrows():
+            mae_list.append(row[models[row['Position']][row['Stat']]])
+        return mae_list
+        
+    df = ess_train.mae_df
+    fmt_methods = {
+        'MEAN': 'Mean',
+        'MEDIAN': 'Median',
+        'FLOOR': 'Min',
+        'CEIL': 'Max',
+        }
+    algos = []
+    for _, row in df.iterrows():
+        algo = models[row['Position']][row['Stat']]
+        algos.append(fmt_methods.get(algo, algo))
+    pos = []
+    for p in df['Position'].values:
+        pos.append('{}' if p in pos else p)
+    
+    table = pd.DataFrame({
+        'Position': pos,
+        'Stat': df['Stat'],
+        'Projection Function': algos,
+        'Train': get_set_mae_list(ess_train),
+        'CV': get_set_mae_list(ess_cv),
+        'Test': get_set_mae_list(ess_test),
+        })
+    cap = 'MAE values for training, cross-validation, and test sets with ' \
+        'selected optimal projection function for each stat.'
+    eu.latex_print(table, hide_index=True, prec=2, col_fmt='lllcrrr',
+                   caption=cap)
     # %%
