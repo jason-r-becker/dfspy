@@ -2,8 +2,8 @@
  
 \usepackage[margin=1in]{geometry}
 \usepackage[font=small,labelfont=bf]{caption}
-%\usepackage{graphicx}
-\usepackage[draft]{graphicx}
+\usepackage{graphicx}
+%\usepackage[draft]{graphicx}
 \usepackage{amsmath, amsthm, amssymb, bm, enumitem, nicefrac, float, booktabs, adjustbox, subcaption, fancyhdr, makecell, titlesec, dsfont, epigraph}
 \PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
 
@@ -44,9 +44,17 @@
 
 
 \section{Introduction}
-TODO
+TODO\bigskip
 
 
+The full end-to-end pipeline used to generate lineups for daily fantasy sites is provided in Figure \ref{pipeline}. This paper will discuss the sections of this pipeline in chronological order: from scraping and cleaning the data, to generating stat and scoring projections, through generating final lineups for each week.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{../figures/pipeline}
+  \caption{Full data pipeline for generating optimal lineups.}
+  \label{pipeline}
+\end{figure}
 
 \pagebreak
 \section{Data Summary}
@@ -137,6 +145,8 @@ Figures \ref{impute MAE} and \ref{impute RMSE} clearly indicate that the iterati
 
 \subsection{Data Exploration}
 
+The raw values for realized stats were investigated prior to building predictive models. For each stat, two nearly independent distributions were observed, one near zero and the other significantly different than zero. These two distributions were identified as \textit{starters} and \textit{backups} (i.e., players who were expected to play the entire game and players who come of the bench and play a minimal role respectively). Due to the difficulties that would arise from machine learning models attempting to predict multiple distributions, a threshold was set for each stat to separate values from starters and backups. Separate models were used to predict stats above and below these thresholds, both of which will be discussed further in the methodology section. Thresholds were selected manually through observation of histograms of each stat. Figure \ref{example hist pass yds} displays an example threshold for an easily separable stat, Pass Yds, where the two distributions are clearly distinguishable. Figure \ref{example hist rush yds} displays an example threshold for a more difficult stat to separate, Rush Yds, which appears to have three distributions, one near zero, one linear decreasing, and a third bell shape distribution. For stats such as Rush Yds, the separation boundary was chosen to separate near-zero and non-zero distributions to avoid having numerous categorical distributions within each stat. The selected thresholds and resulting histograms after thresholding for all essential stats are provided in the appendix.
+
 
 \begin{figure}[H]
   \centering
@@ -144,21 +154,171 @@ Figures \ref{impute MAE} and \ref{impute RMSE} clearly indicate that the iterati
     \centering
     \includegraphics[width=1\textwidth]{../figures/no_theshold_example_hists}
     \caption{Raw histogram with threshold (red).}
+    \label{example hist pass yds}
   \end{subfigure}
   \hfill
   \begin{subfigure}[b]{0.450\textwidth}
     \centering
     \includegraphics[width=1\textwidth]{../figures/no_theshold_example_hists_RB}
     \caption{Histogram above threshold.}
+     \label{example hist rush yds}
   \end{subfigure}
   \caption{Example raw and thresholded histograms for QB passing yards and RB rushing yards.}
+  
 \end{figure}
 
 
 \pagebreak
 \section{Methodology}
+
+
 \subsection{Projections}
-TODO
+In order to project scores for each player, the individual stats of that player were projected, and subsequently combined with scoring rules for either FanDuel or DraftKings to generate a final scoring projection for each week. Models used for individual stat projections were trained on a \textit{training} period (Weeks 1-11), validated on a \textit{cross-validation} period (Weeks 12-14), and finally tested on an unseen \textit{testing} period (Weeks 15-17). This train/cross-validation/test procedure is the standard in machine learning literature as it ensures models are not overfit to the training data, establishes a unseen period to identify the best model in the cross-validation period, and can be tested on completely unseen data in the test period, providing a fair estimate for how well the model will do given future data.\bigskip
+
+For all stats, the projections from individual sources were used as feature variables for the final projection. More concretely, for a given stat such as Pass Yds, the feature variable vector $X = [\text{CBS},\ \text{ESPN},\ \text{FantasyPros},\ \text{FFToday},\ \text{NFL},\ \text{RTSports},\ \text{Yahoo}]$ where each source name represents the Pass Yds projection from that respective source. Given the feature variable vector, the projection $y$ can be found:
+\begin{equation}
+y = f(X)
+\end{equation}
+where $f(\cdot)$ can be any function. The studied functions used to form projections are given in Table \ref{ML algos}.
+
+\begin{table}[H]
+\caption{Functions and algorithms used to project stats from feature variables.}
+\label{ML algos}
+\centering
+\begin{tabular}{llc}
+	\toprule
+	Abbreviation        &  Name           &  Source \\
+	\midrule
+	Min		& Minimum		& -\\
+	Max		& Maximum		& -\\
+	Mean		& Mean		& -\\
+	Median		& Median		& -\\
+	LR  & Linear Regression (Elastic Net)  & \cite{LR paper, LR algo}\\
+	XGB & eXtreme Gradient Boosted Trees  & \cite{XGB paper, XGB algo}\\
+	OLS & Ordinary Least Squares  & \cite{OLS algo}\\
+	RF & Random Forest Regressor & \cite{RF paper, RF algo}\\
+	SVR & Support Vector Regressor  & \cite{SVR paper, SVR algo}\\
+	\bottomrule
+\end{tabular}
+\end{table}
+
+For nonessential stats, only simple methods were compared, as most stats did not have enough sources providing projections to incorporate machine learning models. The MAE results for these simple methods are provided below. As the minimum projection provided the lowest MAE for each stat with multiple projections, it was selected as the projection function for all nonessential stats.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{../figures/nonessential_MAE_table}
+  \caption{Training set MAE of simple projection methods for nonessential stats.}
+\end{figure}
+
+
+Similarly, essential stats below the threshold values were projected using only simple methods. Since the values were all near-zero, the added complexity of using more advanced methods would not result in much benefit to the final scoring projection for each player. As with nonessential stats, the minimum projection for stats below the specified threshold provided the lowest MAE, so minimum was the function selected for projection of stats when the mean of source projections was below the respective specified stat threshold.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{../figures/essential_thresh_MAE_table}
+  \caption{Training set MAE of simple projection methods for essential stats below respective stat thresholds.}
+\end{figure}
+
+Finally, essential stats above the specified thresholds were projected using the full set of studied algorithms. First, OLS was fit to the training set for each stat, which provides a simple linear approximation for the influence of each feature variable on the final projection $y$. OLS is often used as a base machine learning model since it is the simplest model with small chance of overfitting. OLS results are reported in the appendix, where the significance of each individual source for every stat is additionally provided. Note that the significance indicated is only for the \textit{linear} relation between each respective source and the true realized stat values, and sources that are deemed insignificant by OLS may still be significantly related to the true value by another degree (e.g., ESPN's projection for Pass Yds may be insignificant linearly but the square of ESPN's projection may be informative).\bigskip
+
+In order to find these more complex relationships between source projections and realized stat values, the machine learning algorithms detailed in Table \ref{ML algos} were implemented. More information about the individual machine learning algorithms can be found in the cited references. Each stat was treated as a separate dataset, with the methodology outlined below applied to each individually as shown in Figure \ref{ML pipeline}.\bigskip
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{../figures/ML_flowchart}
+  \caption{Pipeline of machine learning generated projections. Color is used to show when models are saved and loaded.}
+  \label{ML pipeline}
+\end{figure}
+
+Each machine learning model was trained using the training set of data (Weeks 1-11). Since several of the models tend to provide better estimates on similarly scaled data, the data was normalized using the training set mean and standard deviation for each stat:
+\begin{equation}
+X_{scaled} = \dfrac{X - \mu (X)}{\sigma (X)}
+\end{equation}
+where $mu$ and $\sigma$ denote the mean and standard deviation of $X$ projections for each source respectively. This scaling results in each $X_{scaled}$ having mean 0 and standard deviation of 1.\bigskip
+
+Once the values for each stat were scaled, they were quantized into quintiles (i.e., given a categorical value 1-5 depending on if they were in the 0-20, 20-40, ..., 80-100 percentile of projections). Next, the full training data was randomly split into 5 subsets, each of which had an identical number of values from each quantile, known as a stratified shuffle split. Stratifying the split using quintiles ensures that each subset had a similar distribution of high, medium, and low values, balancing each subset. Next, a randomized cross-validation grid search was used on the first 4 subsets to find an optimal model, and tested on the fifth subset to observe the how the model performed on unseen data. This was repeated for each group of 4 subsets, known as K-fold cross-validation, to help the models generalize to unseen data. Optimal model hyperparameters from the randomized grid search were chosen from the hyperparameters which performed best on average over each of the 5 K-folds, where MAE was used as loss function. Once model hyperparameters were found for each model, they were saved to files such that they could be loaded and applied to other datasets.\bigskip
+
+After all model hyperparameters where found for each stat, the cross-validation set (Weeks 12-14) were loaded. The saved scaling function mean and standard deviation from the training sets were then applied to scale the cross-validation data in the same manner as the training data. Following, all machine learning models were loaded and applied to the scaled data, generating projections on data previously unseen by the machine learning models which had no impact on hyperparameter selection. The resulting MAE for each stat and projection function is provided in Figure \ref{train/cv MAE}.
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.490\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../figures/essential_train_MAE_table}
+    \caption{Training MAE.}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.490\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../figures/essential_cv_MAE_table}
+    \caption{Cross-Validation MAE.}
+  \end{subfigure}
+  \caption{Mean Absolute Error (MAE) values for all essential stats.}
+  \label{train/cv MAE}
+\end{figure}
+
+Models with low MAE values on the training set but moderate to high MAE values on the cross-validation set indicate that the models overfit to the training set, and do not generalize well to unseen data. The optimal models for projecting each stat were manually chosen based on the MAE results from both the training and cross-validation sets. For stats such as DST - Fum Rec where both the cross-validation and training sets had the same optimal model (Max), that model was selected. For stats such as QB - Rush Yds, were the best model on the cross-validation set (RF) differed from the training set (SVR), the model performing best on the cross validation set was generally chosen. Some exceptions to these rules were made. For example, with QB Pass TD, although the RF slightly outperformed the Max on the cross-validation set, it significantly underperformed compared to Max on the training set. This indicates that the model may have gotten ``lucky'' on the cross-validation set and similar performance greater than the training set cannot be expected on new data. Additionally, when two models perform nearly equally well, a simpler model (Max) is preferable over a more complex model (RF). Hence, for QB - Pass TD Max was chosen as the projection function.\bigskip
+
+Once the projection function was chosen for each stat, the test set data was loaded. Similar to the cross-validation set, the test set was scaled using the saved scaling data from the training set, and then the optimal projection function was applied to each stat, forming final projections for each stat and data that was completely unseen to models during hyperparameter tuning, and during the model selection process. As such, the test set provides a reliable estimate for the MAE expected for each stat on new data to the pipeline. The selected projection function for each stat, as well as its respective MAE value on the training, cross-validation, and test sets are provided in Table \ref{train/cv/test table}.
+
+
+
+﻿\begin{table}[H]
+\caption{MAE values for training, cross-validation, and test sets with selected optimal projection function for each stat.}
+\label{train/cv/test table}
+\centering
+\begin{tabular}{lllcrrr}
+\toprule
+{} & Position &        Stat & Projection Function &  Train &     CV &   Test \\
+\midrule
+{} &       QB &    Pass Yds &                  RF &  55.86 &  66.01 &  61.36 \\
+{} &       {} &     Pass TD &                 Max &   0.77 &   0.75 &   0.79 \\
+{} &       {} &    Pass Int &                 Max &   0.61 &   0.73 &   0.48 \\
+{} &       {} &    Rush Yds &                  RF &   9.25 &  13.96 &  14.10 \\
+{} &       {} &     Rush TD &                  RF &   0.95 &   0.83 &   1.12 \\
+\midrule
+{} &       RB &    Rush Yds &                 OLS &  24.32 &  23.90 &  23.51 \\
+{} &       {} &     Rush TD &                 Max &   0.60 &   0.49 &   0.50 \\
+{} &       {} &  Receptions &                 XGB &   1.37 &   1.50 &   1.27 \\
+{} &       {} &     Rec Yds &                  RF &  14.94 &  15.48 &  14.08 \\
+{} &       {} &      Rec TD &                 XGB &   0.94 &   0.85 &   0.89 \\
+\midrule
+{} &       WR &    Rush Yds &                 Max &  11.20 &  13.75 &  10.00 \\
+{} &       {} &  Receptions &                  RF &   1.56 &   1.64 &   1.62 \\
+{} &       {} &     Rec Yds &                  RF &  22.63 &  23.98 &  22.54 \\
+{} &       {} &      Rec TD &                 Max &   0.56 &   0.58 &   0.59 \\
+\midrule
+{} &       TE &  Receptions &                 Max &   1.34 &   1.48 &   1.40 \\
+{} &       {} &     Rec Yds &                  RF &  16.41 &  18.69 &  17.77 \\
+{} &       {} &      Rec TD &                 Max &   0.64 &   0.53 &   0.80 \\
+\midrule
+{} &      DST &          PA &                  RF &   6.73 &   5.99 &   7.77 \\
+{} &       {} &         YdA &                  RF &  61.70 &  60.50 &  55.52 \\
+{} &       {} &          TD &                 Max &   0.85 &   0.84 &   0.73 \\
+{} &       {} &        Sack &                 SVR &   1.18 &   1.04 &   1.12 \\
+{} &       {} &         Int &                 SVR &   0.54 &   0.74 &   0.52 \\
+{} &       {} &     Fum Rec &                 Max &   0.45 &   0.46 &   0.62 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Several of the stats show some signs of difficulty to generalize to the new data. QB - Rush TD, TE - Rec TD, and DST - Fum Rec all had significantly higher test MAE values than their training and cross-validation counterparts. This could provide some future work as these models may require a closer look at data cleaning/thresholding, hyperparameter tuning, or model selection in order to better generalize. However, overall most stat projection test values were nearly equal to or better than their cross-validation MAE value, showing the ability for most models to generalize well to unseen data.\bigskip
+
+Interestingly, a simple maximum was the most frequent model selection, followed by a random forest, though all machine learning models were utilized for at least one stat. This indicates the largest differences in projecting different stats for different positions. For example, Rush Yds were found to be optimally projected using RF, OLS, and simple Max for QB, RB, and WR respectively, indicating that the algorithms used by each source are different depending upon not only stat but also position.\bigskip
+
+TODO: talk about applying scoring rules and floor ceiling projections.\bigskip
+
+
+Once final projections are computed using scoring rules, the projections for any position can be visualized. Figure \ref{qb17} displays an example visualization for quarterbacks in week 17 scored by FanDuel. In addition to simply showing the generated projections, confidence intervals of each player's respective floor and ceiling are included as well as player status. Statuses include Q for questionable, IR for players on injured reserved, SSPD for suspended players, and O for players who are out.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{../figures/QB_17}
+  \caption{Example projections for QB week 17. Dots indicate the projections generated using our methodology, with error bars representing total floor and total ceiling for each player. Red text indicates the status of players.}
+  \label{qb17}
+\end{figure}
+
+
 \subsection{Lineup Optimization}
 Given optimal player projections, lineups must now be generated for competition at DraftKings and FanDuel. Both sites have the same lineup restrictions, only differing on their budget and point system (DraftKings is 50,000 budget and 1 pt per reception; FanDuel is 60,000 budget and is 0.5 pts per reception). As the goal is to score as many points as possible, projected points were maximized such that all lineup restrictions were met. \bigskip
 
@@ -243,11 +403,20 @@ From Figure \ref{lineups_vs_n}, it is clear that if $n$ lineups are needed, naiv
 
 \pagebreak
 \section{Results}
-TODO: 
+
+
+TODO
 
 
 
 \pagebreak
+\section{Future Work}
+Future work may consist of several improvements to the described methodology. First, more data from other sources may be incorporated. Many additional sources provide similar projections on a weekly basis, but do not store historical projections online. These sources can be scraped each week during the season in order to keep a private history to use for model building. Additionally, several sources are behind paywalls, so paid membership accounts can be created to include them. The law of big data in machine learning states that more data can only result in more accurate predictions, thus including more sources should only improve the projections generated.\bigskip
+
+Second, several models did not generalize well to the test set. Modulating threshold values and hyperparameter grids may help overcome these issues. Additionally, including other machine learning algorithms such as neural networks may further improve accuracy and precision of generated projections.\bigskip
+
+Finally, during lineup creation, simple linear interpolation between the floor, generated projection, and ceiling are used to create 150 lineups. Using the floor and ceiling levels to instead create a distribution with mode or mean equal to the generated projection and performing Monte Carlo simulations to generate lineups may further improve the ability to generate profitable lineups.
+
 \section{Conclusion}
 TODO: conclusions
 
@@ -258,9 +427,48 @@ TODO: conclusions
 
 \bibitem{fancyimpute}
 A. Rubinsteyn, \& S. Feldman (2019). 
-``A Variety of Matrix Completion and Imputation Algorithms Implemented in Python.'' \url{https://github.com/iskandr/fancyimpute}
+``A Variety of Matrix Completion and Imputation Algorithms Implemented in Python.'' 
+\url{https://github.com/iskandr/fancyimpute}
 
+\bibitem{LR paper}
+H. Zhou \& T. Hastie (2005). 
+``Regularization and Variable Selection via the Elastic Net.'' 
+\textit{R. Statist. Soc.B,} 67, 301–32
 
+\bibitem{LR algo}
+M. Brucher et. al (2019). 
+ElasticNet. \url{https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.ElasticNet.html}
+
+\bibitem{XGB paper}
+T. Chen \& C. Guestrin (2016). 
+``XGBoost: A Scalable Tree Boosting System.'' 
+\textit{Proceedings of the 22Nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining,} 785-794
+
+\bibitem{XGB algo}
+T. Chen et. al (2019). 
+XGBoost. \url{https://xgboost.readthedocs.io/en/latest/python/index.html}
+
+\bibitem{OLS algo}
+S. Seabold et. al (2019). 
+OLS. \url{https://www.statsmodels.org/dev/generated/statsmodels.regression.linear_model.OLS.html}
+
+\bibitem{RF paper}
+A. Liaw \& M. Wiener (2002). 
+``Classificationand RegressionbyrandomForest.'' 
+\textit{R News,} 2/3:18-22
+
+\bibitem{RF algo}
+M. Brucher et. al (2019). 
+RandomForestRegressor. \url{https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html}
+
+\bibitem{SVR paper}
+H. Drucker, C.J.C. Burges, L. Kaufman, A. Smola, \& V. Vapnik (1997).
+``Support Vector Regression Machines.'' 
+\textit{Advances in Neural Information Processing Systems,} 9, 155–161
+
+\bibitem{SVR algo}
+M. Brucher et. al (2019). 
+SVR. \url{https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html}
 
 
 
@@ -380,36 +588,36 @@ A. Rubinsteyn, \& S. Feldman (2019).
 
 
 ﻿\begin{table}[H]
-\caption{Simple linear regression results for ensemble weighting of each source. Asterisks denote statistical significance of regression coefficients, (*) denoting a p-value less than 0.5, (**) for less than 0.01, and (***) for less than 0.001.}
+\caption{Ordinary least squares (OLS) regression results for ensemble weighting of each source. Asterisks denote statistical significance of regression coefficients, (*) denoting a p-value less than 0.05, (**) for less than 0.01, and (***) for less than 0.001.}
 \centering
 \begin{adjustbox}{width =\textwidth}
 \begin{tabular}{llllllllll}
 \toprule
-{} & Position &        Stat &    const &     ESPN &    Yahoo & FantasyPros &      NFL &      CBS &   FFToday \\
+{} & Position &        Stat &    const &      CBS &     ESPN &  FFToday & FantasyPros &      NFL &    Yahoo \\
 \midrule
-{} &       QB &    Pass Yds &   -39.79 &     0.29 &     0.38 &       -0.44 &     0.26 &    -0.13 &     0.8** \\
-{} &          &     Pass TD &    -0.08 &     0.19 &     0.05 &        0.62 &     -0.3 &     0.45 &      0.08 \\
-{} &          &    Pass Int &    -0.05 &    -0.25 &     0.37 &        0.57 &     0.57 &     0.04 &     -0.28 \\
-{} &          &    Rush Yds &  3.14*** &     0.12 &     0.01 &       -0.43 &     0.27 &     0.21 &    0.66** \\
-{} &          &     Rush TD &     0.01 &     0.48 &    -0.16 &        0.38 &     0.77 &     -0.4 &     -0.17 \\
-{} &       RB &    Rush Yds &     3.84 &  0.42*** &     0.25 &        0.17 &     0.25 &     0.01 &     -0.19 \\
-{} &          &     Rush TD &     0.06 &    -0.05 &     0.14 &        0.56 &     0.29 &     0.23 &     -0.15 \\
-{} &          &  Receptions &     0.08 &   0.3*** &   0.19** &        0.03 &     0.17 &     0.08 &   0.21*** \\
-{} &          &     Rec Yds &     2.84 &  0.57*** &     0.11 &       -0.46 &     0.16 &     0.17 &   0.37*** \\
-{} &          &      Rec TD &     0.04 &    -0.39 &     0.37 &        0.83 &   0.8*** &    -0.33 &  -0.33*** \\
-{} &       WR &    Rush Yds &   25.03* &   1.54** &    -0.96 &       -2.82 &     0.31 &     0.32 &         - \\
-{} &          &  Receptions &     0.22 &    0.44* &     0.08 &        -0.2 &   0.29** &  0.27*** &      0.06 \\
-{} &          &     Rec Yds &     0.71 &   0.48** &      0.2 &        0.04 &     0.17 &    -0.04 &      0.14 \\
-{} &          &      Rec TD &     0.03 &   0.56** &     0.03 &         0.5 &    -0.01 &     0.02 &     -0.11 \\
-{} &       TE &  Receptions &  0.39*** &    -0.06 &     0.08 &        0.37 &   0.53** &    -0.16 &       0.1 \\
-{} &          &     Rec Yds &     2.69 &    -0.06 &     0.05 &     0.93*** &    0.59* &    -0.27 &     -0.29 \\
-{} &          &      Rec TD &   0.08** &  0.67*** &    -0.35 &       -0.34 &  0.71*** &    -0.12 &      0.14 \\
-{} &      DST &          PA &     0.39 &        - &   0.8*** &        0.14 &    -0.29 &     0.33 &         - \\
-{} &          &         YdA &    39.35 &        - &  0.36*** &        0.61 &        - &    -0.08 &         - \\
-{} &          &          TD &    -0.25 &    -0.46 &     0.43 &       -0.26 &   3.38** &     0.26 &         - \\
-{} &          &        Sack &    -0.26 &     0.06 &     0.34 &       -0.09 &     0.82 &     0.09 &         - \\
-{} &          &         Int &    -0.27 &    -0.34 &     0.19 &        1.13 &     0.15 &      0.1 &         - \\
-{} &          &     Fum Rec &     0.58 &     0.66 &    -0.45 &       -0.07 &     0.26 &    -0.31 &         - \\
+{} &       QB &    Pass Yds &   -40.48 &    -0.13 &     0.32 &   0.81** &       -0.45 &     0.28 &     0.34 \\
+{} &          &     Pass TD &    -0.15 &     0.46 &     0.16 &     0.06 &        0.64 &    -0.28 &     0.08 \\
+{} &          &    Pass Int &    -0.01 &     0.11 &    -0.24 &    -0.25 &        0.42 &     0.57 &     0.34 \\
+{} &          &    Rush Yds &  3.67*** &     0.15 &    -0.02 &   0.71** &       -0.47 &     0.32 &      0.1 \\
+{} &          &     Rush TD &     0.01 &    -0.49 &     0.58 &    -0.17 &        0.33 &     0.87 &    -0.19 \\
+{} &       RB &    Rush Yds &     4.38 &     0.02 &   0.44** &    -0.16 &        0.11 &     0.26 &     0.23 \\
+{} &          &     Rush TD &     0.06 &     0.27 &    -0.01 &    -0.13 &        0.48 &     0.25 &     0.16 \\
+{} &          &  Receptions &     0.08 &     0.12 &   0.3*** &  0.26*** &       -0.05 &     0.18 &  0.17*** \\
+{} &          &     Rec Yds &     2.51 &     0.24 &  0.63*** &   0.4*** &       -0.59 &     0.17 &     0.09 \\
+{} &          &      Rec TD &     0.03 &    -0.38 &    -0.37 &  -0.36** &        0.98 &  0.76*** &     0.38 \\
+{} &       WR &    Rush Yds &   23.23* &     0.18 &   1.47** &        - &        -2.4 &     0.21 &    -0.85 \\
+{} &          &  Receptions &     0.23 &  0.29*** &    0.45* &     0.05 &        -0.2 &  0.28*** &     0.07 \\
+{} &          &     Rec Yds &     0.82 &    -0.03 &   0.48** &     0.11 &        0.04 &     0.18 &     0.21 \\
+{} &          &      Rec TD &     0.03 &     0.03 &  0.51*** &     -0.1 &         0.5 &    -0.04 &     0.09 \\
+{} &       TE &  Receptions &  0.36*** &    -0.22 &    -0.07 &     0.07 &        0.45 &    0.56* &     0.08 \\
+{} &          &     Rec Yds &     2.62 &    -0.32 &    -0.06 &    -0.29 &     0.96*** &    0.61* &     0.05 \\
+{} &          &      Rec TD &  0.08*** &     -0.3 &  0.77*** &     0.08 &       -0.39 &   0.94** &    -0.35 \\
+{} &      DST &          PA &     0.05 &     0.31 &        - &        - &         0.1 &    -0.32 &   0.89** \\
+{} &          &         YdA &    32.28 &    -0.06 &        - &        - &        0.56 &        - &   0.4*** \\
+{} &          &          TD &    -0.19 &     0.15 &    -0.57 &        - &       -0.13 &   3.09** &     0.38 \\
+{} &          &        Sack &    -0.43 &     0.07 &     0.08 &        - &       -0.08 &     0.85 &     0.37 \\
+{} &          &         Int &     -0.3 &      0.1 &    -0.42 &        - &        1.25 &     0.35 &    -0.06 \\
+{} &          &     Fum Rec &     0.52 &     -0.3 &     0.62 &        - &        0.04 &     0.26 &    -0.46 \\
 \bottomrule
 \end{tabular}
 \end{adjustbox}
