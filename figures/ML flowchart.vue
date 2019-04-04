@@ -1,14 +1,14 @@
-<!-- Tufts VUE 3.3.0 concept-map (ML flowchart.vue) 2019-04-03 -->
+<!-- Tufts VUE 3.3.0 concept-map (ML flowchart.vue) 2019-04-04 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Wed Apr 03 12:22:08 CDT 2019 by jasonbecker on platform Mac OS X 10.14.4 in JVM 1.8.0_121-b13 -->
+<!-- Do Not Remove: Saved date Thu Apr 04 10:41:15 CDT 2019 by jasonbecker on platform Mac OS X 10.14.4 in JVM 1.8.0_121-b13 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0" label="ML flowchart.vue"
     created="1554310875701" x="0.0" y="0.0" width="1.4E-45"
     height="1.4E-45" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1554312128605"
+    <resource referenceCreated="1554392475482" size="26427"
         spec="/Users/jasonbecker/PycharmProjects/dfspy/figures/ML flowchart.vue"
         type="1" xsi:type="URLResource">
         <title>ML flowchart.vue</title>
@@ -165,9 +165,9 @@
         <shape xsi:type="hexagon"/>
     </child>
     <child ID="23"
-        label="Project Values using&#xa;Optima Saved ML Algorithm "
+        label="Project Values using&#xa;Optimal Saved ML Algorithm "
         layerID="1" created="1554311642984" x="504.5" y="456.5"
-        width="166.0" height="56.0" strokeWidth="1.0" autoSized="false" xsi:type="node">
+        width="169.0" height="56.0" strokeWidth="1.0" autoSized="false" xsi:type="node">
         <fillColor>#FFFFFF</fillColor>
         <strokeColor>#000000</strokeColor>
         <textColor>#000000</textColor>
@@ -200,7 +200,7 @@
         <ID2 xsi:type="node">9</ID2>
     </child>
     <child ID="42" label="Train" layerID="1" created="1554311732621"
-        x="231.53601" y="121.5" width="26.0" height="74.03125"
+        x="232.03601" y="121.5" width="25.0" height="74.03125"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
@@ -226,7 +226,7 @@
         <ID2 xsi:type="node">16</ID2>
     </child>
     <child ID="44" label="Test" layerID="1" created="1554311736560"
-        x="232.72876" y="350.57812" width="23.0" height="105.421875"
+        x="233.22876" y="350.57812" width="22.0" height="105.421875"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
@@ -265,14 +265,14 @@
         <ID2 xsi:type="node">21</ID2>
     </child>
     <child ID="47" layerID="1" created="1554311741275" x="318.0"
-        y="483.21686" width="187.0" height="1.5414734" strokeWidth="1.0"
+        y="483.21594" width="187.0" height="1.5391235" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/e438e86bc0a8016d2f1d9753f484ee09</URIString>
-        <point1 x="318.5" y="483.7169"/>
-        <point2 x="504.5" y="484.25836"/>
+        <point1 x="318.5" y="483.71594"/>
+        <point2 x="504.5" y="484.25507"/>
         <ID1 xsi:type="node">17</ID1>
         <ID2 xsi:type="node">23</ID2>
     </child>
@@ -364,16 +364,16 @@
         <ID1 xsi:type="node">24</ID1>
         <ID2 xsi:type="node">21</ID2>
     </child>
-    <child ID="55" layerID="1" created="1554311760766" x="587.3889"
-        y="401.28906" width="1.7598267" height="55.710938"
-        strokeWidth="1.0" strokeStyle="4" autoSized="false"
-        controlCount="0" arrowState="2" xsi:type="link">
+    <child ID="55" layerID="1" created="1554311760766" x="588.49994"
+        y="401.30005" width="1.0" height="55.69998" strokeWidth="1.0"
+        strokeStyle="4" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/e438e86fc0a8016d2f1d97539d8f3a4a</URIString>
-        <point1 x="588.64874" y="401.78906"/>
-        <point2 x="587.8889" y="456.5"/>
+        <point1 x="588.99994" y="401.80002"/>
+        <point2 x="588.99994" y="456.5"/>
         <ID1 xsi:type="node">24</ID1>
         <ID2 xsi:type="node">23</ID2>
     </child>
@@ -413,16 +413,16 @@
         <URIString>http://vue.tufts.edu/rdf/resource/e438e870c0a8016d2f1d9753f1615c5f</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="59" layerID="1" created="1554312023994" x="666.949"
-        y="293.08215" width="466.18237" height="163.91785"
+    <child ID="59" layerID="1" created="1554312023994" x="668.25024"
+        y="293.11993" width="464.91956" height="163.88007"
         strokeWidth="1.0" strokeStyle="2" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/e438e871c0a8016d2f1d9753a1d4dedf</URIString>
-        <point1 x="667.449" y="456.5"/>
-        <point2 x="1132.6313" y="293.58215"/>
+        <point1 x="668.75024" y="456.5"/>
+        <point2 x="1132.6698" y="293.61993"/>
         <ID1 xsi:type="node">23</ID1>
         <ID2 xsi:type="node">58</ID2>
     </child>
@@ -456,13 +456,13 @@
         y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/e438e872c0a8016d2f1d9753ef5a6ece</URIString>
     </layer>
-    <userZoom>1.0</userZoom>
+    <userZoom>0.728411808901734</userZoom>
     <userOrigin x="-134.0" y="-133.5"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">
         <pathway ID="0" label="Untitled Pathway" created="1554310875701"
             x="0.0" y="0.0" width="1.4E-45" height="1.4E-45"
-            strokeWidth="0.0" autoSized="false" currentIndex="-1" open="true">
+            strokeWidth="0.0" autoSized="false" currentIndex="0" open="true">
             <strokeColor>#B3CC33CC</strokeColor>
             <textColor>#000000</textColor>
             <font>SansSerif-plain-14</font>
