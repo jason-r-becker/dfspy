@@ -44,10 +44,9 @@
 
 
 \section{Introduction}
-TODO\bigskip
+Popularity of daily fantasy sports (DFS) betting markets surged in the early 2010s reaching mainstream popularity by 2015. As legal sports gambling becomes legal in many states across the US, the amount of money bet in DFS and season-long fantasy leagues should only increase as a result. More than \$5 Billion was bet on sports in general throughout 2018 in the state of Nevada alone, breaking the previous record of nearly \$5 Billion from 2017 (\cite{nevada 2018}, \cite{nevada 2017}). And, the fantasy sports market is now reported to be a \$7 Billion Industry \cite{market size}. The focus of this paper is on DFS in the National Football League (NFL), specifically detailing a methodology for collecting data, projecting points, and generating optimal lineups for use in competition at the major DFS sites, DraftKings and FanDuel. Both of these sites offer weekly contests during the NFL season in which the winner receives \$1 Million, costing only \$20 to enter per lineup. The lineups generated will be tested using the results from these \$1 Million prize contests. \bigskip
 
-
-The full end-to-end pipeline used to generate lineups for daily fantasy sites is provided in Figure \ref{pipeline}. This paper will discuss the sections of this pipeline in chronological order: from scraping and cleaning the data, to generating stat and scoring projections, through generating final lineups for each week.
+As a parallel to finance, DFS lineup generation closely mirrors portfolio optimization, as lineups (portfolios) are optimized to maximize points (returns) subject to a number of lineup (portfolio) constraints such as limiting the number of players (assets) in total and within a particular position (asset class). As in financial practice, we will utilize convex optimization to generate our lineups. The full end-to-end pipeline used to generate lineups for daily fantasy sites is provided in Figure \ref{pipeline}. This paper will discuss the sections of this pipeline in chronological order: from scraping and cleaning the data, to generating stat and scoring projections, through generating final lineups for each week.
 
 \begin{figure}[H]
   \centering
@@ -58,9 +57,6 @@ The full end-to-end pipeline used to generate lineups for daily fantasy sites is
 
 \pagebreak
 \section{Data Summary}
-TODO
-
-
 \subsection{Data Collection}
 \begin{table}[H]
 \caption{Data collected from each source.}
@@ -112,7 +108,7 @@ For each position, a variety of stats are projected from the various sources. Du
 
 \subsection{Missing Data}
 
-Among data collection sources, the number of players with projections was not consistent, and in many cases projections are only provided from 4 or 5 out of 6 sources for a particular player. The number of sources which provided projections for each essential stat, and the percentage of missing data are provided in Figure \ref{missing data}. Nonessential statistics are provided in the appendix. These instances were manually observed and found to not be restricted to backups, but often occur in prominent starting players (e.g., Drew Brees, Cam Newton). Since prominent players were affected, the players with missing projections could not be dropped, necessitating imputing of missing values.\bigskip
+Among data collection sources, the number of players with projections was not consistent, and in many cases projections are only provided from 4 or 5 out of 6 sources for a particular player. The number of sources which provided projections for each essential stat, and the percentage of missing data are provided in Figure \ref{missing data}. Nonessential statistics are provided in the appendix. These instances were manually observed and found not to be restricted to backups, but often occur in prominent starting players (e.g., Drew Brees, Cam Newton). Since prominent players were affected, the players with missing projections could not be dropped, necessitating the imputation of missing values.\bigskip
 
 
 \begin{figure}[H]
@@ -122,7 +118,7 @@ Among data collection sources, the number of players with projections was not co
   \label{missing data}
 \end{figure}
 
-Several imputing methods were tested to find the optimal method for imputing missing projections. Imputing algorithms from the \texttt{fancyimpute} Python package were utilized to perform the imputing\cite{fancyimpute}. The simplest of these techniques as simply filling the projections from missing sources with the mean or median of the collected projections. Several more advanced methods were also studied. First, an iterative imputing method was used, where each source with missing values was first modeled as a function of all other sources using rows with full data, and these respective models were subsequently used to impute missing values for each source. Second, a K-nearest neighbors (KNN) approach was used, where each source is given a weight based on rows with all data observed. A matrix factorization approach was also studied which uses gradient descent to directly solve a factorization of the incomplete matrix into low-rank $U$ and $V$ matrices with L1 and L2 regularization respectively. Finally a soft impute method was studied which completes the matrix via soft thresholding singular value decompositions (SVD). Strictly using SVD was not possible due to the low number of sources (6) compared to the number of players which ranged from 32 for DST to upwards of 200 for WR. More information regarding each method and literature is available at \cite{fancyimpute}.\bigskip
+Several imputing methods were tested to find the optimal method for imputing missing projections. Imputing algorithms from the \texttt{fancyimpute} Python package were utilized to perform the imputing \cite{fancyimpute}. The simplest of these techniques is simply filling the projections from missing sources with the mean or median of the collected projections. Several more advanced methods were also studied. First, an iterative imputing method was used, where each source with missing values was first modeled as a function of all other sources using rows with full data, and these respective models were subsequently used to impute missing values for each source. Second, a K-nearest neighbors (KNN) approach was used, where each source is given a weight based on rows with all data observed. A matrix factorization approach was also studied which uses gradient descent to directly solve a factorization of the incomplete matrix into low-rank $U$ and $V$ matrices with L1 and L2 regularization respectively. Finally a soft impute method was studied which completes the matrix via soft thresholding singular value decompositions (SVD). Strictly using SVD was not possible due to the low number of sources (6) compared to the number of players which ranged from 32 for DST to upwards of 200 for WR. More information regarding each method and literature is available at \cite{fancyimpute}.\bigskip
 
 In order to test which imputing method was best suited for the stat projection dataset, a raw matrix of all projected players for every week of the season was compiled for each stat. Players with 50\% or more sources missing were dropped, as these players were always either backups or players not expected to start, resulting in an incomplete matrix. Next, the percentage of missing data in the incomplete matrix for each respective stat was recorded, shown in Figure \ref{missing data}. All rows (players) with any missing values were subsequently removed, leaving a fully completed matrix for each stat. Elements in this completed matrix were then removed at random until the matrix had an equivalent missing data percentage as incomplete matrix. Each imputation method described above was then used to impute these missing values, with the mean average error (MAE) and root mean squared error (RMSE) recorded for the difference between the imputed matrix of each method and the complete matrix of true projection values. This process was repeated for 50 simulations in order to reduce potential variation from the random selection of missing elements. The resulting MAE and RMSE values for each imputing method of the essential stats is provided below. 
 
@@ -173,7 +169,7 @@ The raw values for realized stats were investigated prior to building predictive
 
 
 \subsection{Projections}
-In order to project scores for each player, the individual stats of that player were projected, and subsequently combined with scoring rules for either FanDuel or DraftKings to generate a final scoring projection for each week. Models used for individual stat projections were trained on a \textit{training} period (Weeks 1-11), validated on a \textit{cross-validation} period (Weeks 12-14), and finally tested on an unseen \textit{testing} period (Weeks 15-17). This train/cross-validation/test procedure is the standard in machine learning literature as it ensures models are not overfit to the training data, establishes a unseen period to identify the best model in the cross-validation period, and can be tested on completely unseen data in the test period, providing a fair estimate for how well the model will do given future data.\bigskip
+In order to project scores for each player, the individual stats of that player were projected, and subsequently combined with scoring rules for either FanDuel or DraftKings to generate a final scoring projection for each week. Models used for individual stat projections were trained on a \textit{training} period (Weeks 1-11), validated on a \textit{cross-validation} period (Weeks 12-14), and finally tested on an unseen \textit{testing} period (Weeks 15-17). This train/cross-validation/test procedure is the standard in machine learning literature as it ensures models are not overfit to the training data, establishes an unseen period to identify the best model in the cross-validation period, and can be tested on completely unseen data in the test period, providing a fair estimate for how well the model will do given future data.\bigskip
 
 For all stats, the projections from individual sources were used as feature variables for the final projection. More concretely, for a given stat such as Pass Yds, the feature variable vector $X = [\text{CBS},\ \text{ESPN},\ \text{FantasyPros},\ \text{FFToday},\ \text{NFL},\ \text{RTSports},\ \text{Yahoo}]$ where each source name represents the Pass Yds projection from that respective source. Given the feature variable vector, the projection $y$ can be found:
 \begin{equation}
@@ -234,11 +230,11 @@ Each machine learning model was trained using the training set of data (Weeks 1-
 \begin{equation}
 X_{scaled} = \dfrac{X - \mu (X)}{\sigma (X)}
 \end{equation}
-where $mu$ and $\sigma$ denote the mean and standard deviation of $X$ projections for each source respectively. This scaling results in each $X_{scaled}$ having mean 0 and standard deviation of 1.\bigskip
+where $\mu$ and $\sigma$ denote the mean and standard deviation of $X$ projections for each source respectively. This scaling results in each $X_{scaled}$ having mean 0 and standard deviation of 1.\bigskip
 
-Once the values for each stat were scaled, they were quantized into quintiles (i.e., given a categorical value 1-5 depending on if they were in the 0-20, 20-40, ..., 80-100 percentile of projections). Next, the full training data was randomly split into 5 subsets, each of which had an identical number of values from each quantile, known as a stratified shuffle split. Stratifying the split using quintiles ensures that each subset had a similar distribution of high, medium, and low values, balancing each subset. Next, a randomized cross-validation grid search was used on the first 4 subsets to find an optimal model, and tested on the fifth subset to observe the how the model performed on unseen data. This was repeated for each group of 4 subsets, known as K-fold cross-validation, to help the models generalize to unseen data. Optimal model hyperparameters from the randomized grid search were chosen from the hyperparameters which performed best on average over each of the 5 K-folds, where MAE was used as loss function. Once model hyperparameters were found for each model, they were saved to files such that they could be loaded and applied to other datasets.\bigskip
+Once the values for each stat were scaled, they were quantized into quintiles (i.e., given a categorical value 1-5 depending on if they were in the 0-20, 20-40, ..., 80-100 percentile of projections). Next, the full training data was randomly split into 5 subsets, each of which had an identical number of values from each quintile, known as a stratified shuffle split. Stratifying the split using quintiles ensures that each subset had a similar distribution of high, medium, and low values, balancing each subset. Next, a randomized cross-validation grid search was used on the first 4 subsets to find an optimal model, and tested on the fifth subset to observe how the model performed on unseen data. This was repeated for each group of 4 subsets, known as K-fold cross-validation, to help the models generalize to unseen data. Optimal model hyperparameters from the randomized grid search were chosen from the hyperparameters which performed best on average over each of the 5 K-folds, where MAE was used as loss function. Once model hyperparameters were found for each model, they were saved to files such that they could be loaded and applied to other datasets.\bigskip
 
-After all model hyperparameters where found for each stat, the cross-validation set (Weeks 12-14) were loaded. The saved scaling function mean and standard deviation from the training sets were then applied to scale the cross-validation data in the same manner as the training data. Following, all machine learning models were loaded and applied to the scaled data, generating projections on data previously unseen by the machine learning models which had no impact on hyperparameter selection. The resulting MAE for each stat and projection function is provided in Figure \ref{train/cv MAE}.
+After all model hyperparameters were found for each stat, the cross-validation set (Weeks 12-14) was loaded. The saved scaling function mean and standard deviation from the training sets were then applied to scale the cross-validation data in the same manner as the training data. Following, all machine learning models were loaded and applied to the scaled data, generating projections on data previously unseen by the machine learning models which had no impact on hyperparameter selection. The resulting MAE for each stat and projection function is provided in Figure \ref{train/cv MAE}.
 
 \begin{figure}[H]
   \centering
@@ -257,7 +253,7 @@ After all model hyperparameters where found for each stat, the cross-validation 
   \label{train/cv MAE}
 \end{figure}
 
-Models with low MAE values on the training set but moderate to high MAE values on the cross-validation set indicate that the models overfit to the training set, and do not generalize well to unseen data. The optimal models for projecting each stat were manually chosen based on the MAE results from both the training and cross-validation sets. For stats such as DST - Fum Rec where both the cross-validation and training sets had the same optimal model (Max), that model was selected. For stats such as QB - Rush Yds, were the best model on the cross-validation set (RF) differed from the training set (SVR), the model performing best on the cross validation set was generally chosen. Some exceptions to these rules were made. For example, with QB Pass TD, although the RF slightly outperformed the Max on the cross-validation set, it significantly underperformed compared to Max on the training set. This indicates that the model may have gotten ``lucky'' on the cross-validation set and similar performance greater than the training set cannot be expected on new data. Additionally, when two models perform nearly equally well, a simpler model (Max) is preferable over a more complex model (RF). Hence, for QB - Pass TD Max was chosen as the projection function.\bigskip
+Models with low MAE values on the training set but moderate to high MAE values on the cross-validation set indicate that the models overfit to the training set, and do not generalize well to unseen data. The optimal models for projecting each stat were manually chosen based on the MAE results from both the training and cross-validation sets. For stats such as DST - Fum Rec where both the cross-validation and training sets had the same optimal model (Max), that model was selected. For stats such as QB - Rush Yds, were the best model on the cross-validation set (RF) differed from the training set (SVR), the model performing best on the cross validation set was generally chosen. Some exceptions to these rules were made. For example, with QB Pass TD, although the RF slightly outperformed the Max on the cross-validation set, it significantly underperformed compared to Max on the training set. This indicates that the model may have gotten ``lucky'' on the cross-validation set and similar performance greater than the training set cannot be expected on new data. Additionally, when two models perform nearly equally well, a simpler model (Max) is preferable over a more complex model (RF). Hence, for QB - Pass TD, Max was chosen as the projection function.\bigskip
 
 Once the projection function was chosen for each stat, the test set data was loaded. Similar to the cross-validation set, the test set was scaled using the saved scaling data from the training set, and then the optimal projection function was applied to each stat, forming final projections for each stat and data that was completely unseen to models during hyperparameter tuning, and during the model selection process. As such, the test set provides a reliable estimate for the MAE expected for each stat on new data to the pipeline. The selected projection function for each stat, as well as its respective MAE value on the training, cross-validation, and test sets are provided in Table \ref{train/cv/test table}.
 
@@ -302,12 +298,11 @@ Once the projection function was chosen for each stat, the test set data was loa
 \end{tabular}
 \end{table}
 
-Several of the stats show some signs of difficulty to generalize to the new data. QB - Rush TD, TE - Rec TD, and DST - Fum Rec all had significantly higher test MAE values than their training and cross-validation counterparts. This could provide some future work as these models may require a closer look at data cleaning/thresholding, hyperparameter tuning, or model selection in order to better generalize. However, overall most stat projection test values were nearly equal to or better than their cross-validation MAE value, showing the ability for most models to generalize well to unseen data.\bigskip
+Several of the stats show some signs of difficulty generalizing to the unseen data in the test set. QB - Rush TD, TE - Rec TD, and DST - Fum Rec all had significantly higher test MAE values than their training and cross-validation counterparts. This could provide some future work as these models may require a closer look at data cleaning/thresholding, hyperparameter tuning, or model selection in order to better generalize. However, overall most stat projection test values were nearly equal to or better than their cross-validation MAE value, showing the ability for most models to generalize well to unseen data.\bigskip
 
 Interestingly, a simple maximum was the most frequent model selection, followed by a random forest, though all machine learning models were utilized for at least one stat. This indicates the largest differences in projecting different stats for different positions. For example, Rush Yds were found to be optimally projected using RF, OLS, and simple Max for QB, RB, and WR respectively, indicating that the algorithms used by each source are different depending upon not only stat but also position.\bigskip
 
-TODO: talk about applying scoring rules and floor ceiling projections.\bigskip
-
+Once each player had each of their essential and non-essential stats projected by the optimal model selection, scoring rules from the different types of leagues were applied to reach a final fantasy point projection. For example, FanDuel rewards 0.5 points for each reception, 6 points for each rushing or receiving touchdown, and 0.1 points for every yard gained rushing or receiving. Thus, if a player was projected for 65 rushing yards, 22 receiving yards, 2.2 catches, 0.5 rushing touchdowns, and 0.1 receiving touchdowns, this player would be projected for 13.40 fantasy points in FanDuel's scoring format. \bigskip
 
 Once final projections are computed using scoring rules, the projections for any position can be visualized. Figure \ref{qb17} displays an example visualization for quarterbacks in week 17 scored by FanDuel. In addition to simply showing the generated projections, confidence intervals of each player's respective floor and ceiling are included as well as player status. Statuses include Q for questionable, IR for players on injured reserved, SSPD for suspended players, and O for players who are out.
 
@@ -320,7 +315,7 @@ Once final projections are computed using scoring rules, the projections for any
 
 
 \subsection{Lineup Optimization}
-Given optimal player projections, lineups must now be generated for competition at DraftKings and FanDuel. Both sites have the same lineup restrictions, only differing on their budget and point system (DraftKings is 50,000 budget and 1 pt per reception; FanDuel is 60,000 budget and is 0.5 pts per reception). As the goal is to score as many points as possible, projected points were maximized such that all lineup restrictions were met. \bigskip
+Given optimal player projections, lineups were generated for competition at DraftKings and FanDuel. Both sites have similar lineup constraints, only differing on their salary cap and point system (DraftKings has a  50000 budget and is 1.0 points per reception; FanDuel has a 60000 budget and is 0.5 points per reception). As our goal is to score as many points as possible, projected points were maximized subject to all necessary lineup constraints. \bigskip
 
 In order to use convex optimization to solve for the optimal lineup, as opposed to brute-force solving for all possible combinations, we define the following problem: \begin{itemize}
 	\item Let $N$ be the number of total players.
@@ -346,18 +341,18 @@ Then, we solve for the $w$ that solves:
 &&& \max_i (w^T \cdot C)_i \leq 4 \\
 \end{aligned}
 \end{equation*}
-where the subscripts $1,\ldots ,5$ on $(w^T \cdot D)$ correspond to the positions QB, RB, WR, TE, and Defense, respectively. These constraints ensure that each lineup follows the composition rules defined in each contest.
+where the subscripts $1,\ldots ,5$ on $(w^T \cdot D)$ correspond to the positions QB, RB, WR, TE, and Defense, respectively. These constraints ensure that each lineup followed the composition rules defined both DFS sites. The lineup optimization routine was written and solved using CVXPY, a Python-embedded modeling language for convex optimization (\cite{cvxpy}, \cite{cvxpy_rewriting}). \bigskip
 
-While this formulation worked perfectly when solving for the highest projected lineup, it failed when scaling to the solve for the highest $n$ projected lineups. As many contests allow for up to 150 lineup entries per person, this limitation must be solved for. Below in figure \ref{lineup times}, the exponential nature of the slowdown is shown.
+While this formulation worked perfectly when solving for the highest projected lineup, it failed when scaling to the solve for the highest $n$ projected lineups. As many contests allow for up to 150 lineup entries per contestant, this limitation must be solved for. Below in figure \ref{lineup times}, the exponential nature of the slowdown is shown.
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.95\textwidth]{../figures/time_per_lineup}
-  \caption{Cumulative (in blue) and marginal (in red) time taken to generate lineups.}
+  \caption{Cumulative (blue) and marginal (red) time taken to generate lineups.}
   \label{lineup times}
 \end{figure}
 
-As a remedy for this problem, we implement a dropout-like system in which players are dropped from the available pool with probability $p$ (CITE). Thus, the probability that the best possible lineup gets chosen is equal to $(1-p)^9$. Below in Table \ref{probs_of_lineups}, these probabilities are shown for different values of $p$.
+As a remedy for this issue, we implement a dropout-like system in which players are dropped from the available pool with probability $p$ \cite{dropout}. Thus, the probability that the best possible lineup gets chosen is equal to $(1-p)^9$. Below in Table \ref{probs_of_lineups}, these probabilities are shown for different values of $p$. Using this dropout technique enables us to scale up, almost linearly, the amount of lineups generated, without causing a slowdown. Figure \ref{lineup times using dropout} below illustrates the ability for this new technique to scale.
 
 ﻿\begin{table}[H]
 \caption{Probability of best lineup being selected for varying levels of dropout probability $p$.}
@@ -380,7 +375,14 @@ As a remedy for this problem, we implement a dropout-like system in which player
 \end{tabular}
 \end{table}
 
-Now of course, for what this approach gains in speed, it loses in precision. We have now introduced a non-zero probability that the best possible $n$ lineups will not be selected if we choose to generate exactly $n$ lineups, given the randomness of dropout. Using week 1 of 2018 as a test, 400 lineups were generated, and the first $n$ lineups generated are examined below in Figure \ref{lineups_vs_n}. Both the top 10 and top 150 lineups are studied.  
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{../figures/time_per_lineup_dropout}
+  \caption{Cumulative (blue) and marginal (red) time taken to generate lineups using dropout.}
+  \label{lineup times using dropout}
+\end{figure}
+
+Of course, for what this approach gains in speed, it loses in precision. We have now introduced a non-zero probability that the best possible $n$ lineups will not be selected if we choose to generate exactly $n$ lineups, given the randomness of dropout. Using week 1 of 2018 as a test, and $p$ equal to 25\%, 400 lineups were generated, and the first $n$ lineups generated are examined below in Figure \ref{lineups_vs_n}. Both the top 10 and top 150 lineups are studied.  
 
 \begin{figure}[H]
   \centering
@@ -399,14 +401,144 @@ Now of course, for what this approach gains in speed, it loses in precision. We 
 \label{lineups_vs_n}
 \end{figure}
 
-From Figure \ref{lineups_vs_n}, it is clear that if $n$ lineups are needed, naively choosing $n$ lineups to generate will produce a sub-optimal output.
+From Figure \ref{lineups_vs_n}, it is clear that if $n$ lineups are needed, naively choosing $n$ lineups to generate will produce a sub-optimal output. As 150 lineups are the typical maximum number of allowed lineups for the million dollar contests, we will generate 400, then subset the top 150 for use, using $p$ equal to 25\% as the dropout rate. \bigskip
+
+To allow further customization of lineups, we introduce a risk parameter $r \in [-1, 1]$, which controls the weighting of the projection towards the floor and ceiling values for each player. For example, $r$ = 0 implies that our lineups are optimized for our projections. $r$ = 1 ($-1$) produces lineups that are optimized for the ceiling (floor) projection. Values of $r$ between $-1$ and 0 use a weighted average of floor and projection for optimization, and similarly, values of $r$ between 0 and $1$, a weighted average of projection and ceiling is used. Table \ref{risk_param} below illustrates this in further detail.
+
+\begin{table}[H]
+\caption{Sample projected point total used in optimization routine for varying levels of $r$ for a given player.}
+\centering
+\begin{tabular}{ccl}
+\toprule 
+$r$ & Projection Used & Description \\
+\midrule 
+$-1.0$ & 10.0 & Floor \\
+$-0.9$ & 10.7 & Weighted Average \\
+$-0.5$ & 13.5 & Weighted Average \\
+$0.0$ & 17.0 & Actual Projection \\
+$0.5$ & 18.5 & Weighted Average \\
+$0.9$ & 19.7 & Weighted Average \\
+$1.0$ & 20.0 & Ceiling \\
+\bottomrule
+\end{tabular}
+\label{risk_param}
+\end{table}
 
 \pagebreak
 \section{Results}
+\subsection{Contest Info}
+To test the performance of generated lineups using our projections, lineup results from DraftKings's main slate (1:00pm and 4:00pm games only), millionaire-maker contests were used. FanDuel contests were not studied due to issues of missing data from multiple weeks. Each of these contests followed a similar buy-in and payout structure. \$1,000,000 was the top prize with a buy-in of around \$20 and a maximum of 150 entries (lineups) per player. Minimum prizes for each contest was typically 50\% higher than the buy-in amount. Table \ref{weekly_contests} below shows details of the contests used in this study. If a lineup finishes in-the-money, the payout structure becomes highly non-linear, showcasing an exponential reward as lineup score increases. Figure \ref{payout structure} illustrates this nature of the payouts by showing the reward for the top 200 scoring lineups in the week 17 contest. Having just one lineup finish in the top 50 will significantly increase the profitability for that week. Table \ref{rest of payout structure} shows the payouts corresponding to all other lineups outside of the top 200. 
 
+﻿\begin{table}[H]
+\caption{DraftKings main slate millionaire-maker contests for the 2018 season with key features shown. These contests were used to measure profitability of generated lineups.}
+\centering
+\begin{tabular}{lccccccc}
+\toprule
+{} &  Week &  Entry Fee &  Max Entries &  \% Cash &  Top Score &   Top Prize &  Min Prize \\
+\midrule
+{} &     1 &      20 &       150 &   23 &    301.18 &  1,000,000 &      30 \\
+{} &     2 &      20 &       150 &   23 &    237.84 &  1,000,000 &      30 \\
+{} &     3 &      20 &       150 &   23 &    251.86 &  1,000,000 &      30 \\
+{} &     4 &      10 &       150 &   21 &    273.56 &  1,000,000 &      15 \\
+{} &     5 &      20 &       150 &   23 &    234.36 &  1,000,000 &      30 \\
+{} &     6 &      10 &       150 &   22 &    245.90 &  1,000,000 &      15 \\
+{} &     7 &      20 &       150 &   23 &    228.62 &  1,000,000 &      30 \\
+{} &     8 &      20 &       150 &   23 &    242.80 &  1,000,000 &      30 \\
+{} &     9 &      20 &       150 &   23 &    245.42 &  1,000,000 &      30 \\
+{} &    10 &      20 &       150 &   23 &    248.20 &  1,000,000 &      30 \\
+{} &    11 &      20 &       150 &   22 &    253.72 &  1,000,000 &      30 \\
+{} &    12 &      20 &       150 &   22 &    252.82 &  1,000,000 &      30 \\
+{} &    13 &     100 &       150 &   22 &    232.24 &  1,000,000 &     150 \\
+{} &    14 &      20 &       150 &   22 &    244.30 &  1,000,000 &      30 \\
+{} &    15 &      20 &       150 &   22 &    206.44 &  1,000,000 &      30 \\
+{} &    16 &      15 &       150 &   20 &    263.08 &  1,000,000 &      25 \\
+{} &    17 &      20 &       150 &   21 &    243.22 &  1,000,000 &      30 \\
+\bottomrule
+\end{tabular}
+\label{weekly_contests}
+\end{table}
 
-TODO
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{../figures/payout_structure}
+  \caption{Prizes for the top 200 lineups played in the week 17 Millionaire-maker DraftKings contest.}
+  \label{payout structure}
+\end{figure}
 
+﻿\begin{table}[H]
+\caption{Payout structure for DraftKings' week 17 Millionaire-maker contest for lineups placing between below 200.}
+\centering
+\begin{tabular}{llr}
+\toprule
+{} &              Lineup Rank &        Prize \\
+\midrule
+{} &      201st - 300th &        \$150 \\
+{} &      301st - 500th &        \$100 \\
+{} &     501st - 1000th &         \$80 \\
+{} &    1001st - 2000th &         \$60 \\
+{} &    2001st - 5000th &         \$50 \\
+{} &   5001st - 12511th &         \$40 \\
+{} &  12512th - 30413th &         \$30 \\
+{} &  30414th and above &         \$0 \\
+\bottomrule
+\end{tabular}
+\label{rest of payout structure}
+\end{table}
+
+\subsection{Training}
+Weeks 1-14 were used as training to determine the optimal methodology of generating our top 150 lineups. For each week, 150 lineups were generated using 21 varying levels of $r$ ranging from -1 to 1 (-1, -0.9, \dots, 0.9, 1). For each level of $r$, lineups were further split into quintiles to examine if higher confidence (projected points) leads to better results. To measure performance, we used the simple average return of each lineup defined below in Equation \ref{lineup_return}. Prize won for each lineup was determined by taking the actual contest results and payout structures directly from DraftKings and overlaying our lineups as if they had been entered.  
+
+\begin{equation}
+	Return = \frac{Prize-Entry}{Entry} 
+\label{lineup_return}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{../figures/testing_results}
+  \caption{Weeks 1-14 average lineup return is shown for each quintile and each level of $r$ used.}
+  \label{training results}
+\end{figure}
+
+Figure \ref{training results} above details the performance of the lineups tested. While lineups on average lost money, two patterns emerged from these results. First, as the projection used in lineup optimization deviated from our optimal projection (as the level of risk moved away from zero), average return declined, bottoming out at $r = 1$ (ceiling projection). Second, at around $r = 0$, as projected score decreased, so did performance. On average, the bottom quintiles returned less than their respective top quintiles.
+
+\subsection{Testing}
+From the results in Weeks 1-14, we define a new methodology for generating the best 150 lineups for competition for use in Weeks 15-17. 150 lineups are generated for $r$ = -0.2, -0.1, and 0, sorted by projected points. Then we iterate over these three sets of lineups, and successively pick the top available lineup, if not already used, until reaching our maximum allotted amount of 150. In most cases, only the top three quintiles are used, but the exact number varies due to commonality between lineups generated under the three levels of risk. Below in Tables \ref{testing weeks results} and \ref{testing quintile results}, results are shown for the final three weeks of the season by week and then by quintile. 
+
+﻿\begin{table}[H]
+\caption{Results from weeks 15-17 of our optimal 150 lineups. Average PnL (\$) and average return are show for each week.}
+\centering
+\begin{tabular}{lccc}
+\toprule
+{} &  Week &    PnL &  Return \\
+\midrule
+{} &    15 &   1.60 &    0.08 \\
+{} &    16 &  -8.83 &   -0.59 \\
+{} &    17 & -12.67 &   -0.63 \\
+{} &    Average & -6.63 &  -0.38 \\
+\bottomrule
+\end{tabular}
+\label{testing weeks results}
+\end{table}
+
+﻿\begin{table}[H]
+\caption{Average PnL (\$) and average return are shown for weeks 15-17 on aggregate for each quintile.}
+\centering
+\begin{tabular}{lccc}
+\toprule
+{} &  Quintile &   PnL &   Return \\
+\midrule
+{} &         1 & -4.89 & -0.27 \\
+{} &         2 & -7.06 & -0.42 \\
+{} &         3 & -6.94 & -0.42 \\
+{} &         4 & -6.83 & -0.37 \\
+{} &         5 & -7.44 & -0.42 \\
+\bottomrule
+\end{tabular}
+\label{testing quintile results}
+\end{table}
+
+Over the final three weeks of the season, our lineups performed slightly worse, on average, than they did during the first fourteen weeks of the season, only making money during Week 15 action, and losing around 60\% over Weeks 16 and 17. Similar to the results from Weeks 1-14, as our projected point total decreased, performance decreased along with it. Table \ref{testing quintile results} shows the performance of the first quintile outperforms the bottom four quintiles by roughly 15\%. 
 
 
 \pagebreak
@@ -415,15 +547,26 @@ Future work may consist of several improvements to the described methodology. Fi
 
 Second, several models did not generalize well to the test set. Modulating threshold values and hyperparameter grids may help overcome these issues. Additionally, including other machine learning algorithms such as neural networks may further improve accuracy and precision of generated projections.\bigskip
 
-Finally, during lineup creation, simple linear interpolation between the floor, generated projection, and ceiling are used to create 150 lineups. Using the floor and ceiling levels to instead create a distribution with mode or mean equal to the generated projection and performing Monte Carlo simulations to generate lineups may further improve the ability to generate profitable lineups.
+Third, during lineup creation, simple linear interpolation between the floor, generated projection, and ceiling are used to create 150 lineups. Using the floor and ceiling levels to instead create a distribution with mode or mean equal to the generated projection and performing Monte Carlo simulations to generate lineups may further improve the ability to generate profitable lineups. \bigskip
+
+Lastly, tweaks to the lineup optimization constraints may yield better results. Forcing a QB/WR stack, a game stack, or other combinations of players may yield more profitable lineups as performance within an offense or game are often correlated. Limiting the number of appearances each player has among the 150 lineups generated might also improve profitability.
 
 \section{Conclusion}
-TODO: conclusions
+We have detailed a pipeline for collecting raw stat projections, using machine learning to produce more accurate fantasy point projections, and utilizing convex optimization to generate 150 optimal, unique lineups that satisfy all required constraints from DFS sites. While our methodology failed to yield profitable lineups on average during the training period of Weeks 1-14 and the testing period of Weeks 15-17, we showed that optimizing lineups for floor or ceiling projections are much less profitable than using more accurate projections. Given the exponential payoffs associated with top-ranking lineups each week however, it only takes one excellent performance to easily make up for weeks of losses. Moreover, we have laid the foundation for a functional, and potentially profitable algorithm that can be directly plugged into either DFS site.
 
 % ------------------------------------ References ---------------------------------------------- %
 
 \pagebreak
 \begin{thebibliography}{}
+
+\bibitem{nevada 2018}
+A. Candee (2019). Nevada Sports Betting Crushes Records With \$5 Billion Year. \url{https://www.legalsportsreport.com/28482/nevada-sports-betting-revenue-december-2018/}
+
+\bibitem{nevada 2017}
+P. Everson (2018). Nevada Sports Bettors Wagered Almost \$5 Billion in 2017, Once Again Breaking Betting Records. \url{https://www.covers.com/Editorial/Article/14f29db1-06c6-11e8-a97f-125516351e3a/Nevada-sports-bettors-wagered-almost-5-billion-in-2017-once-again-breaking-betting-records-bets-sports-betting-odds}
+
+\bibitem{market size}
+FSTA. (2019). Press Release: Fantasy Sports Now a \$7 Billion Industry. \url{https://fsta.org/press-release-fantasy-sports-now-a-7-billion-industry/}
 
 \bibitem{fancyimpute}
 A. Rubinsteyn, \& S. Feldman (2019). 
@@ -470,6 +613,14 @@ H. Drucker, C.J.C. Burges, L. Kaufman, A. Smola, \& V. Vapnik (1997).
 M. Brucher et. al (2019). 
 SVR. \url{https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html}
 
+\bibitem{cvxpy}
+S. Diamond \& Stephen Boyd. 2016. {CVXPY}: A {P}ython-Embedded Modeling Language for Convex Optimization. J. Mach. Learn. Res. 17, 83 (April 2016), 1-5.
+
+\bibitem{cvxpy_rewriting}
+A. Agrawal et al. 2018. A Rewriting System for Convex Optimization Problems. Journal of Control and Decision. 5, 1 (January 2018), 42-60.
+
+\bibitem{dropout}
+N. Srivastava et al. 2014. Dropout: a simple way to prevent neural networks from overfitting. J. Mach. Learn. Res. 15, 1 (January 2014), 1929-1958.
 
 
 \end{thebibliography}
@@ -497,7 +648,7 @@ SVR. \url{https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html
 \end{figure}
 
 \pagebreak
-\section{Essential Stats Histograms}
+\subsection{Essential Stats Histograms}
 
 \begin{figure}[H]
   \centering
@@ -584,7 +735,7 @@ SVR. \url{https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html
 \end{figure}
 
 \pagebreak
-\section{Ensemble Results}
+\subsection{Ensemble Results}
 
 
 ﻿\begin{table}[H]
@@ -622,9 +773,6 @@ SVR. \url{https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html
 \end{tabular}
 \end{adjustbox}
 \end{table}
-
-
-
 
 
 
